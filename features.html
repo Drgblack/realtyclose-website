@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - RealtyClose</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand': '#4285F4',
+                        'brand-hover': '#3367d6'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <div class="w-8 h-8 bg-brand rounded-lg flex items-center justify-center text-white font-bold text-sm mr-3">
+                            RC
+                        </div>
+                        <span class="text-xl font-bold text-gray-900">RealtyClose</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="text-gray-600 hover:text-brand px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                        <a href="features.html" class="text-brand px-3 py-2 text-sm font-medium">Features</a>
+                        <a href="demo.html" class="text-gray-600 hover:text-brand px-3 py-2 text-sm font-medium transition-colors">Demo</a>
+                        <a href="index.html#pricing" class="text-gray-600 hover:text-brand px-3 py-2 text-sm font-medium transition-colors">Pricing</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="bg-brand hover:bg-brand-hover text-white px-6 py-2 rounded-lg font-medium transition-colors">
+                        Install Extension
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-blue-50 to-purple-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl font-bold text-gray-900 mb-6">
+                Powerful Features for 
+                <span class="bg-gradient-to-r from-brand to-purple-600 bg-clip-text text-transparent">
+                    Modern Agents
+                </span>
+            </h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                Everything you need to transform your Gmail into a complete real estate CRM and close more deals
+            </p>
+            <button class="bg-brand hover:bg-brand-hover text-white px-8 py-4 rounded-xl font-semibold text-lg transition-colors">
+                Try All Features Free
+            </button>
+        </div>
+    </section>
+
+    <!-- Core Features -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Core Features</h2>
+                <p class="text-xl text-gray-600">The essential tools every real estate agent needs</p>
+            </div>
+
+            <div class="feature-grid">
+                <!-- AI Email Assistant -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">🤖</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">AI Email Assistant</h3>
+                    <p class="text-gray-600 mb-6">Generate personalized, professional emails in seconds with context-aware AI that understands real estate.</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span class="text-gray-700">Context-aware email generation</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span class="text-gray-700">Multiple tone options (Professional, Friendly, Concise)</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span class="text-gray-700">Multi-language support (EN, DE, FR, ES, IT)</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span class="text-gray-700">Real estate-specific templates</span>
+                        </li>
+                    </ul>
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <p class="text-blue-800 text-sm font-medium">💡 Pro Tip: Use keyboard shortcuts for lightning-fast email generation!</p>
+                    </div>
+                </div>
+
+                <!-- Unified Dashboard -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-100 to-green-200 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">📊</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Unified Dashboard</h3>
+                    <p class="text-gray-600 mb-6">See all your critical business metrics, deals, and tasks in one beautiful dashboard right inside Gmail.</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span class="text-gray-700">Real-time performance metrics</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span class="text-gray-700">Deal pipeline visualization</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span class="text-gray-700">Activity feed and recent updates</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span class="text-gray-700">Quick actions and shortcuts</span>
+                        </li>
+                    </ul>
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <p class="text-green-800 text-sm font-medium">📈 Track revenue, response rates, and closing ratios</p>
+                    </div>
+                </div>
+
+                <!-- Deal Management -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">🏠</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Deal Management</h3>
+                    <p class="text-gray-600 mb-6">Track every deal from initial lead to successful closing with automated workflows and intelligent reminders.</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span class="text-gray-700">Visual pipeline with drag-and-drop</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span class="text-gray-700">Probability tracking and forecasting</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span class="text-gray-700">Commission calculations</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span class="text-gray-700">Deal timeline and milestones</span>
+                        </li>
+                    </ul>
+                    <div class="bg-purple-50 p-4 rounded-lg">
+                        <p class="text-purple-800 text-sm font-medium">🎯 Never lose track of important deal details again</p>
+                    </div>
+                </div>
+
+                <!-- Smart Templates -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">📄</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Smart Templates</h3>
+                    <p class="text-gray-600 mb-6">Access pre-built, compliance-ready templates that automatically customize with client and property details.</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span class="text-gray-700">50+ pre-built email templates</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span class="text-gray-700">Dynamic personalization</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span class="text-gray-700">Compliance-ready language</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span class="text-gray-700">Custom template creation</span>
+                        </li>
+                    </ul>
+                    <div class="bg-yellow-50 p-4 rounded-lg">
+                        <p class="text-yellow-800 text-sm font-medium">⚡ Save hours each week with instant access to proven templates</p>
+                    </div>
+                </div>
+
+                <!-- Zara's Insights -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-gradient-to-br from-indigo-100 to-indigo-200 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">🎯</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Zara's AI Insights</h3>
+                    <p class="text-gray-600 mb-6">Get personalized coaching and actionable insights from Zara, your AI assistant, to continuously improve your performance.</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span class="text-gray-700">Performance coaching and tips</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span class="text-gray-700">Smart follow-up suggestions</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span class="text-gray-700">Market opportunity alerts</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span class="text-gray-700">Productivity recommendations</span>
+                        </li>
+                    </ul>
+                    <div class="bg-indigo-50 p-4 rounded-lg">
+                        <p class="text-indigo-800 text-sm font-medium">🧠 Your personal AI coach working 24/7 to help you succeed</p>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-gradient-to-br from-red-100 to-red-200 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">🚀</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Quick Actions</h3>
+                    <p class="text-gray-600 mb-6">Streamline your workflow with one-click actions for common tasks like email composition, call logging, and scheduling.</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span class="text-gray-700">One-click email composition</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span class="text-gray-700">Quick call and meeting logging</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span class="text-gray-700">Property and contact creation</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span class="text-gray-700">Calendar integration</span>
+                        </li>
+                    </ul>
+                    <div class="bg-red-50 p-4 rounded-lg">
+                        <p class="text-red-800 text-sm font-medium">⚡ Complete tasks in seconds, not minutes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Features -->
+    <section class="bg-gray-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Advanced Features</h2>
+                <p class="text-xl text-gray-600">Powerful tools for serious professionals</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-xl">📧</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Email Analytics</h3>
+                    <p class="text-gray-600">Track open rates, response times, and engagement metrics to optimize your communication strategy.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-xl">🔄</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Automated Workflows</h3>
+                    <p class="text-gray-600">Set up automated follow-up sequences and reminders based on deal stages and client behavior.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-xl">📊</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Custom Reporting</h3>
+                    <p class="text-gray-600">Generate detailed reports on your performance, pipeline, and revenue with customizable dashboards.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                    <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-xl">🔗</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">CRM Integration</h3>
+                    <p class="text-gray-600">Seamlessly sync with popular CRM systems like HubSpot, Salesforce, and more.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-xl">👥</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Team Collaboration</h3>
+                    <p class="text-gray-600">Share deals, templates, and insights with your team for better collaboration and consistency.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                        <span class="text-xl">🛡️</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Security & Compliance</h3>
+                    <p class="text-gray-600">Enterprise-grade security with SOC 2 compliance and GDPR-ready data handling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Works Seamlessly With Your Tools</h2>
+            <p class="text-xl text-gray-600 mb-12">RealtyClose integrates with the tools you already use</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+                <div class="bg-gray-100 p-6 rounded-xl">
+                    <div class="text-2xl font-bold text-gray-700">Gmail</div>
+                    <div class="text-sm text-gray-500">Native Integration</div>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-xl">
+                    <div class="text-2xl font-bold text-gray-700">Google Calendar</div>
+                    <div class="text-sm text-gray-500">Scheduling</div>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-xl">
+                    <div class="text-2xl font-bold text-gray-700">Outlook</div>
+                    <div class="text-sm text-gray-500">Coming Soon</div>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-xl">
+                    <div class="text-2xl font-bold text-gray-700">HubSpot</div>
+                    <div class="text-sm text-gray-500">CRM Sync</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-brand py-20">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-white mb-6">
+                Ready to Experience All These Features?
+            </h2>
+            <p class="text-xl text-blue-100 mb-8">
+                Install RealtyClose today and transform how you manage your real estate business
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-brand px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-100 transition-colors">
+                    🚀 Try Free for 14 Days
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white hover:text-brand transition-colors">
+                    📹 Watch Feature Demo
+                </button>
+            </div>
+            
+            <div class="mt-8 text-blue-100 text-sm">
+                ✓ No credit card required • ✓ Full access to all features • ✓ Cancel anytime
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 bg-brand rounded-lg flex items-center justify-center text-white font-bold text-sm mr-3">
+                            RC
+                        </div>
+                        <span class="text-xl font-bold">RealtyClose</span>
+                    </div>
+                    <p class="text-gray-400">
+                        AI-powered Gmail extension for real estate agents.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Product</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="features.html" class="hover:text-white transition-colors">Features</a></li>
+                        <li><a href="demo.html" class="hover:text-white transition-colors">Demo</a></li>
+                        <li><a href="index.html#pricing" class="hover:text-white transition-colors">Pricing</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Documentation</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 RealtyClose. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
