@@ -60,6 +60,21 @@
             padding: 20px;
             box-shadow: 0 30px 60px rgba(0,0,0,0.15);
         }
+        .pulse-dot {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .urgency-banner {
+            background: linear-gradient(90deg, #22c55e 0%, #16a34a 100%);
+            animation: slideInFromTop 0.5s ease-out;
+        }
+        @keyframes slideInFromTop {
+            0% { transform: translateY(-100%); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
     </style>
 </head>
 <body class="bg-white">
@@ -99,8 +114,11 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
             <div class="lg:grid lg:grid-cols-12 lg:gap-8">
                 <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
-                    <div class="inline-block bg-gradient-to-r from-blue-100 to-purple-100 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                        🚀 Gmail Extension Available Now
+                    <div class="flex items-center justify-center lg:justify-start mb-6">
+                        <div class="inline-flex items-center bg-gradient-to-r from-blue-100 to-purple-100 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold">
+                            <div class="w-2 h-2 bg-green-500 rounded-full pulse-dot mr-2"></div>
+                            🚀 Gmail Extension Available Now
+                        </div>
                     </div>
                     <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                         The Enterprise Real Estate Platform 
@@ -896,11 +914,18 @@
             </p>
             
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <button class="bg-white text-brand px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-100 transition-colors shadow-lg">
-                    🚀 Install Free Gmail Extension
+                <button class="bg-white text-brand px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-100 transition-colors shadow-lg group flex items-center justify-center space-x-3">
+                    <svg class="w-5 h-5 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                    <span>Install Free Gmail Extension</span>
+                    <div class="bg-brand/10 text-brand text-xs px-2 py-1 rounded-full">500+ users</div>
                 </button>
-                <button class="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white hover:text-brand transition-colors">
-                    📹 Watch Extension Demo
+                <button class="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white hover:text-brand transition-colors flex items-center justify-center space-x-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                    <span>Watch Demo</span>
                 </button>
             </div>
             
