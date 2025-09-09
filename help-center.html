@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center - RealtyClose Support</title>
+    <meta name="description" content="Get help with RealtyClose Gmail extension. Find answers to common questions, troubleshooting guides, and contact support.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand': '#2563eb',
+                        'brand-hover': '#1d4ed8',
+                        'brand-light': '#dbeafe',
+                        'soft-blue': '#f0f9ff',
+                        'soft-gray': '#f8fafc',
+                        'muted': '#64748b',
+                        'glass': 'rgba(255, 255, 255, 0.25)'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif']
+                    },
+                    backdropBlur: {
+                        'xs': '2px'
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'fade-in': 'fadeIn 0.5s ease-out',
+                        'slide-up': 'slideUp 0.6s ease-out'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS - Cluely Inspired -->
+    <style>
+        :root {
+            --gradient-bg: linear-gradient(180deg, #FFFFFF 0%, #DDE2EE 37.04%);
+            --gradient-hero: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #dbeafe 100%);
+            --gradient-text: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            --glass-bg: rgba(255, 255, 255, 0.25);
+            --glass-border: rgba(255, 255, 255, 0.18);
+            --shadow-soft: 0 8px 32px rgba(31, 38, 135, 0.15);
+            --shadow-card: 0 4px 15px rgba(0, 0, 0, 0.08);
+            --blur-amount: 16px;
+        }
+        
+        .gradient-bg {
+            background: var(--gradient-bg);
+        }
+        
+        .gradient-text {
+            background: var(--gradient-text);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(var(--blur-amount));
+            -webkit-backdrop-filter: blur(var(--blur-amount));
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--shadow-soft);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            box-shadow: 0 4px 14px rgba(59, 130, 246, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            transform: translateY(-1px);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.35);
+        }
+        
+        .search-container {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .search-icon {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #6b7280;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 1rem 1rem 1rem 3rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        
+        .category-card {
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .category-card:hover {
+            border-color: #2563eb;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+        }
+        
+        .category-icon {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .icon-start { background: #dbeafe; color: #2563eb; }
+        .icon-features { background: #d1fae5; color: #059669; }
+        .icon-troubleshoot { background: #fef3c7; color: #d97706; }
+        .icon-account { background: #e9d5ff; color: #9333ea; }
+        .icon-pricing { background: #fce7f3; color: #ec4899; }
+        .icon-contact { background: #cffafe; color: #0891b2; }
+        
+        .faq-item {
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item.active {
+            border-color: #2563eb;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: #1f2937;
+        }
+        
+        .faq-question:hover {
+            color: #2563eb;
+        }
+        
+        .faq-arrow {
+            transition: transform 0.3s ease;
+            color: #6b7280;
+        }
+        
+        .faq-item.active .faq-arrow {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 1.5rem;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 0 1.5rem 1.5rem;
+        }
+        
+        .contact-card {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border: 2px solid #bfdbfe;
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.15);
+        }
+        
+        .tutorial-card {
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .tutorial-card:hover {
+            border-color: #2563eb;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+        
+        .status-operational {
+            background: #d1fae5;
+            color: #065f46;
+        }
+        
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #10b981;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.5;
+                transform: scale(1.1);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        .tab-button {
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            color: #6b7280;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .tab-button:hover {
+            color: #2563eb;
+            background: #f3f4f6;
+        }
+        
+        .tab-button.active {
+            color: #2563eb;
+            background: #dbeafe;
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen">
+    <!-- Navigation -->
+    <nav class="glass-card sticky top-0 z-50 blur-overlay">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="w-8 h-8 bg-brand rounded-lg flex items-center justify-center text-white font-bold text-sm mr-3">
+                            RC
+                        </div>
+                        <span class="text-xl font-bold">RealtyClose</span>
+                    </div>
+                    
+                    <div class="hidden md:block ml-10">
+                        <div class="flex items-baseline space-x-8">
+                            <a href="index.html" class="text-gray-600 hover:text-brand transition-colors">Home</a>
+                            <a href="index.html#features" class="text-gray-600 hover:text-brand transition-colors">Features</a>
+                            <a href="index.html#pricing" class="text-gray-600 hover:text-brand transition-colors">Pricing</a>
+                            <a href="blog.html" class="text-gray-600 hover:text-brand transition-colors">Blog</a>
+                            <a href="help-center.html" class="text-brand font-medium">Help Center</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <button class="btn-primary text-white px-6 py-2 rounded-lg font-medium">
+                        Install Extension
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden" style="background: var(--gradient-hero);">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <h1 class="text-5xl font-bold text-gray-900 mb-6">
+                    How can we <span class="gradient-text">help</span> you?
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                    Find answers, browse tutorials, and get support for RealtyClose
+                </p>
+                
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <svg class="search-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                    <input type="text" placeholder="Search for help articles, tutorials, FAQs..." class="search-input" id="helpSearch">
+                </div>
+                
+                <!-- System Status -->
+                <div class="mt-6 flex justify-center">
+                    <div class="status-badge status-operational">
+                        <div class="status-dot"></div>
+                        <span>All Systems Operational</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Help Categories -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Browse by Category</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="category-card" onclick="scrollToSection('getting-started')">
+                    <div class="category-icon icon-start">🚀</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Getting Started</h3>
+                    <p class="text-gray-600 mb-4">Installation, setup, and your first automated email</p>
+                    <span class="text-brand font-semibold">5 articles →</span>
+                </div>
+                
+                <div class="category-card" onclick="scrollToSection('features')">
+                    <div class="category-icon icon-features">⚡</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Features & Usage</h3>
+                    <p class="text-gray-600 mb-4">Learn about AI features, templates, and workflows</p>
+                    <span class="text-brand font-semibold">8 articles →</span>
+                </div>
+                
+                <div class="category-card" onclick="scrollToSection('troubleshooting')">
+                    <div class="category-icon icon-troubleshoot">🔧</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Troubleshooting</h3>
+                    <p class="text-gray-600 mb-4">Common issues and how to fix them</p>
+                    <span class="text-brand font-semibold">6 articles →</span>
+                </div>
+                
+                <div class="category-card" onclick="scrollToSection('account')">
+                    <div class="category-icon icon-account">👤</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Account & Billing</h3>
+                    <p class="text-gray-600 mb-4">Manage subscription, billing, and account settings</p>
+                    <span class="text-brand font-semibold">4 articles →</span>
+                </div>
+                
+                <div class="category-card" onclick="scrollToSection('pricing-plans')">
+                    <div class="category-icon icon-pricing">💳</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Pricing & Plans</h3>
+                    <p class="text-gray-600 mb-4">Compare plans and understand features</p>
+                    <span class="text-brand font-semibold">3 articles →</span>
+                </div>
+                
+                <div class="category-card" onclick="scrollToSection('contact')">
+                    <div class="category-icon icon-contact">💬</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Contact Support</h3>
+                    <p class="text-gray-600 mb-4">Can't find what you need? Reach out to us</p>
+                    <span class="text-brand font-semibold">Get help →</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Articles -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Popular Help Articles</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="tutorial-card">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">
+                        🎯 How to Install RealtyClose Extension
+                    </h3>
+                    <p class="text-gray-600 mb-4">Step-by-step guide to install and configure RealtyClose in your Gmail</p>
+                    <a href="#" class="text-brand font-semibold hover:text-brand-hover">Read article →</a>
+                </div>
+                
+                <div class="tutorial-card">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">
+                        ✉️ Creating Your First AI Email Template
+                    </h3>
+                    <p class="text-gray-600 mb-4">Learn how to set up and customize AI-powered email templates</p>
+                    <a href="#" class="text-brand font-semibold hover:text-brand-hover">Read article →</a>
+                </div>
+                
+                <div class="tutorial-card">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">
+                        🔄 Setting Up Automated Follow-ups
+                    </h3>
+                    <p class="text-gray-600 mb-4">Configure automatic follow-up sequences for your leads</p>
+                    <a href="#" class="text-brand font-semibold hover:text-brand-hover">Read article →</a>
+                </div>
+                
+                <div class="tutorial-card">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">
+                        💡 Best Practices for Real Estate Emails
+                    </h3>
+                    <p class="text-gray-600 mb-4">Tips and tricks to improve your email open and response rates</p>
+                    <a href="#" class="text-brand font-semibold hover:text-brand-hover">Read article →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="py-16" id="faqs">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Frequently Asked Questions</h2>
+            
+            <!-- FAQ Tabs -->
+            <div class="flex flex-wrap justify-center gap-2 mb-8">
+                <button class="tab-button active" onclick="filterFAQs('all')">All FAQs</button>
+                <button class="tab-button" onclick="filterFAQs('general')">General</button>
+                <button class="tab-button" onclick="filterFAQs('technical')">Technical</button>
+                <button class="tab-button" onclick="filterFAQs('billing')">Billing</button>
+            </div>
+            
+            <!-- FAQ Items -->
+            <div class="faq-container">
+                <div class="faq-item" data-category="general">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What is RealtyClose and how does it work?</span>
+                        <svg class="faq-arrow w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-gray-600">
+                            RealtyClose is an AI-powered Gmail extension designed specifically for real estate agents. It helps you write professional emails faster, automate follow-ups, and manage client communications more efficiently. Our AI understands real estate context and can draft personalized responses, schedule emails, and organize your inbox automatically.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="technical">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Is RealtyClose compatible with my browser?</span>
+                        <svg class="faq-arrow w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-gray-600">
+                            RealtyClose works with all major browsers that support Gmail extensions:
+                        </p>
+                        <ul class="mt-2 space-y-1 text-gray-600">
+                            <li>• Google Chrome (version 88+)</li>
+                            <li>• Microsoft Edge (Chromium-based)</li>
+                            <li>• Brave Browser</li>
+                            <li>• Opera Browser</li>
+                        </ul>
+                        <p class="mt-2 text-gray-600">
+                            For the best experience, we recommend using the latest version of Google Chrome.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="billing">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What's included in the free plan?</span>
+                        <svg class="faq-arrow w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-gray-600">
+                            The free plan includes:
+                        </p>
+                        <ul class="mt-2 space-y-1 text-gray-600">
+                            <li>• 50 AI email drafts per month</li>
+                            <li>• Basic email templates</li>
+                            <li>• Smart email categorization</li>
+                            <li>• Limited follow-up automation</li>
+                            <li>• Email tracking (opens and clicks)</li>
+                        </ul>
+                        <p class="mt-2 text-gray-600">
+                            Perfect for agents just getting started or those who want to try RealtyClose before upgrading.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="general">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How does RealtyClose protect my data?</span>
+                        <svg class="faq-arrow w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-gray-600">
+                            We take data security seriously:
+                        </p>
+                        <ul class="mt-2 space-y-1 text-gray-600">
+                            <li>• All data is encrypted in transit and at rest</li>
+                            <li>• We never store your Gmail password</li>
+                            <li>• OAuth 2.0 secure authentication</li>
+                            <li>• GDPR and CCPA compliant</li>
+                            <li>• Regular security audits</li>
+                            <li>• You can delete your data anytime</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="technical">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can I use RealtyClose with multiple Gmail accounts?</span>
+                        <svg class="faq-arrow w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-gray-600">
+                            Yes! RealtyClose supports multiple Gmail accounts. You can:
+                        </p>
+                        <ul class="mt-2 space-y-1 text-gray-600">
+                            <li>• Switch between accounts seamlessly</li>
+                            <li>• Have different settings for each account</li>
+                            <li>• Use separate templates for personal vs team accounts</li>
+                            <li>• Track analytics separately for each account</li>
+                        </ul>
+                        <p class="mt-2 text-gray-600">
+                            Note: Each Gmail account needs its own RealtyClose license.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="billing">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can I cancel my subscription anytime?</span>
+                        <svg class="faq-arrow w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-gray-600">
+                            Absolutely! We believe in earning your business every month. You can:
+                        </p>
+                        <ul class="mt-2 space-y-1 text-gray-600">
+                            <li>• Cancel anytime from your account settings</li>
+                            <li>• No cancellation fees or penalties</li>
+                            <li>• Continue using until the end of your billing period</li>
+                            <li>• Export your data before canceling</li>
+                            <li>• Reactivate anytime and keep your settings</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Support -->
+    <section class="py-16 bg-white" id="contact">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Still Need Help?</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="contact-card">
+                    <div class="text-4xl mb-4">💬</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Live Chat</h3>
+                    <p class="text-gray-600 mb-4">Get instant help from our support team. Available Mon-Fri, 9am-6pm EST.</p>
+                    <button class="btn-primary text-white px-6 py-2 rounded-lg font-medium">
+                        Start Chat
+                    </button>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="text-4xl mb-4">✉️</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Email Support</h3>
+                    <p class="text-gray-600 mb-4">Send us a detailed message and we'll respond within 24 hours.</p>
+                    <a href="mailto:support@realtyclose.ai" class="text-brand font-semibold hover:text-brand-hover">
+                        support@realtyclose.ai
+                    </a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="text-4xl mb-4">📚</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Knowledge Base</h3>
+                    <p class="text-gray-600 mb-4">Browse our comprehensive documentation and video tutorials.</p>
+                    <a href="#" class="text-brand font-semibold hover:text-brand-hover">
+                        View All Articles →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Tutorials -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Video Tutorials</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card rounded-2xl overflow-hidden">
+                    <div class="aspect-video bg-gray-200 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-16 h-16 bg-brand rounded-full flex items-center justify-center text-white">
+                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-gray-900 mb-2">Getting Started (5:23)</h3>
+                        <p class="text-gray-600 text-sm">Complete walkthrough of installation and initial setup</p>
+                    </div>
+                </div>
+                
+                <div class="glass-card rounded-2xl overflow-hidden">
+                    <div class="aspect-video bg-gray-200 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-16 h-16 bg-brand rounded-full flex items-center justify-center text-white">
+                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-gray-900 mb-2">AI Email Features (7:45)</h3>
+                        <p class="text-gray-600 text-sm">How to use AI to write and optimize your emails</p>
+                    </div>
+                </div>
+                
+                <div class="glass-card rounded-2xl overflow-hidden">
+                    <div class="aspect-video bg-gray-200 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-16 h-16 bg-brand rounded-full flex items-center justify-center text-white">
+                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-gray-900 mb-2">Advanced Automation (9:12)</h3>
+                        <p class="text-gray-600 text-sm">Setting up complex follow-up sequences and workflows</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 bg-brand rounded-lg flex items-center justify-center text-white font-bold text-sm mr-3">
+                            RC
+                        </div>
+                        <span class="text-xl font-bold">RealtyClose</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Building the complete enterprise real estate operating system, starting with our AI email assistant for Gmail.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Product</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#features" class="text-gray-400 hover:text-white transition-colors">Features</a></li>
+                        <li><a href="index.html#pricing" class="text-gray-400 hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="demo.html" class="text-gray-400 hover:text-white transition-colors">Demo</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="help-center.html" class="text-gray-400 hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">API Documentation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">System Status</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 RealtyClose. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Toggle
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            faqItem.classList.toggle('active');
+        }
+
+        // Filter FAQs by category
+        function filterFAQs(category) {
+            const faqItems = document.querySelectorAll('.faq-item');
+            const buttons = document.querySelectorAll('.tab-button');
+            
+            // Update active button
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.textContent.toLowerCase().includes(category) || (category === 'all' && btn.textContent === 'All FAQs')) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Show/hide FAQ items
+            faqItems.forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Search functionality
+        const searchInput = document.getElementById('helpSearch');
+        searchInput.addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            // This would typically search through articles, FAQs, etc.
+            // For now, we'll just log it
+            console.log('Searching for:', searchTerm);
+        });
+
+        // Smooth scroll to sections
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set all FAQs visible by default
+            filterFAQs('all');
+        });
+    </script>
+</body>
+</html>
