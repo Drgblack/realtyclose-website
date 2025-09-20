@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import Header from '../components/Header'
-import Footer from '../components/Footer'
+import { Footer } from '../components/Footer'
 import HomePage from '../components/HomePage'
 
 // A/B Test Configuration
@@ -27,7 +27,7 @@ export default function Page() {
     <div className="min-h-screen bg-white dark:bg-slate-900">
       <Header />
       <HomePage variant={HOMEPAGE_VARIANT} />
-      <Footer />
+      <Footer product="realtyclose" />
     </div>
   )
 }

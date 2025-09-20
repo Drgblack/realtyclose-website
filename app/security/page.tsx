@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Header from '../../components/Header'
-import Footer from '../../components/Footer'
+import { Footer } from '../../components/Footer'
 
 export const metadata = {
   title: 'Privacy & Security - RealtyClose',
@@ -112,7 +112,7 @@ export default function SecurityPage() {
         </div>
       </main>
 
-      <Footer />
+      <Footer product="realtyclose" />
     </div>
   )
 }

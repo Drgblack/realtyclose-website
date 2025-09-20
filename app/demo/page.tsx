@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import Header from '../../components/Header'
-import Footer from '../../components/Footer'
+import { Footer } from '../../components/Footer'
 import DemoContent from '../../components/DemoContent'
 
 export const metadata: Metadata = {
@@ -14,7 +14,7 @@ export default function DemoPage() {
     <div className="min-h-screen bg-white dark:bg-slate-900">
       <Header />
       <DemoContent />
-      <Footer />
+      <Footer product="realtyclose" />
     </div>
   )
 }

@@ -1,5 +1,5 @@
 ﻿import type { AppProps } from "next/app";
-import "../styles/globals.css";
+import "../app/globals.css";
 import SiteFooter from "../components/SiteFooter";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
