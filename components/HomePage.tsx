@@ -279,9 +279,11 @@ export default function HomePage({ variant }: HomePageProps) {
                 The AI perfectly captures my tone and my clients can't tell the difference."
               </blockquote>
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full flex items-center justify-center text-white font-semibold mr-4">
-                  SM
-                </div>
+                <img 
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=faces" 
+                  alt="Sarah Mitchell" 
+                  className="w-12 h-12 rounded-full object-cover mr-4"
+                />
                 <div>
                   <div className="font-semibold text-slate-900 dark:text-white">Sarah Mitchell</div>
                   <div className="text-slate-600 dark:text-slate-400 text-sm">Top Producer, Coldwell Banker</div>
@@ -303,9 +305,11 @@ export default function HomePage({ variant }: HomePageProps) {
                 a follow-up since I started using it. My closing rate has increased by 30%."
               </blockquote>
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-gradient-to-r from-green-400 to-teal-400 rounded-full flex items-center justify-center text-white font-semibold mr-4">
-                  MR
-                </div>
+                <img 
+                  src="https://images.unsplash.com/photo-1556157382-97eda2f9e2bf?w=150&h=150&fit=crop&crop=faces" 
+                  alt="Marcus Rodriguez" 
+                  className="w-12 h-12 rounded-full object-cover mr-4"
+                />
                 <div>
                   <div className="font-semibold text-slate-900 dark:text-white">Marcus Rodriguez</div>
                   <div className="text-slate-600 dark:text-slate-400 text-sm">Senior Agent, RE/MAX</div>
@@ -327,9 +331,11 @@ export default function HomePage({ variant }: HomePageProps) {
                 faster and our client experience is consistently excellent."
               </blockquote>
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full flex items-center justify-center text-white font-semibold mr-4">
-                  JC
-                </div>
+                <img 
+                  src="https://images.unsplash.com/photo-1598257006458-087169a1f08d?w=150&h=150&fit=crop&crop=faces" 
+                  alt="Jennifer Chen" 
+                  className="w-12 h-12 rounded-full object-cover mr-4"
+                />
                 <div>
                   <div className="font-semibold text-slate-900 dark:text-white">Jennifer Chen</div>
                   <div className="text-slate-600 dark:text-slate-400 text-sm">Team Leader, Keller Williams</div>
@@ -348,9 +354,11 @@ export default function HomePage({ variant }: HomePageProps) {
                   It's like having a personal assistant who knows real estate inside and out."
                 </blockquote>
                 <div className="flex items-center">
-                  <div className="w-10 h-10 bg-gradient-to-r from-orange-400 to-red-400 rounded-full flex items-center justify-center text-white font-semibold mr-3">
-                    DL
-                  </div>
+                  <img 
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=faces" 
+                    alt="David Liu" 
+                    className="w-10 h-10 rounded-full object-cover mr-3"
+                  />
                   <div>
                     <div className="font-semibold text-slate-900 dark:text-white">David Liu</div>
                     <div className="text-slate-600 dark:text-slate-400 text-sm">Broker, Century 21</div>
