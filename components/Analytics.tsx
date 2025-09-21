@@ -67,7 +67,7 @@ export default function Analytics() {
   // Track performance metrics
   useEffect(() => {
     // Web Vitals tracking
-    if (typeof window !== 'undefined' && 'web-vital' in window) {
+    if (typeof window !== 'undefined') {
       import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
         getCLS(metric => {
           window.gtag?.('event', 'web_vitals', {
@@ -108,6 +108,8 @@ export default function Analytics() {
             value: Math.round(metric.value)
           })
         })
+      }).catch(error => {
+        console.warn('Web Vitals not available:', error)
       })
     }
   }, [])
