@@ -24,6 +24,8 @@ const Header = () => {
         event_label: 'header'
       })
     }
+    // Redirect to extension landing page
+    window.open('/extension', '_blank')
   }
 
   const handleDemoClick = () => {
