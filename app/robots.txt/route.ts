@@ -1,17 +1,16 @@
-import { MetadataRoute } from 'next'
+export function GET() {
+  const robotsTxt = `User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /private/
 
-export default function robots(): MetadataRoute.Robots {
-  return {
-    rules: {
-      userAgent: '*',
-      allow: '/',
-      disallow: [
-        '/api/',
-        '/admin/',
-        '/_next/',
-        '/private/',
-      ],
+Sitemap: https://realtyclose.com/sitemap.xml`
+
+  return new Response(robotsTxt, {
+    headers: {
+      'Content-Type': 'text/plain',
     },
-    sitemap: 'https://realtyclose.com/sitemap.xml',
-  }
+  })
 }
