@@ -2,6 +2,10 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import Header from '../../../components/Header'
 import { Footer } from '../../../components/Footer'
+import ChatButton from '../../../components/ChatButton'
+
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
 export const metadata: Metadata = {
   title: 'Installing the Chrome Extension - RealtyClose Help',
@@ -268,15 +272,9 @@ export default function InstallationGuide() {
                 >
                   Contact Support
                 </Link>
-                <button
-                  onClick={() => {
-                    // Trigger live chat
-                    console.log('Open live chat');
-                  }}
-                  className="border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 px-6 py-3 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors font-medium"
-                >
+                <ChatButton className="border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 px-6 py-3 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors font-medium">
                   Live Chat
-                </button>
+                </ChatButton>
               </div>
             </div>
           </div>

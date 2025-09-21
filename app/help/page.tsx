@@ -2,6 +2,10 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import Header from '../../components/Header'
 import { Footer } from '../../components/Footer'
+import ChatButton from '../../components/ChatButton'
+
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
 export const metadata: Metadata = {
   title: 'Help Center - RealtyClose',
@@ -237,16 +241,9 @@ export default function HelpPage() {
               <p className="text-slate-600 dark:text-slate-300 mb-4">
                 Need immediate help? Chat with our support team in real-time.
               </p>
-              <button
-                onClick={() => {
-                  // This would trigger the live chat widget
-                  const chatButton = document.querySelector('[data-chat-trigger]') as HTMLButtonElement;
-                  if (chatButton) chatButton.click();
-                }}
-                className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium"
-              >
+              <ChatButton className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium">
                 Start Chat →
-              </button>
+              </ChatButton>
             </div>
 
             <div className="text-center">
