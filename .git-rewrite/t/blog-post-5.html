@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Gmail Features Real Estate Agents Should Know - RealtyClose Blog</title>
+    <meta name="description" content="Unlock Gmail's hidden productivity features to streamline your real estate business. Expert tips and tricks for better email management.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand': '#2563eb',
+                        'brand-hover': '#1d4ed8',
+                        'brand-light': '#dbeafe',
+                        'soft-blue': '#f0f9ff',
+                        'soft-gray': '#f8fafc',
+                        'muted': '#64748b',
+                        'glass': 'rgba(255, 255, 255, 0.25)'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --gradient-bg: linear-gradient(180deg, #FFFFFF 0%, #DDE2EE 37.04%);
+            --gradient-hero: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #dbeafe 100%);
+            --glass-bg: rgba(255, 255, 255, 0.25);
+            --glass-border: rgba(255, 255, 255, 0.18);
+            --shadow-soft: 0 8px 32px rgba(31, 38, 135, 0.15);
+            --blur-amount: 16px;
+        }
+        
+        .gradient-bg {
+            background: var(--gradient-bg);
+        }
+        
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(var(--blur-amount));
+            -webkit-backdrop-filter: blur(var(--blur-amount));
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--shadow-soft);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            box-shadow: 0 4px 14px rgba(59, 130, 246, 0.25);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            transform: translateY(-1px);
+        }
+        
+        .feature-card {
+            background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+            border: 2px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            border-color: #2563eb;
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-number {
+            background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+            color: white;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .keyboard-shortcut {
+            background: #1f2937;
+            color: #f3f4f6;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        
+        .pro-tip {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border: 2px solid #f59e0b;
+            border-radius: 12px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .step-list {
+            background: #f1f5f9;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen">
+    <!-- Navigation -->
+    <nav class="glass-card sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="w-8 h-8 bg-brand rounded-lg flex items-center justify-center text-white font-bold text-sm mr-3">
+                            RC
+                        </div>
+                        <span class="text-xl font-bold">RealtyClose</span>
+                    </div>
+                    
+                    <div class="hidden md:block ml-10">
+                        <div class="flex items-baseline space-x-8">
+                            <a href="index.html" class="text-gray-600 hover:text-brand transition-colors">Home</a>
+                            <a href="index.html#features" class="text-gray-600 hover:text-brand transition-colors">Features</a>
+                            <a href="index.html#pricing" class="text-gray-600 hover:text-brand transition-colors">Pricing</a>
+                            <a href="blog.html" class="text-brand font-medium">Blog</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <button class="btn-primary text-white px-6 py-2 rounded-lg font-medium">
+                        Install Extension
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Header -->
+    <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="text-center mb-12">
+            <div class="text-sm text-brand font-semibold mb-4">GMAIL TIPS • 9 MIN READ</div>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                10 Gmail Features Real Estate Agents Should Know
+            </h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                Unlock Gmail's hidden productivity features to streamline your real estate business and save hours each week on email management.
+            </p>
+        </div>
+
+        <div class="flex items-center justify-between border-b border-gray-200 pb-6 mb-8">
+            <div class="flex items-center">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=60&h=60&fit=crop&crop=face&auto=format" 
+                     alt="Author" class="w-12 h-12 rounded-full mr-4">
+                <div>
+                    <div class="font-semibold text-gray-900">Marcus Rodriguez</div>
+                    <div class="text-sm text-gray-600">Gmail Productivity Expert</div>
+                </div>
+            </div>
+            <div class="text-sm text-gray-500">November 25, 2024</div>
+        </div>
+
+        <!-- Article Content -->
+        <div class="prose prose-lg max-w-none">
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                Gmail is more than just an email client – it's a powerful productivity platform that most real estate agents barely scratch the surface of. With over 80% of agents using Gmail for business communication, mastering these advanced features can give you a significant competitive edge.
+            </p>
+
+            <p class="text-gray-700 mb-8">
+                After training hundreds of real estate teams on Gmail optimization, I've identified the 10 features that deliver the biggest productivity gains. These aren't basic tips – they're advanced techniques that top-producing agents use daily.
+            </p>
+
+            <!-- Feature 1 -->
+            <div class="feature-card">
+                <div class="feature-number">1</div>
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Smart Compose + Custom Signatures</h2>
+                
+                <p class="text-gray-700 mb-4">
+                    Gmail's Smart Compose suggests complete sentences as you type, learning from your writing style. Combined with custom signatures for different client types, this can save 30+ minutes daily.
+                </p>
+                
+                <div class="step-list">
+                    <strong>Setup Steps:</strong>
+                    <ol class="text-gray-700 mt-2 space-y-1">
+                        <li>1. Go to Settings → General → Smart Compose</li>
+                        <li>2. Enable "Writing suggestions on"</li>
+                        <li>3. Create multiple signatures: Buyers, Sellers, Leads, Follow-ups</li>
+                        <li>4. Use <span class="keyboard-shortcut">Tab</span> to accept suggestions</li>
+                    </ol>
+                </div>
+                
+                <div class="pro-tip">
+                    <strong>💡 Pro Tip:</strong> Train Smart Compose by writing 10-15 similar emails manually first. It will learn your tone and common phrases for better suggestions.
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-card">
+                <div class="feature-number">2</div>
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Multiple Inboxes for Client Organization</h2>
+                
+                <p class="text-gray-700 mb-4">
+                    Transform your inbox into a real estate command center with separate sections for active buyers, sellers, leads, and closings – all visible at once.
+                </p>
+                
+                <div class="step-list">
+                    <strong>Setup Steps:</strong>
+                    <ol class="text-gray-700 mt-2 space-y-1">
+                        <li>1. Go to Settings → Advanced → Multiple Inboxes</li>
+                        <li>2. Create sections with search terms like:</li>
+                        <li>&nbsp;&nbsp;&nbsp;• <code>label:buyers is:unread</code></li>
+                        <li>&nbsp;&nbsp;&nbsp;• <code>label:sellers has:attachment</code></li>
+                        <li>&nbsp;&nbsp;&nbsp;• <code>from:lender OR from:inspector</code></li>
+                        <li>3. Set maximum page size to 25 for each section</li>
+                    </ol>
+                </div>
+                
+                <p class="text-gray-700 mt-4">
+                    <strong>Result:</strong> See all your active deals in one view instead of hunting through folders. Top agents report 40% faster email processing with this setup.
+                </p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-card">
+                <div class="feature-number">3</div>
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Canned Responses (Templates) for Common Scenarios</h2>
+                
+                <p class="text-gray-700 mb-4">
+                    Stop rewriting the same emails. Gmail's Canned Responses let you save and insert template responses with one click.
+                </p>
+                
+                <div class="grid md:grid-cols-2 gap-4 mb-4">
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h4 class="font-semibold text-gray-900 mb-2">Essential Templates</h4>
+                        <ul class="text-sm text-gray-700 space-y-1">
+                            <li>• New lead welcome</li>
+                            <li>• Showing confirmation</li>
+                            <li>• Price reduction notification</li>
+                            <li>• Closing congratulations</li>
+                            <li>• Referral thank you</li>
+                        </ul>
+                    </div>
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <h4 class="font-semibold text-gray-900 mb-2">Quick Access</h4>
+                        <ul class="text-sm text-gray-700 space-y-1">
+                            <li>• Use descriptive template names</li>
+                            <li>• Include placeholders for customization</li>
+                            <li>• Update templates seasonally</li>
+                            <li>• Share templates with team</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="step-list">
+                    <strong>Enable Canned Responses:</strong>
+                    <p class="text-gray-700 mt-2">Settings → Advanced → Canned Responses → Enable → Save Changes</p>
+                    <p class="text-gray-700 text-sm">Access via compose window: More options (⋮) → Canned responses</p>
+                </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="feature-card">
+                <div class="feature-number">4</div>
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Advanced Search Operators for Deal Management</h2>
+                
+                <p class="text-gray-700 mb-4">
+                    Gmail's search is incredibly powerful but most people only use basic keywords. These operators help you find specific emails instantly.
+                </p>
+                
+                <div class="bg-gray-100 p-4 rounded-lg mb-4 font-mono text-sm">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <strong>Essential Operators:</strong><br>
+                            <code>from:lender has:attachment</code><br>
+                            <code>subject:closing older_than:7d</code><br>
+                            <code>to:me cc:client after:2024/11/1</code><br>
+                            <code>filename:contract OR filename:addendum</code>
+                        </div>
+                        <div>
+                            <strong>Property-Specific:</strong><br>
+                            <code>"123 Main St" has:attachment</code><br>
+                            <code>MLS AND "555-1234"</code><br>
+                            <code>inspection AND before:2024/12/1</code><br>
+                            <code>appraisal AND (from:bank OR from:lender)</code>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pro-tip">
+                    <strong>💡 Pro Tip:</strong> Save complex searches as shortcuts. Add them to your bookmark bar for one-click access to common searches like "This week's closings" or "Pending inspection reports."
+                </div>
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="feature-card">
+                <div class="feature-number">5</div>
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Smart Labels + Automated Filters</h2>
+                
+                <p class="text-gray-700 mb-4">
+                    Automatically organize incoming emails with smart labels and filters. Never manually sort emails again.
+                </p>
+                
+                <div class="step-list">
+                    <strong>Recommended Label Structure:</strong>
+                    <ul class="text-gray-700 mt-2 space-y-1">
+                        <li>• <strong>Clients/</strong> → Active-Buyers, Active-Sellers, Past-Clients</li>
+                        <li>• <strong>Leads/</strong> → Hot, Warm, Cold, Nurture</li>
+                        <li>• <strong>Deals/</strong> → Under-Contract, Closing-Soon, Closed</li>
+                        <li>• <strong>Business/</strong> → Marketing, Referrals, Admin</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-purple-50 border-l-4 border-purple-500 p-4 mt-4">
+                    <strong>Power Filter Examples:</strong>
+                    <ul class="text-gray-700 text-sm mt-2 space-y-2">
+                        <li><strong>From lenders:</strong> Apply "Deals/Financing" label + star + forward to transaction coordinator</li>
+                        <li><strong>Subject contains "MLS":</strong> Apply "Leads/Hot" label + mark important</li>
+                        <li><strong>From Zillow/Realtor.com:</strong> Apply "Leads/Website" label + skip inbox</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Feature 6 -->
+            <div class="feature-card">
+                <div class="feature-number">6</div>
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Scheduled Send for Perfect Timing</h2>
+                
+                <p class="text-gray-700 mb-4">
+                    Send emails at the optimal time for recipient engagement, even if you're writing them at 11 PM. This feature has revolutionized agent-client communication.
+                </p>
+                
+                <div class="grid md:grid-cols-2 gap-4 mb-4">
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <h4 class="font-semibold text-gray-900 mb-2">Best Send Times</h4>
+                        <ul class="text-sm text-gray-700 space-y-1">
+                            <li>• <strong>Buyers:</strong> 7-9 AM, 6-8 PM</li>
+                            <li>• <strong>Sellers:</strong> 9-11 AM, 2-4 PM</li>
+                            <li>• <strong>Investors:</strong> 6-8 AM, lunch hour</li>
+                            <li>• <strong>First-time buyers:</strong> Evenings/weekends</li>
+                        </ul>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h4 class="font-semibold text-gray-900 mb-2">Strategic Uses</h4>
+                        <ul class="text-sm text-gray-700 space-y-1">
+                            <li>• Weekly market updates (Monday 8 AM)</li>
+                            <li>• Follow-up sequences</li>
+                            <li>• Birthday/anniversary messages</li>
+                            <li>• Holiday greetings</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <p class="text-gray-700">
+                    <strong>Access:</strong> Write your email → Click send arrow dropdown → "Schedule send" → Choose date/time. Emails show up in your Scheduled folder until sent.
+                </p>
+            </div>
+
+            <!-- Feature 7 -->
+            <div class="feature-card">
+                <div class="feature-number">7</div>
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Priority Inbox for Deal Management</h2>
+                
+                <p class="text-gray-700 mb-4">
+                    Automatically surface the most important emails first. Gmail's Priority Inbox learns from your behavior to highlight critical communications.
+                </p>
+                
+                <div class="step-list">
+                    <strong>Setup for Real Estate:</strong>
+                    <ol class="text-gray-700 mt-2 space-y-1">
+                        <li>1. Go to Settings → Inbox → Priority Inbox</li>
+                        <li>2. Create sections:</li>
+                        <li>&nbsp;&nbsp;&nbsp;• Important and unread</li>
+                        <li>&nbsp;&nbsp;&nbsp;• Starred (for urgent deals)</li>
+                        <li>&nbsp;&nbsp;&nbsp;• Important markers → Everything else</li>
+                        <li>3. Train Gmail by manually marking important emails</li>
+                    </ol>
+                </div>
+                
+                <div class="pro-tip">
+                    <strong>💡 Pro Tip:</strong> Use different colored stars for different priorities: Yellow for hot leads, Red for urgent deal issues, Blue for follow-ups needed.
+                </div>
+            </div>
+
+            <!-- Feature 8 -->
+            <div class="feature-card">
+                <div class="feature-number">8</div>
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Confidential Mode for Sensitive Documents</h2>
+                
+                <p class="text-gray-700 mb-4">
+                    Send sensitive information like financial documents, personal details, or negotiation strategies with expiration dates and access controls.
+                </p>
+                
+                <div class="bg-red-50 border-l-4 border-red-500 p-4 mb-4">
+                    <h4 class="font-semibold text-gray-900 mb-2">Perfect for Real Estate:</h4>
+                    <ul class="text-gray-700 text-sm space-y-1">
+                        <li>• Pre-approval letters</li>
+                        <li>• Negotiation strategies to clients</li>
+                        <li>• Personal financial information</li>
+                        <li>• Sensitive property details</li>
+                        <li>• Commission splits and private arrangements</li>
+                    </ul>
+                </div>
+                
+                <div class="step-list">
+                    <strong>How to Use:</strong>
+                    <p class="text-gray-700 mt-2">Compose email → Click confidential mode icon (🔒) → Set expiration (1 day to 5 years) → Optional SMS passcode → Send</p>
+                </div>
+            </div>
+
+            <!-- Feature 9 -->
+            <div class="feature-card">
+                <div class="feature-number">9</div>
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Right-Click Context Menu Shortcuts</h2>
+                
+                <p class="text-gray-700 mb-4">
+                    Speed up email management with powerful right-click shortcuts that most agents never discover.
+                </p>
+                
+                <div class="grid md:grid-cols-2 gap-4 mb-4">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-semibold text-gray-900 mb-2">Right-Click on Email:</h4>
+                        <ul class="text-sm text-gray-700 space-y-1">
+                            <li>• Mark as important</li>
+                            <li>• Add to Tasks</li>
+                            <li>• Mute conversation</li>
+                            <li>• Filter messages like these</li>
+                            <li>• Create event</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-semibold text-gray-900 mb-2">Right-Click on Labels:</h4>
+                        <ul class="text-sm text-gray-700 space-y-1">
+                            <li>• Show/hide in label list</li>
+                            <li>• Choose label color</li>
+                            <li>• Create sublabel</li>
+                            <li>• Remove label</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <p class="text-gray-700">
+                    <strong>Time Saved:</strong> These shortcuts can reduce email processing time by 50% once you build the muscle memory.
+                </p>
+            </div>
+
+            <!-- Feature 10 -->
+            <div class="feature-card">
+                <div class="feature-number">10</div>
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Tasks Integration + Smart To-Do Management</h2>
+                
+                <p class="text-gray-700 mb-4">
+                    Turn emails into actionable tasks without leaving Gmail. Perfect for managing follow-ups, deadlines, and client commitments.
+                </p>
+                
+                <div class="step-list">
+                    <strong>Power User Workflow:</strong>
+                    <ol class="text-gray-700 mt-2 space-y-2">
+                        <li>1. <strong>From any email:</strong> Right-click → "Add to Tasks"</li>
+                        <li>2. <strong>Set due dates:</strong> Click task → Add details and deadline</li>
+                        <li>3. <strong>Create task lists:</strong> Buyers, Sellers, Admin, Marketing</li>
+                        <li>4. <strong>Mobile sync:</strong> Access tasks on phone via Google Tasks app</li>
+                    </ol>
+                </div>
+                
+                <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 mt-4">
+                    <h4 class="font-semibold text-gray-900 mb-2">Real Estate Task Examples:</h4>
+                    <ul class="text-gray-700 text-sm space-y-1">
+                        <li>• "Follow up with Sarah about showing feedback" (Due: Tomorrow 9 AM)</li>
+                        <li>• "Send Mike pre-approval requirements" (Due: Today 2 PM)</li>
+                        <li>• "Schedule inspection for 456 Oak St" (Due: This Friday)</li>
+                        <li>• "Send market update to past clients" (Due: Next Monday)</li>
+                    </ul>
+                </div>
+                
+                <p class="text-gray-700 mt-4">
+                    <strong>Advanced Tip:</strong> Use keyboard shortcut <span class="keyboard-shortcut">Shift + T</span> to quickly add email to tasks, then <span class="keyboard-shortcut">G + K</span> to open tasks sidebar.
+                </p>
+            </div>
+
+            <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-6">Essential Keyboard Shortcuts</h2>
+            
+            <p class="text-gray-700 mb-4">
+                Master these shortcuts to handle emails 3x faster:
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h4 class="font-semibold text-gray-900 mb-4">Navigation & Selection</h4>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <span>Archive email</span>
+                            <span class="keyboard-shortcut">E</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Delete email</span>
+                            <span class="keyboard-shortcut">#</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Star/unstar</span>
+                            <span class="keyboard-shortcut">S</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Mark as important</span>
+                            <span class="keyboard-shortcut">+ or =</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h4 class="font-semibold text-gray-900 mb-4">Compose & Reply</h4>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <span>Compose new</span>
+                            <span class="keyboard-shortcut">C</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Reply</span>
+                            <span class="keyboard-shortcut">R</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Reply all</span>
+                            <span class="keyboard-shortcut">A</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Forward</span>
+                            <span class="keyboard-shortcut">F</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-tip mb-8">
+                <strong>💡 Bonus Tip:</strong> Enable keyboard shortcuts in Settings → General → Keyboard shortcuts on. Then press <span class="keyboard-shortcut">?</span> anytime to see all available shortcuts.
+            </div>
+
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Your 30-Day Gmail Mastery Plan</h2>
+            
+            <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 mb-8">
+                <h3 class="text-xl font-bold text-gray-900 mb-4">📅 Implementation Schedule</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Week 1: Foundation</h4>
+                        <ul class="text-gray-700 space-y-1 text-sm">
+                            <li>✓ Set up labels and filters</li>
+                            <li>✓ Create canned responses</li>
+                            <li>✓ Enable keyboard shortcuts</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Week 2: Optimization</h4>
+                        <ul class="text-gray-700 space-y-1 text-sm">
+                            <li>✓ Configure multiple inboxes</li>
+                            <li>✓ Set up priority inbox</li>
+                            <li>✓ Practice keyboard shortcuts</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Week 3-4: Mastery</h4>
+                        <ul class="text-gray-700 space-y-1 text-sm">
+                            <li>✓ Master advanced search</li>
+                            <li>✓ Use scheduled sending</li>
+                            <li>✓ Integrate with Tasks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">The Productivity Impact</h2>
+            
+            <p class="text-gray-700 mb-6">
+                Agents who implement these 10 Gmail features typically see:
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-green-50 border-2 border-green-200 p-6 rounded-lg">
+                    <h4 class="font-semibold text-gray-900 mb-4">Time Savings</h4>
+                    <ul class="text-gray-700 space-y-2">
+                        <li>• <strong>2+ hours daily</strong> saved on email management</li>
+                        <li>• <strong>50% faster</strong> email processing</li>
+                        <li>• <strong>90% reduction</strong> in missed follow-ups</li>
+                        <li>• <strong>Zero inbox</strong> achieved within 2 weeks</li>
+                    </ul>
+                </div>
+                <div class="bg-blue-50 border-2 border-blue-200 p-6 rounded-lg">
+                    <h4 class="font-semibold text-gray-900 mb-4">Business Impact</h4>
+                    <ul class="text-gray-700 space-y-2">
+                        <li>• <strong>25% increase</strong> in client satisfaction</li>
+                        <li>• <strong>40% more referrals</strong> from better communication</li>
+                        <li>• <strong>30% faster deal closings</strong> from organization</li>
+                        <li>• <strong>Reduced stress</strong> from email overwhelm</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-brand to-brand-hover rounded-2xl p-8 text-white text-center my-8">
+                <h3 class="text-2xl font-bold mb-4">Take Gmail Productivity to the Next Level</h3>
+                <p class="text-blue-100 mb-6">
+                    RealtyClose's AI-powered Gmail extension builds on these features with smart automation, client insights, and deal tracking.
+                </p>
+                <button class="bg-white text-brand px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                    Supercharge Your Gmail
+                </button>
+            </div>
+
+        </div>
+    </article>
+
+    <!-- Related Articles -->
+    <section class="bg-gray-50 py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center">Related Articles</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <article class="glass-card rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
+                    <img src="https://images.unsplash.com/photo-1560472355-536de3962603?w=400&h=200&fit=crop&auto=format" 
+                         alt="AI email tools" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-gray-900 mb-2">How AI is Transforming Real Estate Email</h3>
+                        <p class="text-gray-600 text-sm mb-3">Learn how AI can save you 2+ hours daily on email tasks...</p>
+                        <a href="blog-post-1.html" class="text-brand font-semibold hover:text-brand-hover">Read More →</a>
+                    </div>
+                </article>
+                
+                <article class="glass-card rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
+                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&h=200&fit=crop&auto=format" 
+                         alt="Email templates" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-gray-900 mb-2">5 Email Templates Every Agent Needs</h3>
+                        <p class="text-gray-600 text-sm mb-3">Proven templates that convert leads into clients...</p>
+                        <a href="blog-post-2.html" class="text-brand font-semibold hover:text-brand-hover">Read More →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+        <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid md:grid-cols-5 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 bg-brand rounded-lg flex items-center justify-center text-white font-bold text-sm mr-3">
+                            RC
+                        </div>
+                        <span class="text-xl font-bold">RealtyClose</span>
+                    </div>
+                    <p class="text-sm text-gray-400 mb-6 max-w-prose">
+                        RealtyClose simplifies real estate closings with automated communication, intelligent reminders, and secure workflows - part of the Zaza Technologies family building trusted, AI-powered tools for professionals.
+                    </p>
+                    
+                    <!-- Social Links -->
+                    <div class="flex space-x-4 mb-6">
+                        <a href="https://twitter.com/realtyclose" class="text-gray-400 hover:text-white transition-colors" aria-label="Twitter">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/company/realtyclose" class="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/realtyclose" class="text-gray-400 hover:text-white transition-colors" aria-label="GitHub">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://facebook.com/realtyclose" class="text-gray-400 hover:text-white transition-colors" aria-label="Facebook">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <!-- Partner Links -->
+                    <div class="text-sm text-gray-400">
+                        <p class="mb-2">Part of the Zaza Technologies family:</p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="https://zazatechnologies.com" class="text-brand-light hover:text-white transition-colors">Zaza Technologies</a>
+                            <a href="https://zazapromptly.com" class="text-brand-light hover:text-white transition-colors">Zaza Promptly</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Product</h4>
+                    <ul class="space-y-2">
+                        <li><a href="features.html" class="text-gray-400 hover:text-white transition-colors">Features</a></li>
+                        <li><a href="index.html#dashboard" class="text-gray-400 hover:text-white transition-colors">Dashboard</a></li>
+                        <li><a href="index.html#pricing" class="text-gray-400 hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="index.html#integrations" class="text-gray-400 hover:text-white transition-colors">Integrations</a></li>
+                        <li><a href="demo.html" class="text-gray-400 hover:text-white transition-colors">Demo</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="help-center.html" class="text-gray-400 hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Documentation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">API Reference</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Community</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="privacy-policy.html" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="text-gray-400 text-sm mb-4 md:mb-0">
+                    <p>&copy; 2025 RealtyClose. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6 text-sm">
+                    <a href="privacy-policy.html" class="text-gray-400 hover:text-white transition-colors">Privacy</a>
+                    <a href="terms-of-service.html" class="text-gray-400 hover:text-white transition-colors">Terms</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Cookies</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

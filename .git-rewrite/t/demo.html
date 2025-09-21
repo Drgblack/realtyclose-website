@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Demo - RealtyClose</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand': '#4285F4',
+                        'brand-hover': '#3367d6'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .demo-screen {
+            transition: all 0.5s ease;
+            transform: scale(0.95);
+            opacity: 0;
+        }
+        .demo-screen.active {
+            transform: scale(1);
+            opacity: 1;
+        }
+        .typing {
+            border-right: 2px solid #4285F4;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 50% { border-color: #4285F4; }
+            51%, 100% { border-color: transparent; }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="min-h-screen flex items-center justify-center p-4">
+        <div class="max-w-6xl w-full">
+            <!-- Demo Header -->
+            <div class="text-center mb-8">
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">RealtyClose Interactive Demo</h1>
+                <p class="text-xl text-gray-600">Experience 14+ powerful features in your complete real estate command center</p>
+            </div>
+
+            <!-- Demo Container -->
+            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
+                <!-- Browser Header -->
+                <div class="bg-gray-200 px-4 py-3 flex items-center">
+                    <div class="flex space-x-2 mr-4">
+                        <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                        <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                        <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                    </div>
+                    <div class="flex-1 bg-white rounded-lg px-4 py-2">
+                        <span class="text-gray-600">https://mail.google.com - Inbox</span>
+                    </div>
+                </div>
+
+                <!-- Demo Steps Navigation -->
+                <div class="bg-gray-50 px-6 py-4 border-b">
+                    <div class="flex items-center justify-between">
+                        <div class="flex space-x-4">
+                            <button id="step-1" class="demo-step px-4 py-2 rounded-lg font-medium transition-colors bg-brand text-white" onclick="showStep(1)">
+                                1. Email Draft
+                            </button>
+                            <button id="step-2" class="demo-step px-4 py-2 rounded-lg font-medium transition-colors text-gray-600 hover:text-brand" onclick="showStep(2)">
+                                2. Dashboard
+                            </button>
+                            <button id="step-3" class="demo-step px-4 py-2 rounded-lg font-medium transition-colors text-gray-600 hover:text-brand" onclick="showStep(3)">
+                                3. Deal Management
+                            </button>
+                            <button id="step-4" class="demo-step px-4 py-2 rounded-lg font-medium transition-colors text-gray-600 hover:text-brand" onclick="showStep(4)">
+                                4. Insights
+                            </button>
+                        </div>
+                        <div class="text-sm text-gray-500">
+                            Step <span id="current-step">1</span> of 4
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Demo Content -->
+                <div class="p-8 h-96 relative">
+                    <!-- Step 1: Email Draft -->
+                    <div id="demo-1" class="demo-screen active">
+                        <div class="grid grid-cols-2 gap-8 h-full">
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-4">AI Email Assistant in Action</h3>
+                                <div class="space-y-4">
+                                    <div class="bg-blue-50 p-4 rounded-lg">
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Email Context</label>
+                                        <p class="text-gray-600">"Follow up with Sarah Chen about the Maple Avenue property viewing"</p>
+                                    </div>
+                                    <div class="bg-green-50 p-4 rounded-lg">
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Tone Selection</label>
+                                        <div class="flex space-x-2">
+                                            <span class="px-3 py-1 bg-brand text-white rounded-full text-sm">Professional</span>
+                                            <span class="px-3 py-1 bg-gray-200 text-gray-600 rounded-full text-sm">Friendly</span>
+                                            <span class="px-3 py-1 bg-gray-200 text-gray-600 rounded-full text-sm">Concise</span>
+                                        </div>
+                                    </div>
+                                    <button class="w-full bg-brand text-white py-3 rounded-lg font-semibold hover:bg-brand-hover transition-colors" onclick="generateDemo()">
+                                        Generate Email ✨
+                                    </button>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-medium text-gray-900 mb-4">Generated Email</h4>
+                                <div class="bg-gray-50 p-4 rounded-lg h-64 overflow-auto">
+                                    <div id="generated-email" class="text-gray-600 leading-relaxed"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Dashboard -->
+                    <div id="demo-2" class="demo-screen">
+                        <div class="h-full">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-6">Unified Dashboard Overview</h3>
+                            <div class="grid grid-cols-3 gap-6">
+                                <div class="bg-gradient-to-r from-blue-50 to-blue-100 p-4 rounded-xl">
+                                    <div class="text-2xl font-bold text-blue-600">12</div>
+                                    <div class="text-sm text-blue-700">Active Deals</div>
+                                    <div class="text-xs text-green-600 mt-1">↗ +8.3%</div>
+                                </div>
+                                <div class="bg-gradient-to-r from-green-50 to-green-100 p-4 rounded-xl">
+                                    <div class="text-2xl font-bold text-green-600">$145K</div>
+                                    <div class="text-sm text-green-700">Pipeline Value</div>
+                                    <div class="text-xs text-green-600 mt-1">↗ +12.5%</div>
+                                </div>
+                                <div class="bg-gradient-to-r from-purple-50 to-purple-100 p-4 rounded-xl">
+                                    <div class="text-2xl font-bold text-purple-600">72.5%</div>
+                                    <div class="text-sm text-purple-700">Response Rate</div>
+                                    <div class="text-xs text-red-600 mt-1">↘ -2.1%</div>
+                                </div>
+                            </div>
+                            <div class="mt-6 grid grid-cols-2 gap-6">
+                                <div>
+                                    <h4 class="font-medium text-gray-900 mb-3">Recent Activity</h4>
+                                    <div class="space-y-2">
+                                        <div class="flex items-center space-x-3 p-2 bg-gray-50 rounded-lg">
+                                            <span class="text-lg">📧</span>
+                                            <div class="flex-1">
+                                                <div class="text-sm font-medium">Email sent to Sarah Chen</div>
+                                                <div class="text-xs text-gray-500">30 minutes ago</div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center space-x-3 p-2 bg-gray-50 rounded-lg">
+                                            <span class="text-lg">🏠</span>
+                                            <div class="flex-1">
+                                                <div class="text-sm font-medium">Property viewing scheduled</div>
+                                                <div class="text-xs text-gray-500">2 hours ago</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-900 mb-3">Quick Actions</h4>
+                                    <div class="grid grid-cols-2 gap-2">
+                                        <button class="bg-brand text-white p-2 rounded-lg text-sm hover:bg-brand-hover transition-colors">✉️ Email</button>
+                                        <button class="border border-gray-200 p-2 rounded-lg text-sm hover:bg-gray-50 transition-colors">📞 Call</button>
+                                        <button class="border border-gray-200 p-2 rounded-lg text-sm hover:bg-gray-50 transition-colors">🏠 Property</button>
+                                        <button class="border border-gray-200 p-2 rounded-lg text-sm hover:bg-gray-50 transition-colors">👤 Contact</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Deal Management -->
+                    <div id="demo-3" class="demo-screen">
+                        <div class="h-full">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-6">Deal Pipeline Management</h3>
+                            <div class="space-y-4">
+                                <div class="border-l-4 border-red-500 bg-white p-4 rounded-xl shadow-sm">
+                                    <div class="flex justify-between items-start">
+                                        <div>
+                                            <div class="font-semibold text-gray-900">Sarah Chen</div>
+                                            <div class="text-sm text-gray-600">123 Maple Avenue, Downtown</div>
+                                            <div class="text-xs text-gray-500 mt-1">4bd • 3ba • 2,400sqft</div>
+                                        </div>
+                                        <div class="text-right">
+                                            <div class="font-bold text-gray-900">$850,000</div>
+                                            <div class="text-xs bg-red-100 text-red-800 px-2 py-1 rounded-full">Hot Lead</div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3 flex items-center justify-between">
+                                        <div class="text-sm text-gray-600">Next: Follow up on inspection results</div>
+                                        <div class="flex items-center space-x-2">
+                                            <div class="text-xs text-gray-500">85% probability</div>
+                                            <div class="w-20 bg-gray-200 rounded-full h-2">
+                                                <div class="bg-red-500 h-2 rounded-full" style="width: 85%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="border-l-4 border-yellow-500 bg-white p-4 rounded-xl shadow-sm">
+                                    <div class="flex justify-between items-start">
+                                        <div>
+                                            <div class="font-semibold text-gray-900">Mike Rodriguez</div>
+                                            <div class="text-sm text-gray-600">456 Oak Street, Suburbs</div>
+                                            <div class="text-xs text-gray-500 mt-1">2bd • 2ba • 1,200sqft</div>
+                                        </div>
+                                        <div class="text-right">
+                                            <div class="font-bold text-gray-900">$425,000</div>
+                                            <div class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full">Warm</div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3 flex items-center justify-between">
+                                        <div class="text-sm text-gray-600">Next: Schedule second showing</div>
+                                        <div class="flex items-center space-x-2">
+                                            <div class="text-xs text-gray-500">60% probability</div>
+                                            <div class="w-20 bg-gray-200 rounded-full h-2">
+                                                <div class="bg-yellow-500 h-2 rounded-full" style="width: 60%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="border-l-4 border-green-500 bg-white p-4 rounded-xl shadow-sm">
+                                    <div class="flex justify-between items-start">
+                                        <div>
+                                            <div class="font-semibold text-gray-900">Emma Thompson</div>
+                                            <div class="text-sm text-gray-600">789 Pine Drive, Waterfront</div>
+                                            <div class="text-xs text-gray-500 mt-1">3bd • 2ba • 1,800sqft</div>
+                                        </div>
+                                        <div class="text-right">
+                                            <div class="font-bold text-gray-900">$675,000</div>
+                                            <div class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full">Closing</div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3 flex items-center justify-between">
+                                        <div class="text-sm text-gray-600">Next: Final walkthrough tomorrow</div>
+                                        <div class="flex items-center space-x-2">
+                                            <div class="text-xs text-gray-500">95% probability</div>
+                                            <div class="w-20 bg-gray-200 rounded-full h-2">
+                                                <div class="bg-green-500 h-2 rounded-full" style="width: 95%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Insights -->
+                    <div id="demo-4" class="demo-screen">
+                        <div class="h-full">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-6">🎯 Zara's AI Insights</h3>
+                            <div class="grid grid-cols-2 gap-6">
+                                <div class="space-y-4">
+                                    <div class="bg-blue-50 p-4 rounded-xl border-l-4 border-blue-500">
+                                        <h4 class="font-semibold text-blue-900 mb-2">📈 Performance Tip</h4>
+                                        <p class="text-blue-800 text-sm">Your response rate is 15% above average! Keep up the personalized approach for even better results.</p>
+                                    </div>
+                                    <div class="bg-yellow-50 p-4 rounded-xl border-l-4 border-yellow-500">
+                                        <h4 class="font-semibold text-yellow-900 mb-2">⏰ Follow-up Reminder</h4>
+                                        <p class="text-yellow-800 text-sm">3 clients haven't heard from you in over a week. Consider sending a market update or checking in.</p>
+                                    </div>
+                                    <div class="bg-green-50 p-4 rounded-xl border-l-4 border-green-500">
+                                        <h4 class="font-semibold text-green-900 mb-2">🎯 Opportunity</h4>
+                                        <p class="text-green-800 text-sm">The downtown market is heating up. Perfect timing to reach out to your downtown property leads.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="bg-white p-4 rounded-xl shadow-lg">
+                                        <h4 class="font-semibold text-gray-900 mb-4">Weekly Performance</h4>
+                                        <div class="space-y-3">
+                                            <div>
+                                                <div class="flex justify-between text-sm mb-1">
+                                                    <span>Email Response Rate</span>
+                                                    <span class="text-green-600">72.5%</span>
+                                                </div>
+                                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                                    <div class="bg-green-500 h-2 rounded-full" style="width: 72.5%"></div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="flex justify-between text-sm mb-1">
+                                                    <span>Deal Conversion</span>
+                                                    <span class="text-blue-600">15.8%</span>
+                                                </div>
+                                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                                    <div class="bg-blue-500 h-2 rounded-full" style="width: 15.8%"></div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="flex justify-between text-sm mb-1">
+                                                    <span>Client Satisfaction</span>
+                                                    <span class="text-purple-600">4.8/5</span>
+                                                </div>
+                                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                                    <div class="bg-purple-500 h-2 rounded-full" style="width: 96%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Demo Footer -->
+                <div class="bg-gray-50 px-6 py-4 border-t flex justify-between items-center">
+                    <div class="flex space-x-4">
+                        <button id="prev-btn" class="px-4 py-2 text-gray-600 hover:text-brand transition-colors" onclick="prevStep()" disabled>
+                            ← Previous
+                        </button>
+                        <button id="next-btn" class="px-4 py-2 bg-brand text-white rounded-lg hover:bg-brand-hover transition-colors" onclick="nextStep()">
+                            Next →
+                        </button>
+                    </div>
+                    <div class="flex space-x-4">
+                        <button class="px-6 py-2 border border-brand text-brand rounded-lg hover:bg-brand hover:text-white transition-colors">
+                            Try RealtyClose Free
+                        </button>
+                        <button class="px-6 py-2 bg-brand text-white rounded-lg hover:bg-brand-hover transition-colors">
+                            Install Extension
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentStep = 1;
+        const totalSteps = 4;
+
+        function showStep(step) {
+            // Hide all demo screens
+            document.querySelectorAll('.demo-screen').forEach(screen => {
+                screen.classList.remove('active');
+            });
+            
+            // Show selected screen
+            document.getElementById(`demo-${step}`).classList.add('active');
+            
+            // Update step buttons
+            document.querySelectorAll('.demo-step').forEach(btn => {
+                btn.classList.remove('bg-brand', 'text-white');
+                btn.classList.add('text-gray-600', 'hover:text-brand');
+            });
+            document.getElementById(`step-${step}`).classList.add('bg-brand', 'text-white');
+            document.getElementById(`step-${step}`).classList.remove('text-gray-600', 'hover:text-brand');
+            
+            // Update current step indicator
+            document.getElementById('current-step').textContent = step;
+            currentStep = step;
+            
+            // Update navigation buttons
+            document.getElementById('prev-btn').disabled = step === 1;
+            document.getElementById('next-btn').textContent = step === totalSteps ? 'Get Started →' : 'Next →';
+        }
+
+        function nextStep() {
+            if (currentStep < totalSteps) {
+                showStep(currentStep + 1);
+            } else {
+                // Redirect to main site or installation
+                window.parent.location.href = 'index.html';
+            }
+        }
+
+        function prevStep() {
+            if (currentStep > 1) {
+                showStep(currentStep - 1);
+            }
+        }
+
+        function generateDemo() {
+            const email = `Subject: Following up on your Maple Avenue property viewing
+
+Hi Sarah,
+
+I hope this email finds you well. I wanted to follow up on your visit to the beautiful property at 123 Maple Avenue yesterday.
+
+I could tell you were impressed by the spacious layout and the stunning kitchen renovation. The natural light throughout the home really does make it special, doesn't it?
+
+I've also prepared some additional information that might interest you:
+• Recent comparable sales in the neighborhood (average $820K)
+• Property inspection report highlights
+• Information about the excellent school district ratings
+
+I'd love to schedule a brief call this week to discuss any questions you might have and explore next steps. Are you available for a 15-minute conversation on Wednesday or Thursday afternoon?
+
+Looking forward to hearing from you soon.
+
+Best regards,
+[Your Name]
+[Your Contact Information]
+
+P.S. I noticed you mentioned wanting a home office space - the bonus room upstairs would be perfect for that!`;
+
+            const emailDiv = document.getElementById('generated-email');
+            emailDiv.innerHTML = '';
+            
+            let i = 0;
+            const typingSpeed = 10;
+            
+            function typeWriter() {
+                if (i < email.length) {
+                    emailDiv.innerHTML += email.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, typingSpeed);
+                } else {
+                    emailDiv.classList.remove('typing');
+                }
+            }
+            
+            emailDiv.classList.add('typing');
+            typeWriter();
+        }
+
+        // Auto-advance demo every 15 seconds
+        setInterval(() => {
+            if (currentStep < totalSteps) {
+                nextStep();
+            } else {
+                showStep(1);
+            }
+        }, 15000);
+    </script>
+</body>
+</html>

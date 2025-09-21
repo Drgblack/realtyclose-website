@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Updated with Anthony Pierri framework 2024-09-08 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealtyClose - Enterprise Real Estate Platform Starting With Gmail</title>
+    <meta name="description" content="The enterprise real estate platform starting with Gmail. AI-powered email assistant available now, comprehensive CRM coming soon. Build trust through transparent development.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand': '#2563eb',
+                        'brand-hover': '#1d4ed8',
+                        'brand-light': '#dbeafe',
+                        'soft-blue': '#f0f9ff',
+                        'soft-gray': '#f8fafc',
+                        'muted': '#64748b',
+                        'glass': 'rgba(255, 255, 255, 0.25)'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif']
+                    },
+                    backdropBlur: {
+                        'xs': '2px'
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'fade-in': 'fadeIn 0.5s ease-out',
+                        'slide-up': 'slideUp 0.6s ease-out'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS - Cluely Inspired -->
+    <style>
+        :root {
+            --gradient-bg: linear-gradient(180deg, #FFFFFF 0%, #DDE2EE 37.04%);
+            --gradient-hero: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #dbeafe 100%);
+            --gradient-text: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            --glass-bg: rgba(255, 255, 255, 0.25);
+            --glass-border: rgba(255, 255, 255, 0.18);
+            --shadow-soft: 0 8px 32px rgba(31, 38, 135, 0.15);
+            --shadow-card: 0 4px 15px rgba(0, 0, 0, 0.08);
+            --blur-amount: 16px;
+        }
+        
+        .gradient-bg {
+            background: var(--gradient-bg);
+        }
+        
+        .gradient-text {
+            background: var(--gradient-text);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(var(--blur-amount));
+            -webkit-backdrop-filter: blur(var(--blur-amount));
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--shadow-soft);
+        }
+        
+        .feature-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(226, 232, 240, 0.5);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+            border-color: rgba(37, 99, 235, 0.2);
+        }
+        
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            33% { transform: translateY(-10px) rotate(1deg); }
+            66% { transform: translateY(-5px) rotate(-1deg); }
+        }
+        
+        .dashboard-preview {
+            background: var(--gradient-hero);
+            border-radius: 24px;
+            padding: 24px;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .pulse-dot {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(1.05); }
+        }
+        
+        .cta-button {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.5);
+        }
+        
+        .soft-gradient {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #1e293b 0%, #475569 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .blur-overlay {
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+        
+        .animate-slide-up {
+            animation: slideUp 0.8s ease-out;
+        }
+        
+        /* Improved button styles inspired by Cluely */
+        .btn-primary {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            box-shadow: 0 4px 14px rgba(59, 130, 246, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            transform: translateY(-1px);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.35);
+        }
+        
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(148, 163, 184, 0.3);
+            box-shadow: 0 4px 14px rgba(100, 116, 139, 0.15);
+        }
+
+        /* Enhanced Typography - Cluely inspired */
+        .heading-xl {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+
+        .heading-lg {
+            font-size: clamp(1.875rem, 4vw, 3rem);
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.01em;
+        }
+
+        .heading-md {
+            font-size: clamp(1.5rem, 3vw, 2.25rem);
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .text-balance {
+            text-wrap: balance;
+        }
+
+        .section-padding {
+            padding-top: clamp(4rem, 8vw, 8rem);
+            padding-bottom: clamp(4rem, 8vw, 8rem);
+        }
+
+        .container-spacing {
+            padding-left: clamp(1rem, 4vw, 2rem);
+            padding-right: clamp(1rem, 4vw, 2rem);
+        }
+
+        /* Improved spacing for cards */
+        .card-grid {
+            display: grid;
+            gap: clamp(1.5rem, 3vw, 2rem);
+        }
+
+        @media (min-width: 768px) {
+            .card-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+        }
+
+        /* Better visual hierarchy */
+        .subtitle {
+            font-size: clamp(1.125rem, 2vw, 1.25rem);
+            line-height: 1.6;
+            color: #64748b;
+            font-weight: 400;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen">
+    <!-- Navigation -->
+    <nav class="glass-card sticky top-0 z-50 blur-overlay">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="w-8 h-8 bg-brand rounded-lg flex items-center justify-center text-white font-bold text-sm mr-3">
+                            RC
+                        </div>
+                        <span class="text-xl font-bold text-gray-900">RealtyClose</span>
+                    </div>
+                </div>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#features" class="text-gray-600 hover:text-brand px-3 py-2 text-sm font-medium transition-colors">Features</a>
+                        <a href="#dashboard" class="text-gray-600 hover:text-brand px-3 py-2 text-sm font-medium transition-colors">Dashboard</a>
+                        <a href="#pricing" class="text-gray-600 hover:text-brand px-3 py-2 text-sm font-medium transition-colors">Pricing</a>
+                        <a href="blog.html" class="text-gray-600 hover:text-brand px-3 py-2 text-sm font-medium transition-colors">Blog</a>
+                        <a href="#demo" class="text-gray-600 hover:text-brand px-3 py-2 text-sm font-medium transition-colors">Demo</a>
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <button class="btn-primary text-white px-6 py-2 rounded-lg font-medium">
+                        Install Extension
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden" style="background: var(--gradient-hero);">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+                <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
+                    <div class="flex items-center justify-center lg:justify-start mb-6">
+                        <div class="inline-flex items-center glass-card text-blue-700 px-6 py-3 rounded-full text-sm font-semibold animate-fade-in">
+                            <div class="w-2 h-2 bg-green-500 rounded-full pulse-dot mr-3"></div>
+                            <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent font-medium">
+                                ✨ Gmail Extension Live Now
+                            </span>
+                        </div>
+                    </div>
+                    <h1 class="heading-xl text-gray-900 text-balance">
+                        The Enterprise Real Estate Platform 
+                        <span class="gradient-text">Starting</span> 
+                        With Your Gmail
+                    </h1>
+                    <p class="subtitle text-gray-600 text-balance">
+                        While others promise everything and deliver nothing, we're building the complete real estate operating system one powerful feature at a time. Start with our AI email assistant today.
+                    </p>
+                    
+                    <div class="mt-8 grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                                <span class="text-green-500 mr-2">✅</span> Available Now
+                            </h3>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-center">
+                                    <span class="text-green-500 mr-2">✓</span> Gmail AI Assistant
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-green-500 mr-2">✓</span> Multi-language drafting
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-green-500 mr-2">✓</span> Timeline sharing
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-green-500 mr-2">✓</span> Smart compliance checks
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                                <span class="text-blue-500 mr-2">🔜</span> Coming Soon
+                            </h3>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-center">
+                                    <span class="text-blue-500 mr-2">○</span> MLS Integration
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-blue-500 mr-2">○</span> eSignature Suite
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-blue-500 mr-2">○</span> Commission Tracking
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-blue-500 mr-2">○</span> Full CRM Platform
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-10 flex flex-col sm:flex-row gap-4 lg:justify-start justify-center">
+                        <button class="btn-primary text-white px-8 py-4 rounded-xl font-semibold text-lg">
+                            Start Free with Gmail Extension
+                        </button>
+                        <button class="btn-secondary text-gray-700 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105">
+                            See Full Platform Roadmap →
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="mt-16 sm:mt-24 lg:mt-0 lg:col-span-6">
+                    <div class="relative floating">
+                        <div class="dashboard-preview">
+                            <div class="bg-white rounded-xl p-6 shadow-lg">
+                                <div class="flex items-center space-x-3 mb-4">
+                                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                                    <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                                    <div class="flex-1 bg-gray-100 rounded-lg px-4 py-2 text-sm text-gray-600">
+                                        gmail.com - RealtyClose Extension
+                                    </div>
+                                </div>
+                                <div class="space-y-4">
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div class="bg-blue-50 p-4 rounded-lg">
+                                            <div class="text-2xl font-bold text-blue-600">10</div>
+                                            <div class="text-sm text-blue-700">Daily Drafts</div>
+                                        </div>
+                                        <div class="bg-green-50 p-4 rounded-lg">
+                                            <div class="text-2xl font-bold text-green-600">5</div>
+                                            <div class="text-sm text-green-700">Languages</div>
+                                        </div>
+                                    </div>
+                                    <div class="space-y-2">
+                                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                            <div>
+                                                <div class="font-medium text-gray-900">Email Draft</div>
+                                                <div class="text-sm text-gray-600">Professional tone</div>
+                                            </div>
+                                            <div class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">Ready</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section (Anthony Pierri Framework) -->
+    <section class="section-padding" style="background: linear-gradient(135deg, #fef2f2 0%, #fce7e7 100%);">
+        <div class="max-w-7xl mx-auto container-spacing">
+            <div class="text-center mb-16">
+                <h2 class="heading-lg text-gray-900 mb-6 text-balance">
+                    Real Estate Agents Spend 3+ Hours Daily Writing Emails
+                </h2>
+                <p class="subtitle text-gray-700 max-w-3xl mx-auto text-balance">
+                    Every minute you spend crafting the perfect email is a minute you're not selling homes. 
+                    Here's what's killing your productivity:
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="glass-card p-8 rounded-xl hover:shadow-2xl transition-all duration-500">
+                    <div class="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">⏱️</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Time-Consuming Email Writing</h3>
+                    <p class="text-gray-600 mb-4">You rewrite the same email 5 times to get the tone right. Meanwhile, competitors are meeting with your potential clients.</p>
+                    <div class="bg-red-50 p-4 rounded-lg">
+                        <p class="text-red-800 text-sm font-medium">💸 Cost: 3 hours/day = $75,000 in lost productivity annually</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-xl hover:shadow-2xl transition-all duration-500">
+                    <div class="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">😰</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Email Anxiety & Mistakes</h3>
+                    <p class="text-gray-600 mb-4">Worried about sounding unprofessional? One poorly worded email can kill a deal or damage your reputation permanently.</p>
+                    <div class="bg-red-50 p-4 rounded-lg">
+                        <p class="text-red-800 text-sm font-medium">💸 Cost: Lost deals from communication errors</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-xl hover:shadow-2xl transition-all duration-500">
+                    <div class="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">🌍</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Language Barriers</h3>
+                    <p class="text-gray-600 mb-4">Miss out on 40% of potential clients because you can't communicate effectively in their preferred language.</p>
+                    <div class="bg-red-50 p-4 rounded-lg">
+                        <p class="text-red-800 text-sm font-medium">💸 Cost: Losing multilingual markets</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center glass-card p-8 rounded-2xl hover:shadow-2xl transition-all duration-500">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">The Email Productivity Crisis</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div>
+                        <div class="text-3xl font-bold text-red-600 mb-2">3.2 hrs</div>
+                        <div class="text-gray-700">Average time agents spend on email daily</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-red-600 mb-2">87%</div>
+                        <div class="text-gray-700">Of agents say email is their #1 time waster</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-red-600 mb-2">23%</div>
+                        <div class="text-gray-700">Response rate drops after 1 hour delay</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-brand">500+</div>
+                    <div class="text-gray-600 mt-2">Active Users</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-brand">10K+</div>
+                    <div class="text-gray-600 mt-2">Emails Drafted</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-brand">5</div>
+                    <div class="text-gray-600 mt-2">Languages Supported</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-brand">10 sec</div>
+                    <div class="text-gray-600 mt-2">Avg. Draft Time</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">
+                    Write Perfect Real Estate Emails in 10 Seconds
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Simple 3-step process that turns hours of email writing into seconds
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-brand rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl font-bold text-white">1</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Install in Chrome</h3>
+                    <p class="text-gray-600 mb-6">Add RealtyClose to Chrome in one click. Works instantly with your Gmail - no setup required.</p>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <div class="text-sm text-gray-600">✅ One-click installation</div>
+                        <div class="text-sm text-gray-600">✅ Works with existing Gmail</div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-brand rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl font-bold text-white">2</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Click the RC Button</h3>
+                    <p class="text-gray-600 mb-6">When composing an email, click the floating RC button or press Alt+R to open your AI assistant.</p>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <div class="text-sm text-gray-600">✅ Floating button in Gmail</div>
+                        <div class="text-sm text-gray-600">✅ Keyboard shortcut: Alt+R</div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-brand rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl font-bold text-white">3</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Generate & Send</h3>
+                    <p class="text-gray-600 mb-6">Choose your tone, review the AI-generated email, make any tweaks, and send. Done in seconds.</p>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <div class="text-sm text-gray-600">✅ Professional, friendly, or concise</div>
+                        <div class="text-sm text-gray-600">✅ 5 languages supported</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-16">
+                <div class="bg-green-50 p-8 rounded-2xl border border-green-200">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">The Result</h3>
+                    <p class="text-xl text-gray-700 mb-4">
+                        Transform from email-stressed agent to communication pro
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-6 mt-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-red-600 mb-2">Before RealtyClose</div>
+                            <div class="text-gray-600">
+                                <div>❌ 20+ minutes per email</div>
+                                <div>❌ Worry about tone & grammar</div>
+                                <div>❌ Lost in translation</div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-green-600 mb-2">With RealtyClose</div>
+                            <div class="text-gray-600">
+                                <div>✅ 10 seconds per email</div>
+                                <div>✅ Perfect professional tone</div>
+                                <div>✅ Fluent in 5 languages</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section-padding bg-gray-50">
+        <div class="max-w-7xl mx-auto container-spacing">
+            <div class="text-center mb-16">
+                <h2 class="heading-lg text-gray-900 mb-4 text-balance">
+                    Gmail Extension Features Available Now
+                </h2>
+                <p class="subtitle text-gray-600 max-w-3xl mx-auto text-balance">
+                    Start with these powerful email features today, while we build the complete platform:
+                </p>
+            </div>
+            
+            <div class="card-grid md:grid-cols-2 lg:grid-cols-3">
+                <!-- Feature 1 -->
+                <div class="feature-card glass-card p-8 rounded-2xl hover:shadow-2xl transition-all duration-500">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-2xl">🤖</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">AI Email Drafting</h3>
+                    <p class="text-gray-600 mb-6">Generate professional emails in seconds. Choose from quick drafts or detailed responses with perfect tone every time.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• ⚡ Quick & full draft modes</li>
+                        <li>• 🎯 Professional tone control</li>
+                        <li>• 🔄 Multiple draft variants</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card glass-card p-8 rounded-2xl hover:shadow-2xl transition-all duration-500">
+                    <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-2xl">🌍</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Multilingual Support</h3>
+                    <p class="text-gray-600 mb-6">Communicate with clients in their preferred language with native-quality translation and cultural awareness.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• 🇺🇸 English, German, French</li>
+                        <li>• 🇪🇸 Spanish, Italian support</li>
+                        <li>• 🤖 Auto language detection</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card glass-card p-8 rounded-2xl hover:shadow-2xl transition-all duration-500">
+                    <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-2xl">🎭</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Tone & Style Controls</h3>
+                    <p class="text-gray-600 mb-6">Choose from professional, friendly, or concise tones. Every email matches your brand and the situation perfectly.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• 👔 Professional preset</li>
+                        <li>• 🙂 Friendly preset</li>
+                        <li>• 📝 Concise preset</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card glass-card p-8 rounded-2xl hover:shadow-2xl transition-all duration-500">
+                    <div class="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-2xl">🔗</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Timeline & Deal Linking</h3>
+                    <p class="text-gray-600 mb-6">Connect email threads to deals and share magic timeline links with clients for transparent communication.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• 🔗 Magic timeline links</li>
+                        <li>• 📄 Thread-to-deal linking</li>
+                        <li>• 👀 Client transparency</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card glass-card p-8 rounded-2xl hover:shadow-2xl transition-all duration-500">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-2xl">📊</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Usage Tracking & Limits</h3>
+                    <p class="text-gray-600 mb-6">Monitor your daily usage with built-in quota tracking and earn bonus drafts for referrals.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• 📊 Daily usage dashboard</li>
+                        <li>• 🎁 Referral bonuses</li>
+                        <li>• ⚙️ Free tier limits</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card glass-card p-8 rounded-2xl hover:shadow-2xl transition-all duration-500">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-2xl">🤖</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Zara AI Assistant</h3>
+                    <p class="text-gray-600 mb-6">Get explanations for AI draft choices and understand why certain language works better for your situation.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• 💡 Draft explanations</li>
+                        <li>• 🎯 Tone justifications</li>
+                        <li>• 📚 Learning insights</li>
+                    </ul>
+                </div>
+
+            </div>
+            
+            <!-- Coming Soon Section -->
+            <div class="mt-20">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">
+                        🚀 Coming Soon: Complete Real Estate Platform
+                    </h3>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        We're building the comprehensive CRM platform you've been waiting for. Here's what's in development:
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-blue-50 p-6 rounded-xl border-2 border-dashed border-blue-200">
+                        <div class="text-4xl mb-3">🏠</div>
+                        <h4 class="font-semibold text-gray-900 mb-2">MLS Integration</h4>
+                        <p class="text-sm text-gray-600">Auto-populate property data and sync listings</p>
+                    </div>
+                    
+                    <div class="bg-green-50 p-6 rounded-xl border-2 border-dashed border-green-200">
+                        <div class="text-4xl mb-3">✍️</div>
+                        <h4 class="font-semibold text-gray-900 mb-2">eSignature Suite</h4>
+                        <p class="text-sm text-gray-600">Bank-grade security with full compliance</p>
+                    </div>
+                    
+                    <div class="bg-purple-50 p-6 rounded-xl border-2 border-dashed border-purple-200">
+                        <div class="text-4xl mb-3">💰</div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Commission Tracking</h4>
+                        <p class="text-sm text-gray-600">Complete financial management system</p>
+                    </div>
+                    
+                    <div class="bg-red-50 p-6 rounded-xl border-2 border-dashed border-red-200">
+                        <div class="text-4xl mb-3">🛡️</div>
+                        <h4 class="font-semibold text-gray-900 mb-2">FinCEN Compliance</h4>
+                        <p class="text-sm text-gray-600">Regulatory compliance and AML monitoring</p>
+                    </div>
+                    
+                    <div class="bg-yellow-50 p-6 rounded-xl border-2 border-dashed border-yellow-200">
+                        <div class="text-4xl mb-3">🔔</div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Smart Notifications</h4>
+                        <p class="text-sm text-gray-600">Real-time alerts and priority management</p>
+                    </div>
+                    
+                    <div class="bg-indigo-50 p-6 rounded-xl border-2 border-dashed border-indigo-200">
+                        <div class="text-4xl mb-3">📊</div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Market Intelligence</h4>
+                        <p class="text-sm text-gray-600">Predictive analytics and insights</p>
+                    </div>
+                    
+                    <div class="bg-teal-50 p-6 rounded-xl border-2 border-dashed border-teal-200">
+                        <div class="text-4xl mb-3">🤝</div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Team Collaboration</h4>
+                        <p class="text-sm text-gray-600">Unified team communication tools</p>
+                    </div>
+                    
+                    <div class="bg-pink-50 p-6 rounded-xl border-2 border-dashed border-pink-200">
+                        <div class="text-4xl mb-3">🎨</div>
+                        <h4 class="font-semibold text-gray-900 mb-2">White-Label Portal</h4>
+                        <p class="text-sm text-gray-600">Complete branding customization</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gmail Extension Demo -->
+    <section id="dashboard" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    See RealtyClose in Action
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Watch how the Gmail extension transforms your email workflow in real-time
+                </p>
+            </div>
+            
+            <div class="relative">
+                <div class="dashboard-preview max-w-5xl mx-auto">
+                    <div class="bg-white rounded-xl shadow-2xl overflow-hidden">
+                        <!-- Browser Header -->
+                        <div class="bg-gray-100 px-4 py-3 flex items-center space-x-2">
+                            <div class="flex space-x-2">
+                                <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                                <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                            </div>
+                            <div class="flex-1 bg-white rounded-lg px-4 py-1 mx-4">
+                                <span class="text-gray-600 text-sm">https://mail.google.com - Gmail with RealtyClose</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Gmail Interface -->
+                        <div class="p-8">
+                            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                                <!-- Gmail Compose -->
+                                <div class="lg:col-span-2 space-y-6">
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-gray-900 mb-4">✉️ Gmail Compose</h3>
+                                        <div class="bg-gray-50 p-4 rounded-xl border">
+                                            <div class="space-y-3">
+                                                <div class="flex items-center space-x-2 text-sm">
+                                                    <span class="text-gray-600">To:</span>
+                                                    <span class="bg-blue-100 px-2 py-1 rounded text-blue-700">sarah.chen@email.com</span>
+                                                </div>
+                                                <div class="flex items-center space-x-2 text-sm">
+                                                    <span class="text-gray-600">Subject:</span>
+                                                    <span class="text-gray-900">Your Maple Avenue Property Inquiry</span>
+                                                </div>
+                                                <div class="border-t pt-3">
+                                                    <div class="bg-white p-4 rounded border min-h-32 relative">
+                                                        <div class="text-gray-400 text-sm">
+                                                            Hi Sarah,
+                                                            
+                                                            Thank you for your interest in the beautiful 4-bedroom home at 123 Maple Avenue. I'd be delighted to schedule a private showing for you this week...
+                                                        </div>
+                                                        <!-- Floating RC Button -->
+                                                        <div class="absolute bottom-2 right-2">
+                                                            <div class="bg-brand text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold cursor-pointer hover:bg-brand-hover transition-colors">
+                                                                RC
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- RealtyClose Sidebar -->
+                                <div class="space-y-6">
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-gray-900 mb-4">🤖 RealtyClose Assistant</h3>
+                                        <div class="bg-brand-50 p-4 rounded-xl border border-brand-200">
+                                            <div class="space-y-4">
+                                                <div class="text-sm">
+                                                    <div class="font-medium text-gray-900 mb-2">Draft Options</div>
+                                                    <div class="space-y-2">
+                                                        <button class="w-full bg-white border border-gray-200 p-2 rounded text-left text-sm hover:bg-gray-50 transition-colors">
+                                                            📝 Quick Draft
+                                                        </button>
+                                                        <button class="w-full bg-brand text-white p-2 rounded text-left text-sm hover:bg-brand-hover transition-colors">
+                                                            📄 Full Draft
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="text-sm">
+                                                    <div class="font-medium text-gray-900 mb-2">Tone</div>
+                                                    <div class="space-y-1">
+                                                        <label class="flex items-center">
+                                                            <input type="radio" name="tone" class="mr-2" checked>
+                                                            <span class="text-xs">Professional</span>
+                                                        </label>
+                                                        <label class="flex items-center">
+                                                            <input type="radio" name="tone" class="mr-2">
+                                                            <span class="text-xs">Friendly</span>
+                                                        </label>
+                                                        <label class="flex items-center">
+                                                            <input type="radio" name="tone" class="mr-2">
+                                                            <span class="text-xs">Concise</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="text-sm">
+                                                    <div class="font-medium text-gray-900 mb-2">Language</div>
+                                                    <select class="w-full p-2 border rounded text-xs">
+                                                        <option>🇺🇸 English</option>
+                                                        <option>🇩🇪 German</option>
+                                                        <option>🇫🇷 French</option>
+                                                        <option>🇪🇸 Spanish</option>
+                                                        <option>🇮🇹 Italian</option>
+                                                    </select>
+                                                </div>
+                                                
+                                                <button class="w-full bg-brand text-white py-2 px-4 rounded text-sm font-medium hover:bg-brand-hover transition-colors">
+                                                    Generate Draft
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <h4 class="text-sm font-medium text-gray-900 mb-2">💡 Zara's Insight</h4>
+                                        <div class="bg-gray-50 p-3 rounded-lg">
+                                            <p class="text-xs text-gray-600">
+                                                "Using 'delighted' shows enthusiasm while maintaining professionalism. Perfect for luxury property inquiries!"
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="section-padding bg-gray-50">
+        <div class="max-w-7xl mx-auto container-spacing">
+            <div class="text-center mb-16">
+                <h2 class="heading-lg text-gray-900 mb-4 text-balance">
+                    Simple, Transparent Pricing
+                </h2>
+                <p class="subtitle text-gray-600 text-balance">
+                    Start free, upgrade when you're ready to scale
+                </p>
+            </div>
+            
+            <div class="card-grid md:grid-cols-3 max-w-5xl mx-auto">
+                <!-- Free Plan -->
+                <div class="glass-card p-8 rounded-2xl hover:shadow-2xl transition-all duration-500">
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Free</h3>
+                        <div class="text-4xl font-bold text-gray-900 mb-2">$0</div>
+                        <div class="text-gray-600 mb-6">Forever</div>
+                        <button class="w-full btn-secondary text-gray-900 py-3 rounded-xl font-semibold">
+                            Install Extension
+                        </button>
+                    </div>
+                    <ul class="mt-8 space-y-3">
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span class="text-gray-600">10 AI drafts per day</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span class="text-gray-600">All tone controls</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span class="text-gray-600">5 languages</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-500 mr-3">✓</span>
+                            <span class="text-gray-600">Basic support</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="bg-brand text-white p-8 rounded-2xl shadow-xl border-4 border-brand transform scale-105">
+                    <div class="text-center">
+                        <div class="bg-white text-brand px-3 py-1 rounded-full text-sm font-semibold mb-4 inline-block">
+                            Most Popular
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Professional</h3>
+                        <div class="text-4xl font-bold mb-2">$19</div>
+                        <div class="opacity-90 mb-6">per month</div>
+                        <button class="w-full bg-white text-brand py-3 rounded-xl font-semibold hover:bg-gray-100 transition-colors">
+                            Start Free Trial
+                        </button>
+                    </div>
+                    <ul class="mt-8 space-y-3">
+                        <li class="flex items-center">
+                            <span class="text-white mr-3">✓</span>
+                            <span class="opacity-90">Unlimited AI drafts</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-white mr-3">✓</span>
+                            <span class="opacity-90">All tone controls</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-white mr-3">✓</span>
+                            <span class="opacity-90">5 languages</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-white mr-3">✓</span>
+                            <span class="opacity-90">Timeline sharing</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-white mr-3">✓</span>
+                            <span class="opacity-90">Zara AI insights</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-white mr-3">✓</span>
+                            <span class="opacity-90">Priority support</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="glass-card p-8 rounded-2xl hover:shadow-2xl transition-all duration-500">
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Full Platform</h3>
+                        <div class="text-4xl font-bold text-gray-900 mb-2">$179</div>
+                        <div class="text-gray-600 mb-6">when available</div>
+                        <button class="w-full bg-gray-900 text-white py-3 rounded-xl font-semibold hover:bg-gray-800 transition-all duration-300 hover:scale-105">
+                            Join Waitlist
+                        </button>
+                    </div>
+                    <ul class="mt-8 space-y-3">
+                        <li class="flex items-center">
+                            <span class="text-blue-500 mr-3">○</span>
+                            <span class="text-gray-600">Everything in Pro</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-blue-500 mr-3">○</span>
+                            <span class="text-gray-600">MLS Integration</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-blue-500 mr-3">○</span>
+                            <span class="text-gray-600">eSignature Suite</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-blue-500 mr-3">○</span>
+                            <span class="text-gray-600">Commission Tracking</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-blue-500 mr-3">○</span>
+                            <span class="text-gray-600">FinCEN Compliance</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-blue-500 mr-3">○</span>
+                            <span class="text-gray-600">Complete CRM Platform</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Risk Reversal Elements -->
+            <div class="mt-16 max-w-4xl mx-auto">
+                <div class="glass-card p-8 rounded-2xl text-center">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">100% Risk-Free Guarantee</h3>
+                    <div class="grid md:grid-cols-3 gap-6 mb-8">
+                        <div class="flex flex-col items-center">
+                            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 mb-2">30-Day Money Back</h4>
+                            <p class="text-gray-600 text-sm">Not satisfied? Get a full refund, no questions asked</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3a4 4 0 118 0v4m-4 12v-2m-6 2h12M6 21V9a2 2 0 012-2h8a2 2 0 012 2v12"></path>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Cancel Anytime</h4>
+                            <p class="text-gray-600 text-sm">No contracts, no cancellation fees, keep your data</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Instant Setup</h4>
+                            <p class="text-gray-600 text-sm">Start using in 30 seconds - no technical setup required</p>
+                        </div>
+                    </div>
+                    <div class="bg-green-50 rounded-lg p-6 border border-green-200">
+                        <div class="flex items-center justify-center mb-2">
+                            <svg class="w-5 h-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="font-semibold text-green-800">Free Forever Plan Available</span>
+                        </div>
+                        <p class="text-green-700 text-sm">Try RealtyClose with up to 10 emails/day at no cost, forever. No credit card required.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section - Outcome Focused -->
+    <section class="section-padding bg-green-50">
+        <div class="max-w-7xl mx-auto container-spacing">
+            <div class="text-center mb-16">
+                <h2 class="heading-lg text-gray-900 mb-6 text-balance">
+                    Real Results from Real Agents
+                </h2>
+                <p class="subtitle text-gray-600 max-w-3xl mx-auto text-balance">
+                    See how agents save time and write better emails with RealtyClose
+                </p>
+            </div>
+
+            <div class="card-grid md:grid-cols-3 mb-16">
+                <!-- Result 1 -->
+                <div class="glass-card p-8 rounded-2xl hover:shadow-2xl transition-all duration-500">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=64&h=64&fit=crop&crop=face&auto=format" 
+                             alt="Sarah Martinez" class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <div class="font-bold text-gray-900">Sarah Martinez</div>
+                            <div class="text-sm text-gray-600">Top Producer, Phoenix</div>
+                        </div>
+                    </div>
+                    <div class="text-3xl font-bold text-green-600 mb-2">2.5 hrs</div>
+                    <div class="text-lg font-semibold text-gray-900 mb-3">Saved Daily</div>
+                    <p class="text-gray-600 mb-4">"I used to spend hours writing emails. Now I draft perfect responses in seconds and spend more time with clients."</p>
+                    <div class="text-yellow-400 text-sm">★★★★★</div>
+                </div>
+
+                <!-- Result 2 -->
+                <div class="glass-card p-8 rounded-2xl hover:shadow-2xl transition-all duration-500">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=64&h=64&fit=crop&crop=face&auto=format" 
+                             alt="Mike R." class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <div class="font-bold text-gray-900">Mike Rodriguez</div>
+                            <div class="text-sm text-gray-600">Team Leader, Austin</div>
+                        </div>
+                    </div>
+                    <div class="text-3xl font-bold text-green-600 mb-2">40%</div>
+                    <div class="text-lg font-semibold text-gray-900 mb-3">More Spanish Clients</div>
+                    <p class="text-gray-600 mb-4">"The multilingual feature opened up a whole new market for me. I can communicate professionally in Spanish now."</p>
+                    <div class="text-yellow-400 text-sm">★★★★★</div>
+                </div>
+
+                <!-- Result 3 -->
+                <div class="glass-card p-8 rounded-2xl hover:shadow-2xl transition-all duration-500">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=64&h=64&fit=crop&crop=face&auto=format" 
+                             alt="Jennifer K." class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <div class="font-bold text-gray-900">Jennifer Kim</div>
+                            <div class="text-sm text-gray-600">Luxury Specialist, Miami</div>
+                        </div>
+                    </div>
+                    <div class="text-3xl font-bold text-green-600 mb-2">0</div>
+                    <div class="text-lg font-semibold text-gray-900 mb-3">Email Anxiety</div>
+                    <p class="text-gray-600 mb-4">"I no longer worry about email tone or grammar. Every message sounds professional and appropriate for luxury clients."</p>
+                    <div class="text-yellow-400 text-sm">★★★★★</div>
+                </div>
+            </div>
+
+            <div class="glass-card p-8 rounded-2xl hover:shadow-2xl transition-all duration-500">
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <div class="text-4xl font-bold text-green-600 mb-2">10K+</div>
+                        <div class="text-lg font-semibold text-gray-900 mb-2">Professional Emails Drafted</div>
+                        <div class="text-sm text-gray-600">Saving agents hours every day</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-green-600 mb-2">95%</div>
+                        <div class="text-lg font-semibold text-gray-900 mb-2">User Satisfaction</div>
+                        <div class="text-sm text-gray-600">Agents love the time savings</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-green-600 mb-2">4.9/5</div>
+                        <div class="text-lg font-semibold text-gray-900 mb-2">Average Rating</div>
+                        <div class="text-sm text-gray-600">From 500+ active users</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Everything you need to know about RealtyClose AI email assistant
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-100 transition-colors" onclick="toggleFAQ(1)">
+                        <h3 class="font-semibold text-gray-900 pr-4">Is my email data private and secure?</h3>
+                        <svg id="icon-1" class="w-5 h-5 text-gray-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="faq-1" class="hidden px-6 pb-4">
+                        <p class="text-gray-600 leading-relaxed">
+                            Yes! We take security seriously. RealtyClose uses enterprise-grade encryption, never stores your emails permanently, and is SOC 2 compliant. We only analyze your email context in real-time to generate suggestions, then immediately discard it. Your sensitive client data never leaves your Gmail.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-100 transition-colors" onclick="toggleFAQ(2)">
+                        <h3 class="font-semibold text-gray-900 pr-4">Will my emails sound authentic or robotic?</h3>
+                        <svg id="icon-2" class="w-5 h-5 text-gray-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="faq-2" class="hidden px-6 pb-4">
+                        <p class="text-gray-600 leading-relaxed">
+                            RealtyClose is specifically trained on real estate communication patterns and learns your writing style. Unlike generic AI tools, it understands MLS terminology, market conditions, and compliance requirements. Most agents report that clients compliment their improved communication without knowing AI is involved.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-100 transition-colors" onclick="toggleFAQ(3)">
+                        <h3 class="font-semibold text-gray-900 pr-4">How is this different from ChatGPT or other AI tools?</h3>
+                        <svg id="icon-3" class="w-5 h-5 text-gray-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="faq-3" class="hidden px-6 pb-4">
+                        <p class="text-gray-600 leading-relaxed">
+                            RealtyClose is built specifically for real estate professionals. It integrates directly into Gmail, understands real estate terminology, includes compliance checks, and works with multiple languages. Unlike generic AI, it knows the difference between a listing update and a contract question, ensuring appropriate tone and content every time.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-100 transition-colors" onclick="toggleFAQ(4)">
+                        <h3 class="font-semibold text-gray-900 pr-4">What if I don't like the generated email?</h3>
+                        <svg id="icon-4" class="w-5 h-5 text-gray-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="faq-4" class="hidden px-6 pb-4">
+                        <p class="text-gray-600 leading-relaxed">
+                            Every email is fully editable before sending. RealtyClose generates a draft that you can modify, add personal touches, or completely rewrite. Think of it as your intelligent writing assistant, not a replacement for your personal touch. You maintain complete control over every message.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-100 transition-colors" onclick="toggleFAQ(5)">
+                        <h3 class="font-semibold text-gray-900 pr-4">Will clients know I'm using AI assistance?</h3>
+                        <svg id="icon-5" class="w-5 h-5 text-gray-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="faq-5" class="hidden px-6 pb-4">
+                        <p class="text-gray-600 leading-relaxed">
+                            No. RealtyClose learns your communication style and generates emails that sound exactly like you wrote them. The AI enhances your natural voice rather than replacing it. Many agents find their communication becomes more consistent and professional, leading to better client relationships.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-100 transition-colors" onclick="toggleFAQ(6)">
+                        <h3 class="font-semibold text-gray-900 pr-4">Is there a money-back guarantee?</h3>
+                        <svg id="icon-6" class="w-5 h-5 text-gray-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="faq-6" class="hidden px-6 pb-4">
+                        <p class="text-gray-600 leading-relaxed">
+                            Yes! We offer a 30-day money-back guarantee on all paid plans, no questions asked. The basic Gmail extension is free forever (up to 10 emails/day), so you can try it risk-free. Cancel anytime and keep all your data - no cancellation fees or penalties.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center bg-blue-50 rounded-2xl p-8">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Still have questions?</h3>
+                <p class="text-gray-600 mb-6">
+                    Our team is here to help you succeed with RealtyClose
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium">
+                        Schedule Demo Call
+                    </button>
+                    <button class="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-50 transition-colors font-medium">
+                        Email Support
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-brand">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-white mb-6">
+                Stop Wasting Hours on Email. Start Selling More Homes.
+            </h2>
+            <p class="text-xl text-blue-100 mb-8">
+                Join 500+ agents who save 3+ hours daily with AI-powered email assistance
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-brand px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-100 transition-colors shadow-lg group flex items-center justify-center space-x-3">
+                    <svg class="w-5 h-5 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                    <span>Install Free Gmail Extension</span>
+                    <div class="bg-brand/10 text-brand text-xs px-2 py-1 rounded-full">500+ users</div>
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white hover:text-brand transition-colors flex items-center justify-center space-x-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                    <span>Watch Demo</span>
+                </button>
+            </div>
+            
+            <div class="mt-8 text-blue-100 text-sm">
+                ✓ One-click installation • ✓ Works with existing Gmail • ✓ 10 free drafts daily forever
+            </div>
+            
+            <div class="mt-6 bg-white/10 rounded-lg p-4 inline-block">
+                <div class="flex items-center justify-center text-white text-sm font-medium">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    30-day money-back guarantee • No credit card required • Cancel anytime
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid md:grid-cols-5 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 bg-brand rounded-lg flex items-center justify-center text-white font-bold text-sm mr-3">
+                            RC
+                        </div>
+                        <span class="text-xl font-bold">RealtyClose</span>
+                    </div>
+                    <p class="text-sm text-gray-400 mb-6 max-w-prose">
+                        RealtyClose simplifies real estate closings with automated communication, intelligent reminders, and secure workflows - part of the Zaza Technologies family building trusted, AI-powered tools for professionals.
+                    </p>
+                    
+                    <!-- Social Links -->
+                    <div class="flex space-x-4 mb-6">
+                        <a href="https://twitter.com/realtyclose" class="text-gray-400 hover:text-white transition-colors" aria-label="Twitter">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/company/realtyclose" class="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/realtyclose" class="text-gray-400 hover:text-white transition-colors" aria-label="GitHub">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://facebook.com/realtyclose" class="text-gray-400 hover:text-white transition-colors" aria-label="Facebook">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <!-- Partner Links -->
+                    <div class="text-sm text-gray-400">
+                        <p class="mb-2">Part of the Zaza Technologies family:</p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="https://zazatechnologies.com" class="text-brand-light hover:text-white transition-colors">Zaza Technologies</a>
+                            <a href="https://zazapromptly.com" class="text-brand-light hover:text-white transition-colors">Zaza Promptly</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Product</h4>
+                    <ul class="space-y-2">
+                        <li><a href="features.html" class="text-gray-400 hover:text-white transition-colors">Features</a></li>
+                        <li><a href="index.html#dashboard" class="text-gray-400 hover:text-white transition-colors">Dashboard</a></li>
+                        <li><a href="index.html#pricing" class="text-gray-400 hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="index.html#integrations" class="text-gray-400 hover:text-white transition-colors">Integrations</a></li>
+                        <li><a href="demo.html" class="text-gray-400 hover:text-white transition-colors">Demo</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="help-center.html" class="text-gray-400 hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Documentation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">API Reference</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Community</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="privacy-policy.html" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="text-gray-400 text-sm mb-4 md:mb-0">
+                    <p>&copy; 2025 RealtyClose. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6 text-sm">
+                    <a href="privacy-policy.html" class="text-gray-400 hover:text-white transition-colors">Privacy</a>
+                    <a href="terms-of-service.html" class="text-gray-400 hover:text-white transition-colors">Terms</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Cookies</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll effect to navbar
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                navbar.classList.add('shadow-lg');
+            } else {
+                navbar.classList.remove('shadow-lg');
+            }
+        });
+
+        // FAQ Toggle functionality
+        function toggleFAQ(index) {
+            const faqContent = document.getElementById(`faq-${index}`);
+            const icon = document.getElementById(`icon-${index}`);
+            
+            if (faqContent.classList.contains('hidden')) {
+                faqContent.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                faqContent.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+</body>
+</html>

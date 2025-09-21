@@ -1,0 +1,1 @@
+feat(footer): wire @drgblack/shared-ui via SiteFooter and inject into app/layout.tsx
