@@ -9,12 +9,16 @@ export const metadata: Metadata = {
 export default function PrivacyPage() {
   return (
     <PageShell title="Privacy Policy">
-      <p><em>Last updated: January 1, 2025 | Effective: January 1, 2025</em></p>
-
-      <p>
-        Your privacy is our priority. Learn how we protect your personal information and ensure
-        excellent data security in compliance with global privacy regulations.
-      </p>
+      {/* Last Updated Banner */}
+      <div className="bg-blue-600/10 border border-blue-500/20 rounded-lg p-4 mb-8">
+        <p className="text-blue-300 text-sm font-medium mb-2">
+          <strong>Last updated:</strong> January 1, 2025 | <strong>Effective:</strong> January 1, 2025
+        </p>
+        <p className="text-slate-300">
+          Your privacy is our priority. Learn how we protect your personal information and ensure
+          excellent data security in compliance with global privacy regulations.
+        </p>
+      </div>
 
       <h2>Account Information</h2>
       <p>
@@ -42,20 +46,42 @@ export default function PrivacyPage() {
 
       <h2>How We Use Your Information</h2>
 
-      <h3>Service Delivery</h3>
-      <p>Provide AI-powered real estate closing tools and automated communication workflows.</p>
+      {/* Usage Cards */}
+      <div className="grid md:grid-cols-2 gap-4 my-8 not-prose">
+        <div className="bg-slate-700/30 border border-slate-600/50 rounded-lg p-6">
+          <h3 className="text-blue-300 font-semibold mb-3 flex items-center">
+            <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+            Service Delivery
+          </h3>
+          <p className="text-slate-300 text-sm">Provide AI-powered real estate closing tools and automated communication workflows.</p>
+        </div>
+        <div className="bg-slate-700/30 border border-slate-600/50 rounded-lg p-6">
+          <h3 className="text-blue-300 font-semibold mb-3 flex items-center">
+            <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+            Account Management
+          </h3>
+          <p className="text-slate-300 text-sm">Manage your subscriptions, billing, and support requests.</p>
+        </div>
+        <div className="bg-slate-700/30 border border-slate-600/50 rounded-lg p-6">
+          <h3 className="text-blue-300 font-semibold mb-3 flex items-center">
+            <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+            Platform Improvement
+          </h3>
+          <p className="text-slate-300 text-sm">Analyze usage patterns to enhance features and user experience.</p>
+        </div>
+        <div className="bg-slate-700/30 border border-slate-600/50 rounded-lg p-6">
+          <h3 className="text-blue-300 font-semibold mb-3 flex items-center">
+            <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+            Communication
+          </h3>
+          <p className="text-slate-300 text-sm">Send important updates, notifications, and relevant service information.</p>
+        </div>
+      </div>
 
-      <h3>Account Management</h3>
-      <p>Manage your subscriptions, billing, and support requests.</p>
-
-      <h3>Platform Improvement</h3>
-      <p>Analyze usage patterns to enhance features and user experience.</p>
-
-      <h3>Communication</h3>
-      <p>Send important updates, notifications, and relevant service information.</p>
-
-      <h3>Legal Compliance</h3>
-      <p>Fulfill regulatory requirements including real estate compliance and ensure service integrity.</p>
+      <div className="bg-green-600/10 border border-green-500/20 rounded-lg p-4 my-8">
+        <h3 className="text-green-300 font-semibold mb-2">Legal Compliance</h3>
+        <p className="text-slate-300 text-sm">Fulfill regulatory requirements including real estate compliance and ensure service integrity.</p>
+      </div>
 
       <h2>Data Processing Legal Basis</h2>
 
@@ -151,15 +177,33 @@ export default function PrivacyPage() {
       </ul>
 
       <h2>Contact Information</h2>
-      <p>
-        For privacy-related questions or to exercise your rights:
-      </p>
+      <p>For privacy-related questions or to exercise your rights:</p>
 
-      <p>
-        <strong>Privacy Contact:</strong> <a href="mailto:greg@zazatechnologies.com">greg@zazatechnologies.com</a><br />
-        <strong>Email:</strong> <a href="mailto:help@zazatechnologies.com">help@zazatechnologies.com</a><br />
-        <strong>Address:</strong> Zaza Technologies, Gumbertstraße 150, 40229 Düsseldorf, Deutschland
-      </p>
+      {/* Contact Card */}
+      <div className="bg-slate-700/30 border border-slate-600/50 rounded-lg p-6 my-8 not-prose">
+        <div className="space-y-4">
+          <div>
+            <h4 className="text-blue-300 font-semibold mb-2">Privacy Contact</h4>
+            <a href="mailto:greg@zazatechnologies.com" className="text-blue-400 hover:text-blue-300 transition-colors">
+              greg@zazatechnologies.com
+            </a>
+          </div>
+          <div>
+            <h4 className="text-blue-300 font-semibold mb-2">General Support</h4>
+            <a href="mailto:help@zazatechnologies.com" className="text-blue-400 hover:text-blue-300 transition-colors">
+              help@zazatechnologies.com
+            </a>
+          </div>
+          <div>
+            <h4 className="text-blue-300 font-semibold mb-2">Address</h4>
+            <p className="text-slate-300 text-sm">
+              Zaza Technologies<br />
+              Gumbertstraße 150<br />
+              40229 Düsseldorf, Deutschland
+            </p>
+          </div>
+        </div>
+      </div>
 
       <h2>Changes to This Policy</h2>
       <p>

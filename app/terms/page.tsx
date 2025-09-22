@@ -9,12 +9,16 @@ export const metadata: Metadata = {
 export default function TermsPage() {
   return (
     <PageShell title="Terms of Service">
-      <p><em>Last updated: January 1, 2025 | Effective: January 1, 2025</em></p>
-
-      <p>
-        These terms define how you can use our RealtyClose service. Please read them, as they contain
-        important information about legal and financial responsibilities.
-      </p>
+      {/* Important Notice Banner */}
+      <div className="bg-amber-600/10 border border-amber-500/20 rounded-lg p-4 mb-8">
+        <p className="text-amber-300 text-sm font-medium mb-2">
+          <strong>Last updated:</strong> January 1, 2025 | <strong>Effective:</strong> January 1, 2025
+        </p>
+        <p className="text-slate-300">
+          These terms define how you can use our RealtyClose service. Please read them, as they contain
+          important information about legal and financial responsibilities.
+        </p>
+      </div>
 
       <h2>Acceptance of Terms</h2>
       <p>
@@ -140,16 +144,27 @@ export default function TermsPage() {
       </ul>
 
       <h2>Professional Responsibility</h2>
-      <p>
-        RealtyClose is a tool to assist real estate professionals. You remain responsible for:
-      </p>
-      <ul>
-        <li>Compliance with real estate laws and regulations in your jurisdiction</li>
-        <li>Professional conduct and client relationships</li>
-        <li>Accuracy of information entered into our system</li>
-        <li>Meeting deadlines and contractual obligations</li>
-        <li>Maintaining appropriate professional licenses and certifications</li>
-      </ul>
+      <p>RealtyClose is a tool to assist real estate professionals. You remain responsible for:</p>
+
+      {/* Professional Responsibility Cards */}
+      <div className="grid md:grid-cols-2 gap-4 my-8 not-prose">
+        <div className="bg-purple-600/10 border border-purple-500/20 rounded-lg p-5">
+          <h4 className="text-purple-300 font-semibold mb-3">Legal Compliance</h4>
+          <p className="text-slate-300 text-sm">Compliance with real estate laws and regulations in your jurisdiction</p>
+        </div>
+        <div className="bg-purple-600/10 border border-purple-500/20 rounded-lg p-5">
+          <h4 className="text-purple-300 font-semibold mb-3">Professional Conduct</h4>
+          <p className="text-slate-300 text-sm">Professional conduct and client relationships</p>
+        </div>
+        <div className="bg-purple-600/10 border border-purple-500/20 rounded-lg p-5">
+          <h4 className="text-purple-300 font-semibold mb-3">Data Accuracy</h4>
+          <p className="text-slate-300 text-sm">Accuracy of information entered into our system</p>
+        </div>
+        <div className="bg-purple-600/10 border border-purple-500/20 rounded-lg p-5">
+          <h4 className="text-purple-300 font-semibold mb-3">Licensing</h4>
+          <p className="text-slate-300 text-sm">Maintaining appropriate professional licenses and certifications</p>
+        </div>
+      </div>
 
       <h2>Indemnification</h2>
       <p>

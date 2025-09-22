@@ -9,12 +9,16 @@ export const metadata: Metadata = {
 export default function CookiesPage() {
   return (
     <PageShell title="Cookie Policy">
-      <p><em>Last updated: January 1, 2025 | Effective: January 1, 2025</em></p>
-
-      <p>
-        Learn about how we use cookies and similar technologies to improve your experience, ensure
-        security, and provide our real estate closing services effectively.
-      </p>
+      {/* Info Banner */}
+      <div className="bg-green-600/10 border border-green-500/20 rounded-lg p-4 mb-8">
+        <p className="text-green-300 text-sm font-medium mb-2">
+          <strong>Last updated:</strong> January 1, 2025 | <strong>Effective:</strong> January 1, 2025
+        </p>
+        <p className="text-slate-300">
+          Learn about how we use cookies and similar technologies to improve your experience, ensure
+          security, and provide our real estate closing services effectively.
+        </p>
+      </div>
 
       <h2>What Are Cookies</h2>
       <p>
@@ -36,41 +40,50 @@ export default function CookiesPage() {
 
       <h2>Types of Cookies We Use</h2>
 
-      <h3>Essential Cookies</h3>
-      <p>
-        Required for basic website functionality, security, and user authentication.
-      </p>
-      <p><strong>Examples:</strong></p>
-      <ul>
-        <li>Login status, security tokens, language preferences</li>
-        <li>Shopping cart content and user preferences</li>
-        <li>Anti-fraud protection and security measures</li>
-        <li>Load balancing and server functionality</li>
-      </ul>
+      {/* Cookie Type Cards */}
+      <div className="space-y-6 my-8 not-prose">
+        <div className="bg-red-600/10 border border-red-500/20 rounded-lg p-6">
+          <h3 className="text-red-300 font-semibold mb-3 flex items-center">
+            <span className="w-3 h-3 bg-red-500 rounded-full mr-3"></span>
+            Essential Cookies
+          </h3>
+          <p className="text-slate-300 mb-4">Required for basic website functionality, security, and user authentication.</p>
+          <div className="grid md:grid-cols-2 gap-3">
+            <div className="text-sm text-slate-400">• Login status, security tokens, language preferences</div>
+            <div className="text-sm text-slate-400">• Shopping cart content and user preferences</div>
+            <div className="text-sm text-slate-400">• Anti-fraud protection and security measures</div>
+            <div className="text-sm text-slate-400">• Load balancing and server functionality</div>
+          </div>
+        </div>
 
-      <h3>Analytics and Performance Cookies</h3>
-      <p>
-        Monitor website performance and identify areas for improvement.
-      </p>
-      <p><strong>Examples:</strong></p>
-      <ul>
-        <li>Page views and popular content</li>
-        <li>User journey and navigation patterns</li>
-        <li>Performance metrics and error tracking</li>
-        <li>A/B testing and feature optimization</li>
-      </ul>
+        <div className="bg-blue-600/10 border border-blue-500/20 rounded-lg p-6">
+          <h3 className="text-blue-300 font-semibold mb-3 flex items-center">
+            <span className="w-3 h-3 bg-blue-500 rounded-full mr-3"></span>
+            Analytics and Performance Cookies
+          </h3>
+          <p className="text-slate-300 mb-4">Monitor website performance and identify areas for improvement.</p>
+          <div className="grid md:grid-cols-2 gap-3">
+            <div className="text-sm text-slate-400">• Page views and popular content</div>
+            <div className="text-sm text-slate-400">• User journey and navigation patterns</div>
+            <div className="text-sm text-slate-400">• Performance metrics and error tracking</div>
+            <div className="text-sm text-slate-400">• A/B testing and feature optimization</div>
+          </div>
+        </div>
 
-      <h3>Functionality Cookies</h3>
-      <p>
-        Enable enhanced features and personalized content.
-      </p>
-      <p><strong>Examples:</strong></p>
-      <ul>
-        <li>Remember your preferences and settings</li>
-        <li>Provide personalized content and recommendations</li>
-        <li>Enable social sharing and commenting features</li>
-        <li>Support customer service chat functions</li>
-      </ul>
+        <div className="bg-purple-600/10 border border-purple-500/20 rounded-lg p-6">
+          <h3 className="text-purple-300 font-semibold mb-3 flex items-center">
+            <span className="w-3 h-3 bg-purple-500 rounded-full mr-3"></span>
+            Functionality Cookies
+          </h3>
+          <p className="text-slate-300 mb-4">Enable enhanced features and personalized content.</p>
+          <div className="grid md:grid-cols-2 gap-3">
+            <div className="text-sm text-slate-400">• Remember your preferences and settings</div>
+            <div className="text-sm text-slate-400">• Provide personalized content and recommendations</div>
+            <div className="text-sm text-slate-400">• Enable social sharing and commenting features</div>
+            <div className="text-sm text-slate-400">• Support customer service chat functions</div>
+          </div>
+        </div>
+      </div>
 
       <h2>Third-Party Cookies</h2>
       <p>

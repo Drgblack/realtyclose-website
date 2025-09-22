@@ -9,27 +9,45 @@ export const metadata: Metadata = {
 export default function ImpressumPage() {
   return (
     <PageShell title="Impressum">
-      <h2>Angaben gemäß § 5 TMG</h2>
-      
-      <p>
-        <strong>Zaza Technologies UG (haftungsbeschränkt)</strong><br />
-        Gumbertstraße 150<br />
-        40229 Düsseldorf<br />
-        Deutschland
-      </p>
+      {/* Company Information Card */}
+      <div className="bg-slate-700/30 border border-slate-600/50 rounded-lg p-6 mb-8 not-prose">
+        <h2 className="text-blue-300 font-semibold mb-6 text-xl">Angaben gemäß § 5 TMG</h2>
+        
+        <div className="space-y-6">
+          <div>
+            <h3 className="text-white font-semibold mb-3">Unternehmen</h3>
+            <p className="text-slate-300">
+              <strong>Zaza Technologies UG (haftungsbeschränkt)</strong><br />
+              Gumbertstraße 150<br />
+              40229 Düsseldorf<br />
+              Deutschland
+            </p>
+          </div>
 
-      <p>
-        <strong>Handelsregister:</strong> [HRB-Nummer eintragen, sobald vorhanden]<br />
-        <strong>Registergericht:</strong> Amtsgericht Düsseldorf
-      </p>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div>
+              <h4 className="text-blue-300 font-semibold mb-2">Handelsregister</h4>
+              <p className="text-slate-300 text-sm">[HRB-Nummer eintragen, sobald vorhanden]</p>
+            </div>
+            <div>
+              <h4 className="text-blue-300 font-semibold mb-2">Registergericht</h4>
+              <p className="text-slate-300 text-sm">Amtsgericht Düsseldorf</p>
+            </div>
+          </div>
 
-      <h2>Vertreten durch den Geschäftsführer:</h2>
-      <p>Dr. Greg Blackburn</p>
+          <div>
+            <h4 className="text-blue-300 font-semibold mb-2">Geschäftsführer</h4>
+            <p className="text-slate-300">Dr. Greg Blackburn</p>
+          </div>
 
-      <h2>Kontakt</h2>
-      <p>
-        <strong>E-Mail:</strong> <a href="mailto:greg@zazatechnologies.com">greg@zazatechnologies.com</a>
-      </p>
+          <div>
+            <h4 className="text-blue-300 font-semibold mb-2">Kontakt</h4>
+            <a href="mailto:greg@zazatechnologies.com" className="text-blue-400 hover:text-blue-300 transition-colors">
+              greg@zazatechnologies.com
+            </a>
+          </div>
+        </div>
+      </div>
 
       <h2>Umsatzsteuer-ID</h2>
       <p>
@@ -94,19 +112,33 @@ export default function ImpressumPage() {
       </p>
 
       <h2>EU-Streitschlichtung</h2>
-      <p>
-        Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:<br />
-        <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">
+      
+      {/* EU Dispute Resolution Card */}
+      <div className="bg-blue-600/10 border border-blue-500/20 rounded-lg p-6 mb-8 not-prose">
+        <h3 className="text-blue-300 font-semibold mb-4">Online-Streitbeilegung (OS)</h3>
+        <p className="text-slate-300 mb-4">
+          Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
+        </p>
+        <a 
+          href="https://ec.europa.eu/consumers/odr/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-blue-400 hover:text-blue-300 transition-colors font-medium"
+        >
           https://ec.europa.eu/consumers/odr/
         </a>
-      </p>
-      <p>Unsere E-Mail-Adresse finden Sie oben im Impressum.</p>
+        <p className="text-slate-400 text-sm mt-3">Unsere E-Mail-Adresse finden Sie oben im Impressum.</p>
+      </div>
 
       <h2>Verbraucherstreitbeilegung/Universalschlichtungsstelle</h2>
-      <p>
-        Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
-        Verbraucherschlichtungsstelle teilzunehmen.
-      </p>
+      
+      {/* Consumer Dispute Resolution Notice */}
+      <div className="bg-amber-600/10 border border-amber-500/20 rounded-lg p-4 mb-8">
+        <p className="text-slate-300 text-sm">
+          Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
+          Verbraucherschlichtungsstelle teilzunehmen.
+        </p>
+      </div>
     </PageShell>
   );
 }
