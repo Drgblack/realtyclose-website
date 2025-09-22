@@ -9,13 +9,153 @@ export const metadata: Metadata = {
 export default function CookiesPage() {
   return (
     <PageShell title="Cookie Policy">
-      <p>We use essential cookies for security/session and optional analytics to improve the product.</p>
-      <h2>Categories</h2>
+      <p><em>Last updated: January 1, 2025 | Effective: January 1, 2025</em></p>
+
+      <p>
+        Learn about how we use cookies and similar technologies to improve your experience, ensure
+        security, and provide our real estate closing services effectively.
+      </p>
+
+      <h2>What Are Cookies</h2>
+      <p>
+        Cookies are small files that websites place on your device (computer, tablet, or mobile device)
+        when you visit them. They help websites remember information about your visit and can help make your
+        experience smoother and more personalized.
+      </p>
+
+      <h2>Similar Technologies</h2>
+      <p>
+        In addition to cookies, we may use other similar technologies including:
+      </p>
       <ul>
-        <li><strong>Essential</strong>: authentication, CSRF, load balancing</li>
-        <li><strong>Analytics (optional)</strong>: product usage insights</li>
+        <li><strong>Local Storage:</strong> Stores data locally on your browser</li>
+        <li><strong>Web Beacons:</strong> Small tracking pixels for analytics</li>
+        <li><strong>Third Party Tools:</strong> Social plugins and analytics tools</li>
+        <li><strong>First Party Data:</strong> Data we collect directly from your interactions</li>
       </ul>
-      <p>You can control analytics consent in your browser or through our product settings (if available).</p>
+
+      <h2>Types of Cookies We Use</h2>
+
+      <h3>Essential Cookies</h3>
+      <p>
+        Required for basic website functionality, security, and user authentication.
+      </p>
+      <p><strong>Examples:</strong></p>
+      <ul>
+        <li>Login status, security tokens, language preferences</li>
+        <li>Shopping cart content and user preferences</li>
+        <li>Anti-fraud protection and security measures</li>
+        <li>Load balancing and server functionality</li>
+      </ul>
+
+      <h3>Analytics and Performance Cookies</h3>
+      <p>
+        Monitor website performance and identify areas for improvement.
+      </p>
+      <p><strong>Examples:</strong></p>
+      <ul>
+        <li>Page views and popular content</li>
+        <li>User journey and navigation patterns</li>
+        <li>Performance metrics and error tracking</li>
+        <li>A/B testing and feature optimization</li>
+      </ul>
+
+      <h3>Functionality Cookies</h3>
+      <p>
+        Enable enhanced features and personalized content.
+      </p>
+      <p><strong>Examples:</strong></p>
+      <ul>
+        <li>Remember your preferences and settings</li>
+        <li>Provide personalized content and recommendations</li>
+        <li>Enable social sharing and commenting features</li>
+        <li>Support customer service chat functions</li>
+      </ul>
+
+      <h2>Third-Party Cookies</h2>
+      <p>
+        Some cookies are placed by third-party services that appear on our pages. We may also provide
+        advertising through third-party advertising networks.
+      </p>
+
+      <h3>Enhanced Features</h3>
+      <ul>
+        <li>Authentication and single sign-on services</li>
+        <li>Social media integration and sharing</li>
+        <li>Customer support chat functionality</li>
+        <li>Video and multimedia content delivery</li>
+        <li>Analytics and performance monitoring</li>
+        <li>Advertising and marketing optimization</li>
+      </ul>
+
+      <h2>Cookie Consent Banner</h2>
+      <p>
+        When you visit our website, you'll see a cookie banner where you can:</p>
+      <ul>
+        <li>Accept all cookies</li>
+        <li>Reject non-essential cookies</li>
+        <li>Customize your preferences</li>
+        <li>Learn more about each cookie type</li>
+      </ul>
+
+      <h2>Managing Your Cookie Preferences</h2>
+
+      <h3>Browser Settings</h3>
+      <p>
+        Most web browsers allow you to control cookies through their settings. You can:
+      </p>
+      <ul>
+        <li>View which cookies are stored and delete them individually</li>
+        <li>Block third-party cookies</li>
+        <li>Block all cookies from specific sites</li>
+        <li>Block all cookies from being set</li>
+        <li>Delete all cookies when you close your browser</li>
+      </ul>
+
+      <p>
+        <strong>Note:</strong> If you disable essential cookies, some features may not work as expected, and you may need to re-enter your
+        information each time you visit.
+      </p>
+
+      <h3>Third-Party Opt-Out</h3>
+      <p>
+        You can opt out of certain third-party advertising cookies by visiting:
+      </p>
+      <ul>
+        <li>Digital Advertising Alliance: <a href="http://optout.aboutads.info/" target="_blank" rel="noopener noreferrer">http://optout.aboutads.info/</a></li>
+        <li>Network Advertising Initiative: <a href="http://optout.networkadvertising.org/" target="_blank" rel="noopener noreferrer">http://optout.networkadvertising.org/</a></li>
+        <li>Google Ads Settings: <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer">https://adssettings.google.com/</a></li>
+      </ul>
+
+      <h2>Cookie Retention</h2>
+      <p>
+        Cookies have different lifespans:
+      </p>
+      <ul>
+        <li><strong>Session Cookies:</strong> Deleted when you close your browser</li>
+        <li><strong>Persistent Cookies:</strong> Remain for a set period (typically 1-24 months)</li>
+        <li><strong>Essential Cookies:</strong> May persist longer for security purposes</li>
+        <li><strong>Analytics Cookies:</strong> Usually expire after 2 years</li>
+      </ul>
+
+      <h2>Updates to This Policy</h2>
+      <p>
+        We may update this Cookie Policy from time to time to reflect changes in our practices, technology, or
+        legal requirements. We'll post the updated version on this page with a new effective date.
+      </p>
+
+      <h2>Contact Us</h2>
+      <p>
+        If you have questions about our use of cookies or this Cookie Policy, please contact us:
+      </p>
+      <ul>
+        <li>Email: <a href="mailto:help@zazatechnologies.com">help@zazatechnologies.com</a></li>
+        <li>Address: Zaza Technologies, Gumbertstraße 150, 40229 Düsseldorf, Deutschland</li>
+      </ul>
+
+      <p>
+        For more information about our privacy practices, please see our <a href="/privacy">Privacy Policy</a>.
+      </p>
     </PageShell>
   );
 }
