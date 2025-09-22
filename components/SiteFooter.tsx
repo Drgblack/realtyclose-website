@@ -145,7 +145,8 @@ export default function SiteFooter() {
         links: [
           { label: "Privacy Policy", href: "/privacy" },
           { label: "Terms of Service", href: "/terms" },
-          { label: "Cookies", href: "/cookies" }
+          { label: "Cookies", href: "/cookies" },
+          { label: "Impressum", href: "/impressum" }
         ]
       }
     ],
