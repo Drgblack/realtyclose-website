@@ -31,64 +31,112 @@ function Footer({ config, locale }: { config: any; locale: string }) {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
-          {/* Brand Section */}
-          <div className="lg:col-span-2">
-            <h3 className="text-lg font-semibold mb-4">{config.brand.name}</h3>
-            <p className="text-gray-300 mb-4">{config.brand.tagline}</p>
-            <p className="text-gray-400 text-sm mb-6">{config.brand.familyNote}</p>
-            <div className="flex space-x-4">
-              {config.brand.socials?.map((social: any, index: number) => (
-                <a
-                  key={index}
-                  href={social.href}
-                  className="text-gray-400 hover:text-white transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {getSocialIcon(social.type)}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Column 1 - Company */}
+          <div>
+            <h4 className="font-medium mb-4">Company</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="/about" className="text-gray-400 hover:text-white transition-colors">
+                  About Us
                 </a>
-              ))}
-            </div>
+              </li>
+              <li>
+                <a href="/contact" className="text-gray-400 hover:text-white transition-colors">
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a href="/blog" className="text-gray-400 hover:text-white transition-colors">
+                  Blog
+                </a>
+              </li>
+            </ul>
           </div>
 
-          {/* Navigation Columns */}
-          {config.columns?.map((column: any, index: number) => (
-            <div key={index}>
-              <h4 className="font-medium mb-4">{column.title}</h4>
-              <ul className="space-y-2">
-                {column.links?.map((link: any, linkIndex: number) => (
-                  <li key={linkIndex}>
-                    <a
-                      href={link.href}
-                      className="text-gray-400 hover:text-white transition-colors"
-                    >
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
+          {/* Column 2 - Legal */}
+          <div>
+            <h4 className="font-medium mb-4">Legal</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="/privacy" className="text-gray-400 hover:text-white transition-colors">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="/terms" className="text-gray-400 hover:text-white transition-colors">
+                  Terms of Service
+                </a>
+              </li>
+              <li>
+                <a href="/cookies" className="text-gray-400 hover:text-white transition-colors">
+                  Cookies
+                </a>
+              </li>
+              <li>
+                <a href="/impressum" className="text-gray-400 hover:text-white transition-colors">
+                  Impressum
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Column 3 - Connect */}
+          <div>
+            <h4 className="font-medium mb-4">Connect</h4>
+            <div className="space-y-4">
+              <div>
+                <p className="text-gray-400 text-sm mb-2">Email:</p>
+                <a 
+                  href="mailto:help@zazatechnologies.com" 
+                  className="text-white hover:text-gray-300 transition-colors font-medium"
+                >
+                  help@zazatechnologies.com
+                </a>
+              </div>
+              
+              <div>
+                <p className="text-gray-400 text-sm mb-3">Follow Us:</p>
+                <div className="flex space-x-4">
+                  <a
+                    href="https://www.tiktok.com/@zazatechnologies"
+                    className="text-gray-400 hover:text-white transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Follow us on TikTok"
+                  >
+                    {getSocialIcon("tiktok")}
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/zaza-technologies"
+                    className="text-gray-400 hover:text-white transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Follow us on LinkedIn"
+                  >
+                    {getSocialIcon("linkedin")}
+                  </a>
+                  <a
+                    href="https://twitter.com/zazatech"
+                    className="text-gray-400 hover:text-white transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Follow us on Twitter/X"
+                  >
+                    {getSocialIcon("x")}
+                  </a>
+                </div>
+              </div>
             </div>
-          ))}
+          </div>
         </div>
 
-        {/* Bottom Section */}
+        {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-12 pt-8">
-          <div className="flex flex-col sm:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">{config.bottom?.copyright}</p>
-            <div className="flex space-x-6 mt-4 sm:mt-0">
-              {config.bottom?.family?.map((link: any, index: number) => (
-                <a
-                  key={index}
-                  href={link.href}
-                  className="text-gray-400 hover:text-white transition-colors text-sm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {link.label}
-                </a>
-              ))}
-            </div>
+          <div className="text-center">
+            <p className="text-gray-400 text-sm">
+              © 2025 RealtyClose (part of Zaza Technologies). All rights reserved.
+            </p>
           </div>
         </div>
       </div>
@@ -97,66 +145,5 @@ function Footer({ config, locale }: { config: any; locale: string }) {
 }
 
 export default function SiteFooter() {
-  const config = {
-    productId: "realtyclose",
-    productName: "RealtyClose",
-    productKey: "realtyclose",
-    locales: ["en"],
-    brand: {
-      name: "RealtyClose",
-      tagline:
-        "RealtyClose simplifies real estate closings with automated communication, reminders, and secure workflows.",
-      familyNote:
-        "Part of the Zaza Technologies family building trusted, AI-powered tools for professionals.",
-      socials: [
-        { type: "tiktok", href: "https://www.tiktok.com/@zazatechnologies" },
-        { type: "linkedin", href: "https://www.linkedin.com/company/zaza-tech" },
-        { type: "x", href: "https://twitter.com/zazatech" }
-      ]
-    },
-    columns: [
-      {
-        title: "Product",
-        links: [
-          { label: "Features", href: "/features" },
-          { label: "Pricing", href: "/pricing" },
-          { label: "Install Extension", href: "/install" },
-          { label: "Demo", href: "/demo" }
-        ]
-      },
-      {
-        title: "Resources",
-        links: [
-          { label: "Blog", href: "/blog" },
-          { label: "Security", href: "/security" },
-          { label: "Support", href: "/contact" }
-        ]
-      },
-      {
-        title: "Company",
-        links: [
-          { label: "About Us", href: "/about" },
-          { label: "Contact", href: "/contact" }
-        ]
-      },
-      {
-        title: "Legal",
-        links: [
-          { label: "Privacy Policy", href: "/privacy" },
-          { label: "Terms of Service", href: "/terms" },
-          { label: "Cookies", href: "/cookies" },
-          { label: "Impressum", href: "/impressum" }
-        ]
-      }
-    ],
-    bottom: {
-      copyright: "© 2025 RealtyClose. All rights reserved.",
-      family: [
-        { label: "Zaza Technologies", href: "https://zazatechnologies.com" },
-        { label: "Zaza Promptly", href: "https://zazapromptly.com" }
-      ]
-    }
-  };
-  
-  return <Footer config={config} locale="en" />;
+  return <Footer config={{}} locale="en" />;
 }
