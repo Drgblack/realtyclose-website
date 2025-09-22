@@ -3,7 +3,10 @@ import { Footer } from "@drgblack/shared-ui";
 
 export default function SiteFooter() {
   const config = {
+    productId: "realtyclose",
+    productName: "RealtyClose",
     productKey: "realtyclose",
+    locales: ["en"],
     brand: {
       name: "RealtyClose",
       tagline:
