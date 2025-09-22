@@ -53,10 +53,17 @@ export default function HowItWorksSection() {
         </div>
 
         <div className="text-center mt-16">
+          <div className="bg-blue-50 p-8 rounded-xl mb-8 max-w-4xl mx-auto">
+            <blockquote className="text-lg text-gray-700 italic mb-4">
+              "We closed three deals that were about to fall apart because RealtyClose kept us on top of every follow-up."
+            </blockquote>
+            <cite className="text-blue-700 font-semibold">– Transaction Coordinator</cite>
+          </div>
+          
           <button className="btn-primary text-white px-8 py-4 rounded-xl font-semibold text-lg">
-            Try It Free - Install Extension
+            Try It Free – Install Extension
           </button>
-          <p className="text-sm text-gray-500 mt-3">No credit card required • Free forever plan available</p>
+          <p className="text-sm text-gray-500 mt-3">No credit card required</p>
         </div>
       </div>
     </section>

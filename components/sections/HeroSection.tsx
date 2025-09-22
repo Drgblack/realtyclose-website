@@ -13,12 +13,12 @@ export default function HeroSection() {
               </div>
             </div>
             <h1 className="heading-xl text-gray-900 text-balance">
-              The Enterprise Real Estate Platform{' '}
-              <span className="gradient-text">Starting</span>{' '}
-              With Your Gmail
+              Reply in Seconds.{' '}
+              <span className="gradient-text">Close Deals</span>{' '}
+              Faster.
             </h1>
             <p className="subtitle text-gray-600 text-balance">
-              While others promise everything and deliver nothing, we're building the complete real estate operating system one powerful feature at a time. Start with our AI email assistant today.
+              RealtyClose is the Gmail-first AI assistant that turns hours of messy transaction emails into consistent, professional, and on-time communication.
             </p>
             
             <div className="mt-8 grid md:grid-cols-2 gap-6">

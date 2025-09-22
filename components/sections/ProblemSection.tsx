@@ -4,11 +4,10 @@ export default function ProblemSection() {
       <div className="max-w-7xl mx-auto container-spacing">
         <div className="text-center mb-16">
           <h2 className="heading-lg text-gray-900 mb-6 text-balance">
-            Real Estate Agents Spend 3+ Hours Daily Writing Emails
+            The Email Productivity Crisis
           </h2>
           <p className="subtitle text-gray-700 max-w-3xl mx-auto text-balance">
-            Every minute you spend crafting the perfect email is a minute you're not selling homes. 
-            Here's what's killing your productivity:
+            Real estate professionals lose 30+ hours per transaction rewriting emails, chasing missing follow-ups, and fixing miscommunication.
           </p>
         </div>
 
@@ -48,19 +47,22 @@ export default function ProblemSection() {
         </div>
 
         <div className="text-center glass-card p-8 rounded-2xl hover:shadow-2xl transition-all duration-500">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">The Email Productivity Crisis</h3>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-4 gap-6">
+            <div>
+              <div className="text-3xl font-bold text-red-600 mb-2">49%</div>
+              <div className="text-gray-700">of managers have seen a deal delayed or lost due to missed communication</div>
+            </div>
             <div>
               <div className="text-3xl font-bold text-red-600 mb-2">3.2 hrs</div>
-              <div className="text-gray-700">Average time agents spend on email daily</div>
+              <div className="text-gray-700">daily wasted on email by the average agent</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-red-600 mb-2">87%</div>
-              <div className="text-gray-700">Of agents say email is their #1 time waster</div>
+              <div className="text-gray-700">of agents say email is their #1 time waster</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-red-600 mb-2">23%</div>
-              <div className="text-gray-700">Response rate drops after 1 hour delay</div>
+              <div className="text-gray-700">lower response rate if a reply takes more than one hour</div>
             </div>
           </div>
         </div>
