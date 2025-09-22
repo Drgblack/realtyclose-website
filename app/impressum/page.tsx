@@ -11,7 +11,7 @@ export default function ImpressumPage() {
     <PageShell title="Impressum">
       <p><strong>RealtyClose</strong> • Part of Zaza Technologies</p>
       <p>Registered office: Gumbertstraße 150, 40229 Düsseldorf, Deutschland</p>
-      <p>Contact: <a href="mailto:support@realtyclose.com">support@realtyclose.com</a></p>
+      <p>Contact: <a href="mailto:help@zazatechnologies.com">help@zazatechnologies.com</a></p>
     </PageShell>
   );
 }

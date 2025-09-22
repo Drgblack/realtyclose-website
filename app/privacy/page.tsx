@@ -41,7 +41,7 @@ export default function PrivacyPage() {
       <h2>Your Rights</h2>
       <p>
         You may request access, correction, export, or deletion of your personal data where applicable.
-        Contact: <a href="mailto:support@realtyclose.com">support@realtyclose.com</a>.
+        Contact: <a href="mailto:help@zazatechnologies.com">help@zazatechnologies.com</a>.
       </p>
 
       <h2>Contact</h2>

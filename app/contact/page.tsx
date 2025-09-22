@@ -11,7 +11,7 @@ export default function ContactPage() {
     <PageShell title="Contact">
       <p>We'd love to help. Email us and we'll reply ASAP.</p>
       <ul>
-        <li>Support: <a href="mailto:support@realtyclose.com">support@realtyclose.com</a></li>
+        <li>Support: <a href="mailto:help@zazatechnologies.com">help@zazatechnologies.com</a></li>
         <li>Sales: <a href="mailto:sales@realtyclose.com">sales@realtyclose.com</a></li>
         <li>Legal: <a href="mailto:legal@realtyclose.com">legal@realtyclose.com</a></li>
       </ul>

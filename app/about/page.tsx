@@ -32,7 +32,7 @@ export default function AboutPage() {
       </p>
       <h2>Contact</h2>
       <p>
-        Questions? Reach us at <a href="mailto:support@realtyclose.com">support@realtyclose.com</a>.
+        Questions? Reach us at <a href="mailto:help@zazatechnologies.com">help@zazatechnologies.com</a>.
       </p>
     </PageShell>
   );
