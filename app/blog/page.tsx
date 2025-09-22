@@ -11,6 +11,62 @@ export const metadata: Metadata = {
 const blogPosts = [
   {
     id: 1,
+    title: "Reclaim 30+ Hours Per Transaction By Fixing Email Chaos",
+    excerpt: "A practical Gmail-first system to win back your week and keep deals on track.",
+    date: "January 22, 2025",
+    readTime: "6 min read",
+    category: "Productivity",
+    slug: "reclaim-30-hours-per-transaction",
+    author: "Dr. Greg Blackburn",
+    authorTitle: "RealtyClose Editorial",
+    featured: true
+  },
+  {
+    id: 2,
+    title: "Never Lose A Deal To Missed Follow-ups Again",
+    excerpt: "A follow-up framework that scales with your pipeline and protects your closings.",
+    date: "January 22, 2025",
+    readTime: "5 min read",
+    category: "Systems",
+    slug: "never-lose-a-deal-follow-up-system",
+    author: "Dr. Greg Blackburn",
+    authorTitle: "RealtyClose Editorial"
+  },
+  {
+    id: 3,
+    title: "Consistent, Professional Tone At Scale",
+    excerpt: "How to sound like the best version of yourself in every client message.",
+    date: "January 22, 2025",
+    readTime: "5 min read",
+    category: "Brand",
+    slug: "consistent-communication-builds-trust",
+    author: "Dr. Greg Blackburn",
+    authorTitle: "RealtyClose Editorial"
+  },
+  {
+    id: 4,
+    title: "The TC Handoff Playbook",
+    excerpt: "Four moves that remove friction between agents and coordinators.",
+    date: "January 22, 2025",
+    readTime: "6 min read",
+    category: "Team",
+    slug: "tc-handoff-playbook",
+    author: "Dr. Greg Blackburn",
+    authorTitle: "RealtyClose Editorial"
+  },
+  {
+    id: 5,
+    title: "Why A Gmail-First Assistant Beats Heavy CRMs For Busy Teams",
+    excerpt: "Faster setup, lower cost, zero disruption to your daily work.",
+    date: "January 22, 2025",
+    readTime: "5 min read",
+    category: "Adoption",
+    slug: "why-gmail-first-beats-crms",
+    author: "Dr. Greg Blackburn",
+    authorTitle: "RealtyClose Editorial"
+  },
+  {
+    id: 6,
     title: "10 AI Email Templates That Close More Deals",
     excerpt: "Discover proven email templates powered by AI that convert leads into clients faster than traditional approaches.",
     date: "January 15, 2025",
@@ -21,7 +77,7 @@ const blogPosts = [
     authorTitle: "Real Estate Tech Consultant"
   },
   {
-    id: 2,
+    id: 7,
     title: "The Future of Real Estate Communication",
     excerpt: "How AI is revolutionizing client communication in real estate and what it means for your business.",
     date: "January 10, 2025",
@@ -32,7 +88,7 @@ const blogPosts = [
     authorTitle: "Senior Product Manager"
   },
   {
-    id: 3,
+    id: 8,
     title: "Gmail Integration Best Practices for Agents",
     excerpt: "Maximize your productivity with these Gmail workflow optimizations specifically designed for real estate professionals.",
     date: "January 5, 2025",
@@ -43,7 +99,7 @@ const blogPosts = [
     authorTitle: "Productivity Coach"
   },
   {
-    id: 4,
+    id: 9,
     title: "Protecting Client Privacy in Digital Communications",
     excerpt: "Essential security measures every real estate agent should implement when communicating with clients online.",
     date: "December 28, 2024",
@@ -54,7 +110,7 @@ const blogPosts = [
     authorTitle: "Security Specialist"
   },
   {
-    id: 5,
+    id: 10,
     title: "Automating Follow-ups Without Losing Personal Touch",
     excerpt: "Strike the perfect balance between efficiency and personalization in your client follow-up strategy.",
     date: "December 20, 2024",
@@ -65,7 +121,7 @@ const blogPosts = [
     authorTitle: "Real Estate Coach"
   },
   {
-    id: 6,
+    id: 11,
     title: "RealtyClose vs Traditional Email: ROI Analysis",
     excerpt: "A comprehensive breakdown of time savings and increased conversion rates with AI-powered email assistance.",
     date: "December 15, 2024",
@@ -77,13 +133,17 @@ const blogPosts = [
   }
 ];
 
+// Get featured post and other posts
+const featuredPost = blogPosts.find(post => post.featured);
+const otherPosts = blogPosts.filter(post => !post.featured);
+
 const categories = ["All", "Templates", "Industry Insights", "Productivity", "Security", "Best Practices", "Case Studies"];
 
 export default function BlogPage() {
   return (
     <PageShell title="Real Estate Insights & Tips">
       {/* Blog Introduction */}
-      <div className="mb-12 text-center">
+      <div className="mb-12 text-center max-w-[1200px] mx-auto">
         <p className="text-xl text-blue-300 font-medium mb-4">
           <strong>Expert insights for modern real estate professionals</strong>
         </p>
@@ -92,126 +152,114 @@ export default function BlogPage() {
         </p>
       </div>
 
-      {/* Category Filter */}
-      <div className="mb-12">
-        <div className="flex flex-wrap gap-3 justify-center">
-          {categories.map((category) => (
-            <button
-              key={category}
-              className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                category === "All" 
-                  ? "bg-blue-500 text-white" 
-                  : "bg-slate-700/30 border border-slate-600/50 text-slate-300 hover:bg-slate-600/50"
-              }`}
-            >
-              {category}
-            </button>
-          ))}
-        </div>
-      </div>
-
       {/* Featured Post */}
-      <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 border border-blue-500/20 rounded-xl p-8 mb-12">
-        <div className="grid md:grid-cols-2 gap-8 items-center">
-          <div>
-            <span className="text-blue-300 text-sm font-medium">📌 Featured Post</span>
-            <h2 className="text-2xl font-bold text-white mt-2 mb-4">
-              10 AI Email Templates That Close More Deals
-            </h2>
-            <p className="text-slate-300 mb-6">
-              Discover proven email templates powered by AI that convert leads into clients faster than traditional approaches. These templates have been tested with over 500 real estate professionals.
-            </p>
-            <div className="flex items-center text-slate-400 text-sm mb-6">
-              <span>By Sarah Chen</span>
-              <span className="mx-3">•</span>
-              <span>January 15, 2025</span>
-              <span className="mx-3">•</span>
-              <span>6 min read</span>
-              <span className="mx-3">•</span>
-              <span className="bg-blue-500/20 text-blue-300 px-2 py-1 rounded">Templates</span>
-            </div>
-            <Link href="/blog/ai-email-templates-close-deals" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-lg font-medium transition-colors inline-block">
-              Read Full Article →
-            </Link>
-          </div>
-          <div className="hidden md:block">
-            <div className="bg-slate-700/30 border border-slate-600/50 rounded-xl p-6 text-center">
-              <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">📧</span>
-              </div>
-              <h4 className="text-lg font-semibold text-blue-300 mb-2">AI-Powered Templates</h4>
-              <p className="text-slate-400 text-sm">
-                Proven email templates that convert 3x better than generic messages
+      {featuredPost && (
+        <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 border border-blue-500/20 rounded-xl p-8 mb-12 max-w-[1200px] mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <span className="text-blue-300 text-sm font-medium">📌 Featured Post</span>
+              <h2 className="text-3xl font-bold text-white mt-2 mb-4">
+                {featuredPost.title}
+              </h2>
+              <p className="text-slate-300 mb-6 text-lg">
+                {featuredPost.excerpt}
               </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Newsletter Signup */}
-      <div className="bg-gradient-to-r from-green-600/10 to-blue-600/10 border border-green-500/20 rounded-xl p-8 my-12">
-        <div className="text-center">
-          <h2 className="text-2xl font-bold text-white mb-4">📰 Stay Updated</h2>
-          <p className="text-slate-300 mb-6">
-            Get the latest real estate AI insights and productivity tips delivered to your inbox weekly
-          </p>
-          <div className="max-w-md mx-auto flex gap-3">
-            <input 
-              type="email" 
-              placeholder="Enter your email"
-              className="flex-1 bg-slate-800/50 border border-slate-600/50 rounded-lg px-4 py-2 text-white placeholder:text-slate-400 focus:outline-none focus:border-blue-500"
-            />
-            <button className="bg-green-500 hover:bg-green-600 text-white py-2 px-6 rounded-lg font-medium transition-colors whitespace-nowrap">
-              Subscribe
-            </button>
-          </div>
-          <p className="text-slate-400 text-xs mt-3">
-            No spam. Unsubscribe anytime. 2,000+ agents already subscribed.
-          </p>
-        </div>
-      </div>
-
-      {/* Blog Posts Grid */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 my-12 not-prose">
-        {blogPosts.slice(1).map((post) => (
-          <Link key={post.id} href={`/blog/${post.slug}`}>
-            <article className="bg-slate-700/30 border border-slate-600/50 rounded-xl p-6 hover:bg-slate-600/30 transition-colors group cursor-pointer">
-              <div className="mb-4">
+              <div className="flex items-center text-slate-400 text-sm mb-6">
+                <span>By {featuredPost.author}</span>
+                <span className="mx-3">•</span>
+                <span>{featuredPost.date}</span>
+                <span className="mx-3">•</span>
+                <span>{featuredPost.readTime}</span>
+                <span className="mx-3">•</span>
                 <span className={`text-xs font-medium px-2 py-1 rounded ${
-                  post.category === "Templates" ? "bg-blue-500/20 text-blue-300" :
-                  post.category === "Industry Insights" ? "bg-green-500/20 text-green-300" :
-                  post.category === "Productivity" ? "bg-purple-500/20 text-purple-300" :
-                  post.category === "Security" ? "bg-red-500/20 text-red-300" :
-                  post.category === "Best Practices" ? "bg-yellow-500/20 text-yellow-300" :
+                  featuredPost.category === "Productivity" ? "bg-purple-500/20 text-purple-300" :
+                  featuredPost.category === "Templates" ? "bg-blue-500/20 text-blue-300" :
                   "bg-orange-500/20 text-orange-300"
                 }`}>
-                  {post.category}
+                  {featuredPost.category}
                 </span>
               </div>
-              
-              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors">
-                {post.title}
-              </h3>
-              
-              <p className="text-slate-300 mb-4 text-sm leading-relaxed">
-                {post.excerpt}
-              </p>
-              
-              <div className="flex items-center justify-between text-slate-400 text-xs">
-                <div className="flex items-center">
-                  <span>By {post.author}</span>
-                  <span className="mx-2">•</span>
-                  <span>{post.date}</span>
-                  <span className="mx-2">•</span>
-                  <span>{post.readTime}</span>
+              <Link href={`/blog/${featuredPost.slug}`} className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-8 rounded-lg font-medium transition-colors inline-block">
+                Read Full Article →
+              </Link>
+            </div>
+            <div className="hidden md:block">
+              <div className="bg-slate-700/30 border border-slate-600/50 rounded-xl p-6 text-center">
+                <div className="w-16 h-16 bg-blue-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <span className="text-3xl">⏰</span>
                 </div>
-                <span className="text-blue-400 group-hover:text-blue-300 font-medium transition-colors">
-                  Read more →
-                </span>
+                <h4 className="text-lg font-semibold text-blue-300 mb-2">Reclaim Your Time</h4>
+                <p className="text-slate-400 text-sm">
+                  A practical system to win back 30+ hours per transaction
+                </p>
               </div>
-            </article>
-          </Link>
-        ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Lightweight Email Capture */}
+      <div className="bg-gradient-to-r from-green-600/10 to-blue-600/10 border border-green-500/20 rounded-xl p-6 my-12 max-w-[1200px] mx-auto text-center">
+        <h3 className="text-lg font-bold text-white mb-3">Get one practical email systems tip each week</h3>
+        <p className="text-slate-300 mb-4 text-sm">No spam.</p>
+        <div className="max-w-sm mx-auto flex gap-3">
+          <input 
+            type="email" 
+            placeholder="Enter your email"
+            className="flex-1 bg-slate-800/50 border border-slate-600/50 rounded-lg px-4 py-2 text-white placeholder:text-slate-400 focus:outline-none focus:border-blue-500 text-sm"
+          />
+          <button className="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg font-medium transition-colors whitespace-nowrap text-sm">
+            Subscribe
+          </button>
+        </div>
+      </div>
+
+      {/* Recent Posts Grid */}
+      <div className="max-w-[1200px] mx-auto">
+        <h2 className="text-2xl font-bold text-white mb-8 text-center">Recent Posts</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {otherPosts.slice(0, 6).map((post) => (
+            <Link key={post.id} href={`/blog/${post.slug}`}>
+              <article className="bg-slate-700/30 border border-slate-600/50 rounded-xl p-6 hover:bg-slate-600/30 transition-colors group cursor-pointer h-full">
+                <div className="mb-4">
+                  <span className={`text-xs font-medium px-2 py-1 rounded ${
+                    post.category === "Templates" ? "bg-blue-500/20 text-blue-300" :
+                    post.category === "Industry Insights" ? "bg-green-500/20 text-green-300" :
+                    post.category === "Productivity" ? "bg-purple-500/20 text-purple-300" :
+                    post.category === "Security" ? "bg-red-500/20 text-red-300" :
+                    post.category === "Best Practices" ? "bg-yellow-500/20 text-yellow-300" :
+                    post.category === "Systems" ? "bg-teal-500/20 text-teal-300" :
+                    post.category === "Brand" ? "bg-pink-500/20 text-pink-300" :
+                    post.category === "Team" ? "bg-orange-500/20 text-orange-300" :
+                    post.category === "Adoption" ? "bg-indigo-500/20 text-indigo-300" :
+                    "bg-slate-500/20 text-slate-300"
+                  }`}>
+                    {post.category}
+                  </span>
+                </div>
+                
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors">
+                  {post.title}
+                </h3>
+                
+                <p className="text-slate-300 mb-4 text-sm leading-relaxed">
+                  {post.excerpt}
+                </p>
+                
+                <div className="flex items-center justify-between text-slate-400 text-xs mt-auto">
+                  <div className="flex items-center">
+                    <span>By {post.author}</span>
+                    <span className="mx-2">•</span>
+                    <span>{post.readTime}</span>
+                  </div>
+                  <span className="text-blue-400 group-hover:text-blue-300 font-medium transition-colors">
+                    Read more →
+                  </span>
+                </div>
+              </article>
+            </Link>
+          ))}
+        </div>
       </div>
 
       {/* Popular Topics */}
