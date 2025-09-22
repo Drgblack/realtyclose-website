@@ -1,12 +1,12 @@
 import * as React from "react";
-import { Footer } from "@drgblack/shared-ui";
+import { Footer, type Locale, type ProductConfig } from "@drgblack/shared-ui";
 
 export default function SiteFooter() {
-  const config = {
+  const config: ProductConfig = {
     productId: "realtyclose",
     productName: "RealtyClose",
     productKey: "realtyclose",
-    locales: ["en" as const],
+    locales: ["en"] as Locale[],
     brand: {
       name: "RealtyClose",
       tagline:
@@ -14,9 +14,9 @@ export default function SiteFooter() {
       familyNote:
         "Part of the Zaza Technologies family building trusted, AI-powered tools for professionals.",
       socials: [
-        { type: "tiktok", href: "https://www.tiktok.com/@zazatechnologies" },
-        { type: "linkedin", href: "https://www.linkedin.com/company/zaza-tech" },
-        { type: "x", href: "https://twitter.com/zazatech" }
+        { type: "tiktok" as const, href: "https://www.tiktok.com/@zazatechnologies" },
+        { type: "linkedin" as const, href: "https://www.linkedin.com/company/zaza-tech" },
+        { type: "x" as const, href: "https://twitter.com/zazatech" }
       ]
     },
     columns: [
