@@ -121,7 +121,7 @@ export default function PrivacyPage() {
       </ul>
 
       <p>
-        To exercise these rights, contact us at <a href="mailto:help@zazatechnologies.com">help@zazatechnologies.com</a>.
+        To exercise these rights, contact us at <a href="mailto:privacy@realtyclose.com">privacy@realtyclose.com</a>.
       </p>
 
       <h2>Data Retention</h2>
@@ -184,8 +184,8 @@ export default function PrivacyPage() {
         <div className="space-y-4">
           <div>
             <h4 className="text-blue-300 font-semibold mb-2">Privacy Contact</h4>
-            <a href="mailto:greg@zazatechnologies.com" className="text-blue-400 hover:text-blue-300 transition-colors">
-              greg@zazatechnologies.com
+            <a href="mailto:privacy@realtyclose.com" className="text-blue-400 hover:text-blue-300 transition-colors">
+              privacy@realtyclose.com
             </a>
           </div>
           <div>

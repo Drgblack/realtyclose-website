@@ -118,18 +118,18 @@ export default function SiteFooter() {
       {
         title: "Product",
         links: [
-          { label: "Features", href: "/#features" },
-          { label: "Pricing", href: "/#pricing" },
-          { label: "Install Extension", href: "/#install" },
-          { label: "Demo", href: "/#demo" }
+          { label: "Features", href: "/features" },
+          { label: "Pricing", href: "/pricing" },
+          { label: "Install Extension", href: "/install" },
+          { label: "Demo", href: "/demo" }
         ]
       },
       {
         title: "Resources",
         links: [
           { label: "Blog", href: "/blog" },
-          { label: "Guides", href: "/guides" },
-          { label: "Support", href: "/support" }
+          { label: "Security", href: "/security" },
+          { label: "Support", href: "/contact" }
         ]
       },
       {

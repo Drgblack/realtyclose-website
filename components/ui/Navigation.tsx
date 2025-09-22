@@ -18,18 +18,17 @@ export default function Navigation() {
           
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              <a href="#features" className="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Features</a>
-              <a href="#dashboard" className="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Dashboard</a>
-              <a href="#pricing" className="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Pricing</a>
+              <Link href="/features" className="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Features</Link>
+              <Link href="/pricing" className="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Pricing</Link>
               <Link href="/blog" className="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Blog</Link>
-              <a href="#demo" className="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Demo</a>
+              <Link href="/demo" className="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Demo</Link>
             </div>
           </div>
           
           <div className="flex items-center space-x-4">
-            <button className="btn-primary text-white px-6 py-2 rounded-lg font-medium">
+            <Link href="/install" className="btn-primary text-white px-6 py-2 rounded-lg font-medium">
               Install Extension
-            </button>
+            </Link>
           </div>
         </div>
       </div>
