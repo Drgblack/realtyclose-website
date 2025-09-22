@@ -1,7 +1,7 @@
 export default function HeroSection() {
   return (
     <section className="relative overflow-hidden" style={{ background: 'var(--gradient-hero)' }}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+      <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-10 py-28">
         <div className="lg:grid lg:grid-cols-12 lg:gap-8">
           <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
             <div className="flex items-center justify-center lg:justify-start mb-6">
@@ -13,13 +13,29 @@ export default function HeroSection() {
               </div>
             </div>
             <h1 className="heading-xl text-gray-900 text-balance">
-              Reply in Seconds.{' '}
-              <span className="gradient-text">Close Deals</span>{' '}
-              Faster.
+              Turn messy real estate emails into{' '}
+              <span className="gradient-text">perfect client communication</span>{' '}
+              - in seconds.
             </h1>
             <p className="subtitle text-gray-600 text-balance">
               RealtyClose is the Gmail-first AI assistant that turns hours of messy transaction emails into consistent, professional, and on-time communication.
             </p>
+            
+            {/* Social Proof Stats */}
+            <div className="mt-6 grid grid-cols-3 gap-4">
+              <div className="text-center lg:text-left">
+                <div className="text-2xl font-bold text-gray-900">500+</div>
+                <div className="text-sm text-gray-600">Active Agents</div>
+              </div>
+              <div className="text-center lg:text-left">
+                <div className="text-2xl font-bold text-gray-900">10K+</div>
+                <div className="text-sm text-gray-600">Emails Drafted</div>
+              </div>
+              <div className="text-center lg:text-left">
+                <div className="text-2xl font-bold text-gray-900">3 hrs</div>
+                <div className="text-sm text-gray-600">Saved Daily</div>
+              </div>
+            </div>
             
             <div className="mt-8 grid md:grid-cols-2 gap-6">
               <div>

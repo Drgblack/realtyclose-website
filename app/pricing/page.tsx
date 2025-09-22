@@ -62,7 +62,7 @@ export default function PricingPage() {
         </div>
 
         {/* Professional Tier - Most Popular */}
-        <div className="bg-blue-600/10 border border-blue-500/50 rounded-xl p-8 relative">
+        <div className="bg-gradient-to-br from-blue-600/20 to-blue-500/10 border-2 border-blue-500 rounded-xl p-8 relative transform scale-105 shadow-xl">
           <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
             <span className="bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-medium">
               Most Popular
@@ -176,8 +176,11 @@ export default function PricingPage() {
       <div className="bg-gradient-to-r from-purple-600/10 to-blue-600/10 border border-purple-500/20 rounded-xl p-8 my-12">
         <div className="text-center">
           <h3 className="text-2xl font-bold text-white mb-4">Enterprise</h3>
+          <p className="text-slate-300 mb-4 text-lg font-medium">
+            Trusted by brokerages with 50+ agents
+          </p>
           <p className="text-slate-300 mb-6">
-            Custom solutions for large brokerages and organizations with 50+ agents
+            Built for compliance-driven teams. Custom solutions that scale with your brokerage.
           </p>
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="text-left">
@@ -213,28 +216,35 @@ export default function PricingPage() {
           <div className="bg-slate-700/30 border border-slate-600/50 rounded-lg p-6">
             <h3 className="text-lg font-semibold text-blue-300 mb-3">Can I cancel anytime?</h3>
             <p className="text-slate-300">
-              Yes, you can cancel your subscription at any time. Your access will continue until the end of your current billing period.
+              Yes - you're never locked in. Cancel whenever you like, and your account will stay active until the end of your billing period.
             </p>
           </div>
           
           <div className="bg-slate-700/30 border border-slate-600/50 rounded-lg p-6">
             <h3 className="text-lg font-semibold text-blue-300 mb-3">Is there a free trial?</h3>
             <p className="text-slate-300">
-              Yes! Professional and Team plans include a 14-day free trial. No credit card required to start.
+              Absolutely. Both Professional and Team plans come with a 14-day free trial. No credit card needed.
             </p>
           </div>
           
           <div className="bg-slate-700/30 border border-slate-600/50 rounded-lg p-6">
             <h3 className="text-lg font-semibold text-blue-300 mb-3">What happens to my data if I cancel?</h3>
             <p className="text-slate-300">
-              You can export your data at any time. After cancellation, we keep your data for 30 days in case you want to reactivate, then it's permanently deleted.
+              You can export all of your data at any time. After cancellation, we keep your data for 30 days in case you change your mind. After that, it's permanently deleted.
             </p>
           </div>
           
           <div className="bg-slate-700/30 border border-slate-600/50 rounded-lg p-6">
-            <h3 className="text-lg font-semibold text-blue-300 mb-3">Do you offer discounts for annual billing?</h3>
+            <h3 className="text-lg font-semibold text-blue-300 mb-3">Do you offer annual discounts?</h3>
             <p className="text-slate-300">
-              Yes! Save 20% when you pay annually. Contact our sales team for annual pricing details.
+              Yes - save 20% when you pay annually. Many brokerages choose this option to maximize savings.
+            </p>
+          </div>
+          
+          <div className="bg-slate-700/30 border border-slate-600/50 rounded-lg p-6">
+            <h3 className="text-lg font-semibold text-blue-300 mb-3">Do I need to install anything?</h3>
+            <p className="text-slate-300">
+              Just a simple Gmail extension. It works instantly with your existing Gmail - no setup headaches.
             </p>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import PageShell from "@/app/components/PageShell";
 
 export const metadata: Metadata = {
@@ -15,7 +16,9 @@ const blogPosts = [
     date: "January 15, 2025",
     readTime: "6 min read",
     category: "Templates",
-    slug: "ai-email-templates-close-deals"
+    slug: "ai-email-templates-close-deals",
+    author: "Sarah Chen",
+    authorTitle: "Real Estate Tech Consultant"
   },
   {
     id: 2,
@@ -24,7 +27,9 @@ const blogPosts = [
     date: "January 10, 2025",
     readTime: "4 min read",
     category: "Industry Insights",
-    slug: "future-real-estate-communication"
+    slug: "future-real-estate-communication",
+    author: "Michael Torres",
+    authorTitle: "Senior Product Manager"
   },
   {
     id: 3,
@@ -33,7 +38,9 @@ const blogPosts = [
     date: "January 5, 2025",
     readTime: "8 min read",
     category: "Productivity",
-    slug: "gmail-integration-best-practices"
+    slug: "gmail-integration-best-practices",
+    author: "Jessica Park",
+    authorTitle: "Productivity Coach"
   },
   {
     id: 4,
@@ -42,7 +49,9 @@ const blogPosts = [
     date: "December 28, 2024",
     readTime: "5 min read",
     category: "Security",
-    slug: "protecting-client-privacy"
+    slug: "protecting-client-privacy",
+    author: "David Kim",
+    authorTitle: "Security Specialist"
   },
   {
     id: 5,
@@ -51,7 +60,9 @@ const blogPosts = [
     date: "December 20, 2024",
     readTime: "7 min read",
     category: "Best Practices",
-    slug: "automating-followups-personal-touch"
+    slug: "automating-followups-personal-touch",
+    author: "Elena Rodriguez",
+    authorTitle: "Real Estate Coach"
   },
   {
     id: 6,
@@ -60,7 +71,9 @@ const blogPosts = [
     date: "December 15, 2024",
     readTime: "9 min read",
     category: "Case Studies",
-    slug: "realtyclose-vs-traditional-email-roi"
+    slug: "realtyclose-vs-traditional-email-roi",
+    author: "Alex Johnson",
+    authorTitle: "Data Analyst"
   }
 ];
 
@@ -109,15 +122,17 @@ export default function BlogPage() {
               Discover proven email templates powered by AI that convert leads into clients faster than traditional approaches. These templates have been tested with over 500 real estate professionals.
             </p>
             <div className="flex items-center text-slate-400 text-sm mb-6">
+              <span>By Sarah Chen</span>
+              <span className="mx-3">•</span>
               <span>January 15, 2025</span>
               <span className="mx-3">•</span>
               <span>6 min read</span>
               <span className="mx-3">•</span>
               <span className="bg-blue-500/20 text-blue-300 px-2 py-1 rounded">Templates</span>
             </div>
-            <button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-lg font-medium transition-colors">
+            <Link href="/blog/ai-email-templates-close-deals" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-lg font-medium transition-colors inline-block">
               Read Full Article →
-            </button>
+            </Link>
           </div>
           <div className="hidden md:block">
             <div className="bg-slate-700/30 border border-slate-600/50 rounded-xl p-6 text-center">
@@ -133,47 +148,8 @@ export default function BlogPage() {
         </div>
       </div>
 
-      {/* Blog Posts Grid */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 my-12 not-prose">
-        {blogPosts.slice(1).map((post) => (
-          <article key={post.id} className="bg-slate-700/30 border border-slate-600/50 rounded-xl p-6 hover:bg-slate-600/30 transition-colors group">
-            <div className="mb-4">
-              <span className={`text-xs font-medium px-2 py-1 rounded ${
-                post.category === "Templates" ? "bg-blue-500/20 text-blue-300" :
-                post.category === "Industry Insights" ? "bg-green-500/20 text-green-300" :
-                post.category === "Productivity" ? "bg-purple-500/20 text-purple-300" :
-                post.category === "Security" ? "bg-red-500/20 text-red-300" :
-                post.category === "Best Practices" ? "bg-yellow-500/20 text-yellow-300" :
-                "bg-orange-500/20 text-orange-300"
-              }`}>
-                {post.category}
-              </span>
-            </div>
-            
-            <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors">
-              {post.title}
-            </h3>
-            
-            <p className="text-slate-300 mb-4 text-sm leading-relaxed">
-              {post.excerpt}
-            </p>
-            
-            <div className="flex items-center justify-between text-slate-400 text-xs">
-              <div className="flex items-center">
-                <span>{post.date}</span>
-                <span className="mx-2">•</span>
-                <span>{post.readTime}</span>
-              </div>
-              <button className="text-blue-400 hover:text-blue-300 font-medium transition-colors">
-                Read more →
-              </button>
-            </div>
-          </article>
-        ))}
-      </div>
-
       {/* Newsletter Signup */}
-      <div className="bg-gradient-to-r from-green-600/10 to-blue-600/10 border border-green-500/20 rounded-xl p-8 my-16">
+      <div className="bg-gradient-to-r from-green-600/10 to-blue-600/10 border border-green-500/20 rounded-xl p-8 my-12">
         <div className="text-center">
           <h2 className="text-2xl font-bold text-white mb-4">📰 Stay Updated</h2>
           <p className="text-slate-300 mb-6">
@@ -193,6 +169,49 @@ export default function BlogPage() {
             No spam. Unsubscribe anytime. 2,000+ agents already subscribed.
           </p>
         </div>
+      </div>
+
+      {/* Blog Posts Grid */}
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 my-12 not-prose">
+        {blogPosts.slice(1).map((post) => (
+          <Link key={post.id} href={`/blog/${post.slug}`}>
+            <article className="bg-slate-700/30 border border-slate-600/50 rounded-xl p-6 hover:bg-slate-600/30 transition-colors group cursor-pointer">
+              <div className="mb-4">
+                <span className={`text-xs font-medium px-2 py-1 rounded ${
+                  post.category === "Templates" ? "bg-blue-500/20 text-blue-300" :
+                  post.category === "Industry Insights" ? "bg-green-500/20 text-green-300" :
+                  post.category === "Productivity" ? "bg-purple-500/20 text-purple-300" :
+                  post.category === "Security" ? "bg-red-500/20 text-red-300" :
+                  post.category === "Best Practices" ? "bg-yellow-500/20 text-yellow-300" :
+                  "bg-orange-500/20 text-orange-300"
+                }`}>
+                  {post.category}
+                </span>
+              </div>
+              
+              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors">
+                {post.title}
+              </h3>
+              
+              <p className="text-slate-300 mb-4 text-sm leading-relaxed">
+                {post.excerpt}
+              </p>
+              
+              <div className="flex items-center justify-between text-slate-400 text-xs">
+                <div className="flex items-center">
+                  <span>By {post.author}</span>
+                  <span className="mx-2">•</span>
+                  <span>{post.date}</span>
+                  <span className="mx-2">•</span>
+                  <span>{post.readTime}</span>
+                </div>
+                <span className="text-blue-400 group-hover:text-blue-300 font-medium transition-colors">
+                  Read more →
+                </span>
+              </div>
+            </article>
+          </Link>
+        ))}
       </div>
 
       {/* Popular Topics */}

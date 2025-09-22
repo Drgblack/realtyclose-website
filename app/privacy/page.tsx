@@ -9,6 +9,14 @@ export const metadata: Metadata = {
 export default function PrivacyPage() {
   return (
     <PageShell title="Privacy Policy">
+      {/* Plain English Summary */}
+      <div className="bg-blue-600/10 border border-blue-500/20 rounded-xl p-6 mb-8">
+        <h3 className="text-lg font-semibold text-blue-300 mb-3">Quick Summary</h3>
+        <p className="text-slate-300 text-sm">
+          We never sell your data. We use cookies only for site functionality and analytics. Your information stays private and secure.
+        </p>
+      </div>
+
       <h2>Privacy Policy</h2>
       
       <p className="text-slate-300 mb-6">

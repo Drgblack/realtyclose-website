@@ -30,7 +30,18 @@ function Footer({ config, locale }: { config: any; locale: string }) {
 
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-10 py-12">
+        {/* Product Description */}
+        <div className="mb-12 text-center border-b border-gray-800 pb-8">
+          <h3 className="text-xl font-semibold text-white mb-3">RealtyClose</h3>
+          <p className="text-gray-400 max-w-2xl mx-auto mb-4">
+            RealtyClose is the AI-powered Gmail extension that helps real estate agents close deals faster with perfect client communication.
+          </p>
+          <p className="text-sm text-gray-500">
+            Trusted by agents at leading brokerages.
+          </p>
+        </div>
+        
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Column 1 - Company */}
           <div>
@@ -49,6 +60,16 @@ function Footer({ config, locale }: { config: any; locale: string }) {
               <li>
                 <a href="/blog" className="text-gray-400 hover:text-white transition-colors">
                   Blog
+                </a>
+              </li>
+              <li>
+                <a href="/features" className="text-gray-400 hover:text-white transition-colors">
+                  Features
+                </a>
+              </li>
+              <li>
+                <a href="/pricing" className="text-gray-400 hover:text-white transition-colors">
+                  Pricing
                 </a>
               </li>
             </ul>

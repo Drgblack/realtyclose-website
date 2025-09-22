@@ -17,10 +17,13 @@ export default function FeaturesPage() {
       </div>
 
       {/* Productivity & Time Savings */}
-      <div className="mb-16">
-        <h2 className="text-3xl font-bold text-white mb-8 border-b border-slate-600/50 pb-4">
-          Productivity & Time Savings
+      <div className="mb-20">
+        <h2 className="text-3xl font-bold text-white mb-4 border-b border-slate-600/50 pb-4">
+          1. Productivity & Time Savings
         </h2>
+        <p className="text-slate-300 mb-8 text-lg">
+          Turn 3+ hours of daily email work into 30 minutes. Write better emails faster with AI assistance and smart templates.
+        </p>
         
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           <div className="bg-slate-700/30 border border-slate-600/50 rounded-xl p-6">
@@ -68,15 +71,18 @@ export default function FeaturesPage() {
           <blockquote className="text-slate-300 italic text-lg">
             &quot;I cut my weekly client updates from 30 minutes to 5. Total gamechanger.&quot;
           </blockquote>
-          <cite className="text-blue-300 text-sm mt-2 block">– Team Lead</cite>
+          <cite className="text-blue-300 text-sm mt-2 block">- Team Lead</cite>
         </div>
       </div>
 
       {/* Deal Health & Risk Reduction */}
-      <div className="mb-16">
-        <h2 className="text-3xl font-bold text-white mb-8 border-b border-slate-600/50 pb-4">
-          Deal Health & Risk Reduction
+      <div className="mb-20">
+        <h2 className="text-3xl font-bold text-white mb-4 border-b border-slate-600/50 pb-4">
+          2. Deal Health & Risk Reduction
         </h2>
+        <p className="text-slate-300 mb-8 text-lg">
+          Never lose another deal to missed follow-ups or communication gaps. Keep every transaction on track with automated reminders.
+        </p>
         
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           <div className="bg-slate-700/30 border border-slate-600/50 rounded-xl p-6">
@@ -124,15 +130,18 @@ export default function FeaturesPage() {
           <blockquote className="text-slate-300 italic text-lg">
             &quot;Our closing rate improved 15% in just two months.&quot;
           </blockquote>
-          <cite className="text-green-300 text-sm mt-2 block">– Brokerage Ops Manager</cite>
+          <cite className="text-green-300 text-sm mt-2 block">- Brokerage Ops Manager</cite>
         </div>
       </div>
 
-      {/* Client Experience & Brand Consistency */}
-      <div className="mb-16">
-        <h2 className="text-3xl font-bold text-white mb-8 border-b border-slate-600/50 pb-4">
-          Client Experience & Brand Consistency
+      {/* Compliance & Oversight */}
+      <div className="mb-20">
+        <h2 className="text-3xl font-bold text-white mb-4 border-b border-slate-600/50 pb-4">
+          3. Compliance & Oversight
         </h2>
+        <p className="text-slate-300 mb-8 text-lg">
+          Maintain brand consistency and regulatory compliance across all communication. Built for real estate teams that scale.
+        </p>
         
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div className="bg-slate-700/30 border border-slate-600/50 rounded-xl p-6">
@@ -142,52 +151,6 @@ export default function FeaturesPage() {
             <h3 className="text-xl font-bold text-blue-300 mb-3">Multilingual Support</h3>
             <p className="text-slate-300 text-sm">
               Communicate in your client&apos;s preferred language with real-time translation.
-            </p>
-          </div>
-
-          <div className="bg-slate-700/30 border border-slate-600/50 rounded-xl p-6">
-            <div className="w-12 h-12 bg-violet-500/20 rounded-xl flex items-center justify-center mb-4">
-              <span className="text-2xl">📤</span>
-            </div>
-            <h3 className="text-xl font-bold text-blue-300 mb-3">Advanced Sharing</h3>
-            <p className="text-slate-300 text-sm">
-              Send updates across email and social channels in one click.
-            </p>
-          </div>
-
-          <div className="bg-slate-700/30 border border-slate-600/50 rounded-xl p-6">
-            <div className="w-12 h-12 bg-lime-500/20 rounded-xl flex items-center justify-center mb-4">
-              <span className="text-2xl">✅</span>
-            </div>
-            <h3 className="text-xl font-bold text-blue-300 mb-3">Consent Guardrails</h3>
-            <p className="text-slate-300 text-sm">
-              Ensure every email is compliant with privacy regulations.
-            </p>
-          </div>
-        </div>
-
-        <div className="bg-purple-600/10 border border-purple-500/20 rounded-xl p-6 text-center">
-          <blockquote className="text-slate-300 italic text-lg">
-            &quot;Clients say I sound professional and consistent every time, even when I am rushed.&quot;
-          </blockquote>
-          <cite className="text-purple-300 text-sm mt-2 block">– Agent</cite>
-        </div>
-      </div>
-
-      {/* Compliance & Oversight */}
-      <div className="mb-16">
-        <h2 className="text-3xl font-bold text-white mb-8 border-b border-slate-600/50 pb-4">
-          Compliance & Oversight
-        </h2>
-        
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
-          <div className="bg-slate-700/30 border border-slate-600/50 rounded-xl p-6">
-            <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-4">
-              <span className="text-2xl">📊</span>
-            </div>
-            <h3 className="text-xl font-bold text-blue-300 mb-3">Unified Dashboard</h3>
-            <p className="text-slate-300 text-sm">
-              View deal pipelines, performance analytics, and tasks in Gmail.
             </p>
           </div>
 
@@ -210,13 +173,43 @@ export default function FeaturesPage() {
               Approve templates and enforce on-brand communication at scale.
             </p>
           </div>
+
+          <div className="bg-slate-700/30 border border-slate-600/50 rounded-xl p-6">
+            <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-4">
+              <span className="text-2xl">📊</span>
+            </div>
+            <h3 className="text-xl font-bold text-blue-300 mb-3">Unified Dashboard</h3>
+            <p className="text-slate-300 text-sm">
+              View deal pipelines, performance analytics, and tasks in Gmail.
+            </p>
+          </div>
+
+          <div className="bg-slate-700/30 border border-slate-600/50 rounded-xl p-6">
+            <div className="w-12 h-12 bg-lime-500/20 rounded-xl flex items-center justify-center mb-4">
+              <span className="text-2xl">✅</span>
+            </div>
+            <h3 className="text-xl font-bold text-blue-300 mb-3">Consent Guardrails</h3>
+            <p className="text-slate-300 text-sm">
+              Ensure every email is compliant with privacy regulations.
+            </p>
+          </div>
+
+          <div className="bg-slate-700/30 border border-slate-600/50 rounded-xl p-6">
+            <div className="w-12 h-12 bg-violet-500/20 rounded-xl flex items-center justify-center mb-4">
+              <span className="text-2xl">📤</span>
+            </div>
+            <h3 className="text-xl font-bold text-blue-300 mb-3">Advanced Sharing</h3>
+            <p className="text-slate-300 text-sm">
+              Send updates across email and social channels in one click.
+            </p>
+          </div>
         </div>
 
         <div className="bg-orange-600/10 border border-orange-500/20 rounded-xl p-6 text-center">
           <blockquote className="text-slate-300 italic text-lg">
             &quot;Audit prep time was cut by 90%. Our compliance officer loves it.&quot;
           </blockquote>
-          <cite className="text-orange-300 text-sm mt-2 block">– Broker Owner</cite>
+          <cite className="text-orange-300 text-sm mt-2 block">- Broker Owner</cite>
         </div>
       </div>
 
@@ -230,21 +223,21 @@ export default function FeaturesPage() {
           
           <div className="grid md:grid-cols-3 gap-6 mb-10">
             <div className="text-center">
-              <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-3">
+              <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-3 transform transition-all hover:scale-110">
                 <span className="text-2xl">⚡</span>
               </div>
               <h4 className="font-semibold text-blue-300 mb-2">Lightning Fast</h4>
               <p className="text-slate-400 text-sm">Features load instantly inside Gmail</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-3">
+              <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-3 transform transition-all hover:scale-110">
                 <span className="text-2xl">🔒</span>
               </div>
               <h4 className="font-semibold text-green-300 mb-2">Secure</h4>
               <p className="text-slate-400 text-sm">Bank-level privacy protection</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-3">
+              <div className="w-16 h-16 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-3 transform transition-all hover:scale-110">
                 <span className="text-2xl">🎯</span>
               </div>
               <h4 className="font-semibold text-purple-300 mb-2">Intuitive</h4>

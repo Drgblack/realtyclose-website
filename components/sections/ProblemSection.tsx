@@ -1,7 +1,7 @@
 export default function ProblemSection() {
   return (
     <section className="section-padding" style={{ background: 'linear-gradient(135deg, #fef2f2 0%, #fce7e7 100%)' }}>
-      <div className="max-w-7xl mx-auto container-spacing">
+      <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-10">
         <div className="text-center mb-16">
           <h2 className="heading-lg text-gray-900 mb-6 text-balance">
             The Email Productivity Crisis

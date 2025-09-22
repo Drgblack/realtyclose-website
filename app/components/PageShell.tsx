@@ -6,7 +6,7 @@ export default function PageShell({ title, children }: { title: string; children
     <div className="min-h-screen w-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
       {/* Navigation */}
       <nav className="bg-slate-800/90 backdrop-blur-md border-b border-slate-700/50 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <Link href="/" className="flex items-center">
@@ -47,7 +47,7 @@ export default function PageShell({ title, children }: { title: string; children
       <main>
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 border-b border-slate-700/50">
-        <div className="mx-auto max-w-4xl px-6 py-16">
+        <div className="mx-auto max-w-6xl px-6 sm:px-8 lg:px-10 py-20">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
             {title}
           </h1>
@@ -56,7 +56,7 @@ export default function PageShell({ title, children }: { title: string; children
       </div>
 
       {/* Content Section */}
-      <div className="mx-auto max-w-4xl px-6 py-16">
+      <div className="mx-auto max-w-6xl px-6 sm:px-8 lg:px-10 py-20">
         <div className="bg-slate-800/40 backdrop-blur-sm rounded-2xl border border-slate-700/50 shadow-2xl">
           <div className="p-8 md:p-12">
             <div className="prose prose-invert prose-slate max-w-none text-slate-300
