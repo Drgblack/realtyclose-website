@@ -1,12 +1,17 @@
-import LegalLayout from "@/components/LegalLayout";
-export const metadata = { title: "Impressum" };
+import type { Metadata } from "next";
+import PageShell from "@/app/components/PageShell";
 
-export default function Page() {
+export const metadata: Metadata = {
+  title: "Impressum | RealtyClose",
+  description: "Legal notice for RealtyClose.",
+};
+
+export default function ImpressumPage() {
   return (
-    <LegalLayout title="Impressum">
-      <p>RealtyClose • Part of Zaza Technologies</p>
+    <PageShell title="Impressum">
+      <p><strong>RealtyClose</strong> • Part of Zaza Technologies</p>
       <p>Registered office: Gumbertstraße 150, 40229 Düsseldorf, Deutschland</p>
-      <p>Contact: support@realtyclose.com</p>
-    </LegalLayout>
+      <p>Contact: <a href="mailto:support@realtyclose.com">support@realtyclose.com</a></p>
+    </PageShell>
   );
 }

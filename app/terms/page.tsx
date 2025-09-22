@@ -1,14 +1,34 @@
-import LegalLayout from "@/components/LegalLayout";
-export const metadata = { title: "Terms of Service" };
+import type { Metadata } from "next";
+import PageShell from "@/app/components/PageShell";
 
-export default function Page() {
+export const metadata: Metadata = {
+  title: "Terms of Service | RealtyClose",
+  description: "The terms that govern your use of RealtyClose.",
+};
+
+export default function TermsPage() {
   return (
-    <LegalLayout title="Terms of Service">
-      <p>By using RealtyClose, you agree to these terms. Do not misuse the service.</p>
+    <PageShell title="Terms of Service">
+      <h2>Use of Service</h2>
+      <p>
+        By using RealtyClose, you agree to these terms. Don't misuse the service or attempt to disrupt it.
+      </p>
+
       <h2>Subscriptions & Billing</h2>
-      <p>Subscriptions renew automatically unless cancelled. Taxes may apply.</p>
+      <ul>
+        <li>Subscriptions renew automatically unless cancelled</li>
+        <li>Taxes may apply</li>
+        <li>Refunds follow the plan's refund policy, if applicable</li>
+      </ul>
+
       <h2>Liability</h2>
-      <p>Service is provided "as is" without warranties; our liability is limited as permitted by law.</p>
-    </LegalLayout>
+      <p>
+        The service is provided "as is" without warranties. To the extent permitted by law, our
+        liability is limited to amounts paid in the 12 months prior to the claim.
+      </p>
+
+      <h2>Contact</h2>
+      <p>Questions: <a href="mailto:legal@realtyclose.com">legal@realtyclose.com</a></p>
+    </PageShell>
   );
 }
