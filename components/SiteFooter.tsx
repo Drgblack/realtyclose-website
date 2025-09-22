@@ -153,7 +153,7 @@ export default function SiteFooter() {
       copyright: "© 2025 RealtyClose. All rights reserved.",
       family: [
         { label: "Zaza Technologies", href: "https://zazatechnologies.com" },
-        { label: "Zaza Promptly", href: "https://zaza.ai" }
+        { label: "Zaza Promptly", href: "https://zazapromptly.com" }
       ]
     }
   };
