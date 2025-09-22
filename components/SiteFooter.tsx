@@ -6,7 +6,7 @@ export default function SiteFooter() {
     productId: "realtyclose",
     productName: "RealtyClose",
     productKey: "realtyclose",
-    locales: ["en"],
+    locales: ["en" as const],
     brand: {
       name: "RealtyClose",
       tagline:
