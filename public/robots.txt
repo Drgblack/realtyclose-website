@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://realtyclose.com/sitemap.xml
+
+# Disallow admin or private paths (if any)
+# Disallow: /admin/
+
+# Allow all content for SEO
+Allow: /features
+Allow: /pricing
+Allow: /blog
+Allow: /demo
+Allow: /about
+Allow: /contact
+Allow: /install
