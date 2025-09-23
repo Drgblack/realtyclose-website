@@ -7,6 +7,28 @@
     <title>RealtyClose - Enterprise Real Estate Platform Starting With Gmail</title>
     <meta name="description" content="The enterprise real estate platform starting with Gmail. AI-powered email assistant available now, comprehensive CRM coming soon. Build trust through transparent development.">
     
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="RealtyClose - Enterprise Real Estate Platform Starting With Gmail">
+    <meta property="og:description" content="The enterprise real estate platform starting with Gmail. AI-powered email assistant available now, comprehensive CRM coming soon. Build trust through transparent development.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://realtyclose.com/">
+    <meta property="og:image" content="https://realtyclose.com/images/realtyclose-social-preview.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="RealtyClose">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RealtyClose - Enterprise Real Estate Platform Starting With Gmail">
+    <meta name="twitter:description" content="The enterprise real estate platform starting with Gmail. AI-powered email assistant available now, comprehensive CRM coming soon.">
+    <meta name="twitter:image" content="https://realtyclose.com/images/realtyclose-social-preview.jpg">
+    <meta name="twitter:site" content="@realtyclose">
+    
+    <!-- Additional SEO -->
+    <meta name="keywords" content="real estate CRM, Gmail extension, AI email assistant, real estate platform, property management, MLS integration">
+    <meta name="author" content="RealtyClose">
+    <link rel="canonical" href="https://realtyclose.com/">
+    
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -233,15 +255,64 @@
             margin-top: 1rem;
         }
     </style>
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "RealtyClose",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "Real Estate CRM",
+        "operatingSystem": "Web Browser",
+        "description": "Enterprise real estate platform starting with Gmail. AI-powered email assistant with comprehensive CRM features coming soon.",
+        "url": "https://realtyclose.com",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "description": "Free Gmail extension with 10 daily AI drafts"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Zaza Technologies",
+            "url": "https://zazatechnologies.com"
+        },
+        "provider": {
+            "@type": "Organization",
+            "name": "RealtyClose",
+            "url": "https://realtyclose.com",
+            "logo": "https://realtyclose.com/images/realtyclose-logo.png",
+            "sameAs": [
+                "https://twitter.com/realtyclose",
+                "https://linkedin.com/company/realtyclose",
+                "https://github.com/realtyclose"
+            ]
+        },
+        "featureList": [
+            "AI Email Drafting",
+            "Multilingual Support",
+            "Timeline Sharing",
+            "Deal Management",
+            "Smart Templates",
+            "Zara AI Assistant"
+        ]
+    }
+    </script>
 </head>
 <body class="gradient-bg min-h-screen">
+    <!-- Skip to main content link for screen readers -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-brand text-white px-4 py-2 rounded-lg z-50">
+        Skip to main content
+    </a>
+    
     <!-- Navigation -->
-    <nav class="glass-card sticky top-0 z-50 blur-overlay">
+    <nav class="glass-card sticky top-0 z-50 blur-overlay" role="navigation" aria-label="Main navigation">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
                     <div class="flex-shrink-0 flex items-center">
-                        <div class="w-8 h-8 bg-brand rounded-lg flex items-center justify-center text-white font-bold text-sm mr-3">
+                        <div class="w-8 h-8 bg-brand rounded-lg flex items-center justify-center text-white font-bold text-sm mr-3" aria-hidden="true">
                             RC
                         </div>
                         <span class="text-xl font-bold text-gray-900">RealtyClose</span>
@@ -250,16 +321,16 @@
                 
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="#features" class="text-gray-600 hover:text-brand px-3 py-2 text-sm font-medium transition-colors">Features</a>
-                        <a href="#dashboard" class="text-gray-600 hover:text-brand px-3 py-2 text-sm font-medium transition-colors">Dashboard</a>
-                        <a href="#pricing" class="text-gray-600 hover:text-brand px-3 py-2 text-sm font-medium transition-colors">Pricing</a>
-                        <a href="blog.html" class="text-gray-600 hover:text-brand px-3 py-2 text-sm font-medium transition-colors">Blog</a>
-                        <a href="#demo" class="text-gray-600 hover:text-brand px-3 py-2 text-sm font-medium transition-colors">Demo</a>
+                        <a href="#features" class="text-gray-600 hover:text-brand focus:text-brand focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 px-3 py-2 text-sm font-medium transition-colors rounded">Features</a>
+                        <a href="#dashboard" class="text-gray-600 hover:text-brand focus:text-brand focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 px-3 py-2 text-sm font-medium transition-colors rounded">Dashboard</a>
+                        <a href="#pricing" class="text-gray-600 hover:text-brand focus:text-brand focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 px-3 py-2 text-sm font-medium transition-colors rounded">Pricing</a>
+                        <a href="blog.html" class="text-gray-600 hover:text-brand focus:text-brand focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 px-3 py-2 text-sm font-medium transition-colors rounded">Blog</a>
+                        <a href="#demo" class="text-gray-600 hover:text-brand focus:text-brand focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 px-3 py-2 text-sm font-medium transition-colors rounded">Demo</a>
                     </div>
                 </div>
                 
                 <div class="flex items-center space-x-4">
-                    <button class="btn-primary text-white px-6 py-2 rounded-lg font-medium">
+                    <button class="btn-primary text-white px-6 py-2 rounded-lg font-medium focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 transition-all" aria-label="Install RealtyClose extension for Gmail">
                         Install Extension
                     </button>
                 </div>
@@ -268,6 +339,7 @@
     </nav>
 
     <!-- Hero Section -->
+    <main id="main-content">
     <section class="relative overflow-hidden" style="background: var(--gradient-hero);">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
             <div class="lg:grid lg:grid-cols-12 lg:gap-8">
@@ -1123,13 +1195,13 @@
             <div class="space-y-4">
                 <!-- FAQ Item 1 -->
                 <div class="bg-gray-50 rounded-lg overflow-hidden">
-                    <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-100 transition-colors" onclick="toggleFAQ(1)">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-brand focus:ring-inset" onclick="toggleFAQ(1)" aria-expanded="false" aria-controls="faq-1">
                         <h3 class="font-semibold text-gray-900 pr-4">Is my email data private and secure?</h3>
-                        <svg id="icon-1" class="w-5 h-5 text-gray-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg id="icon-1" class="w-5 h-5 text-gray-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
-                    <div id="faq-1" class="hidden px-6 pb-4">
+                    <div id="faq-1" class="hidden px-6 pb-4" role="region" aria-labelledby="faq-1-button">
                         <p class="text-gray-600 leading-relaxed">
                             Yes! We take security seriously. RealtyClose uses enterprise-grade encryption, never stores your emails permanently, and is SOC 2 compliant. We only analyze your email context in real-time to generate suggestions, then immediately discard it. Your sensitive client data never leaves your Gmail.
                         </p>
@@ -1269,6 +1341,7 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white">
@@ -1314,6 +1387,7 @@
                         <p class="mb-2">Part of the Zaza Technologies family:</p>
                         <div class="flex flex-wrap gap-4">
                             <a href="https://zazatechnologies.com" class="text-brand-light hover:text-white transition-colors">Zaza Technologies</a>
+                            <a href="https://zazateach.com" class="text-brand-light hover:text-white transition-colors">Zaza Teach</a>
                             <a href="https://zazapromptly.com" class="text-brand-light hover:text-white transition-colors">Zaza Promptly</a>
                         </div>
                     </div>
@@ -1389,19 +1463,38 @@
             }
         });
 
-        // FAQ Toggle functionality
+        // FAQ Toggle functionality with accessibility support
         function toggleFAQ(index) {
             const faqContent = document.getElementById(`faq-${index}`);
             const icon = document.getElementById(`icon-${index}`);
+            const button = document.querySelector(`[aria-controls="faq-${index}"]`);
             
             if (faqContent.classList.contains('hidden')) {
                 faqContent.classList.remove('hidden');
                 icon.style.transform = 'rotate(180deg)';
+                button.setAttribute('aria-expanded', 'true');
             } else {
                 faqContent.classList.add('hidden');
                 icon.style.transform = 'rotate(0deg)';
+                button.setAttribute('aria-expanded', 'false');
             }
         }
+        
+        // Add keyboard support for FAQ toggles
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqButtons = document.querySelectorAll('[aria-controls^="faq-"]');
+            faqButtons.forEach(button => {
+                button.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        this.click();
+                    }
+                });
+            });
+        });
     </script>
+    
+    <!-- Cookie Consent -->
+    <script src="cookie-consent.js"></script>
 </body>
 </html>
