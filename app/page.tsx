@@ -16,28 +16,29 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-[radial-gradient(700px_420px_at_20%_-10%,rgba(37,99,235,.20),transparent_60%),radial-gradient(600px_360px_at_90%_-20%,rgba(16,185,129,.15),transparent_55%)] animate-pulse" style={{animationDuration: '4s'}} />
           <div className="absolute inset-0 bg-[radial-gradient(500px_300px_at_60%_40%,rgba(139,92,246,.10),transparent_50%)] opacity-70" />
           
-          {/* Floating orbs for extra shine */}
-          <div className="absolute top-10 right-10 h-32 w-32 rounded-full bg-gradient-to-r from-blue-400/20 to-violet-400/20 blur-3xl animate-pulse" style={{animationDuration: '3s'}} />
-          <div className="absolute bottom-20 left-16 h-24 w-24 rounded-full bg-gradient-to-r from-emerald-400/20 to-blue-400/20 blur-2xl animate-pulse" style={{animationDuration: '4s', animationDelay: '1s'}} />
-          <div className="absolute top-1/2 left-1/3 h-16 w-16 rounded-full bg-gradient-to-r from-pink-400/20 to-violet-400/20 blur-xl animate-pulse" style={{animationDuration: '5s', animationDelay: '2s'}} />
+          {/* Premium floating orbs */}
+          <div className="absolute top-10 right-10 h-32 w-32 rounded-full bg-gradient-to-r from-cyan-400/15 to-indigo-400/15 blur-3xl animate-pulse" style={{animationDuration: '3s'}} />
+          <div className="absolute bottom-20 left-16 h-24 w-24 rounded-full bg-gradient-to-r from-emerald-400/15 to-cyan-400/15 blur-2xl animate-pulse" style={{animationDuration: '4s', animationDelay: '1s'}} />
+          <div className="absolute top-1/2 left-1/3 h-16 w-16 rounded-full bg-gradient-to-r from-fuchsia-400/15 to-indigo-400/15 blur-xl animate-pulse" style={{animationDuration: '5s', animationDelay: '2s'}} />
         </div>
         <div className="mx-auto grid max-w-6xl gap-8 px-6 pb-16 pt-16 md:gap-10 md:grid-cols-2 sm:pt-28">
           <div>
             <Reveal>
-              <div className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700 ring-1 ring-blue-200">
+              <div className="inline-flex items-center rounded-full bg-gradient-to-r from-slate-50 to-cyan-50 px-4 py-2 text-xs font-bold text-slate-800 ring-1 ring-slate-200/80 shadow-sm">
+                <div className="mr-2 h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></div>
                 Gmail Extension Live Now
               </div>
             </Reveal>
 
             <Reveal delay={0.1}>
-              <h1 className="mt-5 text-4xl font-extrabold tracking-tight sm:text-5xl">
+              <h1 className="mt-6 text-4xl font-black tracking-tight sm:text-5xl lg:text-6xl">
                 Turn messy real estate emails into{" "}
                 <GradientUnderline>perfect client communication</GradientUnderline>.
               </h1>
             </Reveal>
 
             <Reveal delay={0.2}>
-              <p className="mt-4 max-w-xl text-lg text-[color:var(--rc-muted)]">
+              <p className="mt-6 max-w-xl text-xl leading-relaxed text-[color:var(--rc-muted)] font-medium">
                 Agents lose 30+ hours per transaction to email chaos. RealtyClose gives you that time back with AI powered, Gmail first communication.
               </p>
             </Reveal>
@@ -62,10 +63,10 @@ export default function HomePage() {
             <Reveal delay={0.5}>
               <div className="mt-8">
                 <span className="block mb-4 text-sm font-medium text-[color:var(--rc-muted)] md:inline md:mb-0 md:mr-6">Trusted by solo agents, teams, and brokerages</span>
-                <div className="flex items-center gap-4 opacity-75 md:gap-6">
-                  <div className="flex items-center justify-center h-7 w-20 rounded-lg bg-gradient-to-r from-blue-600 to-blue-700 text-white text-xs font-bold md:h-8 md:w-24">RE/MAX</div>
-                  <div className="flex items-center justify-center h-7 w-20 rounded-lg bg-gradient-to-r from-emerald-600 to-emerald-700 text-white text-xs font-bold md:h-8 md:w-24">Century21</div>
-                  <div className="flex items-center justify-center h-7 w-20 rounded-lg bg-gradient-to-r from-violet-600 to-violet-700 text-white text-xs font-bold md:h-8 md:w-24">Keller W.</div>
+                <div className="flex items-center gap-4 opacity-80 md:gap-6">
+                  <div className="flex items-center justify-center h-7 w-20 rounded-lg bg-gradient-to-r from-[var(--rc-primary)] to-[var(--rc-accent)] text-white text-xs font-bold shadow-sm md:h-8 md:w-24">RE/MAX</div>
+                  <div className="flex items-center justify-center h-7 w-20 rounded-lg bg-gradient-to-r from-[var(--rc-emerald)] to-[var(--rc-accent)] text-white text-xs font-bold shadow-sm md:h-8 md:w-24">Century21</div>
+                  <div className="flex items-center justify-center h-7 w-20 rounded-lg bg-gradient-to-r from-[var(--rc-violet)] to-[var(--rc-pink)] text-white text-xs font-bold shadow-sm md:h-8 md:w-24">Keller W.</div>
                 </div>
               </div>
             </Reveal>
@@ -107,8 +108,8 @@ export default function HomePage() {
       </section>
 
       {/* Value strip */}
-      <section className="border-y border-[color:var(--rc-border)] bg-white py-10">
-        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-4 px-6 sm:grid-cols-3">
+      <section className="border-y border-[color:var(--rc-border)] bg-gradient-to-r from-white via-slate-50/30 to-white py-12">
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 px-6 sm:grid-cols-3">
           {[
             { t: "Save hours", d: "Reply in seconds with AI assisted drafting and templates." },
             { t: "Protect deals", d: "Follow up nudges and timeline alerts stop slips." },
@@ -125,10 +126,11 @@ export default function HomePage() {
       </section>
 
       {/* How it works */}
-      <section className="py-20">
+      <section className="py-24">
         <div className="mx-auto max-w-6xl px-6">
           <Reveal>
-            <h2 className="text-3xl font-bold tracking-tight">Write perfect real estate emails in 10 seconds</h2>
+            <h2 className="text-3xl font-black tracking-tight lg:text-4xl">Write perfect real estate emails in 10 seconds</h2>
+            <p className="mt-4 text-lg text-[color:var(--rc-muted)] max-w-2xl">Our AI understands real estate context, compliance requirements, and professional communication standards.</p>
           </Reveal>
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             {[
@@ -158,10 +160,11 @@ export default function HomePage() {
       </section>
 
       {/* Why not CRM */}
-      <section className="py-16">
+      <section className="py-20 bg-gradient-to-b from-slate-50/50 to-white">
         <div className="mx-auto max-w-6xl px-6">
           <Reveal>
-            <h2 className="text-3xl font-bold tracking-tight">Why not just use a CRM</h2>
+            <h2 className="text-3xl font-black tracking-tight lg:text-4xl">Why not just use a CRM</h2>
+            <p className="mt-4 text-lg text-[color:var(--rc-muted)] max-w-2xl">Most tools force you out of Gmail and add complexity. We integrate where you already work.</p>
           </Reveal>
           <div className="mt-6 grid gap-6 md:grid-cols-3">
             {[
@@ -186,10 +189,11 @@ export default function HomePage() {
       </section>
 
       {/* Social proof + closing CTA */}
-      <section className="pb-20">
+      <section className="py-24 bg-gradient-to-t from-slate-50/30 to-white">
         <div className="mx-auto max-w-6xl px-6">
           <Reveal>
-            <h2 className="text-3xl font-bold tracking-tight">Agents, teams, and brokerages trust RealtyClose</h2>
+            <h2 className="text-3xl font-black tracking-tight lg:text-4xl">Agents, teams, and brokerages trust RealtyClose</h2>
+            <p className="mt-4 text-lg text-[color:var(--rc-muted)] max-w-2xl">Join thousands of real estate professionals who've already transformed their email workflow.</p>
           </Reveal>
 
           <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-4">
