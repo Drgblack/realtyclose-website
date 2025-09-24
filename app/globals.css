@@ -14,6 +14,14 @@
   --accent: 52 211 153;      /* emerald-400 */
   --radius: 1rem;            /* rounded-2xl */
   
+  /* Clean Light Theme Variables */
+  --rc-bg: #ffffff;
+  --rc-text: #0f172a;
+  --rc-muted: #64748b;
+  --rc-border: #e2e8f0;
+  --rc-primary: #2563eb;
+  --rc-radius: 1rem;
+  
   /* Legacy variables (keep for existing styles) */
   --gradient-bg: linear-gradient(180deg, #FFFFFF 0%, #DDE2EE 37.04%);
   --gradient-hero: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #dbeafe 100%);
