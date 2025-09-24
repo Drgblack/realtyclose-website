@@ -14,20 +14,24 @@
   --accent: 52 211 153;      /* emerald-400 */
   --radius: 1rem;            /* rounded-2xl */
   
-  /* Azure Pulse - Modern Trust & Speed */
-  --rc-bg: #F7F9FC;             /* page background */
-  --rc-surface: #FFFFFF;        /* cards */
-  --rc-text: #0F172A;
-  --rc-muted: #475569;
-  --rc-border: rgba(15,23,42,.08);
+  /* Surfaces */
+  --rc-bg: #FFFFFF;            /* pure white for snap */
+  --rc-surface: #FFFFFF;
+  --rc-text: #0F172A;          /* slate-900 */
+  --rc-muted: #475569;         /* slate-600 */
+  --rc-border: #CBD5E1;        /* slate-300: darker hairline => more structure */
 
-  /* NEW primary system */
-  --rc-blue: #2563EB;
-  --rc-blue-2: #3B82F6;
-  --rc-violet: #7C3AED;
-  --rc-cta-grad: linear-gradient(90deg, var(--rc-blue), var(--rc-blue-2) 35%, var(--rc-violet));
+  /* Accents: deeper and more saturated */
+  --rc-blue-700: #1D4ED8;
+  --rc-blue-600: #2563EB;
+  --rc-blue-400: #60A5FA;
+  --rc-violet-600: #7C3AED;
 
-  /* states */
+  /* Primary gradient used for CTAs and highlights */
+  --rc-cta-grad: linear-gradient(90deg,var(--rc-blue-700),var(--rc-blue-600) 45%,var(--rc-violet-600));
+  --rc-cta-hover: linear-gradient(90deg,#2348c9,#2b66f1 45%,#6d33da);
+
+  /* Success */
   --rc-success: #10B981;
   
   /* Legacy variables (keep for existing styles) */
@@ -390,11 +394,15 @@
   .hover-lift {
     @apply transition-all duration-150 hover:-translate-y-px;
   }
+  
+  .hero-tight {
+    line-height: 1.08;
+  }
 }
 
 /* --- Reduced Motion Safety --- */
-@media (prefers-reduced-motion: reduce) {
-  * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
 }
 
 /* --- Premium Animations --- */

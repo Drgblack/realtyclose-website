@@ -33,7 +33,8 @@ export default function HomePage() {
             { t: "Stay compliant", d: "Audit trails and approved templates keep messages safe." }
           ].map((i, index) => (
             <Reveal key={i.t} delay={0.1 * index}>
-              <div className="card-3d premium-shine rounded-[var(--rc-radius)] p-6 group">
+              <div className="relative rounded-2xl border border-[var(--rc-border)] bg-white shadow-[0_10px_30px_rgba(2,6,23,0.08)] transition will-change-transform hover:translate-y-[1px] p-6 group">
+                <span aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-[2px] rounded-t-2xl" style={{background:"var(--rc-cta-grad)"}} />
                 <div className="text-lg font-bold text-[color:var(--rc-text)] group-hover:text-blue-600 transition-colors duration-300">{i.t}</div>
                 <p className="mt-2 text-sm leading-relaxed text-[color:var(--rc-muted)]">{i.d}</p>
               </div>
@@ -43,10 +44,11 @@ export default function HomePage() {
       </section>
 
       {/* How it works */}
-      <section id="how-it-works" className="py-24">
+      <section id="how-it-works" className="relative py-16">
+        <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,transparent,rgba(2,6,23,.04))]" />
         <div className="mx-auto max-w-6xl px-6">
           <Reveal>
-            <h2 className="text-3xl font-black tracking-tight lg:text-4xl">Write perfect real estate emails in 10 seconds</h2>
+            <h2 className="text-3xl font-semibold tracking-tight lg:text-4xl">Write perfect real estate emails in 10 seconds</h2>
             <p className="mt-4 text-lg text-[color:var(--rc-muted)] max-w-2xl">Our AI understands real estate context, compliance requirements, and professional communication standards.</p>
           </Reveal>
           <div className="mt-8 grid gap-6 md:grid-cols-3">
@@ -56,7 +58,8 @@ export default function HomePage() {
               { n: 3, t: "Send perfect email", d: "AI generates professional and compliant drafts in seconds." }
             ].map((s, index) => (
               <Reveal key={s.n} delay={0.1 * index}>
-                <div className="card-3d premium-shine rounded-[var(--rc-radius)] p-7 group">
+                <div className="relative rounded-2xl border border-[var(--rc-border)] bg-white shadow-[0_10px_30px_rgba(2,6,23,0.08)] transition will-change-transform hover:translate-y-[1px] p-7 group">
+                  <span aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-[2px] rounded-t-2xl" style={{background:"var(--rc-cta-grad)"}} />
                   <div className="relative inline-flex h-14 w-14 items-center justify-center rounded-full animated-gradient text-white font-bold shadow-xl hover:scale-125 transition-all duration-300 hover:shadow-2xl">
                     <span className="relative z-10 text-lg group-hover:animate-pulse">{s.n}</span>
                     <div className="absolute inset-0 rounded-full bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -80,7 +83,7 @@ export default function HomePage() {
       <section className="py-20 bg-gradient-to-b from-slate-50/50 to-white">
         <div className="mx-auto max-w-6xl px-6">
           <Reveal>
-            <h2 className="text-3xl font-black tracking-tight lg:text-4xl">Why not just use a CRM</h2>
+            <h2 className="text-3xl font-semibold tracking-tight lg:text-4xl">Why not just use a CRM</h2>
             <p className="mt-4 text-lg text-[color:var(--rc-muted)] max-w-2xl">Most tools force you out of Gmail and add complexity. We integrate where you already work.</p>
           </Reveal>
           <div className="mt-6 grid gap-6 md:grid-cols-3">
@@ -90,7 +93,8 @@ export default function HomePage() {
               { h:"Email alone", p:"Leads to missed follow ups and untracked details across transactions." }
             ].map((c, index)=>(
               <Reveal key={c.h} delay={0.1 * index}>
-                <div className="card-3d rounded-[var(--rc-radius)] p-6">
+                <div className="relative rounded-2xl border border-[var(--rc-border)] bg-white shadow-[0_10px_30px_rgba(2,6,23,0.08)] transition will-change-transform hover:translate-y-[1px] p-6">
+                  <span aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-[2px] rounded-t-2xl" style={{background:"var(--rc-cta-grad)"}} />
                   <div className="text-lg font-bold text-[color:var(--rc-text)]">{c.h}</div>
                   <p className="mt-3 text-sm leading-relaxed text-[color:var(--rc-muted)]">{c.p}</p>
                 </div>
@@ -109,7 +113,7 @@ export default function HomePage() {
       <section className="py-24 bg-gradient-to-t from-slate-50/30 to-white">
         <div className="mx-auto max-w-6xl px-6">
           <Reveal>
-            <h2 className="text-3xl font-black tracking-tight lg:text-4xl">Agents, teams, and brokerages trust RealtyClose</h2>
+            <h2 className="text-3xl font-semibold tracking-tight lg:text-4xl">Agents, teams, and brokerages trust RealtyClose</h2>
             <p className="mt-4 text-lg text-[color:var(--rc-muted)] max-w-2xl">Join thousands of real estate professionals who've already transformed their email workflow.</p>
           </Reveal>
 
@@ -121,12 +125,13 @@ export default function HomePage() {
               { k:12, suffix:" sec", v:"average draft time" },
             ].map((p, index)=>(
               <Reveal key={p.v} delay={0.1 * index}>
-                <div className="card-3d premium-shine rounded-[var(--rc-radius)] p-7 text-center group">
+                <div className="relative rounded-2xl border border-[var(--rc-border)] bg-white shadow-[0_10px_30px_rgba(2,6,23,0.08)] transition will-change-transform hover:translate-y-[1px] p-7 text-center group">
+                  <span aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-[2px] rounded-t-2xl" style={{background:"var(--rc-cta-grad)"}} />
                   <div className="relative">
-                    <div className="text-4xl font-black animated-gradient bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">
+                    <div className="text-4xl font-extrabold text-[var(--rc-blue-700)] group-hover:scale-110 transition-transform duration-300">
                       <CountUp to={p.k} suffix={p.suffix} />
                     </div>
-                    <div className="absolute inset-0 text-4xl font-black bg-gradient-to-r from-white to-white bg-clip-text text-transparent opacity-0 group-hover:opacity-20 transition-opacity duration-300">
+                    <div className="absolute inset-0 text-4xl font-extrabold bg-gradient-to-r from-white to-white bg-clip-text text-transparent opacity-0 group-hover:opacity-20 transition-opacity duration-300">
                       <CountUp to={p.k} suffix={p.suffix} />
                     </div>
                   </div>
@@ -143,7 +148,8 @@ export default function HomePage() {
               { q:"Audit prep time cut by 90%. Compliance officer can't believe the organization.", a:"Jennifer L., Independent Broker" },
             ].map((t,i)=>(
               <Reveal key={i} delay={0.1 * i}>
-                <figure className="card-3d rounded-[var(--rc-radius)] p-6">
+                <figure className="relative rounded-2xl border border-[var(--rc-border)] bg-white shadow-[0_10px_30px_rgba(2,6,23,0.08)] transition will-change-transform hover:translate-y-[1px] p-6">
+                  <span aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-[2px] rounded-t-2xl" style={{background:"var(--rc-cta-grad)"}} />
                   <blockquote className="text-[color:var(--rc-text)] font-medium leading-relaxed">"{t.q}"</blockquote>
                   <figcaption className="mt-3 text-sm font-semibold text-[color:var(--rc-muted)]">&mdash; {t.a}</figcaption>
                 </figure>

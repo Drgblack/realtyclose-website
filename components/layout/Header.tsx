@@ -31,7 +31,11 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Link href="/install" className={cta} style={{ background: "var(--rc-cta-grad)" }}>Start Free</Link>
+          <Link href="/install"
+            className="rounded-xl px-4 py-2 text-sm font-semibold text-white hover:opacity-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+            style={{background:"var(--rc-cta-grad)"}}>
+            Start Free
+          </Link>
           <button
             aria-label="Open menu"
             onClick={() => setOpen(true)}
