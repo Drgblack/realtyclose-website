@@ -18,7 +18,7 @@ export default function Header() {
 
   const wrap = "fixed inset-x-0 top-0 z-50 bg-white/80 backdrop-blur ring-1 ring-black/5";
   const link = "text-sm font-medium text-slate-700 hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500 focus-visible:ring-offset-white";
-  const cta = "rounded-xl bg-[var(--rc-forest)] px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:bg-[var(--rc-gold)] hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--rc-forest)] focus-visible:ring-offset-2 focus-visible:ring-offset-white";
+  const cta = "rounded-xl px-4 py-2 text-sm font-semibold text-white hover:opacity-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500";
 
   return (
     <header className={wrap} data-scrolled={scrolled}>
@@ -31,7 +31,7 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Link href="/install" className={cta}>Start Free</Link>
+          <Link href="/install" className={cta} style={{ background: "var(--rc-cta-grad)" }}>Start Free</Link>
           <button
             aria-label="Open menu"
             onClick={() => setOpen(true)}
