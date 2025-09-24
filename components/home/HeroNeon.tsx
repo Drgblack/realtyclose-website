@@ -1,4 +1,4 @@
-import ShimmerButton from "@/components/ui/ShimmerButton";
+﻿import ShimmerButton from "@/components/ui/ShimmerButton";
 import ParallaxCard from "@/components/ui/ParallaxCard";
 
 export default function HeroNeon(){
@@ -46,7 +46,7 @@ export default function HeroNeon(){
         <ParallaxCard>
           <div className="rounded-xl border border-[var(--rc-border)] p-4">
             <div className="flex items-center justify-between text-xs text-[var(--rc-muted)]">
-              <span>gmail.com � RealtyClose Extension</span><span>Ready</span>
+              <span>gmail.com · RealtyClose Extension</span><span>Ready</span>
             </div>
             <div className="mt-4 grid grid-cols-2 gap-3">
               <div className="rounded-lg bg-slate-50 p-4">
@@ -67,3 +67,4 @@ export default function HeroNeon(){
     </section>
   );
 }
+

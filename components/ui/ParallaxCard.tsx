@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { useRef } from "react";
 
 export default function ParallaxCard({ children }:{children:React.ReactNode}){
@@ -21,3 +21,4 @@ export default function ParallaxCard({ children }:{children:React.ReactNode}){
     </div>
   );
 }
+
