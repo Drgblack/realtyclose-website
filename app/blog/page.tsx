@@ -11,6 +11,18 @@ export const metadata: Metadata = {
 const blogPosts = [
   {
     id: 1,
+    title: "The Hidden Cost of Missed Emails",
+    excerpt: "How 23 percent lower response rates and scattered follow-ups are costing agents deals and trust.",
+    date: "January 24, 2025",
+    readTime: "8 min read",
+    category: "Productivity",
+    slug: "hidden-cost-missed-emails",
+    author: "Dr. Greg Blackburn",
+    authorTitle: "RealtyClose Editorial",
+    featured: true
+  },
+  {
+    id: 2,
     title: "Reclaim 30+ Hours Per Transaction By Fixing Email Chaos",
     excerpt: "A practical Gmail-first system to win back your week and keep deals on track.",
     date: "January 22, 2025",
@@ -18,11 +30,21 @@ const blogPosts = [
     category: "Productivity",
     slug: "reclaim-30-hours-per-transaction",
     author: "Dr. Greg Blackburn",
-    authorTitle: "RealtyClose Editorial",
-    featured: true
+    authorTitle: "RealtyClose Editorial"
   },
   {
-    id: 2,
+    id: 3,
+    title: "The TC Survival Guide", 
+    excerpt: "Seven systems that turn transaction coordination from chaos into a competitive advantage.",
+    date: "January 25, 2025",
+    readTime: "12 min read",
+    category: "Operations",
+    slug: "tc-survival-guide",
+    author: "Dr. Greg Blackburn",
+    authorTitle: "RealtyClose Editorial"
+  },
+  {
+    id: 4,
     title: "Never Lose A Deal To Missed Follow-ups Again",
     excerpt: "A follow-up framework that scales with your pipeline and protects your closings.",
     date: "January 22, 2025",
@@ -33,7 +55,7 @@ const blogPosts = [
     authorTitle: "RealtyClose Editorial"
   },
   {
-    id: 3,
+    id: 5,
     title: "Consistent, Professional Tone At Scale",
     excerpt: "How to sound like the best version of yourself in every client message.",
     date: "January 22, 2025",
@@ -44,7 +66,7 @@ const blogPosts = [
     authorTitle: "RealtyClose Editorial"
   },
   {
-    id: 4,
+    id: 6,
     title: "The TC Handoff Playbook",
     excerpt: "Four moves that remove friction between agents and coordinators.",
     date: "January 22, 2025",
@@ -55,7 +77,7 @@ const blogPosts = [
     authorTitle: "RealtyClose Editorial"
   },
   {
-    id: 5,
+    id: 7,
     title: "Why A Gmail-First Assistant Beats Heavy CRMs For Busy Teams",
     excerpt: "Faster setup, lower cost, zero disruption to your daily work.",
     date: "January 22, 2025",
@@ -66,7 +88,7 @@ const blogPosts = [
     authorTitle: "RealtyClose Editorial"
   },
   {
-    id: 6,
+    id: 8,
     title: "10 AI Email Templates That Close More Deals",
     excerpt: "Discover proven email templates powered by AI that convert leads into clients faster than traditional approaches.",
     date: "January 15, 2025",
@@ -77,7 +99,7 @@ const blogPosts = [
     authorTitle: "Real Estate Tech Consultant"
   },
   {
-    id: 7,
+    id: 9,
     title: "The Future of Real Estate Communication",
     excerpt: "How AI is revolutionizing client communication in real estate and what it means for your business.",
     date: "January 10, 2025",
@@ -88,7 +110,7 @@ const blogPosts = [
     authorTitle: "Senior Product Manager"
   },
   {
-    id: 8,
+    id: 10,
     title: "Gmail Integration Best Practices for Agents",
     excerpt: "Maximize your productivity with these Gmail workflow optimizations specifically designed for real estate professionals.",
     date: "January 5, 2025",
@@ -99,7 +121,7 @@ const blogPosts = [
     authorTitle: "Productivity Coach"
   },
   {
-    id: 9,
+    id: 11,
     title: "Protecting Client Privacy in Digital Communications",
     excerpt: "Essential security measures every real estate agent should implement when communicating with clients online.",
     date: "December 28, 2024",
@@ -110,7 +132,7 @@ const blogPosts = [
     authorTitle: "Security Specialist"
   },
   {
-    id: 10,
+    id: 12,
     title: "Automating Follow-ups Without Losing Personal Touch",
     excerpt: "Strike the perfect balance between efficiency and personalization in your client follow-up strategy.",
     date: "December 20, 2024",
@@ -121,7 +143,7 @@ const blogPosts = [
     authorTitle: "Real Estate Coach"
   },
   {
-    id: 11,
+    id: 13,
     title: "RealtyClose vs Traditional Email: ROI Analysis",
     excerpt: "A comprehensive breakdown of time savings and increased conversion rates with AI-powered email assistance.",
     date: "December 15, 2024",
@@ -172,8 +194,9 @@ export default function BlogPage() {
                 <span>{featuredPost.readTime}</span>
                 <span className="mx-3">•</span>
                 <span className={`text-xs font-medium px-2 py-1 rounded ${
-                  featuredPost.category === "Productivity" ? "bg-purple-500/20 text-purple-300" :
+                  featuredPost.category === "Productivity" ? "bg-red-500/20 text-red-300" :
                   featuredPost.category === "Templates" ? "bg-blue-500/20 text-blue-300" :
+                  featuredPost.category === "Operations" ? "bg-purple-500/20 text-purple-300" :
                   "bg-orange-500/20 text-orange-300"
                 }`}>
                   {featuredPost.category}
@@ -231,6 +254,7 @@ export default function BlogPage() {
                     post.category === "Systems" ? "bg-teal-500/20 text-teal-300" :
                     post.category === "Brand" ? "bg-pink-500/20 text-pink-300" :
                     post.category === "Team" ? "bg-orange-500/20 text-orange-300" :
+                    post.category === "Operations" ? "bg-purple-500/20 text-purple-300" :
                     post.category === "Adoption" ? "bg-indigo-500/20 text-indigo-300" :
                     "bg-slate-500/20 text-slate-300"
                   }`}>
