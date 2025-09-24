@@ -2,7 +2,7 @@ export default function HomePage() {
   return (
     <main className="text-slate-900">
       {/* HERO — light surface */}
-      <section className="home-hero relative mx-auto max-w-6xl px-6 pt-16 pb-12 sm:pt-24">
+      <section className="home-hero relative mx-auto max-w-6xl px-6 pt-8 pb-12 sm:pt-16">
         <div className="grid items-center gap-10 md:grid-cols-2">
           <div>
             <div className="inline-flex items-center rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-700">
