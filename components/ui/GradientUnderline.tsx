@@ -8,11 +8,13 @@ export default function GradientUnderline({ children }:{children:React.ReactNode
       <motion.span 
         aria-hidden 
         className="absolute -bottom-1 left-0 h-2 w-full rounded-md opacity-90"
-        style={{background:"linear-gradient(90deg,var(--rc-primary),var(--rc-violet),var(--rc-pink))"}}
+        style={{
+          background:"linear-gradient(90deg,var(--rc-primary),var(--rc-violet),var(--rc-pink))",
+          transformOrigin: "left"
+        }}
         initial={{ scaleX: 0 }}
         animate={{ scaleX: 1 }}
         transition={{ delay: 0.8, duration: 0.6, ease: "easeOut" }}
-        transformOrigin="left"
       />
     </span>
   );
