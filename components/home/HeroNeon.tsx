@@ -1,4 +1,5 @@
-﻿import ShimmerButton from "@/components/ui/ShimmerButton";
+﻿"use client";
+import ShimmerButton from "@/components/ui/ShimmerButton";
 import ParallaxCard from "@/components/ui/ParallaxCard";
 
 export default function HeroNeon(){
@@ -67,4 +68,6 @@ export default function HeroNeon(){
     </section>
   );
 }
+
+
 
