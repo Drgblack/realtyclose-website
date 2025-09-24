@@ -522,3 +522,4 @@ body::before{
 .rc-holo{position:relative;border-radius:16px;background:#fff;}
 .rc-holo::before{content:"";position:absolute;inset:0;padding:1px;border-radius:16px;background:conic-gradient(from 180deg,var(--rc-cyan),var(--rc-blue),var(--rc-violet),var(--rc-pink),var(--rc-cyan));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;}
 
+

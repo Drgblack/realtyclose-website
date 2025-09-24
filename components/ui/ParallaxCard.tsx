@@ -23,3 +23,4 @@ export default function ParallaxCard({ children }:{children:React.ReactNode}){
 }
 
 
+
