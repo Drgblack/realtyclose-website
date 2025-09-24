@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why CRMs Fail Agents (And What to Do Instead) - RealtyClose Blog</title>
+    <meta name="description" content="Most real estate CRMs create more work than they solve. Discover why the Gmail-first approach is replacing traditional CRM systems for top agents.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand': '#2563eb',
+                        'brand-hover': '#1d4ed8',
+                        'brand-light': '#dbeafe',
+                        'soft-blue': '#f0f9ff',
+                        'soft-gray': '#f8fafc',
+                        'muted': '#64748b',
+                        'glass': 'rgba(255, 255, 255, 0.25)'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --gradient-bg: linear-gradient(180deg, #FFFFFF 0%, #DDE2EE 37.04%);
+            --gradient-hero: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #dbeafe 100%);
+            --glass-bg: rgba(255, 255, 255, 0.25);
+            --glass-border: rgba(255, 255, 255, 0.18);
+            --shadow-soft: 0 8px 32px rgba(31, 38, 135, 0.15);
+            --blur-amount: 16px;
+        }
+        
+        .gradient-bg {
+            background: var(--gradient-bg);
+        }
+        
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(var(--blur-amount));
+            -webkit-backdrop-filter: blur(var(--blur-amount));
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--shadow-soft);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            box-shadow: 0 4px 14px rgba(59, 130, 246, 0.25);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            transform: translateY(-1px);
+        }
+        
+        .crm-card {
+            background: linear-gradient(135deg, #fef3c7 0%, #fbbf24 30%, #f59e0b 100%);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .crm-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(245, 158, 11, 0.15);
+        }
+        
+        .problem-highlight {
+            background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+            border-left: 4px solid #ef4444;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .solution-box {
+            background: #f0f9ff;
+            border: 2px solid #3b82f6;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen">
+    <!-- Navigation -->
+    <nav class="glass-card sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="w-8 h-8 bg-brand rounded-lg flex items-center justify-center text-white font-bold text-sm mr-3">
+                            RC
+                        </div>
+                        <span class="text-xl font-bold">RealtyClose</span>
+                    </div>
+                    
+                    <div class="hidden md:block ml-10">
+                        <div class="flex items-baseline space-x-8">
+                            <a href="index.html" class="text-gray-600 hover:text-brand transition-colors">Home</a>
+                            <a href="index.html#features" class="text-gray-600 hover:text-brand transition-colors">Features</a>
+                            <a href="index.html#pricing" class="text-gray-600 hover:text-brand transition-colors">Pricing</a>
+                            <a href="blog.html" class="text-brand font-medium">Blog</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <button class="btn-primary text-white px-6 py-2 rounded-lg font-medium">
+                        Install Extension
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Header -->
+    <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="text-center mb-12">
+            <div class="inline-block bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-semibold mb-4">
+                SYSTEMS • 9 MIN READ
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                Why CRMs Fail Agents (And What to Do Instead)
+            </h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                Most real estate CRMs create more work than they solve. Discover why the Gmail-first approach is replacing traditional CRM systems for top agents.
+            </p>
+        </div>
+
+        <div class="flex items-center justify-between border-b border-gray-200 pb-6 mb-8">
+            <div class="flex items-center">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face&auto=format" 
+                     alt="Dr. Greg Blackburn" class="w-12 h-12 rounded-full mr-4">
+                <div>
+                    <div class="font-semibold text-gray-900">Dr. Greg Blackburn</div>
+                    <div class="text-sm text-gray-600">Real Estate Technology Expert</div>
+                </div>
+            </div>
+            <div class="text-sm text-gray-500">January 23, 2025</div>
+        </div>
+
+        <!-- Article Content -->
+        <div class="prose prose-lg max-w-none">
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">The $50 Million CRM Graveyard</h2>
+            
+            <p class="text-gray-700 mb-6">
+                Every year, real estate agents spend over $50 million on CRM systems they'll abandon within 18 months. The pattern is painfully predictable: excitement during the demo, frustration during implementation, abandonment when it becomes more work than it solves.
+            </p>
+
+            <p class="text-gray-700 mb-6">
+                "It was supposed to organize my business," says Maria Santos, a top producer in Austin. "Instead, I was spending 2 hours a day updating records instead of calling clients."
+            </p>
+
+            <div class="problem-highlight">
+                <p class="text-lg font-semibold text-gray-900 mb-2">
+                    <strong>68%</strong> of real estate professionals report their CRM creates more work than it eliminates
+                </p>
+                <p class="text-sm text-gray-600 italic">Real Estate Technology Survey 2024</p>
+            </div>
+
+            <p class="text-gray-700 mb-6">
+                Here's the uncomfortable truth: Traditional CRMs aren't failing because they're broken. They're failing because they're built for the wrong workflow.
+            </p>
+
+            <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">The 5 Fatal Flaws of Real Estate CRMs</h2>
+
+            <h3 class="text-xl font-semibold text-gray-900 mt-8 mb-4">Flaw #1: They Fight Your Natural Workflow</h3>
+
+            <p class="text-gray-700 mb-6">
+                Where do you actually spend your day? In your email inbox. Where do CRMs want you to work? In their separate platform.
+            </p>
+
+            <div class="crm-card p-6 rounded-xl mb-6">
+                <h4 class="font-semibold text-gray-900 mb-3">The Context-Switching Tax</h4>
+                <ul class="text-gray-700 space-y-2 text-sm">
+                    <li>• Client emails you: Gmail notification</li>
+                    <li>• You respond: Gmail compose window</li>
+                    <li>• You need client history: Switch to CRM</li>
+                    <li>• You log the interaction: CRM data entry</li>
+                    <li>• You set follow-up: CRM task system</li>
+                    <li>• You return to inbox: Gmail tab</li>
+                </ul>
+                <p class="text-xs text-gray-500 mt-3">Result: 6 clicks and 3 platforms for 1 conversation</p>
+            </div>
+
+            <h3 class="text-xl font-semibold text-gray-900 mt-8 mb-4">Flaw #2: Data Entry Becomes a Second Job</h3>
+
+            <p class="text-gray-700 mb-6">
+                CRMs promise organization but deliver data entry purgatory. Every interaction must be manually logged, categorized, and tagged.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-red-50 p-6 rounded-xl">
+                    <h4 class="font-semibold text-red-800 mb-3">❌ CRM Reality</h4>
+                    <ul class="text-red-700 space-y-2 text-sm">
+                        <li>• 15 minutes of data entry per client interaction</li>
+                        <li>• Duplicate information across multiple fields</li>
+                        <li>• Manual email importing and categorization</li>
+                        <li>• Constant reminder to "update your CRM"</li>
+                        <li>• Guilt when you fall behind on logging</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-green-50 p-6 rounded-xl">
+                    <h4 class="font-semibold text-green-800 mb-3">✅ Natural Workflow</h4>
+                    <ul class="text-green-700 space-y-2 text-sm">
+                        <li>• Email conversations auto-captured</li>
+                        <li>• Context preserved where it happens</li>
+                        <li>• No duplicate data entry required</li>
+                        <li>• Interaction history builds naturally</li>
+                        <li>• Focus on relationships, not records</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="text-xl font-semibold text-gray-900 mt-8 mb-4">Flaw #3: They Overcomplicate Simple Tasks</h3>
+
+            <p class="text-gray-700 mb-6">
+                Need to send a status update? In Gmail, that's 30 seconds. In a CRM, it's a 12-step process involving templates, merge fields, and campaign setups.
+            </p>
+
+            <div class="crm-card p-6 rounded-xl mb-6">
+                <h4 class="font-semibold text-gray-900 mb-3">CRM vs. Reality: Sending a Simple Update</h4>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div>
+                        <h5 class="font-medium text-gray-900 mb-2">Traditional CRM:</h5>
+                        <ol class="text-sm text-gray-700 space-y-1">
+                            <li>1. Log into CRM platform</li>
+                            <li>2. Find client record</li>
+                            <li>3. Navigate to communication tab</li>
+                            <li>4. Select email template</li>
+                            <li>5. Customize merge fields</li>
+                            <li>6. Preview and test</li>
+                            <li>7. Send and log interaction</li>
+                        </ol>
+                        <p class="text-xs text-red-600 mt-2">Time: 8-12 minutes</p>
+                    </div>
+                    <div>
+                        <h5 class="font-medium text-gray-900 mb-2">Gmail + Smart Tools:</h5>
+                        <ol class="text-sm text-gray-700 space-y-1">
+                            <li>1. Click reply in email thread</li>
+                            <li>2. Type or use smart template</li>
+                            <li>3. Send</li>
+                            <li class="text-gray-400">4. (Auto-logged)</li>
+                        </ol>
+                        <p class="text-xs text-green-600 mt-2">Time: 30 seconds</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-xl font-semibold text-gray-900 mt-8 mb-4">Flaw #4: Mobile Experience is an Afterthought</h3>
+
+            <p class="text-gray-700 mb-6">
+                Real estate happens on the go, but most CRM mobile apps feel like watered-down desktop versions. Slow loading, clunky interfaces, and limited functionality.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-900 mt-8 mb-4">Flaw #5: They Don't Understand Real Estate</h3>
+
+            <p class="text-gray-700 mb-6">
+                Generic CRMs are built for sales cycles, not real estate transactions. They don't understand closing timelines, compliance requirements, or the multi-party coordination that makes real estate unique.
+            </p>
+
+            <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">The Gmail-First Revolution</h2>
+
+            <p class="text-gray-700 mb-6">
+                While agents struggle with CRMs, the top 10% have discovered a different approach: working with their natural workflow instead of against it.
+            </p>
+
+            <div class="solution-box">
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Why Gmail is Your Real CRM</h3>
+                <p class="text-gray-700 mb-4">
+                    Think about it: Gmail already contains every client interaction, maintains conversation history, provides search functionality, and works seamlessly across all devices.
+                </p>
+                <ul class="text-gray-700 space-y-2">
+                    <li>✓ Every email conversation preserved with full context</li>
+                    <li>✓ Powerful search finds any client interaction instantly</li>
+                    <li>✓ Thread history shows complete relationship timeline</li>
+                    <li>✓ Labels and filters provide unlimited organization</li>
+                    <li>✓ Mobile experience that actually works</li>
+                    <li>✓ No data entry—information captures automatically</li>
+                </ul>
+            </div>
+
+            <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">The Smart Agent's Tech Stack</h2>
+
+            <p class="text-gray-700 mb-6">
+                Instead of fighting a CRM, successful agents build a simple, email-centric system:
+            </p>
+
+            <div class="space-y-6 mb-8">
+                <div class="bg-blue-50 p-6 rounded-xl">
+                    <h4 class="font-semibold text-blue-900 mb-3">📧 Gmail as Command Center</h4>
+                    <p class="text-blue-800 text-sm">All client communication happens here. No switching platforms, no duplicate entry.</p>
+                </div>
+                
+                <div class="bg-green-50 p-6 rounded-xl">
+                    <h4 class="font-semibold text-green-900 mb-3">🤖 RealtyClose for Automation</h4>
+                    <p class="text-green-800 text-sm">Smart templates, follow-up reminders, and AI-drafted responses—all inside Gmail.</p>
+                </div>
+                
+                <div class="bg-purple-50 p-6 rounded-xl">
+                    <h4 class="font-semibold text-purple-900 mb-3">📅 Google Calendar for Scheduling</h4>
+                    <p class="text-purple-800 text-sm">Integrates natively with Gmail. Clients see your availability, book directly.</p>
+                </div>
+                
+                <div class="bg-yellow-50 p-6 rounded-xl">
+                    <h4 class="font-semibold text-yellow-900 mb-3">📋 Simple Task Management</h4>
+                    <p class="text-yellow-800 text-sm">Google Tasks, Todoist, or Asana for deadline tracking. Keep it simple.</p>
+                </div>
+            </div>
+
+            <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Real Agent Results</h2>
+
+            <div class="bg-gray-50 p-8 rounded-xl my-8">
+                <div class="text-center mb-6">
+                    <div class="text-4xl text-blue-600 mb-4">💬</div>
+                    <blockquote class="text-xl text-gray-800 font-medium mb-6 italic">
+                        "I abandoned my $200/month CRM for RealtyClose + Gmail. I'm saving 90 minutes daily on admin work and my clients get faster, more personal responses. My referral rate increased 40% because I actually have time to nurture relationships."
+                    </blockquote>
+                    <div class="text-gray-600 font-medium">– David Chen, $8M Annual Volume</div>
+                </div>
+            </div>
+
+            <h3 class="text-xl font-semibold text-gray-900 mt-8 mb-4">The Numbers Don't Lie</h3>
+
+            <div class="grid md:grid-cols-3 gap-6 mb-8">
+                <div class="text-center p-6 bg-blue-50 rounded-xl">
+                    <div class="text-3xl font-bold text-blue-600 mb-2">90min</div>
+                    <p class="text-sm text-blue-800">Daily time saved vs. traditional CRM</p>
+                </div>
+                
+                <div class="text-center p-6 bg-green-50 rounded-xl">
+                    <div class="text-3xl font-bold text-green-600 mb-2">40%</div>
+                    <p class="text-sm text-green-800">Increase in referral rates</p>
+                </div>
+                
+                <div class="text-center p-6 bg-purple-50 rounded-xl">
+                    <div class="text-3xl font-bold text-purple-600 mb-2">$2,400</div>
+                    <p class="text-sm text-purple-800">Annual savings on CRM costs</p>
+                </div>
+            </div>
+
+            <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Making the Switch: Your 30-Day Migration Plan</h2>
+
+            <p class="text-gray-700 mb-6">
+                Ready to escape CRM hell? Here's how to transition to a Gmail-first system:
+            </p>
+
+            <div class="space-y-4 mb-8">
+                <div class="flex items-start">
+                    <div class="bg-brand text-white rounded-full w-8 h-8 flex items-center justify-center font-semibold mr-4 flex-shrink-0">1</div>
+                    <div>
+                        <h4 class="font-semibold text-gray-900">Week 1: Export and Organize</h4>
+                        <p class="text-gray-600">Export key contacts from your CRM. Set up Gmail labels for client categories.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="bg-brand text-white rounded-full w-8 h-8 flex items-center justify-center font-semibold mr-4 flex-shrink-0">2</div>
+                    <div>
+                        <h4 class="font-semibold text-gray-900">Week 2: Install Smart Tools</h4>
+                        <p class="text-gray-600">Add RealtyClose to Gmail. Set up templates for common scenarios.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="bg-brand text-white rounded-full w-8 h-8 flex items-center justify-center font-semibold mr-4 flex-shrink-0">3</div>
+                    <div>
+                        <h4 class="font-semibold text-gray-900">Week 3: Build New Habits</h4>
+                        <p class="text-gray-600">Start working exclusively in Gmail. Use filters and search to find information.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="bg-brand text-white rounded-full w-8 h-8 flex items-center justify-center font-semibold mr-4 flex-shrink-0">4</div>
+                    <div>
+                        <h4 class="font-semibold text-gray-900">Week 4: Cancel Your CRM</h4>
+                        <p class="text-gray-600">Experience the freedom of working with your natural workflow.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">The Bottom Line</h2>
+
+            <p class="text-gray-700 mb-6">
+                CRMs fail because they ask you to change how you work. The Gmail-first approach succeeds because it enhances how you already work.
+            </p>
+
+            <p class="text-gray-700 mb-6">
+                Stop fighting your tools. Stop doing data entry. Stop switching between platforms. Start working where your clients already reach you: your inbox.
+            </p>
+
+            <div class="bg-gradient-to-r from-brand to-brand-hover rounded-2xl p-8 text-white text-center my-12">
+                <h3 class="text-2xl font-bold mb-4">Ready to ditch your CRM for something better?</h3>
+                <p class="text-blue-100 mb-6">
+                    See how RealtyClose transforms Gmail into your complete client management system
+                </p>
+                <button class="bg-white text-brand px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                    Start Gmail-First CRM Free →
+                </button>
+            </div>
+
+        </div>
+    </article>
+
+    <!-- Related Articles -->
+    <section class="bg-gray-50 py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center">Related Articles</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <article class="glass-card rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=200&fit=crop&auto=format" 
+                         alt="Email automation" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <div class="text-xs font-semibold text-brand mb-2">AUTOMATION</div>
+                        <h3 class="font-bold text-gray-900 mb-2">The 5 Most Time-Wasting Emails</h3>
+                        <p class="text-gray-600 text-sm mb-3">Stop writing the same emails over and over...</p>
+                        <a href="blog-post-11.html" class="text-brand font-semibold hover:text-brand-hover">Read More →</a>
+                    </div>
+                </article>
+                
+                <article class="glass-card rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
+                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=400&h=200&fit=crop&auto=format" 
+                         alt="Email templates" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <div class="text-xs font-semibold text-brand mb-2">TEMPLATES</div>
+                        <h3 class="font-bold text-gray-900 mb-2">The Real Estate Email Template Library</h3>
+                        <p class="text-gray-600 text-sm mb-3">Professional templates you'll actually use...</p>
+                        <a href="#" class="text-brand font-semibold hover:text-brand-hover">Read More →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid md:grid-cols-5 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 bg-brand rounded-lg flex items-center justify-center text-white font-bold text-sm mr-3">
+                            RC
+                        </div>
+                        <span class="text-xl font-bold">RealtyClose</span>
+                    </div>
+                    <p class="text-sm text-gray-400 mb-6 max-w-prose">
+                        RealtyClose simplifies real estate closings with automated communication, intelligent reminders, and secure workflows - part of the Zaza Technologies family building trusted, AI-powered tools for professionals.
+                    </p>
+                    
+                    <!-- Social Links -->
+                    <div class="flex space-x-4 mb-6">
+                        <a href="https://twitter.com/realtyclose" class="text-gray-400 hover:text-white transition-colors" aria-label="Twitter">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/company/realtyclose" class="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/realtyclose" class="text-gray-400 hover:text-white transition-colors" aria-label="GitHub">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://facebook.com/realtyclose" class="text-gray-400 hover:text-white transition-colors" aria-label="Facebook">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <!-- Partner Links -->
+                    <div class="text-sm text-gray-400">
+                        <p class="mb-2">Part of the Zaza Technologies family:</p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="https://zazatechnologies.com" class="text-brand-light hover:text-white transition-colors">Zaza Technologies</a>
+                            <a href="https://zazateach.com" class="text-brand-light hover:text-white transition-colors">Zaza Teach</a>
+                            <a href="https://zazapromptly.com" class="text-brand-light hover:text-white transition-colors">Zaza Promptly</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Product</h4>
+                    <ul class="space-y-2">
+                        <li><a href="features.html" class="text-gray-400 hover:text-white transition-colors">Features</a></li>
+                        <li><a href="index.html#dashboard" class="text-gray-400 hover:text-white transition-colors">Dashboard</a></li>
+                        <li><a href="index.html#pricing" class="text-gray-400 hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="index.html#integrations" class="text-gray-400 hover:text-white transition-colors">Integrations</a></li>
+                        <li><a href="demo.html" class="text-gray-400 hover:text-white transition-colors">Demo</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="help-center.html" class="text-gray-400 hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Documentation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">API Reference</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Community</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="privacy-policy.html" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="text-gray-400 text-sm mb-4 md:mb-0">
+                    <p>&copy; 2025 RealtyClose. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6 text-sm">
+                    <a href="privacy-policy.html" class="text-gray-400 hover:text-white transition-colors">Privacy</a>
+                    <a href="terms-of-service.html" class="text-gray-400 hover:text-white transition-colors">Terms</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Cookies</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
