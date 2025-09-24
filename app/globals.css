@@ -239,3 +239,17 @@ footer a { display:block; margin:.25rem 0; }
 footer ul { list-style:none; margin:0; padding:0; }
 footer ul li { margin:.125rem 0; }
 footer .socials, footer .social-links { display:flex; gap:.5rem; flex-wrap:wrap; }
+/* --- Personality gradient background (site-wide) --- */
+:root{
+  --accent-blue:   #3B82F6; /* blue-500 */
+  --accent-purple: #8B5CF6; /* violet-500 */
+  --accent-mint:   #10B981; /* emerald-500 */
+}
+body::before{
+  content:\"\"; position:fixed; inset:0; pointer-events:none; z-index:-1;
+  background:
+    radial-gradient(600px 400px at 15% 10%, rgba(59,130,246,0.10), transparent 50%),
+    radial-gradient(800px 500px at 85% 0%,  rgba(139,92,246,0.10), transparent 55%),
+    radial-gradient(500px 500px at 50% 100%, rgba(16,185,129,0.08), transparent 60%);
+  filter:saturate(110%);
+}
