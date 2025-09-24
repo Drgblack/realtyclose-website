@@ -23,11 +23,9 @@ export default function HeroNeon(){
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-14 px-6 pt-28 pb-24 sm:pt-40 sm:pb-32 md:grid-cols-2"
            onMouseMove={(e)=>{ const el = document.querySelector<HTMLElement>(".aurora-spot"); if(!el) return; const r=(e.currentTarget as HTMLElement).getBoundingClientRect(); el.style.setProperty("--mx", ((e.clientX-r.left)/r.width*100)+"%"); el.style.setProperty("--my", ((e.clientY-r.top)/r.height*100)+"%"); }}>
         <div>
-          <h1 className="text-5xl font-extrabold tracking-tight sm:text-6xl xl:text-7xl" style={{lineHeight:1.08}}>
-            <span className="bg-clip-text text-transparent"
-                  style={{background:"linear-gradient(180deg,#0f172a 35%, #1f2937)"}}>Perfect real estate emails</span><br/>
-            <span className="relative inline-block">
-              <span className="relative z-10">in 10 seconds</span>
+          <h1 className="text-5xl font-extrabold tracking-tight sm:text-6xl xl:text-7xl text-[var(--rc-text)]" style={{lineHeight:1.08}}>
+            Perfect real estate emails in <span className="relative inline-block">
+              <span className="relative z-10">10 seconds</span>
               <span aria-hidden className="absolute -bottom-1 left-0 h-2 w-full rounded-md" style={{background:"var(--rc-cta-grad)"}} />
             </span>
           </h1>
