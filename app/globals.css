@@ -14,13 +14,17 @@
   --accent: 52 211 153;      /* emerald-400 */
   --radius: 1rem;            /* rounded-2xl */
   
-  /* Clean Light Theme Variables */
-  --rc-bg: #ffffff;
-  --rc-text: #0f172a;
-  --rc-muted: #64748b;
-  --rc-border: #e2e8f0;
-  --rc-primary: #2563eb;
-  --rc-radius: 1rem;
+  /* Clean Light Theme Variables - Premium Version */
+  --rc-bg: #f7f9fc;
+  --rc-surface: #ffffff;
+  --rc-text: #0f172a;   /* slate-900 */
+  --rc-muted: #475569;  /* slate-600 */
+  --rc-border: rgba(15,23,42,.08);
+  --rc-primary: #2563eb; /* blue-600 */
+  --rc-accent: #10b981;  /* emerald-500 */
+  --rc-violet: #7c3aed;  /* violet-600 */
+  --rc-pink: #ec4899;    /* pink-500 */
+  --rc-radius: 16px;
   
   /* Legacy variables (keep for existing styles) */
   --gradient-bg: linear-gradient(180deg, #FFFFFF 0%, #DDE2EE 37.04%);
@@ -232,6 +236,29 @@
   .hover-lift {
     @apply transition-all duration-150 hover:-translate-y-px;
   }
+}
+
+/* --- Reduced Motion Safety --- */
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+}
+
+/* --- Premium Animations --- */
+.typewriter {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid rgba(15,23,42,.3);
+  animation: typing 2.8s steps(44,end), blink .9s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
 }
 
 /* --- Footer spacing fix --- */
