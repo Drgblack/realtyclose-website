@@ -7,6 +7,7 @@ import CountUp from "@/components/ui/CountUp";
 import Parallax from "@/components/ui/Parallax";
 import TestimonialCarousel from "@/components/ui/TestimonialCarousel";
 import StickyCTA from "@/components/ui/StickyCTA";
+import StickyFloatingCTA from "@/components/ui/StickyFloatingCTA";
 
 export default function HomePage() {
   return (
@@ -34,8 +35,8 @@ export default function HomePage() {
             { t: "Stay compliant", d: "Audit trails and approved templates keep messages safe." }
           ].map((i, index) => (
             <Reveal key={i.t} delay={0.1 * index}>
-              <div className="relative rounded-2xl border border-[var(--rc-border)] bg-white shadow-[0_10px_30px_rgba(2,6,23,0.08)] transition will-change-transform hover:translate-y-[1px] p-6 group">
-                <span aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-[2px] rounded-t-2xl" style={{background:"var(--rc-cta-grad)"}} />
+              <div className="rounded-2xl border border-[var(--rc-border)] bg-white shadow-[0_20px_60px_rgba(2,6,23,.10)] transition will-change-transform hover:translate-y-[1px] p-6 group">
+                <span aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-0.5 rounded-t-2xl" style={{background:"var(--rc-cta-grad)"}} />
                 <div className="text-lg font-bold text-[color:var(--rc-text)] group-hover:text-blue-600 transition-colors duration-300">{i.t}</div>
                 <p className="mt-2 text-sm leading-relaxed text-[color:var(--rc-muted)]">{i.d}</p>
               </div>
@@ -80,10 +81,15 @@ export default function HomePage() {
           
           <Reveal delay={0.4}>
             <div className="mt-12">
-              <h3 className="text-xl font-semibold mb-4">See the transformation</h3>
+              <h3 className="text-xl font-semibold text-[var(--rc-text)] mb-4">See the transformation</h3>
               <EmailTransform />
             </div>
           </Reveal>
+          
+          {/* Gradient divider */}
+          <div className="my-16">
+            <div className="h-px w-full" style={{background:"linear-gradient(90deg,transparent,var(--rc-blue) 20%, var(--rc-violet) 80%, transparent)"}} />
+          </div>
         </div>
       </section>
 
@@ -133,9 +139,10 @@ export default function HomePage() {
               { k:12, suffix:" sec", v:"average draft time" },
             ].map((p, index)=>(
               <Reveal key={p.v} delay={0.1 * index}>
-                <div className="rc-holo p-6 text-center shadow-[0_18px_40px_rgba(2,6,23,.08)]">
+                <div className="rc-holo p-6 text-center shadow-[0_20px_60px_rgba(2,6,23,.10)] transition will-change-transform hover:translate-y-[1px] hover:shadow-[0_28px_70px_rgba(37,99,235,.20)]">
+                  <span aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-0.5 rounded-t-2xl" style={{background:"var(--rc-cta-grad)"}} />
                   <div className="relative">
-                    <div className="text-4xl font-extrabold text-[var(--rc-blue)] group-hover:scale-110 transition-transform duration-300">
+                    <div className="text-4xl font-extrabold text-[var(--rc-blue-700)] group-hover:scale-110 transition-transform duration-300">
                       <CountUp to={p.k} suffix={p.suffix} />
                     </div>
                     <div className="absolute inset-0 text-4xl font-extrabold bg-gradient-to-r from-white to-white bg-clip-text text-transparent opacity-0 group-hover:opacity-20 transition-opacity duration-300">
@@ -180,6 +187,9 @@ export default function HomePage() {
 
       {/* Sticky CTA */}
       <StickyCTA />
+      
+      {/* Floating CTA */}
+      <StickyFloatingCTA />
     </main>
   );
 }
