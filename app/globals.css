@@ -3,6 +3,18 @@
 @tailwind utilities;
 
 :root {
+  /* Design System Variables */
+  --bg: 14 18 27;            /* slate-900 */
+  --surface-1: 22 27 38;     /* slate-800 */
+  --surface-2: 31 41 55;     /* slate-700 */
+  --border: 255 255 255 / .10;
+  --text: 241 245 249;       /* slate-100 */
+  --muted: 203 213 225;      /* slate-300 */
+  --primary: 37 99 235;      /* blue-600 */
+  --accent: 52 211 153;      /* emerald-400 */
+  --radius: 1rem;            /* rounded-2xl */
+  
+  /* Legacy variables (keep for existing styles) */
   --gradient-bg: linear-gradient(180deg, #FFFFFF 0%, #DDE2EE 37.04%);
   --gradient-hero: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #dbeafe 100%);
   --gradient-text: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
@@ -11,6 +23,13 @@
   --shadow-soft: 0 8px 32px rgba(31, 38, 135, 0.15);
   --shadow-card: 0 4px 15px rgba(0, 0, 0, 0.08);
   --blur-amount: 16px;
+}
+
+/* Light hero surface */
+.home-hero {
+  --bg: 242 246 255;         /* soft blue */
+  --text: 15 23 42;          /* slate-900 */
+  --muted: 71 85 105;        /* slate-600 */
 }
 
 @layer utilities {
@@ -187,5 +206,22 @@
     color: #64748b;
     font-weight: 400;
     margin-top: 1rem;
+  }
+  
+  /* Design System Utilities */
+  .card {
+    @apply rounded-2xl border border-white/10 bg-white/[0.03] shadow-[0_1px_0_rgba(255,255,255,.04)];
+  }
+  
+  .btn-primary {
+    @apply rounded-xl bg-blue-600 text-white hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+  }
+  
+  .btn-secondary {
+    @apply rounded-xl bg-white/10 text-white ring-1 ring-white/15 hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white/40;
+  }
+  
+  .hover-lift {
+    @apply transition-all duration-150 hover:-translate-y-px;
   }
 }
