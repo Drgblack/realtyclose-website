@@ -3,13 +3,13 @@ export default function ProofTrust() {
     { k: "500+", v: "active users" },
     { k: "10K+", v: "emails drafted" },
     { k: "5", v: "languages supported" },
-    { k: "10 sec", v: "avg. draft time" },
+    { k: "10 sec", v: "average draft time" },
   ];
 
   const quotes = [
-    { q: "I cut my weekly client updates from 30 minutes to 5. Total gamechanger.", a: "Team Lead" },
-    { q: "Our closing rate improved 15% in two months.", a: "Brokerage Ops Manager" },
-    { q: "Audit prep time cut by 90%. Compliance officer loves it.", a: "Broker Owner" },
+    { q: "I cut my weekly client updates from 30 minutes to 5. Gamechanger.", a: "Team Lead" },
+    { q: "Our closing rate improved 15 percent in two months.", a: "Brokerage Ops Manager" },
+    { q: "Audit prep time cut by 90 percent. Compliance officer loves it.", a: "Broker Owner" },
   ];
 
   return (

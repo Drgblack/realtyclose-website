@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 import PageShell from "@/app/components/PageShell";
+import { BillingProvider } from "@/components/pricing/BillingToggle";
+import BillingToggle from "@/components/pricing/BillingToggle";
+import Plans from "@/components/pricing/Plans";
+import ComparisonTable from "@/components/pricing/ComparisonTable";
 
 export const metadata: Metadata = {
   title: "Pricing | RealtyClose",
@@ -15,198 +19,51 @@ export default function PricingPage() {
           Simple, transparent pricing for real estate professionals
         </p>
         <p className="text-slate-300">
-          Start free and scale with your business. No hidden fees, no long-term contracts.
+          Save time, protect deals, and keep every email compliant.
         </p>
       </div>
 
-      {/* Pricing Tiers */}
-      <div className="grid md:grid-cols-3 gap-8 my-12 not-prose">
-        {/* Free Tier */}
-        <div className="bg-slate-700/30 border border-slate-600/50 rounded-xl p-8">
-          <div className="text-center mb-6">
-            <h3 className="text-2xl font-bold text-white mb-2">Free</h3>
-            <div className="text-4xl font-bold text-blue-300 mb-2">$0</div>
-            <p className="text-slate-400">Perfect for trying RealtyClose</p>
-          </div>
-          
-          <ul className="text-slate-300 space-y-3 mb-8">
-            <li className="flex items-center">
-              <span className="w-5 h-5 bg-green-500/20 rounded-full flex items-center justify-center mr-3">
-                <span className="text-green-400 text-xs">✓</span>
-              </span>
-              5 AI email generations per month
-            </li>
-            <li className="flex items-center">
-              <span className="w-5 h-5 bg-green-500/20 rounded-full flex items-center justify-center mr-3">
-                <span className="text-green-400 text-xs">✓</span>
-              </span>
-              Basic email templates
-            </li>
-            <li className="flex items-center">
-              <span className="w-5 h-5 bg-green-500/20 rounded-full flex items-center justify-center mr-3">
-                <span className="text-green-400 text-xs">✓</span>
-              </span>
-              Gmail integration
-            </li>
-            <li className="flex items-center">
-              <span className="w-5 h-5 bg-green-500/20 rounded-full flex items-center justify-center mr-3">
-                <span className="text-green-400 text-xs">✓</span>
-              </span>
-              Community support
-            </li>
-          </ul>
-          
-          <button className="w-full bg-slate-600 hover:bg-slate-500 text-white py-3 px-6 rounded-lg font-medium transition-colors">
-            Get Started Free
-          </button>
+      <BillingProvider>
+        <div className="mt-8">
+          <BillingToggle />
+          <Plans />
+          <p className="mt-3 text-xs text-white/50 text-center">VAT may apply. You can cancel anytime.</p>
         </div>
+      </BillingProvider>
 
-        {/* Professional Tier - Most Popular */}
-        <div className="bg-gradient-to-br from-blue-600/20 to-blue-500/10 border-2 border-blue-500 rounded-xl p-8 relative transform scale-105 shadow-xl">
-          <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-            <span className="bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-medium">
-              Most Popular
-            </span>
-          </div>
-          
-          <div className="text-center mb-6">
-            <h3 className="text-2xl font-bold text-white mb-2">Professional</h3>
-            <div className="text-4xl font-bold text-blue-300 mb-2">$29</div>
-            <p className="text-slate-400">per month • billed monthly</p>
-          </div>
-          
-          <ul className="text-slate-300 space-y-3 mb-8">
-            <li className="flex items-center">
-              <span className="w-5 h-5 bg-green-500/20 rounded-full flex items-center justify-center mr-3">
-                <span className="text-green-400 text-xs">✓</span>
-              </span>
-              Unlimited AI email generations
-            </li>
-            <li className="flex items-center">
-              <span className="w-5 h-5 bg-green-500/20 rounded-full flex items-center justify-center mr-3">
-                <span className="text-green-400 text-xs">✓</span>
-              </span>
-              Premium email templates
-            </li>
-            <li className="flex items-center">
-              <span className="w-5 h-5 bg-green-500/20 rounded-full flex items-center justify-center mr-3">
-                <span className="text-green-400 text-xs">✓</span>
-              </span>
-              Quick Actions suite
-            </li>
-            <li className="flex items-center">
-              <span className="w-5 h-5 bg-green-500/20 rounded-full flex items-center justify-center mr-3">
-                <span className="text-green-400 text-xs">✓</span>
-              </span>
-              Custom tone & style settings
-            </li>
-            <li className="flex items-center">
-              <span className="w-5 h-5 bg-green-500/20 rounded-full flex items-center justify-center mr-3">
-                <span className="text-green-400 text-xs">✓</span>
-              </span>
-              Priority email support
-            </li>
-            <li className="flex items-center">
-              <span className="w-5 h-5 bg-green-500/20 rounded-full flex items-center justify-center mr-3">
-                <span className="text-green-400 text-xs">✓</span>
-              </span>
-              Analytics & insights
-            </li>
-          </ul>
-          
-          <button className="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-lg font-medium transition-colors">
-            Start 14-Day Free Trial
-          </button>
-        </div>
-
-        {/* Team Tier */}
-        <div className="bg-slate-700/30 border border-slate-600/50 rounded-xl p-8">
-          <div className="text-center mb-6">
-            <h3 className="text-2xl font-bold text-white mb-2">Team</h3>
-            <div className="text-4xl font-bold text-purple-300 mb-2">$49</div>
-            <p className="text-slate-400">per user/month • billed monthly</p>
-          </div>
-          
-          <ul className="text-slate-300 space-y-3 mb-8">
-            <li className="flex items-center">
-              <span className="w-5 h-5 bg-green-500/20 rounded-full flex items-center justify-center mr-3">
-                <span className="text-green-400 text-xs">✓</span>
-              </span>
-              Everything in Professional
-            </li>
-            <li className="flex items-center">
-              <span className="w-5 h-5 bg-green-500/20 rounded-full flex items-center justify-center mr-3">
-                <span className="text-green-400 text-xs">✓</span>
-              </span>
-              Shared template library
-            </li>
-            <li className="flex items-center">
-              <span className="w-5 h-5 bg-green-500/20 rounded-full flex items-center justify-center mr-3">
-                <span className="text-green-400 text-xs">✓</span>
-              </span>
-              Team collaboration tools
-            </li>
-            <li className="flex items-center">
-              <span className="w-5 h-5 bg-green-500/20 rounded-full flex items-center justify-center mr-3">
-                <span className="text-green-400 text-xs">✓</span>
-              </span>
-              Compliance & brand controls
-            </li>
-            <li className="flex items-center">
-              <span className="w-5 h-5 bg-green-500/20 rounded-full flex items-center justify-center mr-3">
-                <span className="text-green-400 text-xs">✓</span>
-              </span>
-              Team analytics dashboard
-            </li>
-            <li className="flex items-center">
-              <span className="w-5 h-5 bg-green-500/20 rounded-full flex items-center justify-center mr-3">
-                <span className="text-green-400 text-xs">✓</span>
-              </span>
-              Dedicated account manager
-            </li>
-          </ul>
-          
-          <button className="w-full bg-purple-500 hover:bg-purple-600 text-white py-3 px-6 rounded-lg font-medium transition-colors">
-            Contact Sales
-          </button>
-        </div>
+      {/* Feature Comparison Link */}
+      <div className="mt-8 text-center">
+        <a href="/features#comparison" id="view-feature-comparison" className="text-sm font-medium text-blue-400 hover:text-blue-300">
+          View full feature comparison →
+        </a>
       </div>
+
+      {/* Comparison Table */}
+      <ComparisonTable />
+
 
       {/* Enterprise Option */}
-      <div className="bg-gradient-to-r from-purple-600/10 to-blue-600/10 border border-purple-500/20 rounded-xl p-8 my-12">
-        <div className="text-center">
-          <h3 className="text-2xl font-bold text-white mb-4">Enterprise</h3>
-          <p className="text-slate-300 mb-4 text-lg font-medium">
-            Trusted by brokerages with 50+ agents
-          </p>
-          <p className="text-slate-300 mb-6">
-            Built for compliance-driven teams. Custom solutions that scale with your brokerage.
-          </p>
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
-            <div className="text-left">
-              <h4 className="text-lg font-semibold text-purple-300 mb-3">Everything in Team, plus:</h4>
-              <ul className="text-slate-300 space-y-2">
-                <li>• Custom integrations (MLS, CRM)</li>
-                <li>• Advanced compliance controls</li>
-                <li>• White-label options</li>
-                <li>• API access</li>
-              </ul>
-            </div>
-            <div className="text-left">
-              <h4 className="text-lg font-semibold text-purple-300 mb-3">Enterprise Support:</h4>
-              <ul className="text-slate-300 space-y-2">
-                <li>• Dedicated success manager</li>
-                <li>• Priority phone support</li>
-                <li>• Custom training sessions</li>
-                <li>• SLA guarantees</li>
-              </ul>
-            </div>
-          </div>
-          <button className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white py-3 px-8 rounded-lg font-medium transition-all">
-            Schedule Enterprise Demo
-          </button>
+      <section className="mt-12 rounded-2xl border border-white/10 bg-white/5 p-8 text-white">
+        <h2 className="text-xl font-semibold">Enterprise</h2>
+        <p className="mt-1 text-sm text-white/80">Trusted by brokerages with 50+ agents. Custom solutions that scale with your brokerage.</p>
+        <div className="mt-4 grid gap-6 sm:grid-cols-2">
+          <ul className="space-y-2 text-sm text-white/80">
+            <li>Custom integrations (MLS, CRM)</li>
+            <li>Advanced compliance controls</li>
+            <li>White label options</li>
+            <li>API access</li>
+          </ul>
+          <ul className="space-y-2 text-sm text-white/80">
+            <li>Dedicated success manager</li>
+            <li>Priority phone support</li>
+            <li>Custom training sessions</li>
+            <li>SLA guarantees</li>
+          </ul>
         </div>
-      </div>
+        <a href="/enterprise-demo" id="cta-enterprise" className="mt-6 inline-flex rounded-xl bg-white/10 px-5 py-2 text-sm font-semibold text-white ring-1 ring-white/15 hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white/40">
+          Schedule Enterprise Demo
+        </a>
+      </section>
 
 
       {/* CTA Section */}
@@ -235,20 +92,22 @@ export default function PricingPage() {
           </ul>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <button className="inline-flex items-center justify-center rounded-xl px-5 py-3 text-sm font-semibold text-slate-900 bg-emerald-400 hover:bg-emerald-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/60">
-              Start Free Trial
-            </button>
-            <button className="inline-flex items-center justify-center rounded-xl px-5 py-3 text-sm font-semibold text-white/90 bg-white/10 hover:bg-white/15 ring-1 ring-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40">
+            <a href="/signup?plan=professional" id="cta-pricing-trial" className="inline-flex items-center justify-center rounded-xl px-5 py-3 text-sm font-semibold text-slate-900 bg-emerald-400 hover:bg-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-400">
+              Start 14 Day Free Trial
+            </a>
+            <a href="/demo" id="cta-pricing-demo" className="inline-flex items-center justify-center rounded-xl px-5 py-3 text-sm font-semibold text-white/90 bg-white/10 hover:bg-white/15 ring-1 ring-white/10 focus:outline-none focus:ring-2 focus:ring-white/40">
               Schedule Demo
-            </button>
+            </a>
           </div>
 
           <div className="mt-4 text-xs text-slate-400">
-            No credit card required · Cancel anytime · Bank-level security
+            No credit card required · Cancel anytime · <span className="relative">
+              <span title="256-bit SSL encryption, SOC 2 Type II certified, zero-knowledge architecture" className="underline decoration-dotted cursor-help">Bank level security</span>
+            </span>
           </div>
 
           <div className="mt-6 text-slate-300">
-            "Weekly client updates dropped from 30 minutes to 5. Total gamechanger."
+            "I cut my weekly client updates from 30 minutes to 5. Gamechanger."
           </div>
           <div className="mt-1 text-xs text-slate-400">— Team Lead</div>
           

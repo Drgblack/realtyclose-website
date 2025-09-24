@@ -2,7 +2,7 @@ export default function VisionCTA() {
   return (
     <section className="bg-slate-900 py-16 text-white">
       <div className="mx-auto max-w-4xl px-6 text-center">
-        <h2 className="text-3xl font-bold tracking-tight">Ready to get started?</h2>
+        <h2 className="text-3xl font-bold tracking-tight">Eliminate Communication Chaos</h2>
         <p className="mx-auto mt-3 max-w-2xl text-slate-300">
           Our mission is simple: eliminate communication chaos so agents, teams, and coordinators can focus on closing deals, not fixing their inbox.
         </p>
