@@ -523,3 +523,10 @@ body::before{
 .rc-holo::before{content:"";position:absolute;inset:0;padding:1px;border-radius:16px;background:conic-gradient(from 180deg,var(--rc-cyan),var(--rc-blue),var(--rc-violet),var(--rc-pink),var(--rc-cyan));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;}
 
 
+/* === Pop++ intensifiers === */
+:root{
+  --rc-cyan:#06B6D4; /* brighter */
+  --rc-blue:#3B82F6;
+  --rc-violet:#8B5CF6;
+  --rc-cta-grad:linear-gradient(90deg,var(--rc-cyan),var(--rc-blue) 40%,var(--rc-violet));
+}
