@@ -10,9 +10,17 @@ export default function HomePage() {
   return (
     <main className="bg-[var(--rc-bg)] text-[color:var(--rc-text)]">
       {/* HERO */}
-      <section className="relative overflow-hidden">
-        {/* Enhanced gradient blobs */}
-        <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(700px_420px_at_20%_-10%,rgba(37,99,235,.15),transparent_60%),radial-gradient(600px_360px_at_90%_-20%,rgba(16,185,129,.12),transparent_55%)]" />
+      <section className="hero-glow relative overflow-hidden">
+        {/* Enhanced gradient blobs with animation */}
+        <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
+          <div className="absolute inset-0 bg-[radial-gradient(700px_420px_at_20%_-10%,rgba(37,99,235,.20),transparent_60%),radial-gradient(600px_360px_at_90%_-20%,rgba(16,185,129,.15),transparent_55%)] animate-pulse" style={{animationDuration: '4s'}} />
+          <div className="absolute inset-0 bg-[radial-gradient(500px_300px_at_60%_40%,rgba(139,92,246,.10),transparent_50%)] opacity-70" />
+          
+          {/* Floating orbs for extra shine */}
+          <div className="absolute top-10 right-10 h-32 w-32 rounded-full bg-gradient-to-r from-blue-400/20 to-violet-400/20 blur-3xl animate-pulse" style={{animationDuration: '3s'}} />
+          <div className="absolute bottom-20 left-16 h-24 w-24 rounded-full bg-gradient-to-r from-emerald-400/20 to-blue-400/20 blur-2xl animate-pulse" style={{animationDuration: '4s', animationDelay: '1s'}} />
+          <div className="absolute top-1/2 left-1/3 h-16 w-16 rounded-full bg-gradient-to-r from-pink-400/20 to-violet-400/20 blur-xl animate-pulse" style={{animationDuration: '5s', animationDelay: '2s'}} />
+        </div>
         <div className="mx-auto grid max-w-6xl gap-8 px-6 pb-16 pt-16 md:gap-10 md:grid-cols-2 sm:pt-28">
           <div>
             <Reveal>
@@ -63,11 +71,11 @@ export default function HomePage() {
             </Reveal>
           </div>
 
-          {/* Enhanced product card with parallax and improved styling */}
+          {/* Enhanced product card with premium shine */}
           <Parallax offset={30}>
             <Reveal delay={0.2}>
-              <div className="group rounded-[var(--rc-radius)] border border-[color:var(--rc-border)] bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
-                <div className="rounded-xl border border-[color:var(--rc-border)] bg-gradient-to-br from-slate-50 to-white p-6 transition-all duration-300 group-hover:border-blue-200">
+              <div className="group premium-shine rounded-[var(--rc-radius)] border border-[color:var(--rc-border)] bg-white p-8 shadow-2xl hover:shadow-3xl transition-all duration-500">
+                <div className="glass-morphism rounded-xl border border-[color:var(--rc-border)] bg-gradient-to-br from-white via-slate-50 to-blue-50/30 p-6 transition-all duration-500 group-hover:border-blue-300 group-hover:bg-gradient-to-br group-hover:from-white group-hover:via-blue-50/50 group-hover:to-violet-50/30">
                   <div className="flex items-center justify-between text-xs text-[color:var(--rc-muted)]">
                     <div className="flex items-center gap-2">
                       <div className="h-3 w-3 rounded-full bg-emerald-400 animate-pulse"></div>
@@ -76,11 +84,11 @@ export default function HomePage() {
                     <span className="rounded-full bg-emerald-100 px-2 py-1 text-emerald-700 font-semibold">Ready</span>
                   </div>
                   <div className="mt-6 grid grid-cols-2 gap-4">
-                    <div className="rounded-lg bg-gradient-to-br from-blue-50 to-blue-100 p-5 transition-transform hover:scale-105">
+                    <div className="premium-shine rounded-lg bg-gradient-to-br from-blue-50 via-blue-100 to-blue-200/80 p-5 transition-all duration-300 hover:scale-110 hover:shadow-lg">
                       <div className="text-3xl font-black text-blue-600">10</div>
                       <div className="text-xs font-medium text-blue-700">Daily Drafts</div>
                     </div>
-                    <div className="rounded-lg bg-gradient-to-br from-violet-50 to-violet-100 p-5 transition-transform hover:scale-105">
+                    <div className="premium-shine rounded-lg bg-gradient-to-br from-violet-50 via-violet-100 to-violet-200/80 p-5 transition-all duration-300 hover:scale-110 hover:shadow-lg">
                       <div className="text-3xl font-black text-violet-600">5</div>
                       <div className="text-xs font-medium text-violet-700">Languages</div>
                     </div>
@@ -107,8 +115,8 @@ export default function HomePage() {
             { t: "Stay compliant", d: "Audit trails and approved templates keep messages safe." }
           ].map((i, index) => (
             <Reveal key={i.t} delay={0.1 * index}>
-              <div className="card-3d rounded-[var(--rc-radius)] p-6">
-                <div className="text-lg font-bold text-[color:var(--rc-text)]">{i.t}</div>
+              <div className="card-3d premium-shine rounded-[var(--rc-radius)] p-6 group">
+                <div className="text-lg font-bold text-[color:var(--rc-text)] group-hover:text-blue-600 transition-colors duration-300">{i.t}</div>
                 <p className="mt-2 text-sm leading-relaxed text-[color:var(--rc-muted)]">{i.d}</p>
               </div>
             </Reveal>
@@ -129,11 +137,12 @@ export default function HomePage() {
               { n: 3, t: "Send perfect email", d: "AI generates professional and compliant drafts in seconds." }
             ].map((s, index) => (
               <Reveal key={s.n} delay={0.1 * index}>
-                <div className="card-3d rounded-[var(--rc-radius)] p-7">
-                  <div className="group inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-[var(--rc-primary)] to-blue-700 text-white font-bold shadow-lg hover:scale-110 transition-transform duration-200">
-                    <span className="group-hover:animate-pulse">{s.n}</span>
+                <div className="card-3d premium-shine rounded-[var(--rc-radius)] p-7 group">
+                  <div className="relative inline-flex h-14 w-14 items-center justify-center rounded-full animated-gradient text-white font-bold shadow-xl hover:scale-125 transition-all duration-300 hover:shadow-2xl">
+                    <span className="relative z-10 text-lg group-hover:animate-pulse">{s.n}</span>
+                    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
-                  <div className="mt-5 text-xl font-bold text-[color:var(--rc-text)]">{s.t}</div>
+                  <div className="mt-5 text-xl font-bold text-[color:var(--rc-text)] group-hover:text-blue-600 transition-colors duration-300">{s.t}</div>
                   <p className="mt-2 text-sm leading-relaxed text-[color:var(--rc-muted)]">{s.d}</p>
                 </div>
               </Reveal>
@@ -191,11 +200,16 @@ export default function HomePage() {
               { k:12, suffix:" sec", v:"average draft time" },
             ].map((p, index)=>(
               <Reveal key={p.v} delay={0.1 * index}>
-                <div className="card-3d rounded-[var(--rc-radius)] p-7 text-center">
-                  <div className="text-3xl font-black text-transparent bg-gradient-to-r from-[var(--rc-primary)] to-[var(--rc-violet)] bg-clip-text">
-                    <CountUp to={p.k} suffix={p.suffix} />
+                <div className="card-3d premium-shine rounded-[var(--rc-radius)] p-7 text-center group">
+                  <div className="relative">
+                    <div className="text-4xl font-black animated-gradient bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">
+                      <CountUp to={p.k} suffix={p.suffix} />
+                    </div>
+                    <div className="absolute inset-0 text-4xl font-black bg-gradient-to-r from-white to-white bg-clip-text text-transparent opacity-0 group-hover:opacity-20 transition-opacity duration-300">
+                      <CountUp to={p.k} suffix={p.suffix} />
+                    </div>
                   </div>
-                  <div className="mt-2 text-sm font-medium text-[color:var(--rc-muted)] uppercase tracking-wide">{p.v}</div>
+                  <div className="mt-3 text-sm font-bold text-[color:var(--rc-muted)] uppercase tracking-wider">{p.v}</div>
                 </div>
               </Reveal>
             ))}
