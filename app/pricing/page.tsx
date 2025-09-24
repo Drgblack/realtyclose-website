@@ -208,61 +208,57 @@ export default function PricingPage() {
         </div>
       </div>
 
-      {/* FAQ Section */}
-      <div className="mt-16">
-        <h2 className="text-center mb-8">Frequently Asked Questions</h2>
-        
-        <div className="space-y-6">
-          <div className="bg-slate-700/30 border border-slate-600/50 rounded-lg p-6">
-            <h3 className="text-lg font-semibold text-blue-300 mb-3">Can I cancel anytime?</h3>
-            <p className="text-slate-300">
-              Yes - you're never locked in. Cancel whenever you like, and your account will stay active until the end of your billing period.
-            </p>
-          </div>
-          
-          <div className="bg-slate-700/30 border border-slate-600/50 rounded-lg p-6">
-            <h3 className="text-lg font-semibold text-blue-300 mb-3">Is there a free trial?</h3>
-            <p className="text-slate-300">
-              Absolutely. Both Professional and Team plans come with a 14-day free trial. No credit card needed.
-            </p>
-          </div>
-          
-          <div className="bg-slate-700/30 border border-slate-600/50 rounded-lg p-6">
-            <h3 className="text-lg font-semibold text-blue-300 mb-3">What happens to my data if I cancel?</h3>
-            <p className="text-slate-300">
-              You can export all of your data at any time. After cancellation, we keep your data for 30 days in case you change your mind. After that, it's permanently deleted.
-            </p>
-          </div>
-          
-          <div className="bg-slate-700/30 border border-slate-600/50 rounded-lg p-6">
-            <h3 className="text-lg font-semibold text-blue-300 mb-3">Do you offer annual discounts?</h3>
-            <p className="text-slate-300">
-              Yes - save 20% when you pay annually. Many brokerages choose this option to maximize savings.
-            </p>
-          </div>
-          
-          <div className="bg-slate-700/30 border border-slate-600/50 rounded-lg p-6">
-            <h3 className="text-lg font-semibold text-blue-300 mb-3">Do I need to install anything?</h3>
-            <p className="text-slate-300">
-              Just a simple Gmail extension. It works instantly with your existing Gmail - no setup headaches.
-            </p>
-          </div>
-        </div>
-      </div>
 
       {/* CTA Section */}
-      <div className="text-center mt-16 bg-blue-600/10 border border-blue-500/20 rounded-xl p-8">
-        <h2 className="text-2xl font-bold text-white mb-4">Ready to get started?</h2>
-        <p className="text-slate-300 mb-6">
-          Join hundreds of real estate professionals who save 3+ hours daily with RealtyClose
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-8 rounded-lg font-medium transition-colors">
-            Start Free Trial
-          </button>
-          <button className="bg-slate-600 hover:bg-slate-500 text-white py-3 px-8 rounded-lg font-medium transition-colors">
-            Schedule Demo
-          </button>
+      <div className="mx-auto max-w-4xl px-4 pb-24 pt-12 sm:px-6 lg:px-8">
+        <div className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/60 to-slate-900/60 p-8 shadow-xl ring-1 ring-black/10">
+          <h2 className="text-2xl font-semibold tracking-tight text-white mb-2">
+            Ready to get started?
+          </h2>
+          <p className="text-slate-300">
+            Join agents and teams who save <span className="font-medium text-white">3+ hours a day</span> and keep every deal on track with RealtyClose.
+          </p>
+
+          <ul className="mt-6 grid gap-3 text-sm text-slate-300 sm:grid-cols-3">
+            <li className="flex items-start gap-2">
+              <span className="mt-0.5 inline-block h-2 w-2 rounded-full bg-emerald-400" />
+              Works inside Gmail – no new logins
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-0.5 inline-block h-2 w-2 rounded-full bg-emerald-400" />
+              Real-estate specific templates & follow-ups
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-0.5 inline-block h-2 w-2 rounded-full bg-emerald-400" />
+              Audit-ready communication for teams & brokerages
+            </li>
+          </ul>
+
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <button className="inline-flex items-center justify-center rounded-xl px-5 py-3 text-sm font-semibold text-slate-900 bg-emerald-400 hover:bg-emerald-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/60">
+              Start Free Trial
+            </button>
+            <button className="inline-flex items-center justify-center rounded-xl px-5 py-3 text-sm font-semibold text-white/90 bg-white/10 hover:bg-white/15 ring-1 ring-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40">
+              Schedule Demo
+            </button>
+          </div>
+
+          <div className="mt-4 text-xs text-slate-400">
+            No credit card required · Cancel anytime · Bank-level security
+          </div>
+
+          <div className="mt-6 text-slate-300">
+            "Weekly client updates dropped from 30 minutes to 5. Total gamechanger."
+          </div>
+          <div className="mt-1 text-xs text-slate-400">— Team Lead</div>
+          
+          <p className="mt-6 text-slate-300">Used by solo agents, teams, and compliance focused brokerages</p>
+
+          <div className="mt-6">
+            <a href="/faq" className="text-sm font-medium text-emerald-400 hover:text-emerald-300">
+              Questions? Visit the FAQ →
+            </a>
+          </div>
         </div>
       </div>
     </PageShell>

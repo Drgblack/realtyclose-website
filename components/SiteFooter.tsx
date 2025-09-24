@@ -72,6 +72,11 @@ function Footer({ config, locale }: { config: any; locale: string }) {
                   Pricing
                 </a>
               </li>
+              <li>
+                <a href="/faq" className="text-gray-400 hover:text-white transition-colors">
+                  FAQ
+                </a>
+              </li>
             </ul>
           </div>
 
