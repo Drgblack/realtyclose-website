@@ -1,17 +1,21 @@
 import Navigation from '@/components/ui/Navigation'
-import HeroSection from '@/components/sections/HeroSection'
-import ProblemSection from '@/components/sections/ProblemSection'
-import StatsSection from '@/components/sections/StatsSection'
-import HowItWorksSection from '@/components/sections/HowItWorksSection'
+import Hero from "@/components/home/Hero"
+import EmailCrisis from "@/components/home/EmailCrisis"
+import WhyCRM from "@/components/home/WhyCRM"
+import HowItWorks from "@/components/home/HowItWorks"
+import ProofTrust from "@/components/home/ProofTrust"
+import VisionCTA from "@/components/home/VisionCTA"
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-gradient-to-b from-slate-50 to-white text-slate-900">
       <Navigation />
-      <HeroSection />
-      <ProblemSection />
-      <StatsSection />
-      <HowItWorksSection />
+      <Hero />
+      <EmailCrisis />
+      <WhyCRM />
+      <HowItWorks />
+      <ProofTrust />
+      <VisionCTA />
     </main>
   )
 }
