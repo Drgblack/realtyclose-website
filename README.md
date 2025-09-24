@@ -1,5 +1,5 @@
 # RealtyClose Marketing Website
-<!-- Deploy trigger: Pop++ implementation with electric gradients -->
+<!-- Deploy trigger: Pop++ electric gradients - stable/site-v1 deployment -->
 
 A comprehensive marketing website showcasing the RealtyClose AI-powered Gmail extension - the complete real estate command center with 14+ advanced features for modern agents.
 
