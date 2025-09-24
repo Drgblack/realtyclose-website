@@ -1,4 +1,5 @@
-import HeroSimple from "@/components/home/HeroSimple";
+import HeroNeon from "@/components/home/HeroNeon";
+import EmailTransform from "@/components/home/EmailTransform";
 import GradientUnderline from "@/components/ui/GradientUnderline";
 import ShimmerButton from "@/components/ui/ShimmerButton";
 import Reveal from "@/components/ui/Reveal";
@@ -10,7 +11,7 @@ import StickyCTA from "@/components/ui/StickyCTA";
 export default function HomePage() {
   return (
     <main className="bg-[var(--rc-bg)] text-[var(--rc-text)]">
-      <HeroSimple />
+      <HeroNeon />
 
       {/* Trust bar */}
       <section className="border-t border-[color:var(--rc-border)] bg-[var(--rc-surface)] py-8">
@@ -76,6 +77,13 @@ export default function HomePage() {
               <TestimonialCarousel />
             </div>
           </Reveal>
+          
+          <Reveal delay={0.4}>
+            <div className="mt-12">
+              <h3 className="text-xl font-semibold mb-4">See the transformation</h3>
+              <EmailTransform />
+            </div>
+          </Reveal>
         </div>
       </section>
 
@@ -125,17 +133,16 @@ export default function HomePage() {
               { k:12, suffix:" sec", v:"average draft time" },
             ].map((p, index)=>(
               <Reveal key={p.v} delay={0.1 * index}>
-                <div className="relative rounded-2xl border border-[var(--rc-border)] bg-white shadow-[0_10px_30px_rgba(2,6,23,0.08)] transition will-change-transform hover:translate-y-[1px] p-7 text-center group">
-                  <span aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-[2px] rounded-t-2xl" style={{background:"var(--rc-cta-grad)"}} />
+                <div className="rc-holo p-6 text-center shadow-[0_18px_40px_rgba(2,6,23,.08)]">
                   <div className="relative">
-                    <div className="text-4xl font-extrabold text-[var(--rc-blue-700)] group-hover:scale-110 transition-transform duration-300">
+                    <div className="text-4xl font-extrabold text-[var(--rc-blue)] group-hover:scale-110 transition-transform duration-300">
                       <CountUp to={p.k} suffix={p.suffix} />
                     </div>
                     <div className="absolute inset-0 text-4xl font-extrabold bg-gradient-to-r from-white to-white bg-clip-text text-transparent opacity-0 group-hover:opacity-20 transition-opacity duration-300">
                       <CountUp to={p.k} suffix={p.suffix} />
                     </div>
                   </div>
-                  <div className="mt-3 text-sm font-bold text-[color:var(--rc-muted)] uppercase tracking-wider">{p.v}</div>
+                  <div className="mt-3 text-sm font-bold text-[var(--rc-muted)] uppercase tracking-wider">{p.v}</div>
                 </div>
               </Reveal>
             ))}
