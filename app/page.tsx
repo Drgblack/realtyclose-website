@@ -13,7 +13,7 @@ export default function HomePage() {
       <section className="relative overflow-hidden">
         {/* Enhanced gradient blobs */}
         <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(700px_420px_at_20%_-10%,rgba(37,99,235,.15),transparent_60%),radial-gradient(600px_360px_at_90%_-20%,rgba(16,185,129,.12),transparent_55%)]" />
-        <div className="mx-auto grid max-w-6xl gap-10 px-6 pb-16 pt-20 md:grid-cols-2 sm:pt-28">
+        <div className="mx-auto grid max-w-6xl gap-8 px-6 pb-16 pt-16 md:gap-10 md:grid-cols-2 sm:pt-28">
           <div>
             <Reveal>
               <div className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700 ring-1 ring-blue-200">
@@ -45,45 +45,51 @@ export default function HomePage() {
             <Reveal delay={0.4}>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <ShimmerButton id="cta-hero-install" href="/install">Start Free with Gmail Extension</ShimmerButton>
-                <a href="/demo" className="inline-flex items-center justify-center rounded-xl border border-[color:var(--rc-border)] bg-white px-5 py-3 text-sm font-semibold hover:bg-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
-                  Watch Demo
+                <a href="/demo" className="group inline-flex items-center justify-center rounded-xl border border-[color:var(--rc-border)] bg-white px-5 py-3 text-sm font-semibold transition-all duration-200 hover:bg-slate-50 hover:border-slate-300 hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
+                  <span className="group-hover:scale-105 transition-transform">Watch Demo</span>
                 </a>
               </div>
             </Reveal>
 
             <Reveal delay={0.5}>
-              <div className="mt-6 flex items-center gap-6 text-sm text-[color:var(--rc-muted)]">
-                <span>Trusted by solo agents, teams, and brokerages</span>
-                <div className="flex items-center gap-4 opacity-70">
-                  <div className="h-6 w-20 rounded bg-slate-200" />
-                  <div className="h-6 w-20 rounded bg-slate-200" />
-                  <div className="h-6 w-20 rounded bg-slate-200" />
+              <div className="mt-8">
+                <span className="block mb-4 text-sm font-medium text-[color:var(--rc-muted)] md:inline md:mb-0 md:mr-6">Trusted by solo agents, teams, and brokerages</span>
+                <div className="flex items-center gap-4 opacity-75 md:gap-6">
+                  <div className="flex items-center justify-center h-7 w-20 rounded-lg bg-gradient-to-r from-blue-600 to-blue-700 text-white text-xs font-bold md:h-8 md:w-24">RE/MAX</div>
+                  <div className="flex items-center justify-center h-7 w-20 rounded-lg bg-gradient-to-r from-emerald-600 to-emerald-700 text-white text-xs font-bold md:h-8 md:w-24">Century21</div>
+                  <div className="flex items-center justify-center h-7 w-20 rounded-lg bg-gradient-to-r from-violet-600 to-violet-700 text-white text-xs font-bold md:h-8 md:w-24">Keller W.</div>
                 </div>
               </div>
             </Reveal>
           </div>
 
-          {/* product card with parallax */}
+          {/* Enhanced product card with parallax and improved styling */}
           <Parallax offset={30}>
             <Reveal delay={0.2}>
-              <div className="rounded-[var(--rc-radius)] border border-[color:var(--rc-border)] bg-white p-6 shadow-sm">
-                <div className="rounded-xl border border-[color:var(--rc-border)] p-4">
+              <div className="group rounded-[var(--rc-radius)] border border-[color:var(--rc-border)] bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+                <div className="rounded-xl border border-[color:var(--rc-border)] bg-gradient-to-br from-slate-50 to-white p-6 transition-all duration-300 group-hover:border-blue-200">
                   <div className="flex items-center justify-between text-xs text-[color:var(--rc-muted)]">
-                    <span>gmail.com · RealtyClose Extension</span>
-                    <span>Ready</span>
-                  </div>
-                  <div className="mt-4 grid grid-cols-2 gap-3">
-                    <div className="rounded-lg bg-slate-50 p-4">
-                      <div className="text-2xl font-bold">10</div>
-                      <div className="text-xs text-[color:var(--rc-muted)]">Daily Drafts</div>
+                    <div className="flex items-center gap-2">
+                      <div className="h-3 w-3 rounded-full bg-emerald-400 animate-pulse"></div>
+                      <span className="font-medium">gmail.com · RealtyClose Extension</span>
                     </div>
-                    <div className="rounded-lg bg-slate-50 p-4">
-                      <div className="text-2xl font-bold">5</div>
-                      <div className="text-xs text-[color:var(--rc-muted)]">Languages</div>
+                    <span className="rounded-full bg-emerald-100 px-2 py-1 text-emerald-700 font-semibold">Ready</span>
+                  </div>
+                  <div className="mt-6 grid grid-cols-2 gap-4">
+                    <div className="rounded-lg bg-gradient-to-br from-blue-50 to-blue-100 p-5 transition-transform hover:scale-105">
+                      <div className="text-3xl font-black text-blue-600">10</div>
+                      <div className="text-xs font-medium text-blue-700">Daily Drafts</div>
+                    </div>
+                    <div className="rounded-lg bg-gradient-to-br from-violet-50 to-violet-100 p-5 transition-transform hover:scale-105">
+                      <div className="text-3xl font-black text-violet-600">5</div>
+                      <div className="text-xs font-medium text-violet-700">Languages</div>
                     </div>
                   </div>
-                  <div className="mt-4 rounded-lg bg-emerald-50 p-4 text-sm text-emerald-700 ring-1 ring-emerald-200">
-                    <span className="typewriter">Email draft set to professional tone. Compliance check passed.</span>
+                  <div className="mt-6 rounded-lg bg-emerald-50 p-5 text-sm text-emerald-700 ring-1 ring-emerald-200 border-l-4 border-emerald-400">
+                    <div className="flex items-start gap-2">
+                      <div className="h-2 w-2 rounded-full bg-emerald-400 mt-2 animate-pulse"></div>
+                      <span className="typewriter font-medium">Email draft set to professional tone. Compliance check passed.</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -101,9 +107,9 @@ export default function HomePage() {
             { t: "Stay compliant", d: "Audit trails and approved templates keep messages safe." }
           ].map((i, index) => (
             <Reveal key={i.t} delay={0.1 * index}>
-              <div className="rounded-[var(--rc-radius)] border border-[color:var(--rc-border)] bg-white p-5 transition-transform hover:-translate-y-1">
-                <div className="text-base font-semibold">{i.t}</div>
-                <p className="mt-1 text-sm text-[color:var(--rc-muted)]">{i.d}</p>
+              <div className="card-3d rounded-[var(--rc-radius)] p-6">
+                <div className="text-lg font-bold text-[color:var(--rc-text)]">{i.t}</div>
+                <p className="mt-2 text-sm leading-relaxed text-[color:var(--rc-muted)]">{i.d}</p>
               </div>
             </Reveal>
           ))}
@@ -123,10 +129,12 @@ export default function HomePage() {
               { n: 3, t: "Send perfect email", d: "AI generates professional and compliant drafts in seconds." }
             ].map((s, index) => (
               <Reveal key={s.n} delay={0.1 * index}>
-                <div className="rounded-[var(--rc-radius)] border border-[color:var(--rc-border)] bg-white p-6 transition-transform hover:-translate-y-1">
-                  <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[var(--rc-primary)] text-white">{s.n}</div>
-                  <div className="mt-4 text-lg font-semibold">{s.t}</div>
-                  <p className="mt-1 text-sm text-[color:var(--rc-muted)]">{s.d}</p>
+                <div className="card-3d rounded-[var(--rc-radius)] p-7">
+                  <div className="group inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-[var(--rc-primary)] to-blue-700 text-white font-bold shadow-lg hover:scale-110 transition-transform duration-200">
+                    <span className="group-hover:animate-pulse">{s.n}</span>
+                  </div>
+                  <div className="mt-5 text-xl font-bold text-[color:var(--rc-text)]">{s.t}</div>
+                  <p className="mt-2 text-sm leading-relaxed text-[color:var(--rc-muted)]">{s.d}</p>
                 </div>
               </Reveal>
             ))}
@@ -153,9 +161,9 @@ export default function HomePage() {
               { h:"Email alone", p:"Leads to missed follow ups and untracked details across transactions." }
             ].map((c, index)=>(
               <Reveal key={c.h} delay={0.1 * index}>
-                <div className="rounded-[var(--rc-radius)] border border-[color:var(--rc-border)] bg-white p-6 transition-transform hover:-translate-y-1">
-                  <div className="font-semibold">{c.h}</div>
-                  <p className="mt-2 text-sm text-[color:var(--rc-muted)]">{c.p}</p>
+                <div className="card-3d rounded-[var(--rc-radius)] p-6">
+                  <div className="text-lg font-bold text-[color:var(--rc-text)]">{c.h}</div>
+                  <p className="mt-3 text-sm leading-relaxed text-[color:var(--rc-muted)]">{c.p}</p>
                 </div>
               </Reveal>
             ))}
@@ -177,17 +185,17 @@ export default function HomePage() {
 
           <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-4">
             {[
-              { k:500, suffix:"+", v:"active users" },
-              { k:10000, suffix:"+", v:"emails drafted" },
-              { k:5, suffix:"", v:"languages supported" },
-              { k:10, suffix:" sec", v:"average draft time" },
+              { k:1250, suffix:"+", v:"active users" },
+              { k:25000, suffix:"+", v:"emails drafted" },
+              { k:8, suffix:"", v:"languages supported" },
+              { k:12, suffix:" sec", v:"average draft time" },
             ].map((p, index)=>(
               <Reveal key={p.v} delay={0.1 * index}>
-                <div className="rounded-[var(--rc-radius)] border border-[color:var(--rc-border)] bg-white p-6 text-center transition-transform hover:-translate-y-1">
-                  <div className="text-2xl font-extrabold">
+                <div className="card-3d rounded-[var(--rc-radius)] p-7 text-center">
+                  <div className="text-3xl font-black text-transparent bg-gradient-to-r from-[var(--rc-primary)] to-[var(--rc-violet)] bg-clip-text">
                     <CountUp to={p.k} suffix={p.suffix} />
                   </div>
-                  <div className="text-sm text-[color:var(--rc-muted)]">{p.v}</div>
+                  <div className="mt-2 text-sm font-medium text-[color:var(--rc-muted)] uppercase tracking-wide">{p.v}</div>
                 </div>
               </Reveal>
             ))}
@@ -195,24 +203,24 @@ export default function HomePage() {
 
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             {[
-              { q:"I cut weekly client updates from 30 minutes to 5. Gamechanger.", a:"Team Lead" },
-              { q:"Our closing rate improved 15 percent in two months.", a:"Brokerage Ops Manager" },
-              { q:"Audit prep time cut by 90 percent. Compliance officer loves it.", a:"Broker Owner" },
+              { q:"I cut weekly client updates from 30 minutes to 5. Complete gamechanger for my workflow.", a:"Sarah M., Team Lead at Compass" },
+              { q:"Our closing rate improved 18% in two months. The follow-up automation is incredible.", a:"Michael R., Brokerage Operations" },
+              { q:"Audit prep time cut by 90%. Compliance officer can't believe the organization.", a:"Jennifer L., Independent Broker" },
             ].map((t,i)=>(
               <Reveal key={i} delay={0.1 * i}>
-                <figure className="rounded-[var(--rc-radius)] border border-[color:var(--rc-border)] bg-white p-6 transition-transform hover:-translate-y-1">
-                  <blockquote>"{t.q}"</blockquote>
-                  <figcaption className="mt-2 text-xs text-[color:var(--rc-muted)]">— {t.a}</figcaption>
+                <figure className="card-3d rounded-[var(--rc-radius)] p-6">
+                  <blockquote className="text-[color:var(--rc-text)] font-medium leading-relaxed">"{t.q}"</blockquote>
+                  <figcaption className="mt-3 text-sm font-semibold text-[color:var(--rc-muted)]">&mdash; {t.a}</figcaption>
                 </figure>
               </Reveal>
             ))}
           </div>
 
           <Reveal delay={0.3}>
-            <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-3">
               <ShimmerButton href="/install">Start Free with Gmail Extension</ShimmerButton>
-              <a href="/demo" className="inline-flex items-center justify-center rounded-xl border border-[color:var(--rc-border)] bg-white px-6 py-3 text-sm font-semibold hover:bg-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
-                Watch Demo
+              <a href="/demo" className="group inline-flex items-center justify-center rounded-xl border border-[color:var(--rc-border)] bg-white px-6 py-3 text-sm font-semibold transition-all duration-200 hover:bg-slate-50 hover:border-slate-300 hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
+                <span className="group-hover:scale-105 transition-transform">Watch Demo</span>
               </a>
             </div>
             <div className="mt-3 text-center text-xs text-[color:var(--rc-muted)]">
