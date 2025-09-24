@@ -14,16 +14,18 @@
   --accent: 52 211 153;      /* emerald-400 */
   --radius: 1rem;            /* rounded-2xl */
   
-  /* Apple-style Clean Light Theme */
-  --rc-warm: #FAFAFA;        /* page background */
-  --rc-surface: #FFFFFF;     /* cards */
-  --rc-charcoal: #2C2C2C;    /* primary text */
-  --rc-muted: #4B5563;       /* secondary text */
-  --rc-border: rgba(0,0,0,.08);
+  /* Real Estate Luxe Theme - Premium & Aspirational */
+  --rc-cream: #FAF7F2;       /* warm cream background */
+  --rc-surface: #F8F8F8;     /* soft dove gray cards */
+  --rc-charcoal: #1A1A1A;    /* rich charcoal text */
+  --rc-muted: #4A4A4A;       /* softer secondary text */
+  --rc-border: rgba(26,26,26,.10);
 
-  /* accents */
-  --rc-coral: #FF6B6B;       /* CTA */
-  --rc-sage: #87A96B;        /* success */
+  /* Premium accents */
+  --rc-forest: #2D5A27;      /* deep forest green - primary CTA */
+  --rc-gold: #D4AF37;        /* gold - success & highlights */
+  --rc-sage: #87A96B;        /* sage green - secondary success */
+  --rc-warm-shadow: rgba(139, 87, 42, 0.08); /* warm shadow tone */
   
   /* Legacy variables (keep for existing styles) */
   --gradient-bg: linear-gradient(180deg, #FFFFFF 0%, #DDE2EE 37.04%);
@@ -318,7 +320,7 @@
   }
   
   .animated-gradient {
-    background: linear-gradient(-45deg, var(--rc-primary), var(--rc-accent), var(--rc-violet), var(--rc-emerald));
+    background: linear-gradient(-45deg, var(--rc-forest), var(--rc-gold), var(--rc-sage), var(--rc-forest));
     background-size: 400% 400%;
     animation: gradient-shift 8s ease infinite;
   }
@@ -464,11 +466,11 @@ footer .socials, footer .social-links { display:flex; gap:.5rem; flex-wrap:wrap;
 body::before{
   content:\"\"; position:fixed; inset:0; pointer-events:none; z-index:-1;
   background:
-    radial-gradient(600px 400px at 15% 10%, rgba(26,54,93,0.08), transparent 50%),
-    radial-gradient(800px 500px at 85% 0%,  rgba(8,145,178,0.10), transparent 55%),
-    radial-gradient(500px 500px at 50% 100%, rgba(5,150,105,0.08), transparent 60%),
-    radial-gradient(300px 300px at 70% 30%, rgba(99,102,241,0.06), transparent 40%);
-  filter:saturate(130%);
+    radial-gradient(600px 400px at 15% 10%, rgba(212,175,55,0.06), transparent 50%),
+    radial-gradient(800px 500px at 85% 0%,  rgba(45,90,39,0.08), transparent 55%),
+    radial-gradient(500px 500px at 50% 100%, rgba(135,122,107,0.06), transparent 60%),
+    radial-gradient(300px 300px at 70% 30%, rgba(212,175,55,0.04), transparent 40%);
+  filter:saturate(110%);
   animation: background-drift 30s ease-in-out infinite;
 }
 

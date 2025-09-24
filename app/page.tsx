@@ -9,7 +9,7 @@ import StickyCTA from "@/components/ui/StickyCTA";
 
 export default function HomePage() {
   return (
-    <main className="bg-[var(--rc-warm)] text-[var(--rc-charcoal)]">
+    <main className="bg-[var(--rc-cream)] text-[var(--rc-charcoal)]">
       <HeroSimple />
 
       {/* Trust bar */}
