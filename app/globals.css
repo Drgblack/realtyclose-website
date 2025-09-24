@@ -14,19 +14,16 @@
   --accent: 52 211 153;      /* emerald-400 */
   --radius: 1rem;            /* rounded-2xl */
   
-  /* Premium Dark-Light Hybrid Theme */
-  --rc-bg: #fafbfc;
-  --rc-surface: #ffffff;
-  --rc-text: #0f1419;   /* deep slate */
-  --rc-muted: #4a5568;  /* slate-600 */
-  --rc-border: rgba(15,20,25,.12);
-  --rc-primary: #1a365d; /* deep navy */
-  --rc-accent: #0891b2;  /* cyan-600 */
-  --rc-violet: #6366f1;  /* indigo-500 */
-  --rc-pink: #d946ef;    /* fuchsia-500 */
-  --rc-gold: #f59e0b;    /* amber-500 */
-  --rc-emerald: #059669; /* emerald-600 */
-  --rc-radius: 16px;
+  /* Apple-style Clean Light Theme */
+  --rc-warm: #FAFAFA;        /* page background */
+  --rc-surface: #FFFFFF;     /* cards */
+  --rc-charcoal: #2C2C2C;    /* primary text */
+  --rc-muted: #4B5563;       /* secondary text */
+  --rc-border: rgba(0,0,0,.08);
+
+  /* accents */
+  --rc-coral: #FF6B6B;       /* CTA */
+  --rc-sage: #87A96B;        /* success */
   
   /* Legacy variables (keep for existing styles) */
   --gradient-bg: linear-gradient(180deg, #FFFFFF 0%, #DDE2EE 37.04%);

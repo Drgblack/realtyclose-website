@@ -1,3 +1,4 @@
+import HeroSimple from "@/components/home/HeroSimple";
 import GradientUnderline from "@/components/ui/GradientUnderline";
 import ShimmerButton from "@/components/ui/ShimmerButton";
 import Reveal from "@/components/ui/Reveal";
@@ -8,102 +9,18 @@ import StickyCTA from "@/components/ui/StickyCTA";
 
 export default function HomePage() {
   return (
-    <main className="bg-[var(--rc-bg)] text-[color:var(--rc-text)]">
-      {/* HERO */}
-      <section className="hero-glow relative overflow-hidden">
-        {/* Enhanced gradient blobs with animation */}
-        <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
-          <div className="absolute inset-0 bg-[radial-gradient(700px_420px_at_20%_-10%,rgba(37,99,235,.20),transparent_60%),radial-gradient(600px_360px_at_90%_-20%,rgba(16,185,129,.15),transparent_55%)] animate-pulse" style={{animationDuration: '4s'}} />
-          <div className="absolute inset-0 bg-[radial-gradient(500px_300px_at_60%_40%,rgba(139,92,246,.10),transparent_50%)] opacity-70" />
-          
-          {/* Premium floating orbs */}
-          <div className="absolute top-10 right-10 h-32 w-32 rounded-full bg-gradient-to-r from-cyan-400/15 to-indigo-400/15 blur-3xl animate-pulse" style={{animationDuration: '3s'}} />
-          <div className="absolute bottom-20 left-16 h-24 w-24 rounded-full bg-gradient-to-r from-emerald-400/15 to-cyan-400/15 blur-2xl animate-pulse" style={{animationDuration: '4s', animationDelay: '1s'}} />
-          <div className="absolute top-1/2 left-1/3 h-16 w-16 rounded-full bg-gradient-to-r from-fuchsia-400/15 to-indigo-400/15 blur-xl animate-pulse" style={{animationDuration: '5s', animationDelay: '2s'}} />
-        </div>
-        <div className="mx-auto grid max-w-6xl gap-8 px-6 pb-16 pt-16 md:gap-10 md:grid-cols-2 sm:pt-28">
-          <div>
-            <Reveal>
-              <div className="inline-flex items-center rounded-full bg-gradient-to-r from-slate-50 to-cyan-50 px-4 py-2 text-xs font-bold text-slate-800 ring-1 ring-slate-200/80 shadow-sm">
-                <div className="mr-2 h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></div>
-                Gmail Extension Live Now
-              </div>
-            </Reveal>
+    <main className="bg-[var(--rc-warm)] text-[var(--rc-charcoal)]">
+      <HeroSimple />
 
-            <Reveal delay={0.1}>
-              <h1 className="mt-6 text-4xl font-black tracking-tight sm:text-5xl lg:text-6xl">
-                Turn messy real estate emails into{" "}
-                <GradientUnderline>perfect client communication</GradientUnderline>.
-              </h1>
-            </Reveal>
-
-            <Reveal delay={0.2}>
-              <p className="mt-6 max-w-xl text-xl leading-relaxed text-[color:var(--rc-muted)] font-medium">
-                Agents lose 30+ hours per transaction to email chaos. RealtyClose gives you that time back with AI powered, Gmail first communication.
-              </p>
-            </Reveal>
-
-            <Reveal delay={0.3}>
-              <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-[color:var(--rc-muted)]">
-                <li><span className="font-semibold text-[color:var(--rc-text)]">500+</span> active agents</li>
-                <li><span className="font-semibold text-[color:var(--rc-text)]">10K+</span> emails drafted</li>
-                <li><span className="font-semibold text-[color:var(--rc-text)]">3+</span> hours saved daily</li>
-              </ul>
-            </Reveal>
-
-            <Reveal delay={0.4}>
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <ShimmerButton id="cta-hero-install" href="/install">Start Free with Gmail Extension</ShimmerButton>
-                <a href="/demo" className="group inline-flex items-center justify-center rounded-xl border border-[color:var(--rc-border)] bg-white px-5 py-3 text-sm font-semibold transition-all duration-200 hover:bg-slate-50 hover:border-slate-300 hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
-                  <span className="group-hover:scale-105 transition-transform">Watch Demo</span>
-                </a>
-              </div>
-            </Reveal>
-
-            <Reveal delay={0.5}>
-              <div className="mt-8">
-                <span className="block mb-4 text-sm font-medium text-[color:var(--rc-muted)] md:inline md:mb-0 md:mr-6">Trusted by solo agents, teams, and brokerages</span>
-                <div className="flex items-center gap-4 opacity-80 md:gap-6">
-                  <div className="flex items-center justify-center h-7 w-20 rounded-lg bg-gradient-to-r from-[var(--rc-primary)] to-[var(--rc-accent)] text-white text-xs font-bold shadow-sm md:h-8 md:w-24">RE/MAX</div>
-                  <div className="flex items-center justify-center h-7 w-20 rounded-lg bg-gradient-to-r from-[var(--rc-emerald)] to-[var(--rc-accent)] text-white text-xs font-bold shadow-sm md:h-8 md:w-24">Century21</div>
-                  <div className="flex items-center justify-center h-7 w-20 rounded-lg bg-gradient-to-r from-[var(--rc-violet)] to-[var(--rc-pink)] text-white text-xs font-bold shadow-sm md:h-8 md:w-24">Keller W.</div>
-                </div>
-              </div>
-            </Reveal>
+      {/* Trust bar */}
+      <section className="border-t border-[color:var(--rc-border)] bg-[var(--rc-surface)] py-8">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6">
+          <span className="text-sm text-[var(--rc-muted)]">Trusted by solo agents, teams, and brokerages</span>
+          <div className="flex items-center gap-6">
+            <div className="h-6 w-20 rounded bg-slate-200 opacity-70"></div>
+            <div className="h-6 w-20 rounded bg-slate-200 opacity-70"></div>
+            <div className="h-6 w-20 rounded bg-slate-200 opacity-70"></div>
           </div>
-
-          {/* Enhanced product card with premium shine */}
-          <Parallax offset={30}>
-            <Reveal delay={0.2}>
-              <div className="group premium-shine rounded-[var(--rc-radius)] border border-[color:var(--rc-border)] bg-white p-8 shadow-2xl hover:shadow-3xl transition-all duration-500">
-                <div className="glass-morphism rounded-xl border border-[color:var(--rc-border)] bg-gradient-to-br from-white via-slate-50 to-blue-50/30 p-6 transition-all duration-500 group-hover:border-blue-300 group-hover:bg-gradient-to-br group-hover:from-white group-hover:via-blue-50/50 group-hover:to-violet-50/30">
-                  <div className="flex items-center justify-between text-xs text-[color:var(--rc-muted)]">
-                    <div className="flex items-center gap-2">
-                      <div className="h-3 w-3 rounded-full bg-emerald-400 animate-pulse"></div>
-                      <span className="font-medium">gmail.com · RealtyClose Extension</span>
-                    </div>
-                    <span className="rounded-full bg-emerald-100 px-2 py-1 text-emerald-700 font-semibold">Ready</span>
-                  </div>
-                  <div className="mt-6 grid grid-cols-2 gap-4">
-                    <div className="premium-shine rounded-lg bg-gradient-to-br from-blue-50 via-blue-100 to-blue-200/80 p-5 transition-all duration-300 hover:scale-110 hover:shadow-lg">
-                      <div className="text-3xl font-black text-blue-600">10</div>
-                      <div className="text-xs font-medium text-blue-700">Daily Drafts</div>
-                    </div>
-                    <div className="premium-shine rounded-lg bg-gradient-to-br from-violet-50 via-violet-100 to-violet-200/80 p-5 transition-all duration-300 hover:scale-110 hover:shadow-lg">
-                      <div className="text-3xl font-black text-violet-600">5</div>
-                      <div className="text-xs font-medium text-violet-700">Languages</div>
-                    </div>
-                  </div>
-                  <div className="mt-6 rounded-lg bg-emerald-50 p-5 text-sm text-emerald-700 ring-1 ring-emerald-200 border-l-4 border-emerald-400">
-                    <div className="flex items-start gap-2">
-                      <div className="h-2 w-2 rounded-full bg-emerald-400 mt-2 animate-pulse"></div>
-                      <span className="typewriter font-medium">Email draft set to professional tone. Compliance check passed.</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Reveal>
-          </Parallax>
         </div>
       </section>
 
@@ -126,7 +43,7 @@ export default function HomePage() {
       </section>
 
       {/* How it works */}
-      <section className="py-24">
+      <section id="how-it-works" className="py-24">
         <div className="mx-auto max-w-6xl px-6">
           <Reveal>
             <h2 className="text-3xl font-black tracking-tight lg:text-4xl">Write perfect real estate emails in 10 seconds</h2>
