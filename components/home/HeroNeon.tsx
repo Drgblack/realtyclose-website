@@ -41,7 +41,7 @@ export default function HeroNeon(){
             <span className="relative inline-block">
               <span className="relative z-10">in 10 seconds</span>
               <span aria-hidden className="absolute -bottom-1 left-0 h-2 w-full rounded-md"
-                    style={{background:"var(--rc-cta-grad)"}} />
+                    style={{background:"var(--rc-cta-grad-strong)"}} />
             </span>
           </h1>
 

@@ -13,6 +13,9 @@ export default function HomePage() {
   return (
     <main className="bg-[var(--rc-bg)] text-[var(--rc-text)]">
       <HeroNeon />
+      
+      {/* Gradient ribbon divider */}
+      <div className="grad-ribbon mx-auto my-10 max-w-5xl" />
 
       {/* Trust bar */}
       <section className="border-t border-[color:var(--rc-border)] bg-[var(--rc-surface)] py-8">
@@ -26,8 +29,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Value strip */}
-      <section className="border-y border-[color:var(--rc-border)] bg-gradient-to-r from-white via-slate-50/30 to-white py-12">
+      {/* Value strip - Features row */}
+      <section className="tint-blue rc-noise py-20">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 px-6 sm:grid-cols-3">
           {[
             { t: "Save hours", d: "Reply in seconds with AI assisted drafting and templates." },
@@ -46,8 +49,7 @@ export default function HomePage() {
       </section>
 
       {/* How it works */}
-      <section id="how-it-works" className="relative py-16">
-        <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,transparent,rgba(2,6,23,.04))]" />
+      <section id="how-it-works" className="tint-mint rc-noise py-20">
         <div className="mx-auto max-w-6xl px-6">
           <Reveal>
             <h2 className="text-3xl font-semibold tracking-tight lg:text-4xl">Write perfect real estate emails in 10 seconds</h2>
@@ -94,7 +96,7 @@ export default function HomePage() {
       </section>
 
       {/* Why not CRM */}
-      <section className="py-20 bg-gradient-to-b from-slate-50/50 to-white">
+      <section className="tint-violet rc-noise py-20">
         <div className="mx-auto max-w-6xl px-6">
           <Reveal>
             <h2 className="text-3xl font-semibold tracking-tight lg:text-4xl">Why not just use a CRM</h2>
@@ -140,7 +142,6 @@ export default function HomePage() {
             ].map((p, index)=>(
               <Reveal key={p.v} delay={0.1 * index}>
                 <div className="rc-holo p-6 text-center shadow-[0_20px_60px_rgba(2,6,23,.10)] transition will-change-transform hover:translate-y-[1px] hover:shadow-[0_28px_70px_rgba(37,99,235,.20)]">
-                  <span aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-0.5 rounded-t-2xl" style={{background:"var(--rc-cta-grad)"}} />
                   <div className="relative">
                     <div className="text-4xl font-extrabold text-[var(--rc-blue-700)] group-hover:scale-110 transition-transform duration-300">
                       <CountUp to={p.k} suffix={p.suffix} />
