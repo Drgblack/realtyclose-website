@@ -18,8 +18,7 @@ export default function ShimmerButton({ href, children, id }:{
   return (
     <a ref={ref} id={id} href={href}
        onMouseMove={onMove} onMouseLeave={onLeave}
-       className="relative inline-flex items-center justify-center rounded-2xl px-7 py-3 text-sm font-semibold text-white transition-transform duration-150 ease-out focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 shadow-[0_18px_38px_rgba(59,130,246,.40)]"
-       style={{ background:"var(--rc-cta-grad)" }}>
+       className="btn-primary relative inline-flex items-center justify-center px-7 py-3 text-sm font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
       <span className="absolute inset-0 rounded-2xl opacity-35 [background:linear-gradient(120deg,transparent,white,transparent)] [background-size:200%_100%] hover:[animation:shine_1.1s_linear_infinite]" />
       <span className="absolute -inset-2 -z-10 rounded-3xl blur-xl opacity-50"
             style={{background:"var(--rc-cta-grad)"}} />

@@ -13,9 +13,6 @@ export default function HomePage() {
   return (
     <main className="bg-[var(--rc-bg)] text-[var(--rc-text)]">
       <HeroNeon />
-      
-      {/* Gradient ribbon divider */}
-      <div className="grad-ribbon mx-auto my-10 max-w-5xl" />
 
       {/* Trust bar */}
       <section className="border-t border-[color:var(--rc-border)] bg-[var(--rc-surface)] py-8">
@@ -38,7 +35,7 @@ export default function HomePage() {
             { t: "Stay compliant", d: "Audit trails and approved templates keep messages safe." }
           ].map((i, index) => (
             <Reveal key={i.t} delay={0.1 * index}>
-              <div className="rounded-2xl border border-[var(--rc-border)] bg-white shadow-[0_20px_60px_rgba(2,6,23,.10)] transition will-change-transform hover:translate-y-[1px] p-6 group">
+              <div className="rc-holo elevated rounded-2xl transition will-change-transform hover:translate-y-[1px] p-6 group">
                 <span aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-0.5 rounded-t-2xl" style={{background:"var(--rc-cta-grad)"}} />
                 <div className="text-lg font-bold text-[color:var(--rc-text)] group-hover:text-blue-600 transition-colors duration-300">{i.t}</div>
                 <p className="mt-2 text-sm leading-relaxed text-[color:var(--rc-muted)]">{i.d}</p>
@@ -62,7 +59,7 @@ export default function HomePage() {
               { n: 3, t: "Send perfect email", d: "AI generates professional and compliant drafts in seconds." }
             ].map((s, index) => (
               <Reveal key={s.n} delay={0.1 * index}>
-                <div className="relative rounded-2xl border border-[var(--rc-border)] bg-white shadow-[0_10px_30px_rgba(2,6,23,0.08)] transition will-change-transform hover:translate-y-[1px] p-7 group">
+                <div className="rc-holo elevated relative rounded-2xl transition will-change-transform hover:translate-y-[1px] p-7 group">
                   <span aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-[2px] rounded-t-2xl" style={{background:"var(--rc-cta-grad)"}} />
                   <div className="relative inline-flex h-14 w-14 items-center justify-center rounded-full animated-gradient text-white font-bold shadow-xl hover:scale-125 transition-all duration-300 hover:shadow-2xl">
                     <span className="relative z-10 text-lg group-hover:animate-pulse">{s.n}</span>
@@ -109,7 +106,7 @@ export default function HomePage() {
               { h:"Email alone", p:"Leads to missed follow ups and untracked details across transactions." }
             ].map((c, index)=>(
               <Reveal key={c.h} delay={0.1 * index}>
-                <div className="relative rounded-2xl border border-[var(--rc-border)] bg-white shadow-[0_10px_30px_rgba(2,6,23,0.08)] transition will-change-transform hover:translate-y-[1px] p-6">
+                <div className="rc-holo elevated relative rounded-2xl transition will-change-transform hover:translate-y-[1px] p-6">
                   <span aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-[2px] rounded-t-2xl" style={{background:"var(--rc-cta-grad)"}} />
                   <div className="text-lg font-bold text-[color:var(--rc-text)]">{c.h}</div>
                   <p className="mt-3 text-sm leading-relaxed text-[color:var(--rc-muted)]">{c.p}</p>
@@ -141,7 +138,7 @@ export default function HomePage() {
               { k:12, suffix:" sec", v:"average draft time" },
             ].map((p, index)=>(
               <Reveal key={p.v} delay={0.1 * index}>
-                <div className="rc-holo p-6 text-center shadow-[0_20px_60px_rgba(2,6,23,.10)] transition will-change-transform hover:translate-y-[1px] hover:shadow-[0_28px_70px_rgba(37,99,235,.20)]">
+                <div className="rc-holo elevated p-6 text-center transition will-change-transform hover:translate-y-[1px]">
                   <div className="relative">
                     <div className="text-4xl font-extrabold text-[var(--rc-blue-700)] group-hover:scale-110 transition-transform duration-300">
                       <CountUp to={p.k} suffix={p.suffix} />
@@ -163,7 +160,7 @@ export default function HomePage() {
               { q:"Audit prep time cut by 90%. Compliance officer can't believe the organization.", a:"Jennifer L., Independent Broker" },
             ].map((t,i)=>(
               <Reveal key={i} delay={0.1 * i}>
-                <figure className="relative rounded-2xl border border-[var(--rc-border)] bg-white shadow-[0_10px_30px_rgba(2,6,23,0.08)] transition will-change-transform hover:translate-y-[1px] p-6">
+                <figure className="rc-holo elevated relative rounded-2xl transition will-change-transform hover:translate-y-[1px] p-6">
                   <span aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-[2px] rounded-t-2xl" style={{background:"var(--rc-cta-grad)"}} />
                   <blockquote className="text-[color:var(--rc-text)] font-medium leading-relaxed">"{t.q}"</blockquote>
                   <figcaption className="mt-3 text-sm font-semibold text-[color:var(--rc-muted)]">&mdash; {t.a}</figcaption>
