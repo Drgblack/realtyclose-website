@@ -154,32 +154,31 @@ export default function HomePage() {
                 name:"Sarah M.", 
                 role:"Team Lead", 
                 company:"Compass",
-                initials: "SM",
-                color: "bg-blue-500"
+                photo: "https://images.unsplash.com/photo-1494790108755-2616b9122945?w=100&h=100&fit=crop&crop=face"
               },
               { 
                 q:"Our closing rate improved 18% in two months. The follow-up automation is incredible.", 
                 name:"Michael R.", 
                 role:"Brokerage Operations", 
                 company:"RE/MAX",
-                initials: "MR",
-                color: "bg-violet-500"
+                photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
               },
               { 
                 q:"Audit prep time cut by 90%. Compliance officer can't believe the organization.", 
                 name:"Jennifer L.", 
                 role:"Independent Broker", 
                 company:"JL Properties",
-                initials: "JL",
-                color: "bg-emerald-500"
+                photo: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
               },
             ].map((t,i)=>(
               <Reveal key={i} delay={0.1 * i}>
                 <ShinyCard className="h-full">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className={`h-10 w-10 rounded-full ${t.color} flex items-center justify-center text-white font-semibold text-sm`}>
-                      {t.initials}
-                    </div>
+                    <img 
+                      src={t.photo}
+                      alt={`${t.name} headshot`}
+                      className="h-10 w-10 rounded-full object-cover ring-2 ring-white shadow-sm"
+                    />
                     <div className="flex-1">
                       <div className="font-semibold text-[var(--rc-text)]">{t.name}</div>
                       <div className="text-xs text-[var(--rc-muted)]">{t.role} @ {t.company}</div>
