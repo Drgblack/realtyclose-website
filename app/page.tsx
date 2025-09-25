@@ -13,9 +13,6 @@ export default function HomePage() {
   return (
     <main className="bg-[var(--rc-bg)] text-[var(--rc-text)]">
       <HeroNeon />
-      
-      {/* Gradient ribbon divider */}
-      <div className="grad-ribbon mx-auto my-10 max-w-5xl" />
 
       {/* Trust bar */}
       <section className="border-t border-[color:var(--rc-border)] bg-[var(--rc-surface)] py-8">
@@ -141,7 +138,6 @@ export default function HomePage() {
             ].map((p, index)=>(
               <Reveal key={p.v} delay={0.1 * index}>
                 <div className="rc-holo elevated bg-white rounded-xl p-6 text-center">
-                  <div className="relative">
                   <div className="stat-num">
                     <CountUp to={p.k} suffix={p.suffix} />
                   </div>
