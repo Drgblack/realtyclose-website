@@ -135,11 +135,21 @@ export default function FeaturesPage() {
             </div>
           </div>
 
-          <div className="bg-blue-600/10 border border-blue-500/20 rounded-xl p-6 text-center">
-            <blockquote className="text-slate-100 italic text-lg">
+          <div className="bg-blue-600/10 border border-blue-500/20 rounded-xl p-6">
+            <div className="flex items-center gap-3 mb-4">
+              <img 
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&crop=face"
+                alt="Sarah M. headshot"
+                className="h-10 w-10 rounded-full object-cover ring-2 ring-blue-300/50 shadow-sm"
+              />
+              <div className="text-left">
+                <div className="font-semibold text-blue-300">Sarah M.</div>
+                <div className="text-xs text-slate-300">Team Lead at Compass</div>
+              </div>
+            </div>
+            <blockquote className="text-slate-100 italic text-lg text-left">
               "I cut my weekly client updates from 30 minutes to 5. Complete gamechanger for my workflow."
             </blockquote>
-            <cite className="text-blue-300 text-sm mt-2 block">- Sarah M., Team Lead at Compass</cite>
           </div>
         </div>
 
@@ -176,11 +186,21 @@ export default function FeaturesPage() {
             </div>
           </div>
 
-          <div className="bg-green-600/10 border border-green-500/20 rounded-xl p-6 text-center">
-            <blockquote className="text-slate-100 italic text-lg">
+          <div className="bg-green-600/10 border border-green-500/20 rounded-xl p-6">
+            <div className="flex items-center gap-3 mb-4">
+              <img 
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+                alt="Michael R. headshot"
+                className="h-10 w-10 rounded-full object-cover ring-2 ring-green-300/50 shadow-sm"
+              />
+              <div className="text-left">
+                <div className="font-semibold text-green-300">Michael R.</div>
+                <div className="text-xs text-slate-300">Brokerage Operations</div>
+              </div>
+            </div>
+            <blockquote className="text-slate-100 italic text-lg text-left">
               "Our closing rate improved 18% in two months. The follow-up automation is incredible."
             </blockquote>
-            <cite className="text-green-300 text-sm mt-2 block">- Michael R., Brokerage Operations</cite>
           </div>
         </div>
 
@@ -217,11 +237,21 @@ export default function FeaturesPage() {
             </div>
           </div>
 
-          <div className="bg-purple-600/10 border border-purple-500/20 rounded-xl p-6 text-center">
-            <blockquote className="text-slate-100 italic text-lg">
+          <div className="bg-purple-600/10 border border-purple-500/20 rounded-xl p-6">
+            <div className="flex items-center gap-3 mb-4">
+              <img 
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
+                alt="Jennifer L. headshot"
+                className="h-10 w-10 rounded-full object-cover ring-2 ring-purple-300/50 shadow-sm"
+              />
+              <div className="text-left">
+                <div className="font-semibold text-purple-300">Jennifer L.</div>
+                <div className="text-xs text-slate-300">Independent Broker</div>
+              </div>
+            </div>
+            <blockquote className="text-slate-100 italic text-lg text-left">
               "Clients can't tell when I hand deals to my TC. The communication stays perfectly consistent."
             </blockquote>
-            <cite className="text-purple-300 text-sm mt-2 block">- Jennifer L., Independent Broker</cite>
           </div>
         </div>
 
@@ -258,11 +288,21 @@ export default function FeaturesPage() {
             </div>
           </div>
 
-          <div className="bg-orange-600/10 border border-orange-500/20 rounded-xl p-6 text-center">
-            <blockquote className="text-slate-100 italic text-lg">
+          <div className="bg-orange-600/10 border border-orange-500/20 rounded-xl p-6">
+            <div className="flex items-center gap-3 mb-4">
+              <img 
+                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop&crop=face"
+                alt="Rachel K. headshot"
+                className="h-10 w-10 rounded-full object-cover ring-2 ring-orange-300/50 shadow-sm"
+              />
+              <div className="text-left">
+                <div className="font-semibold text-orange-300">Rachel K.</div>
+                <div className="text-xs text-slate-300">Compliance Manager</div>
+              </div>
+            </div>
+            <blockquote className="text-slate-100 italic text-lg text-left">
               "Audit prep time cut by 90%. Compliance officer can't believe the organization."
             </blockquote>
-            <cite className="text-orange-300 text-sm mt-2 block">- Jennifer L., Independent Broker</cite>
           </div>
         </div>
 
