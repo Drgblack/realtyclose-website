@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import { ShinyCard, glowBtn } from "@/components/ui/shiny-card";
 
 const messy = "hey just circling back about the docs thing. we should prob update the timeline but not sure. thoughts?";
 const clean = "Hi Jamie,\n\nThanks for your note. I reviewed the documents and updated the transaction timeline. Here is the latest status and next step:\n• Appraisal scheduled for Thursday\n• Disclosures delivered and acknowledged\n\nI will follow up Friday with a confirmation.\n\nBest,\nAlex";
@@ -43,7 +44,7 @@ export default function EmailTransform(){
   },[phase, isReduced]);
 
   return (
-    <div className="rc-holo elevated overflow-hidden">
+    <ShinyCard padding="none" gradient="brand">
       <div className="flex items-center justify-between p-3 border-b border-gray-100">
         <div className="flex items-center gap-2">
           <button 
@@ -69,7 +70,9 @@ export default function EmailTransform(){
         </div>
         <button
           onClick={copyEmail}
-          className="rc-holo text-xs px-2 py-1 font-medium text-gray-600 hover:text-gray-800 transition-colors"
+          className={`text-xs px-2 py-1 font-medium text-gray-600 hover:text-gray-800 transition-all duration-200 rounded-md ${
+            copied ? 'shadow-[0_6px_20px_-8px_rgba(88,101,242,0.25)]' : 'hover:shadow-[0_6px_20px_-8px_rgba(88,101,242,0.25)]'
+          }`}
         >
           {copied ? "Copied!" : "Copy"}
         </button>
@@ -78,6 +81,6 @@ export default function EmailTransform(){
            style={{ borderImage: 'linear-gradient(180deg,#04b4ff,#7f3dff) 1' }}>
         <code>{t}</code>
       </pre>
-    </div>
+    </ShinyCard>
   );
 }

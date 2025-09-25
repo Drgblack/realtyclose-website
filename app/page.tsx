@@ -1,13 +1,10 @@
 import HeroNeon from "@/components/home/HeroNeon";
 import EmailTransform from "@/components/home/EmailTransform";
-import GradientUnderline from "@/components/ui/GradientUnderline";
-import ShimmerButton from "@/components/ui/ShimmerButton";
+import { ShinyCard } from "@/components/ui/shiny-card";
+import { glowBtn } from "@/components/ui/shiny-card";
 import Reveal from "@/components/ui/Reveal";
 import CountUp from "@/components/ui/CountUp";
-import Parallax from "@/components/ui/Parallax";
 import TestimonialCarousel from "@/components/ui/TestimonialCarousel";
-import StickyCTA from "@/components/ui/StickyCTA";
-import StickyFloatingCTA from "@/components/ui/StickyFloatingCTA";
 
 export default function HomePage() {
   return (
@@ -26,7 +23,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Value strip - Features row */}
+      {/* Value strip - Features row with ShinyCard */}
       <section className="rc-ambient py-20">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 px-6 sm:grid-cols-3">
           {[
@@ -35,21 +32,22 @@ export default function HomePage() {
             { t: "Stay compliant", d: "Audit trails and approved templates keep messages safe." }
           ].map((i, index) => (
             <Reveal key={i.t} delay={0.1 * index}>
-              <div className="rc-holo elevated bg-white rounded-xl p-6 group">
-                <div className="text-lg font-bold text-[color:var(--rc-text)] group-hover:text-blue-600 transition-colors duration-300">{i.t}</div>
-                <p className="mt-2 text-sm leading-relaxed text-[color:var(--rc-muted)]">{i.d}</p>
-              </div>
+              <ShinyCard>
+                <h3 className="text-lg font-bold text-[var(--rc-text)]">{i.t}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-[var(--rc-muted)]">{i.d}</p>
+              </ShinyCard>
             </Reveal>
           ))}
         </div>
       </section>
 
-      {/* How it works */}
+      {/* How it works with ShinyCard steps */}
       <section id="how-it-works" className="rc-ambient py-20">
         <div className="mx-auto max-w-6xl px-6">
           <Reveal>
-            <h2 className="text-3xl font-semibold tracking-tight lg:text-4xl">Write perfect real estate emails in 10 seconds</h2>
-            <p className="mt-4 text-lg text-[color:var(--rc-muted)] max-w-2xl">Our AI understands real estate context, compliance requirements, and professional communication standards.</p>
+            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Write perfect real estate emails in 10 seconds</h2>
+            <div className="h-1 w-16 mt-4 rounded-full bg-gradient-to-r from-indigo-500 via-sky-400 to-fuchsia-500" />
+            <p className="mt-4 text-base leading-relaxed text-[var(--rc-muted)] max-w-2xl">Our AI understands real estate context, compliance requirements, and professional communication standards.</p>
           </Reveal>
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             {[
@@ -58,14 +56,13 @@ export default function HomePage() {
               { n: 3, t: "Send perfect email", d: "AI generates professional and compliant drafts in seconds." }
             ].map((s, index) => (
               <Reveal key={s.n} delay={0.1 * index}>
-                <div className="rc-holo elevated bg-white relative rounded-xl p-7 group">
-                  <div className="relative inline-flex h-14 w-14 items-center justify-center rounded-full animated-gradient text-white font-bold shadow-xl hover:scale-125 transition-all duration-300 hover:shadow-2xl">
-                    <span className="relative z-10 text-lg group-hover:animate-pulse">{s.n}</span>
-                    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <ShinyCard padding="lg" innerClassName="text-center">
+                  <div className="mx-auto mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-r from-indigo-500 via-sky-400 to-fuchsia-500 text-white text-lg font-bold">
+                    {s.n}
                   </div>
-                  <div className="mt-5 text-xl font-bold text-[color:var(--rc-text)] group-hover:text-blue-600 transition-colors duration-300">{s.t}</div>
-                  <p className="mt-2 text-sm leading-relaxed text-[color:var(--rc-muted)]">{s.d}</p>
-                </div>
+                  <h4 className="text-lg font-semibold text-[var(--rc-text)]">{s.t}</h4>
+                  <p className="mt-2 text-sm text-[var(--rc-muted)]">{s.d}</p>
+                </ShinyCard>
               </Reveal>
             ))}
           </div>
@@ -90,14 +87,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Why not CRM */}
+      {/* Why not CRM with ShinyCard */}
       <section className="rc-ambient relative isolate overflow-hidden py-20">
         <div className="absolute inset-0 -z-10 opacity-[.9]"
              style={{ background: "linear-gradient(180deg,#f8fbff 0%,#f5f3ff 100%)" }} />
         <div className="mx-auto max-w-6xl px-6">
           <Reveal>
-            <h2 className="text-3xl font-semibold tracking-tight lg:text-4xl">Why not just use a CRM</h2>
-            <p className="mt-4 text-lg text-[color:var(--rc-muted)] max-w-2xl">Most tools force you out of Gmail and add complexity. We integrate where you already work.</p>
+            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Why not just use a CRM</h2>
+            <div className="h-1 w-16 mt-4 rounded-full bg-gradient-to-r from-indigo-500 via-sky-400 to-fuchsia-500" />
+            <p className="mt-4 text-base leading-relaxed text-[var(--rc-muted)] max-w-2xl">Most tools force you out of Gmail and add complexity. We integrate where you already work.</p>
           </Reveal>
           <div className="mt-6 grid gap-6 md:grid-cols-3">
             {[
@@ -106,28 +104,29 @@ export default function HomePage() {
               { h:"Email alone", p:"Leads to missed follow ups and untracked details across transactions." }
             ].map((c, index)=>(
               <Reveal key={c.h} delay={0.1 * index}>
-                <div className="rc-holo elevated bg-white relative rounded-xl p-6">
-                  <div className="text-lg font-bold text-[color:var(--rc-text)]">{c.h}</div>
-                  <p className="mt-3 card-body text-[color:var(--rc-muted)]">{c.p}</p>
-                </div>
+                <ShinyCard gradient="indigo">
+                  <h3 className="text-lg font-bold text-[var(--rc-text)]">{c.h}</h3>
+                  <p className="mt-3 text-sm text-[var(--rc-muted)]">{c.p}</p>
+                </ShinyCard>
               </Reveal>
             ))}
           </div>
           <Reveal delay={0.3}>
-            <div className="rc-holo elevated bg-white mt-6 rounded-xl p-4 text-sm">
-              <div className="font-semibold text-blue-800 mb-1">RealtyClose Advantage</div>
-              <div className="text-blue-700">Purpose built for real estate. Inside Gmail. AI driven. Compliance ready.</div>
-            </div>
+            <ShinyCard gradient="emerald" padding="sm" className="mt-6">
+              <div className="font-semibold text-emerald-800 mb-1">RealtyClose Advantage</div>
+              <div className="text-emerald-700 text-sm">Purpose built for real estate. Inside Gmail. AI driven. Compliance ready.</div>
+            </ShinyCard>
           </Reveal>
         </div>
       </section>
 
-      {/* Social proof + closing CTA */}
+      {/* Social proof + closing CTA with ShinyCard */}
       <section className="rc-ambient py-24">
         <div className="mx-auto max-w-6xl px-6">
           <Reveal>
-            <h2 className="text-3xl font-semibold tracking-tight lg:text-4xl">Agents, teams, and brokerages trust RealtyClose</h2>
-            <p className="mt-4 text-lg text-[color:var(--rc-muted)] max-w-2xl">Join thousands of real estate professionals who've already transformed their email workflow.</p>
+            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Agents, teams, and brokerages trust RealtyClose</h2>
+            <div className="h-1 w-16 mt-4 rounded-full bg-gradient-to-r from-indigo-500 via-sky-400 to-fuchsia-500" />
+            <p className="mt-4 text-base leading-relaxed text-[var(--rc-muted)] max-w-2xl">Join thousands of real estate professionals who've already transformed their email workflow.</p>
           </Reveal>
 
           <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-4">
@@ -138,12 +137,12 @@ export default function HomePage() {
               { k:12, suffix:" sec", v:"average draft time" },
             ].map((p, index)=>(
               <Reveal key={p.v} delay={0.1 * index}>
-                <div className="rc-holo elevated bg-white rounded-xl p-6 text-center">
-                  <div className="stat-num">
+                <ShinyCard padding="lg" innerClassName="text-center">
+                  <div className="text-3xl font-bold bg-gradient-to-r from-indigo-600 via-sky-500 to-fuchsia-600 bg-clip-text text-transparent">
                     <CountUp to={p.k} suffix={p.suffix} />
                   </div>
-                  <div className="stat-label text-sm uppercase tracking-wider mt-3">{p.v}</div>
-                </div>
+                  <div className="text-sm text-[var(--rc-muted)] mt-2">{p.v}</div>
+                </ShinyCard>
               </Reveal>
             ))}
           </div>
@@ -176,41 +175,41 @@ export default function HomePage() {
               },
             ].map((t,i)=>(
               <Reveal key={i} delay={0.1 * i}>
-                <figure className="rc-holo elevated bg-white relative rounded-xl p-6 min-h-[220px] flex flex-col">
+                <ShinyCard className="h-full">
                   <div className="flex items-center gap-3 mb-4">
                     <div className={`h-10 w-10 rounded-full ${t.color} flex items-center justify-center text-white font-semibold text-sm`}>
                       {t.initials}
                     </div>
                     <div className="flex-1">
-                      <div className="font-semibold text-[color:var(--rc-text)]">{t.name}</div>
-                      <div className="text-xs text-[color:var(--rc-muted)]">{t.role} @ {t.company}</div>
+                      <div className="font-semibold text-[var(--rc-text)]">{t.name}</div>
+                      <div className="text-xs text-[var(--rc-muted)]">{t.role} @ {t.company}</div>
                     </div>
                   </div>
-                  <blockquote className="flex-1 text-[14.5px] leading-[1.58] text-[#334155]">"{t.q}"</blockquote>
-                </figure>
+                  <blockquote className="text-sm leading-relaxed text-[var(--rc-muted)]">"{t.q}"</blockquote>
+                </ShinyCard>
               </Reveal>
             ))}
           </div>
 
           <Reveal delay={0.3}>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-3">
-              <ShimmerButton href="/install">Start Free with Gmail Extension</ShimmerButton>
-              <a href="/demo" className="group inline-flex items-center justify-center rounded-xl border border-[color:var(--rc-border)] bg-white px-6 py-3 text-sm font-semibold transition-all duration-200 hover:bg-slate-50 hover:border-slate-300 hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
-                <span className="group-hover:scale-105 transition-transform">Watch Demo</span>
+              <a 
+                href="/install" 
+                className={`inline-flex items-center px-6 py-3 bg-[#111] hover:bg-[#0c0c0c] text-white font-semibold rounded-xl transition-all duration-200 ${glowBtn}`}
+              >
+                Start Free with Gmail Extension
+              </a>
+              <a 
+                href="/demo" 
+                className="inline-flex items-center justify-center rounded-xl border border-[var(--rc-border)] hover:border-indigo-200 bg-white px-6 py-3 text-sm font-semibold transition-all duration-200 hover:bg-slate-50"
+              >
+                Watch Demo
               </a>
             </div>
-            <div className="mt-3 text-center text-xs text-[color:var(--rc-muted)]">
-              No credit card required. Cancel anytime. Bank level security.
-            </div>
+            <div className="mt-4 text-center text-xs text-[var(--rc-muted)]">No credit card required. Cancel anytime. Bank level security.</div>
           </Reveal>
         </div>
       </section>
-
-      {/* Sticky CTA */}
-      <StickyCTA />
-      
-      {/* Floating CTA */}
-      <StickyFloatingCTA />
     </main>
   );
 }

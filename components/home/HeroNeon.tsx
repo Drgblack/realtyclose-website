@@ -1,6 +1,5 @@
-﻿"use client";
-import ShimmerButton from "@/components/ui/ShimmerButton";
-import ParallaxCard from "@/components/ui/ParallaxCard";
+"use client";
+import { glowBtn } from "@/components/ui/shiny-card";
 import { useRef } from "react";
 
 export default function HeroNeon(){
@@ -36,12 +35,10 @@ export default function HeroNeon(){
 
         {/* Copy */}
         <div className="max-w-[720px] md:max-w-[760px]">
-          <h1 className="text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl xl:text-7xl" style={{lineHeight:1.08}}>
-            Fix real estate email chaos<br/>
-            <span className="relative inline-block">
-              <span className="relative z-10">- right inside Gmail</span>
-              <span aria-hidden className="absolute -bottom-1 left-0 h-2 w-full rounded-md"
-                    style={{background:"var(--rc-cta-grad-strong)"}} />
+          <h1 className="text-4xl md:text-6xl font-semibold leading-tight tracking-tight text-slate-900">
+            Fix real estate email chaos -{" "}
+            <span className="bg-gradient-to-r from-indigo-600 via-sky-500 to-fuchsia-600 bg-clip-text text-transparent">
+              right inside Gmail
             </span>
           </h1>
 
@@ -64,7 +61,7 @@ export default function HeroNeon(){
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <a 
               href="/install" 
-              className="inline-flex items-center px-6 py-3 bg-green-600 text-white font-semibold rounded-xl hover:bg-green-700 transition-colors duration-200"
+              className={`inline-flex items-center px-6 py-3 bg-[#111] hover:bg-[#0c0c0c] text-white font-semibold rounded-xl transition-all duration-200 ${glowBtn}`}
             >
               <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
@@ -73,7 +70,7 @@ export default function HeroNeon(){
             </a>
             <a 
               href="/demo" 
-              className="inline-flex items-center px-6 py-3 border border-[var(--rc-border)] bg-white text-[var(--rc-text)] font-semibold rounded-xl hover:bg-gray-50 transition-colors duration-200"
+              className="inline-flex items-center px-6 py-3 border border-[var(--rc-border)] hover:border-indigo-200 bg-white text-[var(--rc-text)] font-semibold rounded-xl hover:bg-gray-50 transition-colors duration-200"
             >
               <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M8 5v14l11-7z"/>
@@ -84,33 +81,29 @@ export default function HeroNeon(){
           <div className="mt-3 text-xs text-[var(--rc-muted)]">Works with your existing Gmail. No setup required.</div>
         </div>
 
-        {/* Product card with glow halo + tilt */}
+        {/* Product card with shiny treatment */}
         <div className="relative">
-          <div aria-hidden className="pointer-events-none absolute -inset-8 -z-10 rounded-[28px] blur-2xl opacity-70"
-               style={{background:
-                 "radial-gradient(350px 220px at 40% 20%, rgba(59,130,246,.35), transparent 65%),\
-                  radial-gradient(360px 220px at 75% 55%, rgba(124,58,237,.30), transparent 65%)"}} />
-          <div className="hero-mock">
-            <ParallaxCard>
-            <div className="rc-holo rounded-xl p-4 bg-white/95 backdrop-blur-[2px]">
-              <div className="flex items-center justify-between text-xs text-[var(--rc-muted)]">
-                <span>gmail.com · RealtyClose Extension</span><span>Ready</span>
-              </div>
-              <div className="mt-4 grid grid-cols-2 gap-3">
-                <div className="rounded-lg bg-slate-50 p-4">
-                  <div className="text-2xl font-bold text-[var(--rc-text)]">10</div>
-                  <div className="text-xs text-[var(--rc-muted)]">Daily Drafts</div>
+          <div className="relative rounded-2xl p-[1px] bg-gradient-to-r from-indigo-400 via-sky-400 to-fuchsia-500">
+            <div className="rounded-2xl bg-white shadow-[0_20px_60px_-20px_rgba(88,101,242,0.35)]">
+              <div className="rounded-xl p-4">
+                <div className="flex items-center justify-between text-xs text-[var(--rc-muted)]">
+                  <span>gmail.com · RealtyClose Extension</span><span>Ready</span>
                 </div>
-                <div className="rounded-lg bg-slate-50 p-4">
-                  <div className="text-2xl font-bold text-[var(--rc-text)]">5</div>
-                  <div className="text-xs text-[var(--rc-muted)]">Languages</div>
+                <div className="mt-4 grid grid-cols-2 gap-3">
+                  <div className="rounded-lg bg-slate-50 p-4">
+                    <div className="text-2xl font-bold text-[var(--rc-text)]">10</div>
+                    <div className="text-xs text-[var(--rc-muted)]">Daily Drafts</div>
+                  </div>
+                  <div className="rounded-lg bg-slate-50 p-4">
+                    <div className="text-2xl font-bold text-[var(--rc-text)]">5</div>
+                    <div className="text-xs text-[var(--rc-muted)]">Languages</div>
+                  </div>
                 </div>
-              </div>
-              <div className="mt-4 rounded-lg border border-emerald-300 bg-emerald-50 p-4 text-sm text-emerald-900">
-                Email draft set to professional tone. Compliance check passed.
+                <div className="mt-4 rounded-lg border border-emerald-300 bg-emerald-50 p-4 text-sm text-emerald-900">
+                  Email draft set to professional tone. Compliance check passed.
+                </div>
               </div>
             </div>
-            </ParallaxCard>
           </div>
         </div>
 
