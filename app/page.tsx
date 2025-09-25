@@ -30,7 +30,7 @@ export default function HomePage() {
       </section>
 
       {/* Value strip - Features row */}
-      <section className="tint-blue rc-noise py-20">
+      <section className="rc-ambient py-20">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 px-6 sm:grid-cols-3">
           {[
             { t: "Save hours", d: "Reply in seconds with AI assisted drafting and templates." },
@@ -38,8 +38,7 @@ export default function HomePage() {
             { t: "Stay compliant", d: "Audit trails and approved templates keep messages safe." }
           ].map((i, index) => (
             <Reveal key={i.t} delay={0.1 * index}>
-              <div className="rounded-2xl border border-[var(--rc-border)] bg-white shadow-[0_20px_60px_rgba(2,6,23,.10)] transition will-change-transform hover:translate-y-[1px] p-6 group">
-                <span aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-0.5 rounded-t-2xl" style={{background:"var(--rc-cta-grad)"}} />
+              <div className="rc-holo elevated bg-white rounded-xl p-6 group">
                 <div className="text-lg font-bold text-[color:var(--rc-text)] group-hover:text-blue-600 transition-colors duration-300">{i.t}</div>
                 <p className="mt-2 text-sm leading-relaxed text-[color:var(--rc-muted)]">{i.d}</p>
               </div>
@@ -49,7 +48,7 @@ export default function HomePage() {
       </section>
 
       {/* How it works */}
-      <section id="how-it-works" className="tint-mint rc-noise py-20">
+      <section id="how-it-works" className="rc-ambient py-20">
         <div className="mx-auto max-w-6xl px-6">
           <Reveal>
             <h2 className="text-3xl font-semibold tracking-tight lg:text-4xl">Write perfect real estate emails in 10 seconds</h2>
@@ -62,8 +61,7 @@ export default function HomePage() {
               { n: 3, t: "Send perfect email", d: "AI generates professional and compliant drafts in seconds." }
             ].map((s, index) => (
               <Reveal key={s.n} delay={0.1 * index}>
-                <div className="relative rounded-2xl border border-[var(--rc-border)] bg-white shadow-[0_10px_30px_rgba(2,6,23,0.08)] transition will-change-transform hover:translate-y-[1px] p-7 group">
-                  <span aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-[2px] rounded-t-2xl" style={{background:"var(--rc-cta-grad)"}} />
+                <div className="rc-holo elevated bg-white relative rounded-xl p-7 group">
                   <div className="relative inline-flex h-14 w-14 items-center justify-center rounded-full animated-gradient text-white font-bold shadow-xl hover:scale-125 transition-all duration-300 hover:shadow-2xl">
                     <span className="relative z-10 text-lg group-hover:animate-pulse">{s.n}</span>
                     <div className="absolute inset-0 rounded-full bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -96,7 +94,9 @@ export default function HomePage() {
       </section>
 
       {/* Why not CRM */}
-      <section className="tint-violet rc-noise py-20">
+      <section className="relative isolate overflow-hidden py-20">
+        <div className="absolute inset-0 -z-10 opacity-[.9]"
+             style={{ background: "linear-gradient(180deg,#f8fbff 0%,#f5f3ff 100%)" }} />
         <div className="mx-auto max-w-6xl px-6">
           <Reveal>
             <h2 className="text-3xl font-semibold tracking-tight lg:text-4xl">Why not just use a CRM</h2>
@@ -109,8 +109,7 @@ export default function HomePage() {
               { h:"Email alone", p:"Leads to missed follow ups and untracked details across transactions." }
             ].map((c, index)=>(
               <Reveal key={c.h} delay={0.1 * index}>
-                <div className="relative rounded-2xl border border-[var(--rc-border)] bg-white shadow-[0_10px_30px_rgba(2,6,23,0.08)] transition will-change-transform hover:translate-y-[1px] p-6">
-                  <span aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-[2px] rounded-t-2xl" style={{background:"var(--rc-cta-grad)"}} />
+                <div className="rc-holo elevated bg-white relative rounded-xl p-6">
                   <div className="text-lg font-bold text-[color:var(--rc-text)]">{c.h}</div>
                   <p className="mt-3 text-sm leading-relaxed text-[color:var(--rc-muted)]">{c.p}</p>
                 </div>
@@ -126,7 +125,7 @@ export default function HomePage() {
       </section>
 
       {/* Social proof + closing CTA */}
-      <section className="py-24 bg-gradient-to-t from-slate-50/30 to-white">
+      <section className="rc-ambient py-24">
         <div className="mx-auto max-w-6xl px-6">
           <Reveal>
             <h2 className="text-3xl font-semibold tracking-tight lg:text-4xl">Agents, teams, and brokerages trust RealtyClose</h2>
@@ -141,16 +140,12 @@ export default function HomePage() {
               { k:12, suffix:" sec", v:"average draft time" },
             ].map((p, index)=>(
               <Reveal key={p.v} delay={0.1 * index}>
-                <div className="rc-holo p-6 text-center shadow-[0_20px_60px_rgba(2,6,23,.10)] transition will-change-transform hover:translate-y-[1px] hover:shadow-[0_28px_70px_rgba(37,99,235,.20)]">
+                <div className="rc-holo elevated bg-white rounded-xl p-6 text-center">
                   <div className="relative">
-                    <div className="text-4xl font-extrabold text-[var(--rc-blue-700)] group-hover:scale-110 transition-transform duration-300">
-                      <CountUp to={p.k} suffix={p.suffix} />
-                    </div>
-                    <div className="absolute inset-0 text-4xl font-extrabold bg-gradient-to-r from-white to-white bg-clip-text text-transparent opacity-0 group-hover:opacity-20 transition-opacity duration-300">
-                      <CountUp to={p.k} suffix={p.suffix} />
-                    </div>
+                  <div className="stat-num">
+                    <CountUp to={p.k} suffix={p.suffix} />
                   </div>
-                  <div className="mt-3 text-sm font-bold text-[var(--rc-muted)] uppercase tracking-wider">{p.v}</div>
+                  <div className="stat-label text-sm uppercase tracking-wider mt-3">{p.v}</div>
                 </div>
               </Reveal>
             ))}
@@ -163,8 +158,7 @@ export default function HomePage() {
               { q:"Audit prep time cut by 90%. Compliance officer can't believe the organization.", a:"Jennifer L., Independent Broker" },
             ].map((t,i)=>(
               <Reveal key={i} delay={0.1 * i}>
-                <figure className="relative rounded-2xl border border-[var(--rc-border)] bg-white shadow-[0_10px_30px_rgba(2,6,23,0.08)] transition will-change-transform hover:translate-y-[1px] p-6">
-                  <span aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-[2px] rounded-t-2xl" style={{background:"var(--rc-cta-grad)"}} />
+                <figure className="rc-holo elevated bg-white relative rounded-xl p-6">
                   <blockquote className="text-[color:var(--rc-text)] font-medium leading-relaxed">"{t.q}"</blockquote>
                   <figcaption className="mt-3 text-sm font-semibold text-[color:var(--rc-muted)]">&mdash; {t.a}</figcaption>
                 </figure>

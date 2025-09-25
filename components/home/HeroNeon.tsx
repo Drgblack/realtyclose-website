@@ -35,7 +35,7 @@ export default function HeroNeon(){
            className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-14 px-6 pt-28 pb-24 sm:pt-40 sm:pb-32 md:grid-cols-2">
 
         {/* Copy */}
-        <div>
+        <div className="max-w-[700px] md:max-w-[760px]">
           <h1 className="text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl xl:text-7xl" style={{lineHeight:1.08}}>
             Perfect real estate emails<br/>
             <span className="relative inline-block">
@@ -61,7 +61,8 @@ export default function HeroNeon(){
                style={{background:
                  "radial-gradient(350px 220px at 40% 20%, rgba(59,130,246,.35), transparent 65%),\
                   radial-gradient(360px 220px at 75% 55%, rgba(124,58,237,.30), transparent 65%)"}} />
-          <ParallaxCard>
+          <div className="hero-mock">
+            <ParallaxCard>
             <div className="rounded-xl border border-[var(--rc-border)] p-4 bg-white/95 backdrop-blur-[2px]">
               <div className="flex items-center justify-between text-xs text-[var(--rc-muted)]">
                 <span>gmail.com · RealtyClose Extension</span><span>Ready</span>
@@ -80,7 +81,8 @@ export default function HeroNeon(){
                 Email draft set to professional tone. Compliance check passed.
               </div>
             </div>
-          </ParallaxCard>
+            </ParallaxCard>
+          </div>
         </div>
 
       </div>

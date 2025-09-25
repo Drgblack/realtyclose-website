@@ -39,7 +39,10 @@ export default function EmailTransform(){
           <div className="mb-3 text-xs font-semibold text-[var(--rc-blue-700)]">
             {isReduced ? "Polished draft" : (phase==="messy"?"Raw email":"Polished draft")}
           </div>
-          <pre className="whitespace-pre-wrap text-sm text-[var(--rc-text)] min-h-[4rem]">{t}</pre>
+          <pre className="rc-holo elevated bg-white p-4 pl-5 border-l-2 whitespace-pre-wrap text-[13.5px] leading-6 text-[var(--rc-text)] min-h-[4rem]"
+               style={{ borderImage: 'linear-gradient(180deg,#04b4ff,#7f3dff) 1' }}>
+            <code>{t}</code>
+          </pre>
         </div>
       </div>
     </div>
