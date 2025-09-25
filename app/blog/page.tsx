@@ -288,7 +288,7 @@ export default function BlogPage() {
 
       {/* Popular Topics */}
       <div className="my-16">
-        <h2 className="text-center mb-8">Popular Topics</h2>
+        <h2 className="text-center mb-8 text-white font-semibold text-2xl">Popular Topics</h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="bg-slate-700/30 border border-slate-600/50 rounded-lg p-6 text-center">

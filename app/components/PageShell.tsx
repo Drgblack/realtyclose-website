@@ -18,19 +18,23 @@ export default function PageShell({ title, children }: { title: string; children
       <div className="mx-auto max-w-6xl px-6 sm:px-8 lg:px-10 py-20">
         <div className="bg-slate-800/40 backdrop-blur-sm rounded-2xl border border-slate-700/50 shadow-2xl">
           <div className="p-8 md:p-12">
-            <div className="prose prose-invert prose-slate max-w-none text-slate-300
+            <div className="prose prose-invert prose-slate max-w-none text-slate-100
                           prose-headings:text-white prose-headings:font-semibold
                           prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-6 prose-h2:pb-3 
                           prose-h2:border-b prose-h2:border-slate-600/50 prose-h2:text-white
                           prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4 prose-h3:text-blue-300
                           prose-h4:text-lg prose-h4:mt-6 prose-h4:mb-3 prose-h4:text-blue-300
-                          prose-p:text-slate-300 prose-p:leading-relaxed prose-p:mb-6
-                          prose-li:text-slate-300 prose-li:mb-2
+                          prose-p:text-slate-100 prose-p:leading-relaxed prose-p:mb-6
+                          prose-li:text-slate-100 prose-li:mb-2
                           prose-strong:text-white prose-strong:font-semibold
                           prose-a:text-blue-400 prose-a:no-underline hover:prose-a:text-blue-300
                           prose-a:transition-colors prose-a:duration-200
                           prose-ul:space-y-2 prose-ol:space-y-2
-                          prose-em:text-slate-400 prose-em:italic">
+                          prose-em:text-slate-200 prose-em:italic
+                          prose-code:text-slate-100 prose-pre:text-slate-100
+                          prose-blockquote:text-slate-100 prose-blockquote:border-slate-600
+                          prose-table:text-slate-100 prose-thead:text-white
+                          prose-td:text-slate-100 prose-th:text-white">
               {children}
             </div>
           </div>
