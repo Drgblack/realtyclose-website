@@ -47,9 +47,9 @@ export default function SiteFooter({ variant = "dark" }: { variant?: Variant }) 
           {/* Core Suite Products (ecosystem) */}
           <div className="space-y-3">
             <div className="text-sm font-semibold">Suite</div>
-            <a href="https://zazateach.com" target="_blank" rel="noopener noreferrer" className={item}>Zaza Teach</a>
-            <a href="https://zazapromptly.com" target="_blank" rel="noopener noreferrer" className={item}>Zaza Promptly</a>
-            <a href="https://zazatechnologies.com" target="_blank" rel="noopener noreferrer" className={item}>Zaza Technologies</a>
+            <a href="https://www.zazateach.com" target="_blank" rel="noopener noreferrer" className={item}>Zaza Teach</a>
+            <a href="https://www.zazapromptly.com" target="_blank" rel="noopener noreferrer" className={item}>Zaza Promptly</a>
+            <a href="https://www.zazatechnologies.com" target="_blank" rel="noopener noreferrer" className={item}>Zaza Technologies</a>
             <a href="https://realtyclose.com" target="_blank" rel="noopener noreferrer" className={item}>RealtyClose</a>
           </div>
 

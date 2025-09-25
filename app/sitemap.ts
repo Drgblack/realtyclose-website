@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/contact',
     '/install',
     '/blog',
+    '/faq',
     '/privacy',
     '/terms',
     '/cookies',
@@ -33,6 +34,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/protecting-client-privacy',
     '/blog/automating-followups-personal-touch',
     '/blog/realtyclose-vs-traditional-email-roi',
+    '/blog/hidden-cost-missed-emails',
+    '/blog/tc-survival-guide',
   ]
 
   const staticSitemap = staticPages.map((path) => ({

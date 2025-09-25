@@ -103,7 +103,7 @@ export default function FeaturesPage() {
         </div>
 
         {/* Save 30+ hours per transaction */}
-        <div className="mb-20">
+        <div id="ai-email-assistant" className="mb-20">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-white mb-4">Save 30+ hours per transaction</h2>
             <p className="text-slate-200 max-w-3xl mx-auto">
@@ -119,7 +119,7 @@ export default function FeaturesPage() {
               <h3 className="text-white font-semibold mb-2">AI drafts professional emails</h3>
               <p className="text-slate-300 text-sm">Stop rewriting the same message five times</p>
             </div>
-            <div className="text-center">
+            <div id="smart-templates" className="text-center">
               <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center mx-auto mb-3">
                 <span className="text-xl">📄</span>
               </div>
@@ -154,7 +154,7 @@ export default function FeaturesPage() {
         </div>
 
         {/* Protect every deal from email drop-offs */}
-        <div className="mb-20">
+        <div id="deal-tracking" className="mb-20">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-white mb-4">Protect every deal from email drop-offs</h2>
             <p className="text-slate-200 max-w-3xl mx-auto">
@@ -205,7 +205,7 @@ export default function FeaturesPage() {
         </div>
 
         {/* Consistent, on-brand client experience */}
-        <div className="mb-20">
+        <div id="integrations" className="mb-20">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-white mb-4">Consistent, on-brand client experience</h2>
             <p className="text-slate-200 max-w-3xl mx-auto">
@@ -256,7 +256,7 @@ export default function FeaturesPage() {
         </div>
 
         {/* Audit-ready compliance & oversight */}
-        <div className="mb-20">
+        <div id="compliance" className="mb-20">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-white mb-4">Audit-ready compliance & oversight</h2>
             <p className="text-slate-200 max-w-3xl mx-auto">
