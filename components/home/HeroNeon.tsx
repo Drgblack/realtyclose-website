@@ -37,22 +37,51 @@ export default function HeroNeon(){
         {/* Copy */}
         <div className="max-w-[720px] md:max-w-[760px]">
           <h1 className="text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl xl:text-7xl" style={{lineHeight:1.08}}>
-            Perfect real estate emails<br/>
+            Fix real estate email chaos<br/>
             <span className="relative inline-block">
-              <span className="relative z-10">in 10 seconds</span>
+              <span className="relative z-10">— right inside Gmail</span>
               <span aria-hidden className="absolute -bottom-1 left-0 h-2 w-full rounded-md"
                     style={{background:"var(--rc-cta-grad-strong)"}} />
             </span>
           </h1>
 
           <p className="mt-5 max-w-xl text-lg text-[var(--rc-muted)]">
-            Stop losing hours to email. RealtyClose drafts professional, on-brand replies inside Gmail in seconds.
+            Reclaim hours on every transaction and keep deals on track with on-brand, compliant emails in seconds.
           </p>
 
-          <div className="mt-8">
-            <ShimmerButton id="cta-hero" href="/install">Start Free – No Credit Card Required</ShimmerButton>
-            <div className="mt-3 text-xs text-[var(--rc-muted)]">Works with your existing Gmail. No setup required.</div>
+          {/* Proof chips */}
+          <div className="mt-6 flex flex-wrap gap-3 text-sm">
+            <div className="flex items-center gap-2 bg-slate-50 px-3 py-2 rounded-full border">
+              <span className="text-orange-600">⚠️</span>
+              <span className="text-slate-700">Agents lose 30+ hrs/transaction to comms</span>
+            </div>
+            <div className="flex items-center gap-2 bg-slate-50 px-3 py-2 rounded-full border">
+              <span className="text-red-600">📉</span>
+              <span className="text-slate-700">49% report comms-related deal delays</span>
+            </div>
           </div>
+
+          <div className="mt-8 flex flex-col sm:flex-row gap-4">
+            <a 
+              href="/install" 
+              className="inline-flex items-center px-6 py-3 bg-green-600 text-white font-semibold rounded-xl hover:bg-green-700 transition-colors duration-200"
+            >
+              <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+              Add to Chrome
+            </a>
+            <a 
+              href="/demo" 
+              className="inline-flex items-center px-6 py-3 border border-[var(--rc-border)] bg-white text-[var(--rc-text)] font-semibold rounded-xl hover:bg-gray-50 transition-colors duration-200"
+            >
+              <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+              Watch 2-min Gmail demo
+            </a>
+          </div>
+          <div className="mt-3 text-xs text-[var(--rc-muted)]">Works with your existing Gmail. No setup required.</div>
         </div>
 
         {/* Product card with glow halo + tilt */}

@@ -169,7 +169,7 @@ export default function BlogPage() {
         <p className="text-xl text-blue-300 font-medium mb-4">
           <strong>Expert insights for modern real estate professionals</strong>
         </p>
-        <p className="text-slate-300">
+        <p className="text-slate-200">
           AI email strategies, productivity tips, and industry best practices to help you close more deals
         </p>
       </div>
@@ -183,10 +183,10 @@ export default function BlogPage() {
               <h2 className="rc-h2 text-white mt-2 mb-4">
                 {featuredPost.title}
               </h2>
-              <p className="text-slate-300 mb-6 text-lg">
+              <p className="text-slate-100 mb-6 text-lg">
                 {featuredPost.excerpt}
               </p>
-              <div className="flex items-center text-slate-400 text-sm mb-6">
+              <div className="flex items-center text-slate-200 text-sm mb-6">
                 <span>By {featuredPost.author}</span>
                 <span className="mx-3">•</span>
                 <span>{featuredPost.date}</span>
@@ -212,7 +212,7 @@ export default function BlogPage() {
                   <span className="text-3xl">⏰</span>
                 </div>
                 <h4 className="text-lg font-semibold text-blue-300 mb-2">Reclaim Your Time</h4>
-                <p className="text-slate-400 text-sm">
+                <p className="text-slate-100 text-sm">
                   A practical system to win back 30+ hours per transaction
                 </p>
               </div>
@@ -224,7 +224,7 @@ export default function BlogPage() {
       {/* Lightweight Email Capture */}
       <div className="bg-gradient-to-r from-green-600/10 to-blue-600/10 border border-green-500/20 rounded-xl p-6 my-12 max-w-[1200px] mx-auto text-center">
         <h3 className="text-lg font-bold text-white mb-3">Get one practical email systems tip each week</h3>
-        <p className="text-slate-300 mb-4 text-sm">No spam.</p>
+        <p className="text-slate-100 mb-4 text-sm">No spam.</p>
         <div className="max-w-sm mx-auto flex gap-3">
           <input 
             type="email" 
@@ -266,11 +266,11 @@ export default function BlogPage() {
                   {post.title}
                 </h3>
                 
-                <p className="text-slate-300 mb-4 text-sm leading-relaxed">
+                <p className="text-slate-100 mb-4 text-sm leading-relaxed">
                   {post.excerpt}
                 </p>
                 
-                <div className="flex items-center justify-between text-slate-400 text-xs mt-auto">
+                <div className="flex items-center justify-between text-slate-200 text-xs mt-auto">
                   <div className="flex items-center">
                     <span>By {post.author}</span>
                     <span className="mx-2">•</span>
@@ -296,7 +296,7 @@ export default function BlogPage() {
               <span className="text-xl">🤖</span>
             </div>
             <h4 className="font-semibold text-blue-300 mb-2">AI Email Writing</h4>
-            <p className="text-slate-400 text-sm">Templates, tips, and best practices</p>
+            <p className="text-slate-100 text-sm">Templates, tips, and best practices</p>
           </div>
           
           <div className="bg-slate-700/30 border border-slate-600/50 rounded-lg p-6 text-center">
@@ -304,7 +304,7 @@ export default function BlogPage() {
               <span className="text-xl">📈</span>
             </div>
             <h4 className="font-semibold text-green-300 mb-2">Lead Conversion</h4>
-            <p className="text-slate-400 text-sm">Strategies to close more deals</p>
+            <p className="text-slate-100 text-sm">Strategies to close more deals</p>
           </div>
           
           <div className="bg-slate-700/30 border border-slate-600/50 rounded-lg p-6 text-center">
@@ -312,7 +312,7 @@ export default function BlogPage() {
               <span className="text-xl">⚡</span>
             </div>
             <h4 className="font-semibold text-purple-300 mb-2">Productivity Hacks</h4>
-            <p className="text-slate-400 text-sm">Workflow optimization techniques</p>
+            <p className="text-slate-100 text-sm">Workflow optimization techniques</p>
           </div>
           
           <div className="bg-slate-700/30 border border-slate-600/50 rounded-lg p-6 text-center">
@@ -320,7 +320,7 @@ export default function BlogPage() {
               <span className="text-xl">📊</span>
             </div>
             <h4 className="font-semibold text-orange-300 mb-2">Industry Trends</h4>
-            <p className="text-slate-400 text-sm">Market insights and forecasts</p>
+            <p className="text-slate-100 text-sm">Market insights and forecasts</p>
           </div>
         </div>
       </div>
@@ -328,7 +328,7 @@ export default function BlogPage() {
       {/* CTA Section */}
       <div className="text-center mt-16 bg-blue-600/10 border border-blue-500/20 rounded-xl p-8">
         <h2 className="text-2xl font-bold text-white mb-4">Ready to implement what you've learned?</h2>
-        <p className="text-slate-300 mb-6">
+        <p className="text-slate-100 mb-6">
           Start using AI-powered email assistance today and see the difference in your client communications
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
