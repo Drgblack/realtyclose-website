@@ -14,25 +14,11 @@ export default function HeroNeon(){
   }
 
   return (
-    <section className="relative overflow-hidden bg-[var(--rc-bg)] rc-noise">
-      {/* Aurora + cursor spotlight */}
-      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute inset-0"
-             style={{background:
-               "radial-gradient(900px 520px at 8% -10%, rgba(37,99,235,.28), transparent 55%),\
-                radial-gradient(700px 420px at 95% -15%, rgba(124,58,237,.24), transparent 55%)"}} />
-        <div className="aurora-spot absolute -inset-24 rounded-[50%]" />
-        <style>{`
-          .aurora-spot{
-            background: radial-gradient(520px 520px at var(--mx,55%) var(--my,42%),
-              rgba(59,130,246,.35), transparent 60%);
-            transition: background-position .12s ease-out;
-          }
-        `}</style>
-      </div>
+    <>
+      <section className="tint-hero relative overflow-hidden bg-[var(--rc-bg)] rc-noise">
 
-      <div ref={wrapRef} onMouseMove={track}
-           className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-14 px-6 pt-28 pb-24 sm:pt-40 sm:pb-32 md:grid-cols-2">
+        <div ref={wrapRef} onMouseMove={track}
+             className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-14 px-6 pt-28 pb-24 sm:pt-40 sm:pb-32 md:grid-cols-2">
 
         {/* Copy */}
         <div>
@@ -83,7 +69,11 @@ export default function HeroNeon(){
           </ParallaxCard>
         </div>
 
+        </div>
+      </section>
+      <div className="mx-auto mt-10 max-w-5xl px-6">
+        <div className="grad-ribbon rounded-full" aria-hidden="true" />
       </div>
-    </section>
+    </>
   );
 }
