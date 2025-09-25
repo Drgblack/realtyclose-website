@@ -162,7 +162,7 @@ export default function PricingPageClient() {
         {/* ROI Hint Bar */}
         <div className="mt-6 bg-green-600/10 border border-green-500/20 rounded-2xl p-4 text-center">
           <p className="text-slate-100">
-            ✨ <strong>Save 30+ hours/transaction</strong> • <strong>49% of managers report comms-related delays</strong>—fix that.
+            ✨ <strong>Save 30+ hours/transaction</strong> • <strong>49% of managers report comms-related delays</strong> - fix that.
           </p>
         </div>
       </section>
@@ -298,7 +298,7 @@ export default function PricingPageClient() {
             <blockquote className="text-slate-100 italic text-lg">
               "I cut weekly client updates from 30 minutes to 5. Complete gamechanger for my workflow."
             </blockquote>
-            <cite className="text-blue-300 text-sm">— Sarah M., Team Lead at Compass</cite>
+            <cite className="text-blue-300 text-sm">- Sarah M., Team Lead at Compass</cite>
           </div>
           
           <p className="text-slate-300">

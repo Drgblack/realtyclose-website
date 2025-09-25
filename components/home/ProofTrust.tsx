@@ -30,7 +30,7 @@ export default function ProofTrust() {
           {quotes.map((t, i) => (
             <figure key={i} className="rounded-xl border border-slate-200 bg-white p-6">
               <blockquote className="text-slate-800">"{t.q}"</blockquote>
-              <figcaption className="mt-2 text-sm text-slate-500">— {t.a}</figcaption>
+              <figcaption className="mt-2 text-sm text-slate-500">- {t.a}</figcaption>
             </figure>
           ))}
         </div>

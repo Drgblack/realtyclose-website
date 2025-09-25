@@ -39,7 +39,7 @@ export default function HeroNeon(){
           <h1 className="text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl xl:text-7xl" style={{lineHeight:1.08}}>
             Fix real estate email chaos<br/>
             <span className="relative inline-block">
-              <span className="relative z-10">— right inside Gmail</span>
+              <span className="relative z-10">- right inside Gmail</span>
               <span aria-hidden className="absolute -bottom-1 left-0 h-2 w-full rounded-md"
                     style={{background:"var(--rc-cta-grad-strong)"}} />
             </span>

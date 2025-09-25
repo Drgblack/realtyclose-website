@@ -45,7 +45,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     category: "Features",
     question: "How does RealtyClose help me close deals faster?",
     answer:
-      "RealtyClose automates repetitive tasks, assembles next best actions, and generates ready-to-send updates, offers, and reminders—reducing coordination delays across the transaction.",
+      "RealtyClose automates repetitive tasks, assembles next best actions, and generates ready-to-send updates, offers, and reminders - reducing coordination delays across the transaction.",
   },
   {
     id: "integrations",
@@ -59,7 +59,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     category: "Pricing & Plans",
     question: "Is there a free trial?",
     answer:
-      "Yes—enjoy a 14-day free trial to experience RealtyClose before choosing a plan.",
+      "Yes - enjoy a 14-day free trial to experience RealtyClose before choosing a plan.",
   },
   {
     id: "pricing-plans",
@@ -87,7 +87,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     category: "Support & Teams",
     question: "Can teams use RealtyClose together?",
     answer:
-      "Yes—team workspaces, shared templates, and role-based permissions help brokerages standardize processes while keeping sensitive data private.",
+      "Yes - team workspaces, shared templates, and role-based permissions help brokerages standardize processes while keeping sensitive data private.",
   },
   {
     id: "support",
@@ -108,7 +108,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     category: "About the Founder",
     question: "Who created RealtyClose?",
     answer:
-      "RealtyClose was founded by Dr. Greg Blackburn, a business leader and EdTech innovator with 20 years in digital transformation and a PhD in Professional Education—combining operational rigor with AI-native product design.",
+      "RealtyClose was founded by Dr. Greg Blackburn, a business leader and EdTech innovator with 20 years in digital transformation and a PhD in Professional Education - combining operational rigor with AI-native product design.",
   },
 ];
 

@@ -34,15 +34,15 @@ export const PLANS: Plan[] = [
   {
     key: "pro",
     name: "Professional",
-    tagline: "Reclaim hours and protect every deal — right inside Gmail.",
+    tagline: "Reclaim hours and protect every deal - right inside Gmail.",
     priceMonthly: 29,
     priceAnnual: 23, // 20% off annual (displayed as /mo when billed annually)
     ctaLabel: "Start 7-Day Chrome Trial",
     ctaHref: "/install",
     popular: true,
     bullets: [
-      "Unlimited AI drafts & smart templates → save 30+ hours/transaction",
-      "Quick Actions for follow-ups & date flags → reduce delays",
+      "Unlimited AI drafts & smart templates - save 30+ hours/transaction",
+      "Quick Actions for follow-ups & date flags - reduce delays",
       "On-brand tone & style controls for polished replies",
       "Priority email support",
       "Analytics & insights",
@@ -58,9 +58,9 @@ export const PLANS: Plan[] = [
     ctaHref: "/demo",
     bullets: [
       "Everything in Professional",
-      "Shared template library & approvals → brand control",
-      "Team collaboration & role permissions → smooth handoffs",
-      "Compliance & audit logs → review in seconds",
+      "Shared template library & approvals - brand control",
+      "Team collaboration & role permissions - smooth handoffs",
+      "Compliance & audit logs - review in seconds",
       "Dedicated account manager",
     ],
   },
@@ -75,7 +75,7 @@ export const comparisonRows = [
   },
   {
     label: "Deal protection (missed-email / deadline alerts)",
-    free: "—",
+    free: "-",
     pro: "✓",
     team: "✓",
   },
@@ -87,14 +87,14 @@ export const comparisonRows = [
   },
   {
     label: "Compliance & audit readiness",
-    free: "—",
+    free: "-",
     pro: "Individual",
     team: "✓",
   },
   {
     label: "Team controls & permissions",
-    free: "—",
-    pro: "—",
+    free: "-",
+    pro: "-",
     team: "✓",
   },
 ];

@@ -36,7 +36,7 @@ export default function HowItWorks() {
           <blockquote className="text-lg">
             "We closed three deals that were about to fall apart because RealtyClose kept us on top of every follow-up."
           </blockquote>
-          <figcaption className="mt-2 text-sm text-slate-500">— Transaction Coordinator</figcaption>
+          <figcaption className="mt-2 text-sm text-slate-500">- Transaction Coordinator</figcaption>
         </figure>
       </div>
     </section>

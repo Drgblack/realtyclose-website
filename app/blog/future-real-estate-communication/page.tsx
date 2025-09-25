@@ -136,7 +136,7 @@ export default function FutureRealEstateCommunicationPost() {
         </p>
 
         <p>
-          The question isn't whether AI will transform real estate communication—it's whether you'll be an early adopter or play catch-up later.
+          The question isn't whether AI will transform real estate communication - it's whether you'll be an early adopter or play catch-up later.
         </p>
       </div>
 

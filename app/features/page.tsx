@@ -130,7 +130,7 @@ export default function FeaturesPage() {
           <blockquote className="text-slate-100 italic text-lg">
             "I cut weekly client updates from 30 minutes to 5. Complete gamechanger for my workflow."
           </blockquote>
-          <cite className="text-blue-300 text-sm mt-2 block">— Sarah M., Team Lead at Compass</cite>
+          <cite className="text-blue-300 text-sm mt-2 block">- Sarah M., Team Lead at Compass</cite>
         </div>
       </div>
 
@@ -171,7 +171,7 @@ export default function FeaturesPage() {
           <blockquote className="text-slate-100 italic text-lg">
             "Our closing rate improved 18% in two months. The follow-up automation is incredible."
           </blockquote>
-          <cite className="text-green-300 text-sm mt-2 block">— Michael R., Brokerage Operations</cite>
+          <cite className="text-green-300 text-sm mt-2 block">- Michael R., Brokerage Operations</cite>
         </div>
       </div>
 
@@ -197,7 +197,7 @@ export default function FeaturesPage() {
               <span className="text-xl">🎨</span>
             </div>
             <h3 className="text-white font-semibold mb-2">Tone control</h3>
-            <p className="text-slate-300 text-sm">Professional, friendly, or urgent—AI matches your brand voice</p>
+            <p className="text-slate-300 text-sm">Professional, friendly, or urgent - AI matches your brand voice</p>
           </div>
           <div className="text-center">
             <div className="w-12 h-12 bg-teal-500/20 rounded-xl flex items-center justify-center mx-auto mb-3">
@@ -212,7 +212,7 @@ export default function FeaturesPage() {
           <blockquote className="text-slate-100 italic text-lg">
             "Clients can't tell when I hand deals to my TC. The communication stays perfectly consistent."
           </blockquote>
-          <cite className="text-purple-300 text-sm mt-2 block">— Jennifer L., Independent Broker</cite>
+          <cite className="text-purple-300 text-sm mt-2 block">- Jennifer L., Independent Broker</cite>
         </div>
       </div>
 
@@ -253,7 +253,7 @@ export default function FeaturesPage() {
           <blockquote className="text-slate-100 italic text-lg">
             "Audit prep time cut by 90%. Compliance officer can't believe the organization."
           </blockquote>
-          <cite className="text-orange-300 text-sm mt-2 block">— Jennifer L., Independent Broker</cite>
+          <cite className="text-orange-300 text-sm mt-2 block">- Jennifer L., Independent Broker</cite>
         </div>
       </div>
 

@@ -5,11 +5,11 @@ import FAQPageClient from "./FAQPageClient";
 
 export const metadata: Metadata = {
   title: "RealtyClose FAQ – AI for Real Estate Professionals",
-  description: "Answers about RealtyClose—AI-powered workflows that help agents, brokers, and property managers close more deals, save time, and stay compliant.",
+  description: "Answers about RealtyClose - AI-powered workflows that help agents, brokers, and property managers close more deals, save time, and stay compliant.",
   keywords: "AI for real estate, close more deals faster, real estate workflow automation, AI real estate assistant",
   openGraph: {
     title: "RealtyClose FAQ – AI for Real Estate Professionals", 
-    description: "Answers about RealtyClose—AI-powered workflows that help agents, brokers, and property managers close more deals, save time, and stay compliant.",
+    description: "Answers about RealtyClose - AI-powered workflows that help agents, brokers, and property managers close more deals, save time, and stay compliant.",
     type: "website",
   },
 };

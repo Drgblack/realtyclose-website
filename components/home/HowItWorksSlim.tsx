@@ -49,7 +49,7 @@ export default function HowItWorksSlim() {
             <blockquote className="text-lg text-slate-100">
               "We closed three deals that were about to fall apart because RealtyClose kept us on top of every follow up."
             </blockquote>
-            <figcaption className="mt-3 text-sm text-slate-400">— Transaction Coordinator</figcaption>
+            <figcaption className="mt-3 text-sm text-slate-400">- Transaction Coordinator</figcaption>
           </figure>
         </div>
 
