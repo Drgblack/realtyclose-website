@@ -91,7 +91,7 @@ export default function HomePage() {
       </section>
 
       {/* Why not CRM */}
-      <section className="relative isolate overflow-hidden py-20">
+      <section className="rc-ambient relative isolate overflow-hidden py-20">
         <div className="absolute inset-0 -z-10 opacity-[.9]"
              style={{ background: "linear-gradient(180deg,#f8fbff 0%,#f5f3ff 100%)" }} />
         <div className="mx-auto max-w-6xl px-6">
@@ -108,14 +108,15 @@ export default function HomePage() {
               <Reveal key={c.h} delay={0.1 * index}>
                 <div className="rc-holo elevated bg-white relative rounded-xl p-6">
                   <div className="text-lg font-bold text-[color:var(--rc-text)]">{c.h}</div>
-                  <p className="mt-3 text-sm leading-relaxed text-[color:var(--rc-muted)]">{c.p}</p>
+                  <p className="mt-3 card-body text-[color:var(--rc-muted)]">{c.p}</p>
                 </div>
               </Reveal>
             ))}
           </div>
           <Reveal delay={0.3}>
-            <div className="mt-6 rounded-[var(--rc-radius)] border border-blue-200 bg-blue-50 p-4 text-sm text-blue-800">
-              RealtyClose is purpose built for real estate. Inside Gmail. AI driven. Compliance ready.
+            <div className="rc-holo elevated bg-white mt-6 rounded-xl p-4 text-sm">
+              <div className="font-semibold text-blue-800 mb-1">RealtyClose Advantage</div>
+              <div className="text-blue-700">Purpose built for real estate. Inside Gmail. AI driven. Compliance ready.</div>
             </div>
           </Reveal>
         </div>

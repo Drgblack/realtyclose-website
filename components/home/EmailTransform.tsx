@@ -32,19 +32,19 @@ export default function EmailTransform(){
   },[phase, isReduced]);
 
   return (
-    <div className="rounded-2xl border border-[var(--rc-border)] bg-white shadow-[0_20px_60px_rgba(2,6,23,.10)] transition will-change-transform hover:translate-y-[1px]">
-      <div className="relative">
-        <span aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-0.5 rounded-t-2xl" style={{background:"var(--rc-cta-grad)"}} />
-        <div className="p-6">
-          <div className="mb-3 text-xs font-semibold text-[var(--rc-blue-700)]">
-            {isReduced ? "Polished draft" : (phase==="messy"?"Raw email":"Polished draft")}
-          </div>
-          <pre className="rc-holo elevated bg-white p-4 pl-5 border-l-2 whitespace-pre-wrap text-[13.5px] leading-6 text-[var(--rc-text)] min-h-[4rem]"
-               style={{ borderImage: 'linear-gradient(180deg,#04b4ff,#7f3dff) 1' }}>
-            <code>{t}</code>
-          </pre>
-        </div>
+    <div className="rc-holo elevated overflow-hidden">
+      <div className="flex items-center gap-2 p-3 border-b border-gray-100">
+        <button className={`px-3 py-1 rounded text-xs font-medium transition-colors ${!isReduced && phase === "messy" ? "bg-orange-100 text-orange-700" : "text-gray-500"}`}>
+          Before
+        </button>
+        <button className={`px-3 py-1 rounded text-xs font-medium transition-colors ${isReduced || phase === "clean" ? "bg-blue-100 text-blue-700" : "text-gray-500"}`}>
+          After
+        </button>
       </div>
+      <pre className="p-4 pl-5 border-l-2 whitespace-pre-wrap text-[13.5px] leading-6 text-[var(--rc-text)] min-h-[4rem] bg-white"
+           style={{ borderImage: 'linear-gradient(180deg,#04b4ff,#7f3dff) 1' }}>
+        <code>{t}</code>
+      </pre>
     </div>
   );
 }
