@@ -180,7 +180,7 @@ export default function BlogPage() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <span className="text-blue-300 text-sm font-medium">📌 Featured Post</span>
-              <h2 className="rc-h2 text-white mt-2 mb-4">
+              <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-white mt-2 mb-4">
                 {featuredPost.title}
               </h2>
               <p className="text-slate-100 mb-6 text-lg">
@@ -239,7 +239,7 @@ export default function BlogPage() {
 
       {/* Recent Posts Grid */}
       <div className="max-w-[1200px] mx-auto">
-        <h2 className="rc-h2 text-white mb-8 text-center">Recent Posts</h2>
+        <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-white mb-8 text-center">Recent Posts</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {otherPosts.slice(0, 6).map((post) => (
             <Link key={post.id} href={`/blog/${post.slug}`}>
