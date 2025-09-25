@@ -641,6 +641,37 @@ body::before{
     0 0 0 6px rgba(43,102,241,.45);
 }
 
+/* Shared Typography System for Blog and FAQ */
+.rc-h1 { 
+  @apply text-4xl md:text-5xl font-bold tracking-tight text-[var(--rc-text)]; 
+}
+.rc-h2 { 
+  @apply text-2xl md:text-3xl font-semibold tracking-tight text-[var(--rc-text)]; 
+}
+.rc-h3 { 
+  @apply text-xl md:text-2xl font-semibold tracking-tight text-[var(--rc-text)]; 
+}
+.rc-body { 
+  @apply text-base leading-relaxed text-[var(--rc-muted)]; 
+}
+.rc-body-large { 
+  @apply text-lg leading-relaxed text-[var(--rc-muted)]; 
+}
+
+/* Shared button styles */
+.rc-btn-primary {
+  @apply inline-flex items-center px-6 py-3 rounded-xl font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2;
+  background: var(--rc-cta-grad);
+  box-shadow: 0 10px 24px -10px rgba(43,102,241,.42);
+}
+.rc-btn-primary:focus {
+  box-shadow: 0 0 0 3px #fff, 0 0 0 6px rgba(43,102,241,.45);
+}
+
+.rc-btn-secondary {
+  @apply inline-flex items-center px-6 py-3 rounded-xl font-semibold border border-[var(--rc-border)] bg-white text-[var(--rc-text)] transition-all duration-200 hover:border-[var(--rc-blue)] hover:text-[var(--rc-blue)] hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[var(--rc-blue)] focus:ring-offset-2;
+}
+
 /* Type & spacing rhythm */
 h2 { letter-spacing: -0.01em; font-size: 2rem; }
 .section { padding-top: 80px; }

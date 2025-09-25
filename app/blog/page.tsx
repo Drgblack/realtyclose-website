@@ -180,7 +180,7 @@ export default function BlogPage() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <span className="text-blue-300 text-sm font-medium">📌 Featured Post</span>
-              <h2 className="text-3xl font-bold text-white mt-2 mb-4">
+              <h2 className="rc-h2 text-white mt-2 mb-4">
                 {featuredPost.title}
               </h2>
               <p className="text-slate-300 mb-6 text-lg">
@@ -202,7 +202,7 @@ export default function BlogPage() {
                   {featuredPost.category}
                 </span>
               </div>
-              <Link href={`/blog/${featuredPost.slug}`} className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-8 rounded-lg font-medium transition-colors inline-block">
+              <Link href={`/blog/${featuredPost.slug}`} className="rc-btn-primary inline-block">
                 Read Full Article →
               </Link>
             </div>
@@ -231,7 +231,7 @@ export default function BlogPage() {
             placeholder="Enter your email"
             className="flex-1 bg-slate-800/50 border border-slate-600/50 rounded-lg px-4 py-2 text-white placeholder:text-slate-400 focus:outline-none focus:border-blue-500 text-sm"
           />
-          <button className="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg font-medium transition-colors whitespace-nowrap text-sm">
+          <button className="rc-btn-primary text-sm py-2 px-4">
             Subscribe
           </button>
         </div>
@@ -239,7 +239,7 @@ export default function BlogPage() {
 
       {/* Recent Posts Grid */}
       <div className="max-w-[1200px] mx-auto">
-        <h2 className="text-2xl font-bold text-white mb-8 text-center">Recent Posts</h2>
+        <h2 className="rc-h2 text-white mb-8 text-center">Recent Posts</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {otherPosts.slice(0, 6).map((post) => (
             <Link key={post.id} href={`/blog/${post.slug}`}>
@@ -332,12 +332,12 @@ export default function BlogPage() {
           Start using AI-powered email assistance today and see the difference in your client communications
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-8 rounded-lg font-medium transition-colors">
+          <a href="/install" className="rc-btn-primary">
             🛒 Install RealtyClose Extension
-          </button>
-          <button className="bg-slate-600 hover:bg-slate-500 text-white py-3 px-8 rounded-lg font-medium transition-colors">
+          </a>
+          <a href="/demo" className="rc-btn-secondary">
             📺 Watch Demo
-          </button>
+          </a>
         </div>
       </div>
     </PageShell>

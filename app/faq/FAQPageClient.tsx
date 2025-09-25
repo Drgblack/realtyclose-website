@@ -35,13 +35,15 @@ export default function FAQPageClient() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section with subtle gradient */}
-      <section className="relative overflow-hidden py-16 bg-gradient-to-b from-white via-white to-gray-50">
+      <section className="relative overflow-hidden py-16">
+        {/* Subtle gradient accent */}
+        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-white via-white to-slate-50/30" />
         <div className="mx-auto max-w-4xl px-6 text-center">
           <Reveal>
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-[var(--rc-text)]">
+            <h1 className="rc-h1">
               Frequently Asked Questions
             </h1>
-            <p className="mt-4 text-lg text-[var(--rc-muted)] max-w-2xl mx-auto leading-relaxed">
+            <p className="mt-4 rc-body-large max-w-2xl mx-auto">
               Everything you need to know about RealtyClose – clear, simple, and designed for professionals who want to close deals faster.
             </p>
           </Reveal>
@@ -154,7 +156,7 @@ export default function FAQPageClient() {
                     setQuery("");
                     setActiveCategory("All");
                   }}
-                  className="mt-4 px-6 py-2 bg-[var(--rc-blue)] text-white rounded-xl hover:bg-blue-600 transition-colors duration-200"
+                  className="mt-4 rc-btn-primary"
                 >
                   Clear filters
                 </button>
@@ -173,7 +175,7 @@ export default function FAQPageClient() {
               </p>
               <a
                 href="/contact"
-                className="inline-flex items-center px-6 py-3 bg-[var(--rc-blue)] text-white font-semibold rounded-xl hover:bg-blue-600 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[var(--rc-blue)] focus:ring-offset-2"
+                className="rc-btn-primary"
               >
                 Contact us
                 <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
