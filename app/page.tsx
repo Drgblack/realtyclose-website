@@ -14,8 +14,8 @@ export default function HomePage() {
     <main className="bg-[var(--rc-bg)] text-[var(--rc-text)]">
       <HeroNeon />
 
-      {/* Trust bar */}
-      <section className="border-t border-[color:var(--rc-border)] bg-[var(--rc-surface)] py-8">
+      {/* Trust bar - reduced padding */}
+      <section className="border-t border-[color:var(--rc-border)] bg-[var(--rc-surface)] py-6">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6">
           <span className="text-sm text-[var(--rc-muted)]">Trusted by solo agents, teams, and brokerages</span>
           <div className="flex items-center gap-6">
@@ -150,14 +150,43 @@ export default function HomePage() {
 
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             {[
-              { q:"I cut weekly client updates from 30 minutes to 5. Complete gamechanger for my workflow.", a:"Sarah M., Team Lead at Compass" },
-              { q:"Our closing rate improved 18% in two months. The follow-up automation is incredible.", a:"Michael R., Brokerage Operations" },
-              { q:"Audit prep time cut by 90%. Compliance officer can't believe the organization.", a:"Jennifer L., Independent Broker" },
+              { 
+                q:"I cut weekly client updates from 30 minutes to 5. Complete gamechanger for my workflow.", 
+                name:"Sarah M.", 
+                role:"Team Lead", 
+                company:"Compass",
+                initials: "SM",
+                color: "bg-blue-500"
+              },
+              { 
+                q:"Our closing rate improved 18% in two months. The follow-up automation is incredible.", 
+                name:"Michael R.", 
+                role:"Brokerage Operations", 
+                company:"RE/MAX",
+                initials: "MR",
+                color: "bg-violet-500"
+              },
+              { 
+                q:"Audit prep time cut by 90%. Compliance officer can't believe the organization.", 
+                name:"Jennifer L.", 
+                role:"Independent Broker", 
+                company:"JL Properties",
+                initials: "JL",
+                color: "bg-emerald-500"
+              },
             ].map((t,i)=>(
               <Reveal key={i} delay={0.1 * i}>
-                <figure className="rc-holo elevated bg-white relative rounded-xl p-6">
-                  <blockquote className="text-[color:var(--rc-text)] font-medium leading-relaxed">"{t.q}"</blockquote>
-                  <figcaption className="mt-3 text-sm font-semibold text-[color:var(--rc-muted)]">&mdash; {t.a}</figcaption>
+                <figure className="rc-holo elevated bg-white relative rounded-xl p-6 min-h-[220px] flex flex-col">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className={`h-10 w-10 rounded-full ${t.color} flex items-center justify-center text-white font-semibold text-sm`}>
+                      {t.initials}
+                    </div>
+                    <div className="flex-1">
+                      <div className="font-semibold text-[color:var(--rc-text)]">{t.name}</div>
+                      <div className="text-xs text-[color:var(--rc-muted)]">{t.role} @ {t.company}</div>
+                    </div>
+                  </div>
+                  <blockquote className="flex-1 text-[14.5px] leading-[1.58] text-[#334155]">"{t.q}"</blockquote>
                 </figure>
               </Reveal>
             ))}

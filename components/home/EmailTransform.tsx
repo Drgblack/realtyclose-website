@@ -8,6 +8,17 @@ export default function EmailTransform(){
   const [t,setT]=useState(""); 
   const [phase,setPhase]=useState<"messy"|"clean">("messy");
   const [isReduced, setIsReduced] = useState(false);
+  const [copied, setCopied] = useState(false);
+
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(t);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.log('Copy failed');
+    }
+  };
   
   useEffect(() => {
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -33,15 +44,37 @@ export default function EmailTransform(){
 
   return (
     <div className="rc-holo elevated overflow-hidden">
-      <div className="flex items-center gap-2 p-3 border-b border-gray-100">
-        <button className={`px-3 py-1 rounded text-xs font-medium transition-colors ${!isReduced && phase === "messy" ? "bg-orange-100 text-orange-700" : "text-gray-500"}`}>
-          Before
-        </button>
-        <button className={`px-3 py-1 rounded text-xs font-medium transition-colors ${isReduced || phase === "clean" ? "bg-blue-100 text-blue-700" : "text-gray-500"}`}>
-          After
+      <div className="flex items-center justify-between p-3 border-b border-gray-100">
+        <div className="flex items-center gap-2">
+          <button 
+            className={`px-3 py-1.5 rounded-md text-xs font-medium transition-colors ${
+              !isReduced && phase === "messy" 
+                ? "bg-orange-100 text-orange-700 border border-orange-200" 
+                : "text-gray-500 hover:text-gray-700"
+            }`}
+            onClick={() => !isReduced && setPhase("messy")}
+          >
+            Before
+          </button>
+          <button 
+            className={`px-3 py-1.5 rounded-md text-xs font-medium transition-colors ${
+              isReduced || phase === "clean" 
+                ? "bg-blue-100 text-blue-700 border border-blue-200" 
+                : "text-gray-500 hover:text-gray-700"
+            }`}
+            onClick={() => !isReduced && setPhase("clean")}
+          >
+            After
+          </button>
+        </div>
+        <button
+          onClick={copyEmail}
+          className="rc-holo text-xs px-2 py-1 font-medium text-gray-600 hover:text-gray-800 transition-colors"
+        >
+          {copied ? "Copied!" : "Copy"}
         </button>
       </div>
-      <pre className="p-4 pl-5 border-l-2 whitespace-pre-wrap text-[13.5px] leading-6 text-[var(--rc-text)] min-h-[4rem] bg-white"
+      <pre className="p-4 pl-5 border-l-2 whitespace-pre-wrap font-mono text-[13.5px] leading-6 text-slate-800 min-h-[4rem] bg-white"
            style={{ borderImage: 'linear-gradient(180deg,#04b4ff,#7f3dff) 1' }}>
         <code>{t}</code>
       </pre>
