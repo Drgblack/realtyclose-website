@@ -145,5 +145,112 @@
       "demo": "Demo ansehen",
       "subtitle": "Schreiben Sie Ihre nächste Kunden-E-Mail in Sekunden • Sehen Sie, wie Top-Makler RealtyClose täglich nutzen"
     }
+  },
+  "features": {
+    "title": "Gmail-first Immobilien-Assistent",
+    "hero": {
+      "subtitle": "E-Mail-Chaos beheben ohne Gmail zu verlassen",
+      "description": "Gewinnen Sie 30+ Stunden pro Transaktion zurück und schützen Sie Geschäfte vor Kommunikationsfehlern mit KI-gestützter E-Mail-Unterstützung für Immobilienprofis.",
+      "stat1": "94% verlieren 30+ Std/Transaktion durch Kommunikation",
+      "stat2": "49% berichten über kommunikationsbedingte Deal-Verzögerungen",
+      "addToChrome": "Zu Chrome hinzufügen",
+      "watchDemo": "2-Min Gmail Demo ansehen",
+      "subtitle2": "Chrome Web Store • Kostenlose Testversion • Keine Kreditkarte erforderlich"
+    },
+    "howItWorks": {
+      "title": "So funktioniert es in Gmail",
+      "step1Title": "Gmail öffnen",
+      "step1Desc": "RealtyClose erscheint in Ihrer Gmail-Seitenleiste",
+      "step2Title": "RealtyClose anklicken",
+      "step2Desc": "KI analysiert Kontext und schlägt Antworten vor",
+      "step3Title": "Markenkonformen Entwurf einfügen",
+      "step3Desc": "Füllt Namen, Daten und nächste Schritte automatisch aus",
+      "noContextSwitching": "Kein Kontextwechsel. Keine neuen Anmeldungen. Keine Störung Ihres bestehenden Workflows."
+    },
+    "saveHours": {
+      "title": "30+ Stunden pro Transaktion sparen",
+      "description": "Verwandeln Sie 3+ Stunden tägliches E-Mail-Chaos in 30 Minuten optimierte Kommunikation",
+      "aiDrafts": "KI erstellt professionelle E-Mails",
+      "aiDraftsDesc": "Hören Sie auf, dieselbe Nachricht fünfmal umzuschreiben",
+      "smartTemplates": "Intelligente Vorlagen füllen Details automatisch aus",
+      "smartTemplatesDesc": "Namen, Daten, Immobilieninfos werden sofort eingefügt",
+      "oneClick": "Ein-Klick-Kunden-Updates",
+      "oneClickDesc": "Terminieren, Anrufe protokollieren, Updates senden ohne Tab-Wechsel",
+      "testimonial1": "Ich habe meine wöchentlichen Kunden-Updates von 30 Minuten auf 5 reduziert. Kompletter Gamechanger für meinen Workflow."
+    },
+    "protectDeals": {
+      "title": "Jedes Geschäft vor E-Mail-Ausfällen schützen",
+      "description": "Fast die Hälfte der Manager berichten über verzögerte/gefährdete Geschäfte durch Kommunikationsfehler. Werden Sie nicht zur Statistik.",
+      "alerts": "Unbeantwortete E-Mail-Warnungen",
+      "alertsDesc": "Verpassen Sie nie ein Follow-up, das Ihr Geschäft killen könnte",
+      "deadlines": "Termin-Flags",
+      "deadlinesDesc": "Kritische Daten tauchen automatisch in jedem E-Mail-Thread auf",
+      "singleSource": "Einzige Wahrheitsquelle",
+      "singleSourceDesc": "Jede Unterhaltung mit ihrem Geschäft verknüpft für vollständigen Kontext",
+      "testimonial2": "Unsere Abschlussrate verbesserte sich in zwei Monaten um 18%. Die Follow-up-Automatisierung ist unglaublich."
+    },
+    "brandExperience": {
+      "title": "Konsistente, markenkonforme Kundenerfahrung",
+      "description": "Klingen Sie wie die beste Version Ihrer selbst in jeder Nachricht, egal ob Sie solo arbeiten oder ein 50-Makler-Team leiten",
+      "sharedTemplates": "Geteilte Vorlagen",
+      "sharedTemplatesDesc": "Team-genehmigte Nachrichten für alle Makler",
+      "toneControl": "Ton-Kontrolle",
+      "toneControlDesc": "Professionell, freundlich oder dringend - KI passt sich Ihrer Markenstimme an",
+      "handoffContinuity": "Übergabe-Kontinuität",
+      "handoffContinuityDesc": "Nahtlose TC-Übergänge ohne Kundenverwirrung",
+      "testimonial3": "Kunden können nicht erkennen, wann ich Geschäfte an meinen TC übergebe. Die Kommunikation bleibt perfekt konsistent."
+    },
+    "compliance": {
+      "title": "Prüfbereite Compliance & Überwachung",
+      "description": "Schlafen Sie besser, wissend dass jede Kommunikation protokolliert, compliant und bereit für Makler-Review ist",
+      "centralizedLog": "Zentralisiertes Protokoll",
+      "centralizedLogDesc": "Jede E-Mail mit Zeitstempel und Teilnehmern verfolgt",
+      "rolePermissions": "Rollenbasierte Berechtigungen",
+      "rolePermissionsDesc": "Makler, TCs und Broker sehen genau das, was sie brauchen",
+      "reviews": "Reviews",
+      "reviewsDesc": "Broker-Genehmigungsworkflows für sensible Kommunikation",
+      "testimonial4": "Audit-Vorbereitungszeit um 90% reduziert. Der Compliance-Beauftragte kann die Organisation nicht glauben."
+    },
+    "builtFor": {
+      "title": "Entwickelt für Immobilienprofis, die in Gmail leben",
+      "tc": "Transaktionskoordinatoren",
+      "tcDesc": "Überwachung + Compliance ohne das Chaos. Gewinnen Sie Stunden zurück während Sie jedes Geschäft auf Kurs halten.",
+      "tcFeature1": "Zentralisierte Geschäftsüberwachung",
+      "tcFeature2": "Automatisierte Compliance-Prüfungen",
+      "tcFeature3": "Team-Übergabe-Management",
+      "teamLeads": "Teamleiter",
+      "teamLeadsDesc": "Konsistenz zwischen Maklern ohne Mikromanagement. Skalieren Sie Ihre Standards, nicht Ihren Stress.",
+      "teamLeadsFeature1": "Geteilte Vorlagen-Bibliotheken",
+      "teamLeadsFeature2": "Markenstimmen-Konsistenz",
+      "teamLeadsFeature3": "Leistungseinblicke",
+      "soloAgents": "Solo-Makler",
+      "soloAgentsDesc": "Geschwindigkeit und Eleganz ohne neue Tools zu lernen. Professionelle Kommunikation auf Unternehmensebene.",
+      "soloAgentsFeature1": "KI-gestütztes E-Mail-Schreiben",
+      "soloAgentsFeature2": "Intelligente Follow-up-Erinnerungen",
+      "soloAgentsFeature3": "Professionelle Vorlagen"
+    },
+    "whyNot": {
+      "title": "Warum nicht einfach ... verwenden?",
+      "crms": "CRMs",
+      "crmsProblem": "Das Problem: Mächtig aber komplex & nicht Gmail-nativ → verlangsamt Kommunikation.",
+      "crmsSolution": "RealtyClose: Funktioniert in Gmail, kein Kontextwechsel erforderlich.",
+      "transactionTools": "Transaktions-Tools",
+      "transactionToolsProblem": "Das Problem: Dokument-first; beheben tägliches E-Mail-Chaos nicht.",
+      "transactionToolsSolution": "RealtyClose: E-Mail-first mit eingebautem Geschäftskontext.",
+      "genericPlugins": "Generische E-Mail-Plugins",
+      "genericPluginsProblem": "Das Problem: Schnell aber nicht immobilienspezifisch oder compliance-bewusst.",
+      "genericPluginsSolution": "RealtyClose: Entwickelt für Immobilienprofis und ihre Workflows."
+    },
+    "security": {
+      "title": "Unternehmenssicherheit",
+      "description": "Bank-Level-Verschlüsselung, SOC 2 Compliance und Null-Datenspeicher-Richtlinien. Ihre Kundendaten verlassen nie Ihr Gmail-Konto."
+    },
+    "finalCta": {
+      "title": "Bereit, 30+ Stunden pro Transaktion zurückzugewinnen?",
+      "description": "Schließen Sie sich Tausenden von Immobilienprofis an, die ihren E-Mail-Workflow bereits transformiert haben.",
+      "addToChrome": "Zu Chrome hinzufügen - Kostenlos starten",
+      "watchDemo": "2-Min Demo ansehen",
+      "subtitle": "Chrome Web Store • 14-tägige kostenlose Testversion • Keine Kreditkarte erforderlich • Funktioniert mit bestehendem Gmail"
+    }
   }
 }

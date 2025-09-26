@@ -145,5 +145,112 @@
       "demo": "Watch the Demo",
       "subtitle": "Write your next client email in seconds • See how top agents use RealtyClose daily"
     }
+  },
+  "features": {
+    "title": "Gmail-First Real Estate Assistant",
+    "hero": {
+      "subtitle": "Fix email chaos without leaving Gmail",
+      "description": "Reclaim 30+ hours per transaction and protect deals from communication failures with AI-powered email assistance built for real estate professionals.",
+      "stat1": "94% lose 30+ hrs/transaction to comms",
+      "stat2": "49% report comms-related deal delays",
+      "addToChrome": "Add to Chrome",
+      "watchDemo": "Watch 2-min Gmail demo",
+      "subtitle2": "Chrome Web Store • Free trial • No credit card required"
+    },
+    "howItWorks": {
+      "title": "How it works in Gmail",
+      "step1Title": "Open Gmail",
+      "step1Desc": "RealtyClose appears in your Gmail sidebar",
+      "step2Title": "Click RealtyClose",
+      "step2Desc": "AI analyzes context and suggests responses",
+      "step3Title": "Insert on-brand draft",
+      "step3Desc": "Auto-fills names, dates, and next steps",
+      "noContextSwitching": "No context switching. No new logins. No disruption to your existing workflow."
+    },
+    "saveHours": {
+      "title": "Save 30+ hours per transaction",
+      "description": "Turn 3+ hours of daily email chaos into 30 minutes of streamlined communication",
+      "aiDrafts": "AI drafts professional emails",
+      "aiDraftsDesc": "Stop rewriting the same message five times",
+      "smartTemplates": "Smart templates auto-fill details",
+      "smartTemplatesDesc": "Names, dates, property info inserted instantly",
+      "oneClick": "One-click client updates",
+      "oneClickDesc": "Schedule, log calls, send updates without switching tabs",
+      "testimonial1": "I cut my weekly client updates from 30 minutes to 5. Complete gamechanger for my workflow."
+    },
+    "protectDeals": {
+      "title": "Protect every deal from email drop-offs",
+      "description": "Nearly half of managers report deals delayed/jeopardized by communication failures. Don't be a statistic.",
+      "alerts": "Unanswered-email alerts",
+      "alertsDesc": "Never miss a follow-up that could kill your deal",
+      "deadlines": "Deadline flags",
+      "deadlinesDesc": "Critical dates surface automatically in every email thread",
+      "singleSource": "Single source of truth",
+      "singleSourceDesc": "Every conversation connected to its deal for full context",
+      "testimonial2": "Our closing rate improved 18% in two months. The follow-up automation is incredible."
+    },
+    "brandExperience": {
+      "title": "Consistent, on-brand client experience",
+      "description": "Sound like the best version of yourself in every message, whether you're solo or managing a 50-agent team",
+      "sharedTemplates": "Shared templates",
+      "sharedTemplatesDesc": "Team-approved messaging across all agents",
+      "toneControl": "Tone control",
+      "toneControlDesc": "Professional, friendly, or urgent - AI matches your brand voice",
+      "handoffContinuity": "Handoff continuity",
+      "handoffContinuityDesc": "Seamless TC transitions without client confusion",
+      "testimonial3": "Clients can't tell when I hand deals to my TC. The communication stays perfectly consistent."
+    },
+    "compliance": {
+      "title": "Audit-ready compliance & oversight",
+      "description": "Sleep better knowing every communication is logged, compliant, and ready for broker review",
+      "centralizedLog": "Centralized log",
+      "centralizedLogDesc": "Every email tracked with timestamps and participants",
+      "rolePermissions": "Role-based permissions",
+      "rolePermissionsDesc": "Agents, TCs, and brokers see exactly what they need",
+      "reviews": "Reviews",
+      "reviewsDesc": "Broker approval workflows for sensitive communications",
+      "testimonial4": "Audit prep time cut by 90%. Compliance officer can't believe the organization."
+    },
+    "builtFor": {
+      "title": "Built for real estate professionals who live in Gmail",
+      "tc": "Transaction Coordinators",
+      "tcDesc": "Oversight + compliance without the chaos. Reclaim hours while keeping every deal on track.",
+      "tcFeature1": "Centralized deal monitoring",
+      "tcFeature2": "Automated compliance checks",
+      "tcFeature3": "Team handoff management",
+      "teamLeads": "Team Leads",
+      "teamLeadsDesc": "Consistency across agents without micromanaging. Scale your standards, not your stress.",
+      "teamLeadsFeature1": "Shared template libraries",
+      "teamLeadsFeature2": "Brand voice consistency",
+      "teamLeadsFeature3": "Performance insights",
+      "soloAgents": "Solo Agents",
+      "soloAgentsDesc": "Speed and polish without learning new tools. Professional communication at enterprise scale.",
+      "soloAgentsFeature1": "AI-powered email drafting",
+      "soloAgentsFeature2": "Smart follow-up reminders",
+      "soloAgentsFeature3": "Professional templates"
+    },
+    "whyNot": {
+      "title": "Why not just use...?",
+      "crms": "CRMs",
+      "crmsProblem": "The problem: Powerful but complex & not Gmail-native → slows communication.",
+      "crmsSolution": "RealtyClose: Works inside Gmail, no context switching required.",
+      "transactionTools": "Transaction Tools",
+      "transactionToolsProblem": "The problem: Document-first; don't fix daily email chaos.",
+      "transactionToolsSolution": "RealtyClose: Email-first with deal context built in.",
+      "genericPlugins": "Generic Email Plugins",
+      "genericPluginsProblem": "The problem: Fast but not real-estate-specific or compliance-aware.",
+      "genericPluginsSolution": "RealtyClose: Built for real estate professionals and their workflows."
+    },
+    "security": {
+      "title": "Enterprise Security",
+      "description": "Bank-level encryption, SOC 2 compliance, and zero data retention policies. Your client data never leaves your Gmail account."
+    },
+    "finalCta": {
+      "title": "Ready to reclaim 30+ hours per transaction?",
+      "description": "Join thousands of real estate professionals who've already transformed their email workflow.",
+      "addToChrome": "Add to Chrome - Start Free",
+      "watchDemo": "Watch 2-min demo",
+      "subtitle": "Chrome Web Store • 14-day free trial • No credit card required • Works with existing Gmail"
+    }
   }
 }
