@@ -180,11 +180,11 @@ export default function FAQPageClient() {
                           className="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-blue-500/50 rounded-xl"
                         >
                           <div className="flex justify-between items-start">
-                            <h3 className="text-lg font-semibold text-white pr-4">
+                            <h3 className="text-lg font-semibold text-slate-800 pr-4">
                               {faq.question}
                             </h3>
                             <svg
-                              className={`h-6 w-6 text-slate-400 transform transition-transform duration-200 flex-shrink-0 ${
+                              className={`h-6 w-6 text-slate-600 transform transition-transform duration-200 flex-shrink-0 ${
                                 expandedItems.has(faq.id) ? "rotate-180" : ""
                               }`}
                               fill="none"
@@ -195,8 +195,8 @@ export default function FAQPageClient() {
                             </svg>
                           </div>
                           {expandedItems.has(faq.id) && (
-                            <div className="mt-4 pt-4 border-t border-slate-700/50">
-                              <p className="text-slate-300 leading-relaxed">
+                            <div className="mt-4 pt-4 border-t border-slate-300/50">
+                              <p className="text-slate-700 leading-relaxed">
                                 {faq.answer}
                               </p>
                             </div>
@@ -220,11 +220,11 @@ export default function FAQPageClient() {
                     className="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-blue-500/50 rounded-xl"
                   >
                     <div className="flex justify-between items-start">
-                      <h3 className="text-lg font-semibold text-white pr-4">
+                      <h3 className="text-lg font-semibold text-slate-800 pr-4">
                         {faq.question}
                       </h3>
                       <svg
-                        className={`h-6 w-6 text-slate-400 transform transition-transform duration-200 flex-shrink-0 ${
+                        className={`h-6 w-6 text-slate-600 transform transition-transform duration-200 flex-shrink-0 ${
                           expandedItems.has(faq.id) ? "rotate-180" : ""
                         }`}
                         fill="none"
@@ -235,8 +235,8 @@ export default function FAQPageClient() {
                       </svg>
                     </div>
                     {expandedItems.has(faq.id) && (
-                      <div className="mt-4 pt-4 border-t border-slate-700/50">
-                        <p className="text-slate-300 leading-relaxed">
+                      <div className="mt-4 pt-4 border-t border-slate-300/50">
+                        <p className="text-slate-700 leading-relaxed">
                           {faq.answer}
                         </p>
                       </div>
@@ -253,10 +253,10 @@ export default function FAQPageClient() {
           <div className="mt-16 text-center">
             <ShinyCard>
               <div className="p-8">
-                <h2 className="text-2xl font-bold text-white mb-4">
+                <h2 className="text-2xl font-bold text-slate-800 mb-4">
                   {t('faq.contact.stillHaveQuestions')}
                 </h2>
-                <p className="text-slate-300 mb-6">
+                <p className="text-slate-600 mb-6">
                   {t('faq.contact.cantFind')}
                 </p>
                 <a
