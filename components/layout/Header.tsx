@@ -47,7 +47,13 @@ export default function Header() {
   return (
     <header className={wrap} data-scrolled={scrolled}>
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-6">
-        <Link href="/" className="text-base font-semibold text-slate-900">RealtyClose</Link>
+        <Link href="/" className="flex items-center gap-2 text-base font-semibold text-slate-900">
+          <svg width="24" height="24" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="6" fill="#2563eb"/>
+            <path d="M9 8h14v3.5L13.5 20.5H23V24H9v-3.5l9.5-9H9V8z" fill="white"/>
+          </svg>
+          RealtyClose
+        </Link>
 
         {/* Center - Nav */}
         <nav className="hidden md:flex items-center gap-6 text-sm">
@@ -103,7 +109,13 @@ export default function Header() {
           <button onClick={() => setOpen(false)} aria-label="Close menu" className="fixed inset-0 z-40 bg-black/40" />
           <div className="fixed right-0 top-0 z-50 h-full w-80 bg-white p-6 shadow-xl ring-1 ring-black/5">
             <div className="flex items-center justify-between">
-              <span className="text-base font-semibold text-slate-900">{t('nav.menu')}</span>
+              <div className="flex items-center gap-2">
+                <svg width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="32" height="32" rx="6" fill="#2563eb"/>
+                  <path d="M9 8h14v3.5L13.5 20.5H23V24H9v-3.5l9.5-9H9V8z" fill="white"/>
+                </svg>
+                <span className="text-base font-semibold text-slate-900">{t('nav.menu')}</span>
+              </div>
               <button onClick={() => setOpen(false)} aria-label="Close" className="inline-flex h-9 w-9 items-center justify-center rounded-lg ring-1 ring-black/10">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6l-12 12" stroke="#0f172a" strokeWidth="2" strokeLinecap="round"/></svg>
               </button>
