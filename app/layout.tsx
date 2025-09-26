@@ -9,15 +9,11 @@ export const metadata: Metadata = {
   description: 'AI-powered email assistant and deal tools for real estate professionals. Write perfect emails in seconds and close with confidence.',
   icons: {
     icon: [
-      { url: '/favicon.svg', type: 'image/svg+xml' },        // primary (transparent)
-      { url: '/brand/z-mark-32.png', sizes: '32x32', type: 'image/png' }, // fallback
-      { url: '/brand/z-mark-16.png', sizes: '16x16', type: 'image/png' }, // fallback
+      { url: '/icon.svg', type: 'image/svg+xml' },        // primary (transparent)
+      { url: '/images/brand/z-logo.png', sizes: '32x32', type: 'image/png' }, // fallback
     ],
     apple: [
       { url: '/apple-touch-icon.png', sizes: '180x180' },   // no transparency
-    ],
-    other: [
-      { rel: 'mask-icon', url: '/safari-pinned-tab.svg', color: '#2563eb' }, // pinned tabs (monotone)
     ],
   },
 }
