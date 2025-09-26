@@ -73,5 +73,65 @@
     "sarah": "I cut weekly client updates from 30 minutes to 5. Complete gamechanger for my workflow.",
     "michael": "Our closing rate improved 18% in two months. The follow-up automation is incredible.",
     "jennifer": "Audit prep time cut by 90%. Compliance officer can't believe the organization."
+  },
+  "about": {
+    "title": "The Gmail-First AI Assistant Built for Real Estate Communication",
+    "problem": {
+      "title": "The Problem",
+      "description": "Real estate professionals spend hours buried in messy inboxes. Communication is unstructured, deadlines slip, clients feel ignored, and deals fall apart.",
+      "stat1": "70%",
+      "stat1Desc": "of professionals face closing delays from poor communication",
+      "stat2": "49%",
+      "stat2Desc": "of managers have seen a deal jeopardized by missed emails",
+      "stat3": "30+",
+      "stat3Desc": "hours lost per transaction to repetitive email work"
+    },
+    "whyFail": {
+      "title": "Why Existing Tools Fail",
+      "crm": "Too complex and expensive, require you to leave Gmail",
+      "tm": "Focus on documents, not conversations",
+      "generic": "Fast but not built for real estate compliance"
+    },
+    "solution": {
+      "title": "Our Solution",
+      "description": "RealtyClose lives inside Gmail. It drafts, organizes, and tracks every deal-critical email. You reply faster, sound consistent, and keep every transaction on track.",
+      "feature1": "Professional, on-brand replies in seconds",
+      "feature2": "Automated follow-up nudges so no client slips through the cracks",
+      "feature3": "Compliance guardrails that protect your brokerage"
+    },
+    "whoWeHelp": {
+      "title": "Who We Help",
+      "solo": "Save time and maintain a professional voice",
+      "teams": "Standardize communication and coordinate handoffs",
+      "tc": "Automate reminders and track dozens of active deals",
+      "brokerages": "Enforce brand consistency and audit readiness"
+    },
+    "proof": {
+      "title": "Proof & Outcomes",
+      "faster": "professional drafts in seconds",
+      "fewer": "AI checks tone and compliance",
+      "happier": "consistent, proactive updates build trust",
+      "more": "less time in email, more time with clients"
+    },
+    "beforeAfter": {
+      "title": "Before vs After",
+      "beforeTitle": "Before RealtyClose",
+      "before1": "3+ hours daily writing emails",
+      "before2": "Missed follow-ups and delays",
+      "before3": "Fragmented tools and copy-paste chaos",
+      "afterTitle": "With RealtyClose",
+      "after1": "10-second replies",
+      "after2": "Consistent, compliant communication",
+      "after3": "Every deal tracked in Gmail"
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "Our mission is simple: eliminate communication chaos so agents, teams, and coordinators can focus on closing deals, not fighting their inbox."
+    },
+    "cta": {
+      "install": "Install Free Extension",
+      "demo": "Watch the Demo",
+      "subtitle": "Write your next client email in seconds • See how top agents use RealtyClose daily"
+    }
   }
 }
