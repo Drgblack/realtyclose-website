@@ -1,0 +1,52 @@
+{
+  "common": {
+    "install": "Start Free with Gmail Extension",
+    "watchDemo": "Watch Demo",
+    "trustedBy": "Trusted by solo agents, teams, and brokerages"
+  },
+  "features": {
+    "saveHours": "Save hours",
+    "saveHoursDesc": "Reply in seconds with AI assisted drafting and templates.",
+    "protectDeals": "Protect deals", 
+    "protectDealsDesc": "Follow up nudges and timeline alerts stop slips.",
+    "stayCompliant": "Stay compliant",
+    "stayCompliantDesc": "Audit trails and approved templates keep messages safe."
+  },
+  "howItWorks": {
+    "title": "Write perfect real estate emails in 10 seconds",
+    "subtitle": "Our AI understands real estate context, compliance requirements, and professional communication standards.",
+    "step1Title": "Install in Chrome",
+    "step1Desc": "Works instantly with Gmail. No setup required.",
+    "step2Title": "Select context", 
+    "step2Desc": "First contact, follow up, listing update, or client question.",
+    "step3Title": "Send perfect email",
+    "step3Desc": "AI generates professional and compliant drafts in seconds.",
+    "seeTransformation": "See the transformation"
+  },
+  "crm": {
+    "title": "Why not just use a CRM",
+    "subtitle": "Most tools force you out of Gmail and add complexity. We integrate where you already work.",
+    "crmTitle": "CRMs",
+    "crmDesc": "Expensive and complicated. Force you out of Gmail and add extra steps.",
+    "genericTitle": "Generic AI tools",
+    "genericDesc": "Do not understand real estate compliance or deal timelines.",
+    "emailTitle": "Email alone", 
+    "emailDesc": "Leads to missed follow ups and untracked details across transactions.",
+    "advantageTitle": "RealtyClose Advantage",
+    "advantageDesc": "Purpose built for real estate. Inside Gmail. AI driven. Compliance ready."
+  },
+  "socialProof": {
+    "title": "Agents, teams, and brokerages trust RealtyClose",
+    "subtitle": "Join thousands of real estate professionals who've already transformed their email workflow.",
+    "activeUsers": "active users",
+    "emailsDrafted": "emails drafted", 
+    "languagesSupported": "languages supported",
+    "averageDraftTime": "average draft time",
+    "disclaimer": "No credit card required. Cancel anytime. Bank level security."
+  },
+  "testimonials": {
+    "sarah": "I cut weekly client updates from 30 minutes to 5. Complete gamechanger for my workflow.",
+    "michael": "Our closing rate improved 18% in two months. The follow-up automation is incredible.",
+    "jennifer": "Audit prep time cut by 90%. Compliance officer can't believe the organization."
+  }
+}

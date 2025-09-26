@@ -1,0 +1,52 @@
+{
+  "common": {
+    "install": "Kostenlos mit Gmail Extension starten",
+    "watchDemo": "Demo ansehen",
+    "trustedBy": "Vertrauen von Solo-Maklern, Teams und Maklerfirmen"
+  },
+  "features": {
+    "saveHours": "Stunden sparen",
+    "saveHoursDesc": "Antworten Sie in Sekunden mit KI-unterstützter Erstellung und Vorlagen.",
+    "protectDeals": "Deals schützen",
+    "protectDealsDesc": "Follow-up-Erinnerungen und Timeline-Benachrichtigungen verhindern Versäumnisse.",
+    "stayCompliant": "Compliant bleiben",
+    "stayCompliantDesc": "Audit-Trails und genehmigte Vorlagen halten Nachrichten sicher."
+  },
+  "howItWorks": {
+    "title": "Schreiben Sie perfekte Immobilien-E-Mails in 10 Sekunden",
+    "subtitle": "Unsere KI versteht Immobilienkontext, Compliance-Anforderungen und professionelle Kommunikationsstandards.",
+    "step1Title": "In Chrome installieren",
+    "step1Desc": "Funktioniert sofort mit Gmail. Keine Einrichtung erforderlich.",
+    "step2Title": "Kontext auswählen",
+    "step2Desc": "Erstkontakt, Follow-up, Listing-Update oder Kundenfrage.",
+    "step3Title": "Perfekte E-Mail senden", 
+    "step3Desc": "KI generiert professionelle und konforme Entwürfe in Sekunden.",
+    "seeTransformation": "Sehen Sie die Transformation"
+  },
+  "crm": {
+    "title": "Warum nicht einfach ein CRM verwenden",
+    "subtitle": "Die meisten Tools zwingen Sie aus Gmail heraus und fügen Komplexität hinzu. Wir integrieren dort, wo Sie bereits arbeiten.",
+    "crmTitle": "CRMs",
+    "crmDesc": "Teuer und kompliziert. Zwingen Sie aus Gmail heraus und fügen zusätzliche Schritte hinzu.",
+    "genericTitle": "Generische KI-Tools",
+    "genericDesc": "Verstehen Immobilien-Compliance oder Deal-Timelines nicht.",
+    "emailTitle": "Nur E-Mail",
+    "emailDesc": "Führt zu verpassten Follow-ups und nicht verfolgten Details bei Transaktionen.",
+    "advantageTitle": "RealtyClose-Vorteil", 
+    "advantageDesc": "Speziell für Immobilien entwickelt. In Gmail. KI-gesteuert. Compliance-bereit."
+  },
+  "socialProof": {
+    "title": "Makler, Teams und Maklerfirmen vertrauen RealtyClose",
+    "subtitle": "Schließen Sie sich Tausenden von Immobilienprofis an, die ihren E-Mail-Workflow bereits transformiert haben.",
+    "activeUsers": "aktive Nutzer",
+    "emailsDrafted": "E-Mails erstellt",
+    "languagesSupported": "Sprachen unterstützt", 
+    "averageDraftTime": "durchschnittliche Erstellungszeit",
+    "disclaimer": "Keine Kreditkarte erforderlich. Jederzeit kündbar. Banksicherheit."
+  },
+  "testimonials": {
+    "sarah": "Ich habe wöchentliche Kunden-Updates von 30 Minuten auf 5 reduziert. Kompletter Gamechanger für meinen Workflow.",
+    "michael": "Unsere Abschlussrate verbesserte sich in zwei Monaten um 18%. Die Follow-up-Automatisierung ist unglaublich.", 
+    "jennifer": "Audit-Vorbereitungszeit um 90% reduziert. Der Compliance-Beauftragte kann die Organisation nicht glauben."
+  }
+}
