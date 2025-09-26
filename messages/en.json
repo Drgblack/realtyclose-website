@@ -1,0 +1,97 @@
+{
+  "common": {
+    "getStarted": "Get Started Free",
+    "learnMore": "Learn More",
+    "installExtension": "Install Free Extension",
+    "company": "Company",
+    "features": "Features",
+    "pricing": "Pricing",
+    "blog": "Blog",
+    "faq": "FAQ"
+  },
+  "home": {
+    "hero": {
+      "title": "The Enterprise Real Estate Platform Starting With Your Gmail",
+      "subtitle": "RealtyClose is the smart platform designed to remove stress from real estate closings. Generate professional emails in seconds and keep every deal on track.",
+      "ctaPrimary": "Install Free Extension",
+      "ctaSecondary": "View Live Demo",
+      "chromeInstall": "Install for Chrome",
+      "gmailIntegration": "right inside Gmail"
+    },
+    "stats": {
+      "emailsGenerated": "2M+ emails generated",
+      "timesSaved": "15K+ hours saved",
+      "dealsProtected": "50K+ deals protected"
+    },
+    "features": {
+      "title": "Everything you need to close more deals",
+      "subtitle": "From first contact to closing day, RealtyClose has you covered",
+      "aiAssistant": {
+        "title": "AI Email Assistant",
+        "description": "Generate professional emails in seconds with context-aware AI"
+      },
+      "smartTemplates": {
+        "title": "Smart Templates",
+        "description": "50+ proven templates for every real estate scenario"
+      },
+      "quickActions": {
+        "title": "Quick Actions",
+        "description": "Set reminders, flag dates, and track follow-ups instantly"
+      }
+    },
+    "testimonials": {
+      "title": "Trusted by 10,000+ Real Estate Professionals",
+      "sarah": {
+        "quote": "RealtyClose has been a game-changer for my business. I've gone from spending 3 hours a day on emails to just 20 minutes.",
+        "name": "Sarah M.",
+        "title": "Top Producer, Keller Williams"
+      },
+      "michael": {
+        "quote": "The AI suggestions are incredibly accurate. It's like having a personal assistant who knows real estate inside and out.",
+        "name": "Michael R.",
+        "title": "Team Lead, Century 21"
+      },
+      "jennifer": {
+        "quote": "My clients love how quickly I respond now. RealtyClose helps me maintain that personal touch at scale.",
+        "name": "Jennifer L.",
+        "title": "Independent Agent"
+      }
+    },
+    "cta": {
+      "title": "Ready to transform your real estate business?",
+      "subtitle": "Join thousands of agents who are closing more deals with less stress.",
+      "button": "Start Free Trial"
+    }
+  },
+  "footer": {
+    "tagline": "The smart platform for real estate professionals",
+    "product": {
+      "title": "Product",
+      "features": "Features",
+      "pricing": "Pricing",
+      "integrations": "Integrations",
+      "security": "Security"
+    },
+    "company": {
+      "title": "Company",
+      "about": "About",
+      "blog": "Blog", 
+      "contact": "Contact",
+      "careers": "Careers"
+    },
+    "support": {
+      "title": "Support",
+      "helpCenter": "Help Center",
+      "documentation": "Documentation",
+      "contact": "Contact Support"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy"
+    },
+    "copyright": "© 2024 RealtyClose. All rights reserved.",
+    "madeBy": "Made with ❤️ in San Francisco"
+  }
+}

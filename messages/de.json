@@ -1,0 +1,97 @@
+{
+  "common": {
+    "getStarted": "Kostenlos starten",
+    "learnMore": "Mehr erfahren",
+    "installExtension": "Kostenlose Installation",
+    "company": "Unternehmen",
+    "features": "Funktionen",
+    "pricing": "Preise",
+    "blog": "Blog",
+    "faq": "FAQ"
+  },
+  "home": {
+    "hero": {
+      "title": "Die Enterprise-Immobilienplattform beginnt mit Ihrem Gmail",
+      "subtitle": "RealtyClose ist die intelligente Plattform, die entwickelt wurde, um Stress aus Immobilienabschlüssen zu nehmen. Generieren Sie professionelle E-Mails in Sekunden und halten Sie jeden Deal auf Kurs.",
+      "ctaPrimary": "Kostenlose Installation",
+      "ctaSecondary": "Live-Demo ansehen",
+      "chromeInstall": "Für Chrome installieren",
+      "gmailIntegration": "direkt in Gmail"
+    },
+    "stats": {
+      "emailsGenerated": "2M+ generierte E-Mails",
+      "timesSaved": "15K+ gesparte Stunden",
+      "dealsProtected": "50K+ geschützte Deals"
+    },
+    "features": {
+      "title": "Alles was Sie brauchen, um mehr Deals abzuschließen",
+      "subtitle": "Vom ersten Kontakt bis zum Abschlusstag - RealtyClose hat Sie abgedeckt",
+      "aiAssistant": {
+        "title": "KI E-Mail-Assistent",
+        "description": "Generieren Sie professionelle E-Mails in Sekunden mit kontextbewusster KI"
+      },
+      "smartTemplates": {
+        "title": "Intelligente Vorlagen",
+        "description": "50+ bewährte Vorlagen für jedes Immobilienszenario"
+      },
+      "quickActions": {
+        "title": "Schnellaktionen",
+        "description": "Erinnerungen setzen, Termine markieren und Follow-ups sofort verfolgen"
+      }
+    },
+    "testimonials": {
+      "title": "Vertraut von 10.000+ Immobilienprofis",
+      "sarah": {
+        "quote": "RealtyClose war ein Wendepunkt für mein Geschäft. Ich bin von 3 Stunden täglich für E-Mails auf nur 20 Minuten übergegangen.",
+        "name": "Sarah M.",
+        "title": "Top-Verkäuferin, Keller Williams"
+      },
+      "michael": {
+        "quote": "Die KI-Vorschläge sind unglaublich genau. Es ist wie ein persönlicher Assistent zu haben, der Immobilien in- und auswendig kennt.",
+        "name": "Michael R.",
+        "title": "Teamleiter, Century 21"
+      },
+      "jennifer": {
+        "quote": "Meine Kunden lieben es, wie schnell ich jetzt antworte. RealtyClose hilft mir, diese persönliche Note in großem Maßstab beizubehalten.",
+        "name": "Jennifer L.",
+        "title": "Unabhängige Maklerin"
+      }
+    },
+    "cta": {
+      "title": "Bereit, Ihr Immobiliengeschäft zu transformieren?",
+      "subtitle": "Schließen Sie sich Tausenden von Maklern an, die mehr Deals mit weniger Stress abschließen.",
+      "button": "Kostenlos testen"
+    }
+  },
+  "footer": {
+    "tagline": "Die intelligente Plattform für Immobilienprofis",
+    "product": {
+      "title": "Produkt",
+      "features": "Funktionen",
+      "pricing": "Preise",
+      "integrations": "Integrationen",
+      "security": "Sicherheit"
+    },
+    "company": {
+      "title": "Unternehmen",
+      "about": "Über uns",
+      "blog": "Blog",
+      "contact": "Kontakt",
+      "careers": "Karriere"
+    },
+    "support": {
+      "title": "Support",
+      "helpCenter": "Hilfe-Center",
+      "documentation": "Dokumentation",
+      "contact": "Support kontaktieren"
+    },
+    "legal": {
+      "title": "Rechtliches",
+      "privacy": "Datenschutzrichtlinie",
+      "terms": "Nutzungsbedingungen",
+      "cookies": "Cookie-Richtlinie"
+    },
+    "copyright": "© 2024 RealtyClose. Alle Rechte vorbehalten.",
+    "madeBy": "Mit ❤️ in San Francisco gemacht"
+  }
+}

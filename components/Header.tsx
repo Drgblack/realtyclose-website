@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
+import LanguageSwitcher from '../app/components/LanguageSwitcher'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -99,6 +100,7 @@ const Header = () => {
           
           {/* Desktop CTAs */}
           <div className="hidden lg:flex items-center space-x-4">
+            <LanguageSwitcher className="text-slate-700 dark:text-slate-300" />
             <Link
               href="/demo"
               onClick={handleDemoClick}
@@ -179,6 +181,9 @@ const Header = () => {
               
               {/* Mobile CTAs */}
               <div className="border-t border-slate-200 dark:border-slate-700 pt-4 mt-4 space-y-2">
+                <div className="px-3 py-2">
+                  <LanguageSwitcher className="text-slate-700 dark:text-slate-300" />
+                </div>
                 <Link
                   href="/demo"
                   onClick={handleDemoClick}
