@@ -63,6 +63,12 @@
     "averageDraftTime": "average draft time",
     "disclaimer": "No credit card required. Cancel anytime. Bank level security."
   },
+  "emailTransform": {
+    "before": "Before",
+    "after": "After",
+    "messyEmail": "hey just circling back about the docs thing. we should prob update the timeline but not sure. thoughts?",
+    "cleanEmail": "Hi Jamie,\n\nThanks for your note. I reviewed the documents and updated the transaction timeline. Here is the latest status and next step:\n• Appraisal scheduled for Thursday\n• Disclosures delivered and acknowledged\n\nI will follow up Friday with a confirmation.\n\nBest,\nAlex"
+  },
   "testimonials": {
     "sarah": "I cut weekly client updates from 30 minutes to 5. Complete gamechanger for my workflow.",
     "michael": "Our closing rate improved 18% in two months. The follow-up automation is incredible.",

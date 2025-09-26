@@ -1,19 +1,18 @@
 "use client";
 import { useEffect, useState } from "react";
 import { ShinyCard, glowBtn } from "@/components/ui/shiny-card";
-
-const messy = "hey just circling back about the docs thing. we should prob update the timeline but not sure. thoughts?";
-const clean = "Hi Jamie,\n\nThanks for your note. I reviewed the documents and updated the transaction timeline. Here is the latest status and next step:\n• Appraisal scheduled for Thursday\n• Disclosures delivered and acknowledged\n\nI will follow up Friday with a confirmation.\n\nBest,\nAlex";
+import { useTranslations } from 'next-intl';
 
 export default function EmailTransform(){
-  const [t,setT]=useState(""); 
+  const tr = useTranslations();
+  const [displayText, setDisplayText] = useState(""); 
   const [phase,setPhase]=useState<"messy"|"clean">("messy");
   const [isReduced, setIsReduced] = useState(false);
   const [copied, setCopied] = useState(false);
 
   const copyEmail = async () => {
     try {
-      await navigator.clipboard.writeText(t);
+      await navigator.clipboard.writeText(displayText);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
@@ -25,23 +24,24 @@ export default function EmailTransform(){
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     setIsReduced(reduced);
     if (reduced) {
-      setT(clean);
+      setDisplayText(tr('emailTransform.cleanEmail'));
       return;
     }
-  }, []);
+  }, [tr]);
 
   useEffect(()=>{
     if (isReduced) return;
-    let i=0; const target = phase==="messy"? messy : clean;
+    let i=0; 
+    const target = phase==="messy" ? tr('emailTransform.messyEmail') : tr('emailTransform.cleanEmail');
     const id = setInterval(()=>{ 
-      setT(target.slice(0,++i)); 
+      setDisplayText(target.slice(0,++i)); 
       if(i>=target.length){ 
         clearInterval(id); 
         setTimeout(()=>setPhase(p=>p==="messy"?"clean":"messy"), 1500);
       } 
     }, 12);
     return ()=>clearInterval(id);
-  },[phase, isReduced]);
+  },[phase, isReduced, tr]);
 
   return (
     <ShinyCard padding="none" gradient="brand">
@@ -55,7 +55,7 @@ export default function EmailTransform(){
             }`}
             onClick={() => !isReduced && setPhase("messy")}
           >
-            Before
+            {tr('emailTransform.before')}
           </button>
           <button 
             className={`px-3 py-1.5 rounded-md text-xs font-medium transition-colors ${
@@ -65,7 +65,7 @@ export default function EmailTransform(){
             }`}
             onClick={() => !isReduced && setPhase("clean")}
           >
-            After
+            {tr('emailTransform.after')}
           </button>
         </div>
         <button
@@ -74,12 +74,12 @@ export default function EmailTransform(){
             copied ? 'shadow-[0_6px_20px_-8px_rgba(88,101,242,0.25)]' : 'hover:shadow-[0_6px_20px_-8px_rgba(88,101,242,0.25)]'
           }`}
         >
-          {copied ? "Copied!" : "Copy"}
+          {copied ? tr('common.copied') : tr('common.copy')}
         </button>
       </div>
       <pre className="p-4 pl-5 border-l-2 whitespace-pre-wrap font-mono text-[13.5px] leading-6 text-slate-800 min-h-[4rem] bg-white"
            style={{ borderImage: 'linear-gradient(180deg,#04b4ff,#7f3dff) 1' }}>
-        <code>{t}</code>
+        <code>{displayText}</code>
       </pre>
     </ShinyCard>
   );

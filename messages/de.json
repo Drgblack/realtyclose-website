@@ -63,6 +63,12 @@
     "averageDraftTime": "durchschnittliche Erstellungszeit",
     "disclaimer": "Keine Kreditkarte erforderlich. Jederzeit kündbar. Banksicherheit."
   },
+  "emailTransform": {
+    "before": "Vorher",
+    "after": "Nachher",
+    "messyEmail": "hi, kurz wegen der unterlagen. sollten vermutlich den zeitplan aktualisieren aber bin unsicher. gedanken?",
+    "cleanEmail": "Hallo Jamie,\n\nVielen Dank für Ihre Nachricht. Ich habe die Unterlagen geprüft und den Transaktionszeitplan aktualisiert. Hier ist der aktuelle Status und der nächste Schritt:\n• Bewertung für Donnerstag terminiert\n• Offenlegungen übermittelt und bestätigt\n\nIch werde mich am Freitag mit einer Bestätigung melden.\n\nViele Grüße,\nAlex"
+  },
   "testimonials": {
     "sarah": "Ich habe wöchentliche Kunden-Updates von 30 Minuten auf 5 reduziert. Kompletter Gamechanger für meinen Workflow.",
     "michael": "Unsere Abschlussrate verbesserte sich in zwei Monaten um 18%. Die Follow-up-Automatisierung ist unglaublich.", 
