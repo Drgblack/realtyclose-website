@@ -1,17 +1,22 @@
 import { Metadata } from 'next'
-import { useTranslations } from 'next-intl'
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 import Header from '../../components/Header'
 import { Footer } from '../../components/Footer'
 import HomePage from '../../components/HomePage'
+import { routing } from '../../routing'
 
 type Props = {
-  params: { locale: string }
+  params: Promise<{ locale: string }>
+}
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({locale}));
 }
 
 export async function generateMetadata({
-  params: { locale }
+  params
 }: Props): Promise<Metadata> {
+  const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'home' })
   
   return {
@@ -31,7 +36,12 @@ export async function generateMetadata({
   }
 }
 
-export default function Page({ params: { locale } }: Props) {
+export default async function Page({ params }: Props) {
+  const { locale } = await params
+  
+  // Enable static rendering
+  setRequestLocale(locale);
+  
   return (
     <div className="min-h-screen bg-white dark:bg-slate-900">
       <Header />
