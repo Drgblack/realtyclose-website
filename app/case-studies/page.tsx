@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import Header from '../../components/Header'
+import HeaderLegacy from '../../components/HeaderLegacy'
 import { Footer } from '../../components/Footer'
 
 export const metadata: Metadata = {
@@ -86,7 +86,7 @@ export default function CaseStudiesPage() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-slate-900">
-      <Header />
+      <HeaderLegacy />
       
       <main className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -125,7 +125,7 @@ export default function CaseStudiesPage() {
           <div className="space-y-16">
             {caseStudies.map((study, index) => (
               <div key={study.id} className="bg-white dark:bg-slate-800 rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700 overflow-hidden">
-                {/* Header */}
+                {/* HeaderLegacy */}
                 <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 p-8">
                   <div className="flex items-start justify-between mb-6">
                     <div className="flex items-center space-x-4">

@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import Header from '../../../components/Header'
+import HeaderLegacy from '../../../components/HeaderLegacy'
 import { Footer } from '../../../components/Footer'
 import ChatButton from '../../../components/ChatButton'
 
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function InstallationGuide() {
   return (
     <div className="min-h-screen bg-white dark:bg-slate-900">
-      <Header />
+      <HeaderLegacy />
       
       <main className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -46,7 +46,7 @@ export default function InstallationGuide() {
             </ol>
           </nav>
 
-          {/* Article Header */}
+          {/* Article HeaderLegacy */}
           <div className="mb-12">
             <h1 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">
               Installing the Chrome Extension

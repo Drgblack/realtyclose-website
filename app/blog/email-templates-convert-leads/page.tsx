@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import Header from '../../../components/Header'
+import HeaderLegacy from '../../../components/HeaderLegacy'
 import { Footer } from '../../../components/Footer'
 
 export const metadata: Metadata = {
@@ -83,7 +83,7 @@ Warm regards,
 
   return (
     <div className="min-h-screen bg-white dark:bg-slate-900">
-      <Header />
+      <HeaderLegacy />
       
       <main className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -106,7 +106,7 @@ Warm regards,
             </ol>
           </nav>
 
-          {/* Article Header */}
+          {/* Article HeaderLegacy */}
           <div className="mb-12">
             <div className="flex items-center text-slate-600 dark:text-slate-300 text-sm mb-4">
               <span className="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-3 py-1 rounded-full mr-4">

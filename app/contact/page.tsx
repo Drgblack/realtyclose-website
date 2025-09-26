@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import Header from '../../components/Header'
+import HeaderLegacy from '../../components/HeaderLegacy'
 import { Footer } from '../../components/Footer'
 import ContactForm from '../../components/ContactForm'
 
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white dark:bg-slate-900">
-      <Header />
+      <HeaderLegacy />
       
       <main className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import Header from '../../components/Header'
+import HeaderLegacy from '../../components/HeaderLegacy'
 import { Footer } from '../../components/Footer'
 import DemoContent from '../../components/DemoContent'
 
@@ -12,7 +12,7 @@ export default function DemoPage() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-slate-900">
-      <Header />
+      <HeaderLegacy />
       <DemoContent />
       <Footer product="realtyclose" />
     </div>
