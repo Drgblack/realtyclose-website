@@ -65,7 +65,7 @@ export default function FAQPageClient() {
   };
 
   const categories = [
-    { key: "all", label: "All" },
+    { key: "all", label: t('faq.categories.all') },
     { key: "general", label: t('faq.categories.general') },
     { key: "pricing", label: t('faq.categories.pricing') },
     { key: "technical", label: t('faq.categories.technical') },
@@ -254,10 +254,10 @@ export default function FAQPageClient() {
             <ShinyCard>
               <div className="p-8">
                 <h2 className="text-2xl font-bold text-white mb-4">
-                  Still have questions?
+                  {t('faq.contact.stillHaveQuestions')}
                 </h2>
                 <p className="text-slate-300 mb-6">
-                  Can't find what you're looking for? Our support team is here to help.
+                  {t('faq.contact.cantFind')}
                 </p>
                 <a
                   href="mailto:help@zazatechnologies.com"
@@ -266,7 +266,7 @@ export default function FAQPageClient() {
                   <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  Contact Support
+                  {t('faq.contact.contactSupport')}
                 </a>
               </div>
             </ShinyCard>

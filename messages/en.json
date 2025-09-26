@@ -327,7 +327,76 @@
     "scheduleStandardDemo": "Schedule demo",
     "testimonialQuote": "I cut weekly client updates from 30 minutes to 5. Complete gamechanger for my workflow.",
     "testimonialAuthor": "- Sarah M., Team Lead at Compass",
-    "usedBy": "Used by TCs, team leads, solo agents, and compliance-focused brokerages"
+    "usedBy": "Used by TCs, team leads, solo agents, and compliance-focused brokerages",
+    "plans": {
+      "free": {
+        "name": "Free",
+        "tagline": "Try the Gmail workflow. Great for solo testing.",
+        "ctaLabel": "Get Started Free",
+        "bullets": [
+          "5 AI email drafts per month",
+          "Basic real-estate templates", 
+          "Gmail integration",
+          "Community support"
+        ]
+      },
+      "pro": {
+        "name": "Professional",
+        "tagline": "Reclaim hours and protect every deal - right inside Gmail.",
+        "ctaLabel": "Start 7-Day Chrome Trial",
+        "bullets": [
+          "Unlimited AI drafts & smart templates - save 30+ hours/transaction",
+          "Quick Actions for follow-ups & date flags - reduce delays",
+          "On-brand tone & style controls for polished replies",
+          "Priority email support",
+          "Analytics & insights"
+        ]
+      },
+      "team": {
+        "name": "Team",
+        "tagline": "Consistency and oversight for teams & brokerages.",
+        "ctaLabel": "Talk to Sales",
+        "bullets": [
+          "Everything in Professional",
+          "Shared template library & approvals - brand control",
+          "Team collaboration & role permissions - smooth handoffs",
+          "Compliance & audit logs - review in seconds",
+          "Dedicated account manager"
+        ]
+      }
+    },
+    "comparison": {
+      "timeSaved": {
+        "label": "Time saved (per transaction)",
+        "free": "Test workflow",
+        "pro": "30+ hrs saved",
+        "team": "30+ hrs saved"
+      },
+      "dealProtection": {
+        "label": "Deal protection (missed-email / deadline alerts)",
+        "free": "-",
+        "pro": "✓",
+        "team": "✓"
+      },
+      "brandConsistency": {
+        "label": "Brand consistency (templates, tone, approvals)",
+        "free": "Basic",
+        "pro": "Individual",
+        "team": "Team-wide"
+      },
+      "compliance": {
+        "label": "Compliance & audit readiness",
+        "free": "-",
+        "pro": "Individual",
+        "team": "✓"
+      },
+      "teamControls": {
+        "label": "Team controls & permissions",
+        "free": "-",
+        "pro": "-",
+        "team": "✓"
+      }
+    }
   },
   "faq": {
     "title": "Frequently Asked Questions",
@@ -336,6 +405,7 @@
     "noResults": "No FAQs found matching your search.",
     "clearSearch": "Clear search",
     "categories": {
+      "all": "All",
       "general": "General",
       "pricing": "Pricing & Plans", 
       "technical": "Technical",
@@ -433,6 +503,20 @@
         "answer": "Free users get community support, Professional users get email support, and Team/Enterprise users get priority phone support. We also have extensive documentation and video tutorials.",
         "category": "general"
       }
+    },
+    "contact": {
+      "stillHaveQuestions": "Still have questions?",
+      "cantFind": "Can't find what you're looking for? Our support team is here to help.",
+      "contactSupport": "Contact Support",
+      "title": "Contact RealtyClose",
+      "subtitle": "Get in touch with the RealtyClose team.",
+      "description": "We'd love to help. Choose the right contact so we can assist you faster:",
+      "generalSupport": "General Support",
+      "privacyInquiries": "Privacy Inquiries", 
+      "pressMedia": "Press & Media",
+      "businessAddress": "Business Address",
+      "companyName": "Zaza Technologies UG (haftungsbeschränkt)",
+      "addressPlaceholder": "[insert registered address here]"
     }
   }
 }

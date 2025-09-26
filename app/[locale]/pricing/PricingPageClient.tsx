@@ -1,13 +1,82 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { PLANS, comparisonRows, type BillingCycle, CHROME_BADGE_URL, CHROME_DEMO_URL } from "@/lib/pricing";
+import { type BillingCycle, CHROME_BADGE_URL, CHROME_DEMO_URL } from "@/lib/pricing";
 
 export default function PricingPageClient() {
   const [cycle, setCycle] = useState<BillingCycle>("monthly");
   const t = useTranslations();
+
+  // Create plans from translations
+  const plans = useMemo(() => [
+    {
+      key: "free",
+      name: t('pricing.plans.free.name'),
+      tagline: t('pricing.plans.free.tagline'),
+      priceMonthly: 0,
+      priceAnnual: 0,
+      ctaLabel: t('pricing.plans.free.ctaLabel'),
+      ctaHref: "/install",
+      bullets: t.raw('pricing.plans.free.bullets') as string[],
+    },
+    {
+      key: "pro",
+      name: t('pricing.plans.pro.name'),
+      tagline: t('pricing.plans.pro.tagline'),
+      priceMonthly: 29,
+      priceAnnual: 23,
+      ctaLabel: t('pricing.plans.pro.ctaLabel'),
+      ctaHref: "/install",
+      popular: true,
+      bullets: t.raw('pricing.plans.pro.bullets') as string[],
+    },
+    {
+      key: "team",
+      name: t('pricing.plans.team.name'),
+      tagline: t('pricing.plans.team.tagline'),
+      priceMonthly: 49,
+      priceAnnual: 39,
+      ctaLabel: t('pricing.plans.team.ctaLabel'),
+      ctaHref: "/demo",
+      bullets: t.raw('pricing.plans.team.bullets') as string[],
+    },
+  ], [t]);
+
+  // Create comparison rows from translations
+  const comparisonRows = useMemo(() => [
+    {
+      label: t('pricing.comparison.timeSaved.label'),
+      free: t('pricing.comparison.timeSaved.free'),
+      pro: t('pricing.comparison.timeSaved.pro'),
+      team: t('pricing.comparison.timeSaved.team'),
+    },
+    {
+      label: t('pricing.comparison.dealProtection.label'),
+      free: t('pricing.comparison.dealProtection.free'),
+      pro: t('pricing.comparison.dealProtection.pro'),
+      team: t('pricing.comparison.dealProtection.team'),
+    },
+    {
+      label: t('pricing.comparison.brandConsistency.label'),
+      free: t('pricing.comparison.brandConsistency.free'),
+      pro: t('pricing.comparison.brandConsistency.pro'),
+      team: t('pricing.comparison.brandConsistency.team'),
+    },
+    {
+      label: t('pricing.comparison.compliance.label'),
+      free: t('pricing.comparison.compliance.free'),
+      pro: t('pricing.comparison.compliance.pro'),
+      team: t('pricing.comparison.compliance.team'),
+    },
+    {
+      label: t('pricing.comparison.teamControls.label'),
+      free: t('pricing.comparison.teamControls.free'),
+      pro: t('pricing.comparison.teamControls.pro'),
+      team: t('pricing.comparison.teamControls.team'),
+    },
+  ], [t]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
@@ -82,7 +151,7 @@ export default function PricingPageClient() {
       {/* Plans */}
       <section className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-10 py-16">
         <div className="grid gap-8 lg:grid-cols-3">
-          {PLANS.map((plan) => (
+          {plans.map((plan) => (
             <div
               key={plan.key}
               className={`relative rounded-2xl bg-slate-800/40 backdrop-blur-sm border border-slate-700/50 p-8 shadow-2xl ${

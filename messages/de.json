@@ -327,7 +327,76 @@
     "scheduleStandardDemo": "Demo planen",
     "testimonialQuote": "Ich habe meine wöchentlichen Kunden-Updates von 30 Minuten auf 5 reduziert. Kompletter Gamechanger für meinen Workflow.",
     "testimonialAuthor": "- Sarah M., Teamleiterin bei Compass",
-    "usedBy": "Verwendet von TCs, Teamleitern, Solo-Maklern und compliance-fokussierten Maklerfirmen"
+    "usedBy": "Verwendet von TCs, Teamleitern, Solo-Maklern und compliance-fokussierten Maklerfirmen",
+    "plans": {
+      "free": {
+        "name": "Kostenlos",
+        "tagline": "Testen Sie den Gmail-Workflow. Perfekt für Solo-Tests.",
+        "ctaLabel": "Kostenlos starten",
+        "bullets": [
+          "5 KI-E-Mail-Entwürfe pro Monat",
+          "Grundlegende Immobilien-Vorlagen",
+          "Gmail-Integration",
+          "Community-Support"
+        ]
+      },
+      "pro": {
+        "name": "Professionell", 
+        "tagline": "Gewinnen Sie Stunden zurück und schützen Sie jedes Geschäft - direkt in Gmail.",
+        "ctaLabel": "7-tägige Chrome-Testversion starten",
+        "bullets": [
+          "Unbegrenzte KI-Entwürfe & intelligente Vorlagen - sparen Sie 30+ Stunden/Transaktion",
+          "Schnellaktionen für Follow-ups & Termin-Flags - reduzieren Sie Verzögerungen",
+          "Markenkonformer Ton & Stil-Kontrollen für polierte Antworten",
+          "Prioritäts-E-Mail-Support",
+          "Analysen & Einblicke"
+        ]
+      },
+      "team": {
+        "name": "Team",
+        "tagline": "Konsistenz und Überwachung für Teams & Maklerfirmen.",
+        "ctaLabel": "Mit Vertrieb sprechen",
+        "bullets": [
+          "Alles in Professionell",
+          "Geteilte Vorlagen-Bibliothek & Genehmigungen - Markenkontrolle",
+          "Team-Zusammenarbeit & Rollenberechtigungen - reibungslose Übergaben",
+          "Compliance & Audit-Logs - Überprüfung in Sekunden",
+          "Dedizierter Account-Manager"
+        ]
+      }
+    },
+    "comparison": {
+      "timeSaved": {
+        "label": "Gesparte Zeit (pro Transaktion)",
+        "free": "Workflow testen",
+        "pro": "30+ Std gespart",
+        "team": "30+ Std gespart"
+      },
+      "dealProtection": {
+        "label": "Geschäftsschutz (verpasste E-Mail- / Termin-Warnungen)",
+        "free": "-",
+        "pro": "✓",
+        "team": "✓"
+      },
+      "brandConsistency": {
+        "label": "Markenkonsistenz (Vorlagen, Ton, Genehmigungen)",
+        "free": "Grundlegend",
+        "pro": "Individuell",
+        "team": "Teamweit"
+      },
+      "compliance": {
+        "label": "Compliance & Audit-Bereitschaft",
+        "free": "-",
+        "pro": "Individuell",
+        "team": "✓"
+      },
+      "teamControls": {
+        "label": "Team-Kontrollen & Berechtigungen",
+        "free": "-",
+        "pro": "-",
+        "team": "✓"
+      }
+    }
   },
   "faq": {
     "title": "Häufig gestellte Fragen",
@@ -336,6 +405,7 @@
     "noResults": "Keine FAQs gefunden, die Ihrer Suche entsprechen.",
     "clearSearch": "Suche löschen",
     "categories": {
+      "all": "Alle",
       "general": "Allgemein",
       "pricing": "Preise & Pläne", 
       "technical": "Technisch",
@@ -433,6 +503,20 @@
         "answer": "Kostenlose Nutzer erhalten Community-Support, Professional-Nutzer erhalten E-Mail-Support, und Team-/Enterprise-Nutzer erhalten prioritären Telefon-Support. Wir haben auch umfangreiche Dokumentation und Video-Tutorials.",
         "category": "general"
       }
+    },
+    "contact": {
+      "stillHaveQuestions": "Haben Sie noch Fragen?",
+      "cantFind": "Können Sie nicht finden, wonach Sie suchen? Unser Support-Team hilft Ihnen gerne.",
+      "contactSupport": "Support kontaktieren",
+      "title": "RealtyClose kontaktieren",
+      "subtitle": "Nehmen Sie Kontakt mit dem RealtyClose-Team auf.",
+      "description": "Wir helfen gerne. Wählen Sie den richtigen Kontakt, damit wir Ihnen schneller helfen können:",
+      "generalSupport": "Allgemeiner Support",
+      "privacyInquiries": "Datenschutz-Anfragen",
+      "pressMedia": "Presse & Medien",
+      "businessAddress": "Geschäftsadresse",
+      "companyName": "Zaza Technologies UG (haftungsbeschränkt)",
+      "addressPlaceholder": "[hier registrierte Adresse einfügen]"
     }
   }
 }
