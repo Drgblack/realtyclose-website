@@ -2,14 +2,36 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { primaryNav, ctaNav } from "@/lib/nav";
+import { useTranslations } from 'next-intl';
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 export default function Header() {
   const pathname = usePathname();
+  const t = useTranslations();
   const isHome = pathname === "/";
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  
+  // Extract locale from pathname
+  const locale = pathname.startsWith('/de') ? 'de' : 'en';
+  
+  // Dynamic navigation with translations
+  const primaryNav = [
+    { label: t('nav.howItWorks'), href: "#how-it-works" },
+    {
+      label: t('nav.company'),
+      items: [
+        { label: t('nav.aboutUs'), href: `/${locale}/about` },
+        { label: t('nav.blog'), href: `/blog` },
+        { label: t('nav.pricing'), href: `/pricing` },
+        { label: t('nav.features'), href: `/features` },
+        { label: t('nav.faq'), href: `/faq` },
+        { label: t('nav.contact'), href: `/contact` },
+      ],
+    },
+  ];
+  
+  const ctaNav = { label: t('nav.startFree'), href: `/install` };
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -30,12 +52,12 @@ export default function Header() {
         {/* Center - Nav */}
         <nav className="hidden md:flex items-center gap-6 text-sm">
           {/* How It Works */}
-          <a href="#how-it-works" className="text-sm font-medium text-slate-700 hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500">How It Works</a>
+          <a href="#how-it-works" className="text-sm font-medium text-slate-700 hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500">{t('nav.howItWorks')}</a>
 
           {/* Company dropdown */}
           <div className="relative group">
             <button className="flex items-center gap-1 text-sm font-medium text-slate-700 hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500">
-              Company
+              {t('nav.company')}
               <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
@@ -81,15 +103,15 @@ export default function Header() {
           <button onClick={() => setOpen(false)} aria-label="Close menu" className="fixed inset-0 z-40 bg-black/40" />
           <div className="fixed right-0 top-0 z-50 h-full w-80 bg-white p-6 shadow-xl ring-1 ring-black/5">
             <div className="flex items-center justify-between">
-              <span className="text-base font-semibold text-slate-900">Menu</span>
+              <span className="text-base font-semibold text-slate-900">{t('nav.menu')}</span>
               <button onClick={() => setOpen(false)} aria-label="Close" className="inline-flex h-9 w-9 items-center justify-center rounded-lg ring-1 ring-black/10">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6l-12 12" stroke="#0f172a" strokeWidth="2" strokeLinecap="round"/></svg>
               </button>
             </div>
             <nav className="mt-6 grid gap-2">
-              <a href="#how-it-works" onClick={() => setOpen(false)} className="rounded-lg px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50">How It Works</a>
+              <a href="#how-it-works" onClick={() => setOpen(false)} className="rounded-lg px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50">{t('nav.howItWorks')}</a>
               <div className="mt-4">
-                <div className="px-3 py-1 text-xs font-semibold text-slate-500 uppercase tracking-wide">Company</div>
+                <div className="px-3 py-1 text-xs font-semibold text-slate-500 uppercase tracking-wide">{t('nav.company')}</div>
                 {primaryNav[1].items?.map((item) => (
                   <Link
                     key={item.href}

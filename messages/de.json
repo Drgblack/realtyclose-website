@@ -8,6 +8,18 @@
     "copy": "Kopieren",
     "copied": "Kopiert!"
   },
+  "nav": {
+    "howItWorks": "So funktioniert's",
+    "company": "Unternehmen",
+    "aboutUs": "Über uns",
+    "blog": "Blog",
+    "pricing": "Preise",
+    "features": "Funktionen",
+    "faq": "FAQ",
+    "contact": "Kontakt",
+    "startFree": "Kostenlos starten",
+    "menu": "Menü"
+  },
   "hero": {
     "title": "Chaos bei Immobilien-E-Mails beheben -",
     "titleHighlight": "direkt in Gmail",

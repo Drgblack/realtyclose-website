@@ -8,6 +8,18 @@
     "copy": "Copy",
     "copied": "Copied!"
   },
+  "nav": {
+    "howItWorks": "How It Works",
+    "company": "Company",
+    "aboutUs": "About Us",
+    "blog": "Blog",
+    "pricing": "Pricing",
+    "features": "Features",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "startFree": "Start Free",
+    "menu": "Menu"
+  },
   "hero": {
     "title": "Fix real estate email chaos -",
     "titleHighlight": "right inside Gmail",
