@@ -12,13 +12,13 @@ export default function LanguageSwitcher({className=""}:{className?:string}) {
   const searchParams = useSearchParams();
 
   // Strip the current locale prefix from the path (App Router format: /[locale]/...)
-  const segments = pathname.split('/').filter(Boolean);
+  const segments = pathname?.split('/').filter(Boolean) || [];
   const currentLocale = segments[0];
   const rest = currentLocale && locales.includes(currentLocale as any)
     ? '/' + segments.slice(1).join('/')
-    : pathname;
+    : pathname || '/';
 
-  const qs = searchParams.toString();
+  const qs = searchParams?.toString() || '';
   const withQS = (p:string) => qs ? `${p}?${qs}` : p;
 
   const linkFor = (targetLocale:string) =>
