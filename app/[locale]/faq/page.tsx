@@ -1,7 +1,14 @@
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import FAQPageClient from './FAQPageClient';
 
-export default async function FAQPage() {
+type Props = {
+  params: { locale: string };
+};
+
+export default async function FAQPage({ params: { locale } }: Props) {
+  // Enable static rendering
+  setRequestLocale(locale);
+  
   return <FAQPageClient />;
 }
 

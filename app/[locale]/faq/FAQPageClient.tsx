@@ -2,8 +2,8 @@
 
 import { useState, useMemo } from "react";
 import { useTranslations } from "next-intl";
-import { ShinyCard } from "@/components/ui/ShinyCard";
-import { Reveal } from "@/components/ui/Reveal";
+import { ShinyCard } from "@/components/ui/shiny-card";
+import Reveal from "@/components/ui/Reveal";
 
 type FAQ = {
   id: string;
@@ -174,7 +174,7 @@ export default function FAQPageClient() {
                   </h2>
                   <div className="space-y-4">
                     {faqs.map((faq, index) => (
-                      <ShinyCard key={faq.id} delay={index * 0.05}>
+                      <ShinyCard key={faq.id}>
                         <button
                           onClick={() => toggleExpanded(faq.id)}
                           className="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-blue-500/50 rounded-xl"

@@ -1,8 +1,15 @@
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { PLANS, comparisonRows, CHROME_BADGE_URL, CHROME_DEMO_URL } from '@/lib/pricing';
 import PricingPageClient from './PricingPageClient';
 
-export default async function PricingPage() {
+type Props = {
+  params: { locale: string };
+};
+
+export default async function PricingPage({ params: { locale } }: Props) {
+  // Enable static rendering
+  setRequestLocale(locale);
+  
   const t = await getTranslations();
 
   return <PricingPageClient />;
