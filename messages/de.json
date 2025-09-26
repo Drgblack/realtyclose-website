@@ -252,5 +252,187 @@
       "watchDemo": "2-Min Demo ansehen",
       "subtitle": "Chrome Web Store • 14-tägige kostenlose Testversion • Keine Kreditkarte erforderlich • Funktioniert mit bestehendem Gmail"
     }
+  },
+  "footer": {
+    "description": "KI-gestützte Tools, die Immobilienprofis dabei helfen, mehr Geschäfte abzuschließen und ihre Workflows zu optimieren.",
+    "coreSuite": "Kern-Suite",
+    "realtyCloseAgent": "RealtyClose Agent",
+    "realtyCloseInbox": "RealtyClose Inbox",
+    "realtyCloseExtension": "RealtyClose Erweiterung",
+    "dealPipeline": "Deal-Pipeline",
+    "comingSoon": "(Kommt bald)",
+    "viewAllCore": "Alle Kern-Produkte anzeigen",
+    "proTools": "Profi-Tools",
+    "leadManager": "Lead-Manager",
+    "marketAnalytics": "Marktanalyse",
+    "crmIntegration": "CRM-Integration",
+    "mobileApp": "Mobile App",
+    "viewAllPro": "Alle Profi-Tools anzeigen",
+    "company": "Unternehmen",
+    "about": "Über uns",
+    "pricing": "Preise",
+    "security": "Sicherheit",
+    "support": "Support",
+    "privacy": "Datenschutz",
+    "contact": "Kontakt",
+    "copyright": "© 2025 RealtyClose. Alle Rechte vorbehalten.",
+    "familySites": "Schwester-Websites:",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "termsOfService": "Nutzungsbedingungen",
+    "cookiePolicy": "Cookie-Richtlinie",
+    "impressum": "Impressum"
+  },
+  "pricing": {
+    "title": "Preise, die sich in der ersten Woche amortisieren",
+    "subtitle": "Gmail-first Assistent für sekundenschnelle Antworten, um Geschäfte am Laufen zu halten und audit-bereit zu bleiben",
+    "monthly": "Monatlich",
+    "annual": "Jährlich",
+    "save20": "20% sparen",
+    "startTrial": "7-tägige Chrome-Testversion starten",
+    "watchDemo": "2-Min Gmail Demo ansehen",
+    "mostPopular": "Beliebtester",
+    "perUserMonth": "pro Nutzer/Monat",
+    "billedAnnually": "Jährlich abgerechnet",
+    "ifBilledMonthly": "bei monatlicher Abrechnung",
+    "upgradePrompts": "Upgrade-Hinweise erscheinen bei Limit-Erreichen",
+    "crmComparison": "Die meisten CRMs kosten 499–1.800$/Monat und sind immer noch nicht Gmail-nativ. RealtyClose beginnt bei 29$ und funktioniert dort, wo Sie bereits arbeiten.",
+    "roiHint": "30+ Stunden/Transaktion sparen • 49% der Manager berichten über kommunikationsbedingte Verzögerungen - beheben Sie das.",
+    "planComparison": "Plan-Vergleich",
+    "compareOutcomes": "Ergebnisse zwischen Plänen vergleichen",
+    "outcome": "Ergebnis",
+    "free": "Kostenlos",
+    "professional": "Professionell",
+    "team": "Team",
+    "featureAvailability": "Funktionsverfügbarkeit kann sich ändern, während wir das Produkt verbessern. Details finden Sie auf der Funktionen-Seite.",
+    "quickQuestions": "Schnelle Fragen",
+    "whySeatBased": "Warum platzbasiert, nicht pro E-Mail?",
+    "seatBasedAnswer": "Vorhersagbare Kosten; ermutigt zur täglichen Nutzung.",
+    "whoIsEachPlan": "Für wen ist jeder Plan?",
+    "planTargets": "Kostenlos = Solo-Tests; Professionell = Solo-/Hochvolumen-Makler; Team = Teamleiter/TCs; Enterprise = Maklerfirmen.",
+    "enterprise": "Enterprise (Maklerfirma/TC)",
+    "enterpriseDesc": "Für 50+ Plätze und erweiterte Kontrollen.",
+    "sso": "SSO, erweiterte Compliance-Exporte, API & Integrationen",
+    "customIntegrations": "Benutzerdefinierte Integrationen (MLS, CRM)",
+    "whiteLabel": "White-Label-Optionen",
+    "advancedAudit": "Erweiterte Audit- & Berichterstattung",
+    "conciergeOnboarding": "Concierge-Onboarding & Schulung",
+    "dedicatedManager": "Dedizierter Erfolgsmanager",
+    "prioritySupport": "Prioritäts-Telefonsupport",
+    "slaGuarantees": "SLA-Garantien",
+    "scheduleDemo": "Enterprise-Demo planen",
+    "readyToReclaim": "Bereit, 30+ Stunden pro Transaktion zurückzugewinnen?",
+    "joinThousands": "Schließen Sie sich Tausenden von Immobilienprofis an, die ihren E-Mail-Workflow mit Gmail-first Assistenz transformiert haben.",
+    "chromeTrialFeatures": "7-tägige Chrome-Testversion • Keine Kreditkarte • Jederzeit kündbar",
+    "addToChrome": "Zu Chrome hinzufügen",
+    "scheduleStandardDemo": "Demo planen",
+    "testimonialQuote": "Ich habe meine wöchentlichen Kunden-Updates von 30 Minuten auf 5 reduziert. Kompletter Gamechanger für meinen Workflow.",
+    "testimonialAuthor": "- Sarah M., Teamleiterin bei Compass",
+    "usedBy": "Verwendet von TCs, Teamleitern, Solo-Maklern und compliance-fokussierten Maklerfirmen"
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Alles, was Sie über RealtyClose wissen müssen",
+    "searchPlaceholder": "FAQs durchsuchen...",
+    "noResults": "Keine FAQs gefunden, die Ihrer Suche entsprechen.",
+    "clearSearch": "Suche löschen",
+    "categories": {
+      "general": "Allgemein",
+      "pricing": "Preise & Pläne", 
+      "technical": "Technisch",
+      "integration": "Integration",
+      "compliance": "Compliance & Sicherheit"
+    },
+    "questions": {
+      "whatIsRealtyClose": {
+        "question": "Was ist RealtyClose?",
+        "answer": "RealtyClose ist ein Gmail-first KI-Assistent, der speziell für Immobilienprofis entwickelt wurde. Er hilft Ihnen, professionelle E-Mails in Sekunden zu verfassen, Geschäfte zu verfolgen und compliant zu bleiben - alles ohne Gmail zu verlassen.",
+        "category": "general"
+      },
+      "howDoesItWork": {
+        "question": "Wie funktioniert RealtyClose?",
+        "answer": "RealtyClose integriert sich direkt in Ihre Gmail-Oberfläche als Chrome-Erweiterung. Wenn Sie eine E-Mail verfassen, analysiert unsere KI den Kontext und schlägt professionelle, compliance-bereite Antworten vor. Sie können Ton anpassen, geschäftsspezifische Details hinzufügen und polierte E-Mails in Sekunden senden.",
+        "category": "general"
+      },
+      "whoIsItFor": {
+        "question": "Für wen ist RealtyClose?",
+        "answer": "RealtyClose ist für alle Immobilienprofis entwickelt: Solo-Makler, Teamleiter, Transaktionskoordinatoren und Maklerfirmen. Ob Sie 2 Geschäfte pro Jahr oder 200 abwickeln, unsere Tools skalieren, um Ihnen bei der effizienteren Kommunikation zu helfen.",
+        "category": "general"
+      },
+      "pricingPlans": {
+        "question": "Was sind Ihre Preispläne?",
+        "answer": "Wir bieten drei Hauptpläne: Kostenlos (5 Entwürfe/Monat), Professionell (29$/Nutzer/Monat) und Team (49$/Nutzer/Monat). Enterprise-Pläne sind für Maklerfirmen mit 50+ Maklern verfügbar. Alle bezahlten Pläne beinhalten eine 7-tägige kostenlose Testversion.",
+        "category": "pricing"
+      },
+      "freeTrialDetails": {
+        "question": "Was ist in der kostenlosen Testversion enthalten?",
+        "answer": "Die 7-tägige kostenlose Testversion gibt Ihnen vollen Zugang zu Professional-Funktionen: unbegrenzte KI-Entwürfe, intelligente Vorlagen, Follow-up-Erinnerungen und Compliance-Prüfung. Keine Kreditkarte erforderlich zum Starten.",
+        "category": "pricing"
+      },
+      "cancelAnytime": {
+        "question": "Kann ich jederzeit kündigen?",
+        "answer": "Ja, Sie können Ihr Abonnement jederzeit kündigen. Ihr Zugang bleibt bis zum Ende Ihres Abrechnungszeitraums bestehen, und Sie können jederzeit auf unseren kostenlosen Plan downgraden.",
+        "category": "pricing"
+      },
+      "dataPrivacy": {
+        "question": "Wie gehen Sie mit meinen Daten um?",
+        "answer": "Wir nehmen Datenschutz ernst. RealtyClose arbeitet innerhalb von Gmails Sicherheitsframework und folgt Bank-Level-Verschlüsselungsstandards. Wir speichern Ihre E-Mail-Inhalte nicht - unsere KI verarbeitet Anfragen in Echtzeit und verwirft sie sofort.",
+        "category": "compliance"
+      },
+      "compliance": {
+        "question": "Ist RealtyClose compliant mit Immobilienvorschriften?",
+        "answer": "Ja, RealtyClose ist mit Compliance im Hinterkopf entwickelt. Unsere Vorlagen enthalten erforderliche Offenlegungen, unsere Audit-Logs verfolgen alle Kommunikationen, und Makler-Überwachungsfunktionen gewährleisten Team-Compliance. Sie sind jedoch immer dafür verantwortlich, Ihre lokalen Vorschriften zu befolgen.",
+        "category": "compliance"
+      },
+      "gmailSecurity": {
+        "question": "Sind meine Gmail-Daten sicher?",
+        "answer": "Absolut. RealtyClose verwendet OAuth 2.0 für sicheren Gmail-Zugang und benötigt nur die minimal notwendigen Berechtigungen. Wir sind SOC 2-compliant und Ihre E-Mail-Daten verlassen nie Googles Server außer für Echtzeit-KI-Verarbeitung.",
+        "category": "compliance"
+      },
+      "installation": {
+        "question": "Wie installiere ich RealtyClose?",
+        "answer": "Besuchen Sie einfach den Chrome Web Store, suchen Sie nach 'RealtyClose' und klicken Sie auf 'Zu Chrome hinzufügen'. Nach der Installation öffnen Sie Gmail und Sie sehen das RealtyClose-Panel in Ihrer Seitenleiste. Melden Sie sich mit Ihrem Google-Konto an und Sie sind startklar.",
+        "category": "technical"
+      },
+      "browserSupport": {
+        "question": "Welche Browser werden unterstützt?",
+        "answer": "Derzeit ist RealtyClose als Chrome-Erweiterung verfügbar. Wir arbeiten an der Unterstützung für Edge und Firefox. Für die beste Erfahrung empfehlen wir die neueste Version von Chrome.",
+        "category": "technical"
+      },
+      "mobileSupport": {
+        "question": "Funktioniert RealtyClose auf dem Handy?",
+        "answer": "Noch nicht, aber mobile Unterstützung kommt bald. Derzeit funktioniert RealtyClose am besten auf Desktop-/Laptop-Computern mit Chrome-Browser und Gmail.",
+        "category": "technical"
+      },
+      "crmIntegration": {
+        "question": "Integriert sich RealtyClose in mein CRM?",
+        "answer": "RealtyClose arbeitet neben Ihrem bestehenden CRM, indem es innerhalb von Gmail funktioniert. Wir ersetzen Ihr CRM nicht - wir verbessern Ihre E-Mail-Kommunikation. Direkte CRM-Integrationen sind für zukünftige Versionen geplant.",
+        "category": "integration"
+      },
+      "outlookSupport": {
+        "question": "Unterstützen Sie Outlook?",
+        "answer": "Derzeit nicht. RealtyClose ist speziell für Gmail entwickelt, um die bestmögliche Integration zu bieten. Wir könnten Outlook-Unterstützung in der Zukunft basierend auf Nutzernachfrage in Betracht ziehen.",
+        "category": "integration"
+      },
+      "teamManagement": {
+        "question": "Wie funktioniert Team-Management?",
+        "answer": "Team-Pläne beinhalten geteilte Vorlagen-Bibliotheken, rollenbasierte Berechtigungen und zentralisierte Überwachung. Teamleiter können Vorlagen genehmigen, Nutzung überwachen und Markenkonsistenz in allen Team-Kommunikationen gewährleisten.",
+        "category": "integration"
+      },
+      "aiAccuracy": {
+        "question": "Wie genau ist die KI?",
+        "answer": "Unsere KI ist speziell auf Immobilien-Kommunikationsmuster trainiert und erreicht hohe Genauigkeit für branchenspezifische Inhalte. Sie sollten jedoch immer KI-generierte Inhalte vor dem Senden überprüfen und anpassen.",
+        "category": "technical"
+      },
+      "customTemplates": {
+        "question": "Kann ich benutzerdefinierte Vorlagen erstellen?",
+        "answer": "Ja! Professional- und Team-Pläne beinhalten die Erstellung benutzerdefinierter Vorlagen. Sie können Vorlagen für häufige Szenarien wie Listing-Updates, Closing-Zeitpläne und Kunden-Check-ins erstellen.",
+        "category": "technical"
+      },
+      "supportOptions": {
+        "question": "Welche Support-Optionen sind verfügbar?",
+        "answer": "Kostenlose Nutzer erhalten Community-Support, Professional-Nutzer erhalten E-Mail-Support, und Team-/Enterprise-Nutzer erhalten prioritären Telefon-Support. Wir haben auch umfangreiche Dokumentation und Video-Tutorials.",
+        "category": "general"
+      }
+    }
   }
 }

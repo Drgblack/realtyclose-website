@@ -23,9 +23,9 @@ export default function Header() {
       items: [
         { label: t('nav.aboutUs'), href: `/${locale}/about` },
         { label: t('nav.blog'), href: `/${locale}/blog` },
-        { label: t('nav.pricing'), href: `/pricing` },
+        { label: t('nav.pricing'), href: `/${locale}/pricing` },
         { label: t('nav.features'), href: `/${locale}/features` },
-        { label: t('nav.faq'), href: `/faq` },
+        { label: t('nav.faq'), href: `/${locale}/faq` },
         { label: t('nav.contact'), href: `/contact` },
       ],
     },

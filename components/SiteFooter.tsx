@@ -1,6 +1,13 @@
+"use client";
+
 import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 export default function SiteFooter() {
+  const t = useTranslations();
+  const pathname = usePathname();
+  const locale = pathname.startsWith('/de') ? 'de' : 'en';
   return (
     <footer className="bg-slate-950 text-white border-t border-white/10">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
@@ -13,7 +20,7 @@ export default function SiteFooter() {
               <span className="text-2xl font-bold">RealtyClose</span>
             </Link>
             <p className="text-sm text-gray-400 mb-6">
-              AI-powered tools that help real estate professionals close more deals and streamline their workflows.
+              {t('footer.description')}
             </p>
             <div className="flex items-center gap-4">
               <a
@@ -54,30 +61,30 @@ export default function SiteFooter() {
 
           {/* Column 2: Core Products */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider mb-4">Core Suite</h3>
+            <h3 className="text-sm font-semibold uppercase tracking-wider mb-4">{t('footer.coreSuite')}</h3>
             <ul className="space-y-3 text-sm">
               <li>
                 <Link href="/products/agent" className="text-gray-400 hover:text-white transition-colors">
-                  RealtyClose Agent
+                  {t('footer.realtyCloseAgent')}
                 </Link>
               </li>
               <li>
                 <Link href="/products/inbox" className="text-gray-400 hover:text-white transition-colors">
-                  RealtyClose Inbox
+                  {t('footer.realtyCloseInbox')}
                 </Link>
               </li>
               <li>
                 <Link href="/install" className="text-gray-400 hover:text-white transition-colors">
-                  RealtyClose Extension
+                  {t('footer.realtyCloseExtension')}
                 </Link>
               </li>
               <li>
-                <span className="text-gray-400 opacity-70 cursor-not-allowed">Deal Pipeline</span>
-                <span className="ml-2 text-xs text-gray-500">(Coming Soon)</span>
+                <span className="text-gray-400 opacity-70 cursor-not-allowed">{t('footer.dealPipeline')}</span>
+                <span className="ml-2 text-xs text-gray-500">{t('footer.comingSoon')}</span>
               </li>
               <li className="pt-2">
                 <Link href="/products/core" className="text-gray-400 hover:text-white transition-colors flex items-center gap-1">
-                  View All Core Products
+                  {t('footer.viewAllCore')}
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -88,28 +95,28 @@ export default function SiteFooter() {
 
           {/* Column 3: Pro Tools */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider mb-4">Pro Tools</h3>
+            <h3 className="text-sm font-semibold uppercase tracking-wider mb-4">{t('footer.proTools')}</h3>
             <ul className="space-y-3 text-sm">
               <li>
-                <span className="text-gray-400 opacity-70 cursor-not-allowed">Lead Manager</span>
-                <span className="ml-2 text-xs text-gray-500">(Coming Soon)</span>
+                <span className="text-gray-400 opacity-70 cursor-not-allowed">{t('footer.leadManager')}</span>
+                <span className="ml-2 text-xs text-gray-500">{t('footer.comingSoon')}</span>
               </li>
               <li>
-                <span className="text-gray-400 opacity-70 cursor-not-allowed">Market Analytics</span>
-                <span className="ml-2 text-xs text-gray-500">(Coming Soon)</span>
+                <span className="text-gray-400 opacity-70 cursor-not-allowed">{t('footer.marketAnalytics')}</span>
+                <span className="ml-2 text-xs text-gray-500">{t('footer.comingSoon')}</span>
               </li>
               <li>
                 <Link href="/features#crm" className="text-gray-400 hover:text-white transition-colors">
-                  CRM Integration
+                  {t('footer.crmIntegration')}
                 </Link>
               </li>
               <li>
-                <span className="text-gray-400 opacity-70 cursor-not-allowed">Mobile App</span>
-                <span className="ml-2 text-xs text-gray-500">(Coming Soon)</span>
+                <span className="text-gray-400 opacity-70 cursor-not-allowed">{t('footer.mobileApp')}</span>
+                <span className="ml-2 text-xs text-gray-500">{t('footer.comingSoon')}</span>
               </li>
               <li className="pt-2">
                 <Link href="/products/pro" className="text-gray-400 hover:text-white transition-colors flex items-center gap-1">
-                  View All Pro Tools
+                  {t('footer.viewAllPro')}
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -120,36 +127,36 @@ export default function SiteFooter() {
 
           {/* Column 4: Company */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider mb-4">Company</h3>
+            <h3 className="text-sm font-semibold uppercase tracking-wider mb-4">{t('footer.company')}</h3>
             <ul className="space-y-3 text-sm">
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-white transition-colors">
-                  About
+                <Link href={`/${locale}/about`} className="text-gray-400 hover:text-white transition-colors">
+                  {t('footer.about')}
                 </Link>
               </li>
               <li>
-                <Link href="/pricing" className="text-gray-400 hover:text-white transition-colors">
-                  Pricing
+                <Link href={`/${locale}/pricing`} className="text-gray-400 hover:text-white transition-colors">
+                  {t('footer.pricing')}
                 </Link>
               </li>
               <li>
                 <Link href="/security" className="text-gray-400 hover:text-white transition-colors">
-                  Security
+                  {t('footer.security')}
                 </Link>
               </li>
               <li>
                 <Link href="/support" className="text-gray-400 hover:text-white transition-colors">
-                  Support
+                  {t('footer.support')}
                 </Link>
               </li>
               <li>
                 <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors">
-                  Privacy
+                  {t('footer.privacy')}
                 </Link>
               </li>
               <li>
                 <Link href="/contact" className="text-gray-400 hover:text-white transition-colors">
-                  Contact
+                  {t('footer.contact')}
                 </Link>
               </li>
               <li className="pt-2">
@@ -169,10 +176,10 @@ export default function SiteFooter() {
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
             {/* Copyright and Family Sites */}
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 text-sm text-gray-400">
-              <p>© 2025 RealtyClose. All rights reserved.</p>
+              <p>{t('footer.copyright')}</p>
               <div className="hidden sm:block text-gray-600">|</div>
               <div className="flex items-center flex-wrap gap-x-2 gap-y-1">
-                <span>Family sites:</span>
+                <span>{t('footer.familySites')}</span>
                 <a
                   href="https://realtyclose.com"
                   target="_blank"
@@ -218,16 +225,16 @@ export default function SiteFooter() {
             {/* Legal Links */}
             <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-gray-400 text-sm">
               <Link href="/privacy" className="hover:text-white transition-colors">
-                Privacy Policy
+                {t('footer.privacyPolicy')}
               </Link>
               <Link href="/terms" className="hover:text-white transition-colors">
-                Terms of Service
+                {t('footer.termsOfService')}
               </Link>
               <Link href="/cookies" className="hover:text-white transition-colors">
-                Cookie Policy
+                {t('footer.cookiePolicy')}
               </Link>
               <Link href="/impressum" className="hover:text-white transition-colors">
-                Impressum
+                {t('footer.impressum')}
               </Link>
             </div>
           </div>

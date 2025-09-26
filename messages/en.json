@@ -252,5 +252,187 @@
       "watchDemo": "Watch 2-min demo",
       "subtitle": "Chrome Web Store • 14-day free trial • No credit card required • Works with existing Gmail"
     }
+  },
+  "footer": {
+    "description": "AI-powered tools that help real estate professionals close more deals and streamline their workflows.",
+    "coreSuite": "Core Suite",
+    "realtyCloseAgent": "RealtyClose Agent",
+    "realtyCloseInbox": "RealtyClose Inbox",
+    "realtyCloseExtension": "RealtyClose Extension",
+    "dealPipeline": "Deal Pipeline",
+    "comingSoon": "(Coming Soon)",
+    "viewAllCore": "View All Core Products",
+    "proTools": "Pro Tools",
+    "leadManager": "Lead Manager",
+    "marketAnalytics": "Market Analytics",
+    "crmIntegration": "CRM Integration",
+    "mobileApp": "Mobile App",
+    "viewAllPro": "View All Pro Tools",
+    "company": "Company",
+    "about": "About",
+    "pricing": "Pricing",
+    "security": "Security",
+    "support": "Support",
+    "privacy": "Privacy",
+    "contact": "Contact",
+    "copyright": "© 2025 RealtyClose. All rights reserved.",
+    "familySites": "Family sites:",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy",
+    "impressum": "Impressum"
+  },
+  "pricing": {
+    "title": "Pricing that pays for itself the first week",
+    "subtitle": "Gmail-first assistant to reply in seconds, keep deals moving, and stay audit-ready",
+    "monthly": "Monthly",
+    "annual": "Annual",
+    "save20": "Save 20%",
+    "startTrial": "Start 7-day Chrome trial",
+    "watchDemo": "Watch 2-min Gmail demo",
+    "mostPopular": "Most Popular",
+    "perUserMonth": "per user/mo",
+    "billedAnnually": "Billed annually",
+    "ifBilledMonthly": "if billed monthly",
+    "upgradePrompts": "Upgrade prompts appear when you hit limits",
+    "crmComparison": "Most CRMs run $499–$1,800/mo and still aren't Gmail-native. RealtyClose starts at $29 and works where you already work.",
+    "roiHint": "Save 30+ hours/transaction • 49% of managers report comms-related delays - fix that.",
+    "planComparison": "Plan comparison",
+    "compareOutcomes": "Compare outcomes across plans",
+    "outcome": "Outcome",
+    "free": "Free",
+    "professional": "Professional",
+    "team": "Team",
+    "featureAvailability": "Feature availability can change as we improve the product. For details see the Features page.",
+    "quickQuestions": "Quick Questions",
+    "whySeatBased": "Why seat-based, not per-email?",
+    "seatBasedAnswer": "Predictable cost; encourages everyday use.",
+    "whoIsEachPlan": "Who is each plan for?",
+    "planTargets": "Free = solo testing; Professional = solos/high-volume agents; Team = team leads/TCs; Enterprise = brokerages.",
+    "enterprise": "Enterprise (Brokerage/TC)",
+    "enterpriseDesc": "For 50+ seats and advanced controls.",
+    "sso": "SSO, advanced compliance exports, API & integrations",
+    "customIntegrations": "Custom integrations (MLS, CRM)",
+    "whiteLabel": "White label options",
+    "advancedAudit": "Advanced audit & reporting",
+    "conciergeOnboarding": "Concierge onboarding & training",
+    "dedicatedManager": "Dedicated success manager",
+    "prioritySupport": "Priority phone support",
+    "slaGuarantees": "SLA guarantees",
+    "scheduleDemo": "Schedule enterprise demo",
+    "readyToReclaim": "Ready to reclaim 30+ hours per transaction?",
+    "joinThousands": "Join thousands of real estate professionals who've transformed their email workflow with Gmail-first assistance.",
+    "chromeTrialFeatures": "7-day Chrome trial • No credit card • Cancel anytime",
+    "addToChrome": "Add to Chrome",
+    "scheduleStandardDemo": "Schedule demo",
+    "testimonialQuote": "I cut weekly client updates from 30 minutes to 5. Complete gamechanger for my workflow.",
+    "testimonialAuthor": "- Sarah M., Team Lead at Compass",
+    "usedBy": "Used by TCs, team leads, solo agents, and compliance-focused brokerages"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about RealtyClose",
+    "searchPlaceholder": "Search FAQs...",
+    "noResults": "No FAQs found matching your search.",
+    "clearSearch": "Clear search",
+    "categories": {
+      "general": "General",
+      "pricing": "Pricing & Plans", 
+      "technical": "Technical",
+      "integration": "Integration",
+      "compliance": "Compliance & Security"
+    },
+    "questions": {
+      "whatIsRealtyClose": {
+        "question": "What is RealtyClose?",
+        "answer": "RealtyClose is a Gmail-first AI assistant designed specifically for real estate professionals. It helps you draft professional emails in seconds, track deals, and stay compliant - all without leaving Gmail.",
+        "category": "general"
+      },
+      "howDoesItWork": {
+        "question": "How does RealtyClose work?",
+        "answer": "RealtyClose integrates directly into your Gmail interface as a Chrome extension. When you're composing an email, our AI analyzes the context and suggests professional, compliance-ready responses. You can customize tone, add deal-specific details, and send polished emails in seconds.",
+        "category": "general"
+      },
+      "whoIsItFor": {
+        "question": "Who is RealtyClose for?",
+        "answer": "RealtyClose is built for all real estate professionals: solo agents, team leads, transaction coordinators, and brokerages. Whether you handle 2 deals a year or 200, our tools scale to help you communicate more efficiently.",
+        "category": "general"
+      },
+      "pricingPlans": {
+        "question": "What are your pricing plans?",
+        "answer": "We offer three main plans: Free (5 drafts/month), Professional ($29/user/month), and Team ($49/user/month). Enterprise plans are available for brokerages with 50+ agents. All paid plans include a 7-day free trial.",
+        "category": "pricing"
+      },
+      "freeTrialDetails": {
+        "question": "What's included in the free trial?",
+        "answer": "The 7-day free trial gives you full access to Professional features: unlimited AI drafts, smart templates, follow-up reminders, and compliance checking. No credit card required to start.",
+        "category": "pricing"
+      },
+      "cancelAnytime": {
+        "question": "Can I cancel anytime?",
+        "answer": "Yes, you can cancel your subscription at any time. Your access continues until the end of your billing period, and you can always downgrade to our free plan.",
+        "category": "pricing"
+      },
+      "dataPrivacy": {
+        "question": "How do you handle my data?",
+        "answer": "We take privacy seriously. RealtyClose operates within Gmail's security framework and follows bank-level encryption standards. We don't store your email content - our AI processes requests in real-time and discards them immediately.",
+        "category": "compliance"
+      },
+      "compliance": {
+        "question": "Is RealtyClose compliant with real estate regulations?",
+        "answer": "Yes, RealtyClose is designed with compliance in mind. Our templates include required disclosures, our audit logs track all communications, and broker oversight features ensure team compliance. However, you're always responsible for following your local regulations.",
+        "category": "compliance"
+      },
+      "gmailSecurity": {
+        "question": "Is my Gmail data secure?",
+        "answer": "Absolutely. RealtyClose uses OAuth 2.0 for secure Gmail access, requiring only the minimum permissions needed. We're SOC 2 compliant and your email data never leaves Google's servers except for real-time AI processing.",
+        "category": "compliance"
+      },
+      "installation": {
+        "question": "How do I install RealtyClose?",
+        "answer": "Simply visit the Chrome Web Store, search for 'RealtyClose', and click 'Add to Chrome'. After installation, open Gmail and you'll see the RealtyClose panel in your sidebar. Sign in with your Google account and you're ready to go.",
+        "category": "technical"
+      },
+      "browserSupport": {
+        "question": "Which browsers are supported?",
+        "answer": "Currently, RealtyClose is available as a Chrome extension. We're working on support for Edge and Firefox. For the best experience, we recommend using the latest version of Chrome.",
+        "category": "technical"
+      },
+      "mobileSupport": {
+        "question": "Does RealtyClose work on mobile?",
+        "answer": "Not yet, but mobile support is coming soon. Currently, RealtyClose works best on desktop/laptop computers using Chrome browser with Gmail.",
+        "category": "technical"
+      },
+      "crmIntegration": {
+        "question": "Does RealtyClose integrate with my CRM?",
+        "answer": "RealtyClose works alongside your existing CRM by operating within Gmail. We don't replace your CRM - we enhance your email communication. Direct CRM integrations are planned for future releases.",
+        "category": "integration"
+      },
+      "outlookSupport": {
+        "question": "Do you support Outlook?",
+        "answer": "Not currently. RealtyClose is built specifically for Gmail to provide the best possible integration. We may consider Outlook support in the future based on user demand.",
+        "category": "integration"
+      },
+      "teamManagement": {
+        "question": "How does team management work?",
+        "answer": "Team plans include shared template libraries, role-based permissions, and centralized oversight. Team leads can approve templates, monitor usage, and ensure brand consistency across all team communications.",
+        "category": "integration"
+      },
+      "aiAccuracy": {
+        "question": "How accurate is the AI?",
+        "answer": "Our AI is specifically trained on real estate communication patterns and achieves high accuracy for industry-specific content. However, you should always review and customize AI-generated content before sending.",
+        "category": "technical"
+      },
+      "customTemplates": {
+        "question": "Can I create custom templates?",
+        "answer": "Yes! Professional and Team plans include custom template creation. You can build templates for common scenarios like listing updates, closing timelines, and client check-ins.",
+        "category": "technical"
+      },
+      "supportOptions": {
+        "question": "What support options are available?",
+        "answer": "Free users get community support, Professional users get email support, and Team/Enterprise users get priority phone support. We also have extensive documentation and video tutorials.",
+        "category": "general"
+      }
+    }
   }
 }
