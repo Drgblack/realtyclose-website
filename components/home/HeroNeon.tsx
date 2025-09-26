@@ -1,8 +1,10 @@
 "use client";
 import { glowBtn } from "@/components/ui/shiny-card";
 import { useRef } from "react";
+import { useTranslations } from 'next-intl';
 
 export default function HeroNeon(){
+  const t = useTranslations();
   const wrapRef = useRef<HTMLDivElement>(null);
 
   function track(e:React.MouseEvent<HTMLDivElement>){
@@ -36,25 +38,25 @@ export default function HeroNeon(){
         {/* Copy */}
         <div className="max-w-[720px] md:max-w-[760px]">
           <h1 className="text-4xl md:text-6xl font-semibold leading-tight tracking-tight text-slate-900">
-            Fix real estate email chaos -{" "}
+            {t('hero.title')}{" "}
             <span className="bg-gradient-to-r from-indigo-600 via-sky-500 to-fuchsia-600 bg-clip-text text-transparent">
-              right inside Gmail
+              {t('hero.titleHighlight')}
             </span>
           </h1>
 
           <p className="mt-5 max-w-xl text-lg text-[var(--rc-muted)]">
-            Reclaim hours on every transaction and keep deals on track with on-brand, compliant emails in seconds.
+            {t('hero.subtitle')}
           </p>
 
           {/* Proof chips */}
           <div className="mt-6 flex flex-wrap gap-3 text-sm">
             <div className="flex items-center gap-2 bg-slate-50 px-3 py-2 rounded-full border">
               <span className="text-orange-600">⚠️</span>
-              <span className="text-slate-700">Agents lose 30+ hrs/transaction to comms</span>
+              <span className="text-slate-700">{t('hero.proofChip1')}</span>
             </div>
             <div className="flex items-center gap-2 bg-slate-50 px-3 py-2 rounded-full border">
               <span className="text-red-600">📉</span>
-              <span className="text-slate-700">49% report comms-related deal delays</span>
+              <span className="text-slate-700">{t('hero.proofChip2')}</span>
             </div>
           </div>
 
@@ -66,7 +68,7 @@ export default function HeroNeon(){
               <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
               </svg>
-              Add to Chrome
+              {t('common.addToChrome')}
             </a>
             <a 
               href="/demo" 
@@ -75,10 +77,10 @@ export default function HeroNeon(){
               <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M8 5v14l11-7z"/>
               </svg>
-              Watch 2-min Gmail demo
+              {t('common.watchDemoGmail')}
             </a>
           </div>
-          <div className="mt-3 text-xs text-[var(--rc-muted)]">Works with your existing Gmail. No setup required.</div>
+          <div className="mt-3 text-xs text-[var(--rc-muted)]">{t('hero.helperText')}</div>
         </div>
 
         {/* Product card with shiny treatment */}
@@ -87,20 +89,20 @@ export default function HeroNeon(){
             <div className="rounded-2xl bg-white shadow-[0_20px_60px_-20px_rgba(88,101,242,0.35)]">
               <div className="rounded-xl p-4">
                 <div className="flex items-center justify-between text-xs text-[var(--rc-muted)]">
-                  <span>gmail.com · RealtyClose Extension</span><span>Ready</span>
+                  <span>{t('hero.gmailCard.header')}</span><span>{t('hero.gmailCard.status')}</span>
                 </div>
                 <div className="mt-4 grid grid-cols-2 gap-3">
                   <div className="rounded-lg bg-slate-50 p-4">
                     <div className="text-2xl font-bold text-[var(--rc-text)]">10</div>
-                    <div className="text-xs text-[var(--rc-muted)]">Daily Drafts</div>
+                    <div className="text-xs text-[var(--rc-muted)]">{t('hero.gmailCard.dailyDrafts')}</div>
                   </div>
                   <div className="rounded-lg bg-slate-50 p-4">
                     <div className="text-2xl font-bold text-[var(--rc-text)]">5</div>
-                    <div className="text-xs text-[var(--rc-muted)]">Languages</div>
+                    <div className="text-xs text-[var(--rc-muted)]">{t('hero.gmailCard.languages')}</div>
                   </div>
                 </div>
                 <div className="mt-4 rounded-lg border border-emerald-300 bg-emerald-50 p-4 text-sm text-emerald-900">
-                  Email draft set to professional tone. Compliance check passed.
+                  {t('hero.gmailCard.statusMessage')}
                 </div>
               </div>
             </div>

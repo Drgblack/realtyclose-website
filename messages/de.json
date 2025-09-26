@@ -2,7 +2,26 @@
   "common": {
     "install": "Kostenlos mit Gmail Extension starten",
     "watchDemo": "Demo ansehen",
-    "trustedBy": "Vertrauen von Solo-Maklern, Teams und Maklerfirmen"
+    "watchDemoGmail": "2-Min Gmail Demo ansehen",
+    "addToChrome": "Zu Chrome hinzufügen",
+    "trustedBy": "Vertrauen von Solo-Maklern, Teams und Maklerfirmen",
+    "copy": "Kopieren",
+    "copied": "Kopiert!"
+  },
+  "hero": {
+    "title": "Chaos bei Immobilien-E-Mails beheben -",
+    "titleHighlight": "direkt in Gmail",
+    "subtitle": "Gewinnen Sie Stunden bei jeder Transaktion zurück und halten Sie Deals mit markenkonformen, konformen E-Mails in Sekunden auf Kurs.",
+    "proofChip1": "Makler verlieren 30+ Std/Transaktion durch Kommunikation",
+    "proofChip2": "49% berichten über kommunikationsbedingte Deal-Verzögerungen",
+    "helperText": "Funktioniert mit Ihrem bestehenden Gmail. Keine Einrichtung erforderlich.",
+    "gmailCard": {
+      "header": "gmail.com · RealtyClose Extension",
+      "status": "Bereit",
+      "dailyDrafts": "Tägliche Entwürfe",
+      "languages": "Sprachen",
+      "statusMessage": "E-Mail-Entwurf auf professionellen Ton eingestellt. Compliance-Check bestanden."
+    }
   },
   "features": {
     "saveHours": "Stunden sparen",

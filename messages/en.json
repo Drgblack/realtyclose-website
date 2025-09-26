@@ -2,7 +2,26 @@
   "common": {
     "install": "Start Free with Gmail Extension",
     "watchDemo": "Watch Demo",
-    "trustedBy": "Trusted by solo agents, teams, and brokerages"
+    "watchDemoGmail": "Watch 2-min Gmail demo",
+    "addToChrome": "Add to Chrome",
+    "trustedBy": "Trusted by solo agents, teams, and brokerages",
+    "copy": "Copy",
+    "copied": "Copied!"
+  },
+  "hero": {
+    "title": "Fix real estate email chaos -",
+    "titleHighlight": "right inside Gmail",
+    "subtitle": "Reclaim hours on every transaction and keep deals on track with on-brand, compliant emails in seconds.",
+    "proofChip1": "Agents lose 30+ hrs/transaction to comms",
+    "proofChip2": "49% report comms-related deal delays",
+    "helperText": "Works with your existing Gmail. No setup required.",
+    "gmailCard": {
+      "header": "gmail.com · RealtyClose Extension",
+      "status": "Ready",
+      "dailyDrafts": "Daily Drafts",
+      "languages": "Languages",
+      "statusMessage": "Email draft set to professional tone. Compliance check passed."
+    }
   },
   "features": {
     "saveHours": "Save hours",
