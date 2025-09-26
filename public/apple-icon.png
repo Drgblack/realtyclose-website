@@ -1,6 +1,0 @@
-<!-- This is a placeholder. In a real implementation, you would create a 180x180 PNG file with the Z logo -->
-<!-- For now, I'll create an SVG that browsers can use -->
-<svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
-  <rect width="180" height="180" rx="40" fill="#2563eb"/>
-  <path d="M50 45h80v20L75 115h55v20H50v-20l55-50H50V45z" fill="white"/>
-</svg>
