@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useTranslations } from 'next-intl';
@@ -48,10 +49,7 @@ export default function Header() {
     <header className={wrap} data-scrolled={scrolled}>
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-6">
         <Link href="/" className="flex items-center gap-2 text-base font-semibold text-slate-900">
-          <svg width="24" height="24" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-            <rect width="32" height="32" rx="6" fill="#2563eb"/>
-            <path d="M9 8h14v3.5L13.5 20.5H23V24H9v-3.5l9.5-9H9V8z" fill="white"/>
-          </svg>
+          <Image src="/images/brand/z-logo.png" alt="RealtyClose" width={24} height={24} priority />
           RealtyClose
         </Link>
 
@@ -110,10 +108,7 @@ export default function Header() {
           <div className="fixed right-0 top-0 z-50 h-full w-80 bg-white p-6 shadow-xl ring-1 ring-black/5">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
-                <svg width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="32" height="32" rx="6" fill="#2563eb"/>
-                  <path d="M9 8h14v3.5L13.5 20.5H23V24H9v-3.5l9.5-9H9V8z" fill="white"/>
-                </svg>
+                <Image src="/images/brand/z-logo.png" alt="RealtyClose" width={20} height={20} />
                 <span className="text-base font-semibold text-slate-900">{t('nav.menu')}</span>
               </div>
               <button onClick={() => setOpen(false)} aria-label="Close" className="inline-flex h-9 w-9 items-center justify-center rounded-lg ring-1 ring-black/10">
