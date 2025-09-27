@@ -256,13 +256,21 @@
   "contact": {
     "title": "Contact RealtyClose",
     "subtitle": "Get in touch with the RealtyClose team.",
-    "description": "We'd love to help. Choose the right contact so we can assist you faster:",
+    "description": "Choose the right contact so we can assist you faster:",
     "generalSupport": "General Support",
     "privacyInquiries": "Privacy Inquiries",
     "pressMedia": "Press & Media",
-    "businessAddress": "Business Address",
-    "companyName": "Zaza Technologies UG (haftungsbeschränkt)",
-    "addressPlaceholder": "Gumbertstraße 150, 40229 Düsseldorf, Deutschland"
+    "salesPartnerships": "Sales & Partnerships",
+    "billingAccounts": "Billing & Accounts",
+    "supportHours": "Support Hours & Languages",
+    "supportHoursDesc": "Mon–Fri · 09:00–18:00 CET · Support available in English and German",
+    "companyDetails": "Company Details",
+    "companyDetailsDesc": "RealtyClose is a product of Zaza Technologies UG (haftungsbeschränkt).",
+    "businessAddress": "Gumbertstraße 150, 40229 Düsseldorf, Germany",
+    "registerCourt": "Register court: Amtsgericht Düsseldorf, HRB [number]",
+    "vatId": "VAT ID: DE [number]",
+    "managingDirector": "Managing Director: Greg Blackburn",
+    "footerLinks": "Imprint (Impressum) • Privacy • Terms • Cookies"
   },
   "footer": {
     "description": "AI-powered tools that help real estate professionals close more deals and streamline their workflows.",
@@ -408,6 +416,22 @@
         "team": "✓"
       }
     }
+  },
+  "impressum": {
+    "title": "Imprint (Impressum)",
+    "description": "Legal information and company details for RealtyClose",
+    "companyInfo": "Company Information",
+    "legalInfo": "Legal Information",
+    "registerCourt": "Register court",
+    "vatId": "VAT ID",
+    "managingDirector": "Managing Director",
+    "contact": "Contact Information",
+    "email": "Email",
+    "website": "Website",
+    "responsibility": "Responsibility for Content",
+    "responsibilityText": "The contents of our pages have been created with the utmost care. However, we cannot guarantee the contents' accuracy, completeness or topicality. According to statutory provisions, we are furthermore responsible for our own content on these web pages.",
+    "disclaimer": "Disclaimer",
+    "disclaimerText": "Our offer contains links to external third party websites. We have no influence on the contents of those websites, therefore we cannot guarantee for those contents. Providers or administrators of linked websites are always responsible for the contents of the linked websites."
   },
   "faq": {
     "title": "Frequently Asked Questions",

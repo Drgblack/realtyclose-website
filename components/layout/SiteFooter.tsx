@@ -79,10 +79,11 @@ export default function SiteFooter({ variant = "dark" }: { variant?: Variant }) 
         <div className={`mt-12 flex flex-col items-start justify-between gap-4 border-t ${border} pt-6 text-sm ${muted} sm:flex-row`}>
           <p>© {new Date().getFullYear()} RealtyClose (part of Zaza Technologies). All rights reserved.</p>
           <div className="flex gap-6">
+            <Link href="/impressum" className={item}>Impressum</Link>
             <Link href="/privacy" className={item}>Privacy</Link>
             <Link href="/terms" className={item}>Terms</Link>
             <Link href="/cookies" className={item}>Cookies</Link>
-            <a href="mailto:help@zazatechnologies.com" className={item}>help@zazatechnologies.com</a>
+            <a href="mailto:support@realtyclose.com" className={item}>support@realtyclose.com</a>
           </div>
         </div>
       </div>

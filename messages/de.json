@@ -254,15 +254,23 @@
     }
   },
   "contact": {
-    "title": "RealtyClose kontaktieren",
+    "title": "Kontakt zu RealtyClose",
     "subtitle": "Nehmen Sie Kontakt mit dem RealtyClose-Team auf.",
-    "description": "Wir helfen gerne. Wählen Sie den richtigen Kontakt, damit wir Ihnen schneller helfen können:",
+    "description": "Wählen Sie den richtigen Kontakt, damit wir schneller helfen können:",
     "generalSupport": "Allgemeiner Support",
     "privacyInquiries": "Datenschutz-Anfragen",
     "pressMedia": "Presse & Medien",
-    "businessAddress": "Geschäftsadresse",
-    "companyName": "Zaza Technologies UG (haftungsbeschränkt)",
-    "addressPlaceholder": "Gumbertstraße 150, 40229 Düsseldorf, Deutschland"
+    "salesPartnerships": "Vertrieb & Partnerschaften",
+    "billingAccounts": "Abrechnung",
+    "supportHours": "Supportzeiten & Sprachen",
+    "supportHoursDesc": "Mo–Fr · 09:00–18:00 Uhr (MEZ/MESZ) · Support auf Deutsch und Englisch",
+    "companyDetails": "Unternehmensangaben",
+    "companyDetailsDesc": "RealtyClose ist ein Produkt der Zaza Technologies UG (haftungsbeschränkt).",
+    "businessAddress": "Gumbertstraße 150, 40229 Düsseldorf, Deutschland",
+    "registerCourt": "Registergericht: Amtsgericht Düsseldorf, HRB [Nummer]",
+    "vatId": "USt-IdNr.: DE [Nummer]",
+    "managingDirector": "Geschäftsführer: Greg Blackburn",
+    "footerLinks": "Impressum • Datenschutz • Nutzungsbedingungen • Cookies"
   },
   "footer": {
     "description": "KI-gestützte Tools, die Immobilienprofis dabei helfen, mehr Geschäfte abzuschließen und ihre Workflows zu optimieren.",
@@ -408,6 +416,22 @@
         "team": "✓"
       }
     }
+  },
+  "impressum": {
+    "title": "Impressum",
+    "description": "Rechtliche Informationen und Unternehmensangaben für RealtyClose",
+    "companyInfo": "Unternehmensangaben",
+    "legalInfo": "Rechtliche Informationen",
+    "registerCourt": "Registergericht",
+    "vatId": "USt-IdNr.",
+    "managingDirector": "Geschäftsführer",
+    "contact": "Kontaktinformationen",
+    "email": "E-Mail",
+    "website": "Webseite",
+    "responsibility": "Verantwortlich für Inhalte",
+    "responsibilityText": "Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.",
+    "disclaimer": "Haftungsausschluss",
+    "disclaimerText": "Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich."
   },
   "faq": {
     "title": "Häufig gestellte Fragen",

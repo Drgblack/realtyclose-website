@@ -38,7 +38,7 @@ export default function ContactPageClient() {
 
       <div className="mx-auto max-w-6xl px-6 sm:px-8 lg:px-10 py-16">
         {/* Contact Options */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           <Reveal delay={0.1}>
             <ShinyCard gradient="blue" padding="lg">
               <div className="text-center">
@@ -46,10 +46,11 @@ export default function ContactPageClient() {
                   {t('contact.generalSupport')}
                 </h3>
                 <a 
-                  href="mailto:help@zazatechnologies.com" 
-                  className="text-blue-300 hover:text-blue-200 font-medium transition-colors"
+                  href="mailto:support@realtyclose.com" 
+                  className="text-blue-300 hover:text-blue-200 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-slate-800 rounded-md"
+                  aria-label="Send email to general support"
                 >
-                  help@zazatechnologies.com
+                  support@realtyclose.com
                 </a>
               </div>
             </ShinyCard>
@@ -63,7 +64,8 @@ export default function ContactPageClient() {
                 </h3>
                 <a 
                   href="mailto:privacy@realtyclose.com" 
-                  className="text-emerald-300 hover:text-emerald-200 font-medium transition-colors"
+                  className="text-emerald-300 hover:text-emerald-200 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-slate-800 rounded-md"
+                  aria-label="Send email for privacy inquiries"
                 >
                   privacy@realtyclose.com
                 </a>
@@ -79,28 +81,91 @@ export default function ContactPageClient() {
                 </h3>
                 <a 
                   href="mailto:press@realtyclose.com" 
-                  className="text-indigo-300 hover:text-indigo-200 font-medium transition-colors"
+                  className="text-indigo-300 hover:text-indigo-200 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 focus:ring-offset-slate-800 rounded-md"
+                  aria-label="Send email for press and media inquiries"
                 >
                   press@realtyclose.com
                 </a>
               </div>
             </ShinyCard>
           </Reveal>
+          
+          <Reveal delay={0.4}>
+            <ShinyCard gradient="brand" padding="lg">
+              <div className="text-center">
+                <h3 className="text-xl font-semibold text-white mb-4">
+                  {t('contact.salesPartnerships')}
+                </h3>
+                <a 
+                  href="mailto:sales@realtyclose.com" 
+                  className="text-purple-300 hover:text-purple-200 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2 focus:ring-offset-slate-800 rounded-md"
+                  aria-label="Send email for sales and partnerships"
+                >
+                  sales@realtyclose.com
+                </a>
+              </div>
+            </ShinyCard>
+          </Reveal>
+          
+          <Reveal delay={0.5}>
+            <ShinyCard gradient="blue" padding="lg">
+              <div className="text-center">
+                <h3 className="text-xl font-semibold text-white mb-4">
+                  {t('contact.billingAccounts')}
+                </h3>
+                <a 
+                  href="mailto:billing@realtyclose.com" 
+                  className="text-blue-300 hover:text-blue-200 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-slate-800 rounded-md"
+                  aria-label="Send email for billing and accounts"
+                >
+                  billing@realtyclose.com
+                </a>
+              </div>
+            </ShinyCard>
+          </Reveal>
         </div>
 
-        {/* Business Address */}
-        <Reveal delay={0.4}>
+        {/* Support Hours */}
+        <Reveal delay={0.6}>
           <div className="mb-16">
             <h2 className="text-2xl font-bold text-white mb-6 text-center">
-              {t('contact.businessAddress')}
+              {t('contact.supportHours')}
+            </h2>
+            <div className="max-w-2xl mx-auto">
+              <ShinyCard gradient="emerald" padding="lg">
+                <div className="text-center">
+                  <p className="text-slate-200 text-lg">
+                    {t('contact.supportHoursDesc')}
+                  </p>
+                </div>
+              </ShinyCard>
+            </div>
+          </div>
+        </Reveal>
+
+        {/* Company Details */}
+        <Reveal delay={0.7}>
+          <div className="mb-16">
+            <h2 className="text-2xl font-bold text-white mb-6 text-center">
+              {t('contact.companyDetails')}
             </h2>
             <div className="max-w-2xl mx-auto">
               <ShinyCard gradient="brand" padding="lg">
-                <div className="text-center">
+                <div className="text-center space-y-4">
                   <p className="text-slate-200">
-                    <strong className="text-white">{t('contact.companyName')}</strong><br />
-                    <span className="text-slate-300">{t('contact.addressPlaceholder')}</span>
+                    {t('contact.companyDetailsDesc')}
                   </p>
+                  <div className="text-slate-300 space-y-2">
+                    <p>{t('contact.businessAddress')}</p>
+                    <p>{t('contact.registerCourt')}</p>
+                    <p>{t('contact.vatId')}</p>
+                    <p>{t('contact.managingDirector')}</p>
+                  </div>
+                  <div className="pt-4 border-t border-slate-600/50">
+                    <p className="text-slate-400 text-sm">
+                      {t('contact.footerLinks')}
+                    </p>
+                  </div>
                 </div>
               </ShinyCard>
             </div>
