@@ -433,6 +433,131 @@
     "disclaimer": "Disclaimer",
     "disclaimerText": "Our offer contains links to external third party websites. We have no influence on the contents of those websites, therefore we cannot guarantee for those contents. Providers or administrators of linked websites are always responsible for the contents of the linked websites."
   },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated",
+    "overview": {
+      "title": "Overview",
+      "description": "At RealtyClose, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you use our Gmail-first AI assistant for real estate communication."
+    },
+    "dataCollection": {
+      "title": "Information We Collect",
+      "description": "We collect the following types of information:",
+      "item1": "Account information: Email address, name, and authentication data when you sign up",
+      "item2": "Usage data: How you interact with our service, including email drafts and templates used",
+      "item3": "Technical data: Browser type, device information, and IP address for security and analytics",
+      "item4": "Email content: Only processed in real-time for AI assistance and immediately discarded"
+    },
+    "dataUse": {
+      "title": "How We Use Your Information",
+      "description": "We use your information to:",
+      "item1": "Provide AI-powered email assistance and drafting services",
+      "item2": "Improve our service quality and develop new features",
+      "item3": "Ensure security and prevent unauthorized access",
+      "item4": "Send important service updates and support communications"
+    },
+    "dataSharing": {
+      "title": "Information Sharing",
+      "description": "We do not sell, trade, or rent your personal information to third parties. We may share data only when required by law or to protect our rights and the safety of our users."
+    },
+    "dataSecurity": {
+      "title": "Data Security",
+      "description": "We implement industry-standard security measures including encryption, secure data transmission, and regular security audits. Your email content is processed in real-time and not stored on our servers."
+    },
+    "userRights": {
+      "title": "Your Rights",
+      "description": "You have the right to:",
+      "item1": "Access and review your personal information",
+      "item2": "Request correction of inaccurate data",
+      "item3": "Request deletion of your account and associated data",
+      "item4": "Withdraw consent and stop using our service at any time"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "If you have questions about this Privacy Policy or our data practices, please contact us at"
+    }
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated",
+    "acceptance": {
+      "title": "Acceptance of Terms",
+      "description": "By accessing and using RealtyClose, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by these terms, please do not use this service."
+    },
+    "serviceDescription": {
+      "title": "Service Description",
+      "description": "RealtyClose is a Gmail-first AI assistant designed to help real estate professionals draft professional emails, manage communications, and maintain compliance. The service operates as a Chrome extension integrated with Gmail."
+    },
+    "userResponsibilities": {
+      "title": "User Responsibilities",
+      "description": "As a user, you agree to:",
+      "item1": "Provide accurate and current information when creating your account",
+      "item2": "Use the service only for lawful real estate business purposes",
+      "item3": "Maintain the confidentiality of your account credentials",
+      "item4": "Comply with all applicable real estate regulations and laws"
+    },
+    "subscription": {
+      "title": "Subscription and Payment",
+      "description": "RealtyClose offers various subscription plans. Payments are processed securely through third-party payment processors. You may cancel your subscription at any time, and access will continue until the end of your billing period."
+    },
+    "limitation": {
+      "title": "Limitation of Liability",
+      "description": "RealtyClose provides AI assistance for email drafting. Users are responsible for reviewing all AI-generated content before sending. We are not liable for any consequences resulting from the use of AI-generated content."
+    },
+    "termination": {
+      "title": "Termination",
+      "description": "Either party may terminate this agreement at any time. Upon termination, your access to the service will cease, and any outstanding fees will be charged according to our billing terms."
+    },
+    "changes": {
+      "title": "Changes to Terms",
+      "description": "We reserve the right to modify these terms at any time. Users will be notified of significant changes, and continued use of the service constitutes acceptance of modified terms."
+    },
+    "contact": {
+      "title": "Contact Information",
+      "description": "For questions about these Terms of Service, please contact us at"
+    }
+  },
+  "cookies": {
+    "title": "Cookie Policy",
+    "lastUpdated": "Last updated",
+    "overview": {
+      "title": "What Are Cookies",
+      "description": "Cookies are small text files stored on your device when you visit our website. We use cookies to enhance your browsing experience, analyze site usage, and provide personalized content."
+    },
+    "essential": {
+      "title": "Essential Cookies",
+      "description": "These cookies are necessary for the website to function properly:",
+      "item1": "Authentication cookies to keep you logged in",
+      "item2": "Security cookies to protect against fraud",
+      "item3": "Preference cookies to remember your settings"
+    },
+    "analytics": {
+      "title": "Analytics Cookies",
+      "description": "We use analytics cookies to understand how visitors interact with our website:",
+      "item1": "Google Analytics to track page visits and user behavior",
+      "item2": "Performance metrics to identify areas for improvement",
+      "item3": "Usage statistics to enhance our service offerings"
+    },
+    "preferences": {
+      "title": "Managing Your Preferences",
+      "description": "You can control cookie settings through your browser preferences. Note that disabling certain cookies may affect website functionality and your user experience."
+    },
+    "thirdParty": {
+      "title": "Third-Party Cookies",
+      "description": "Some cookies are set by third-party services we use:",
+      "item1": "Google Analytics for website analytics",
+      "item2": "Authentication providers for secure login",
+      "item3": "Payment processors for subscription management"
+    },
+    "control": {
+      "title": "Cookie Control",
+      "description": "You can control and delete cookies through your browser settings. Most browsers allow you to refuse cookies or alert you when cookies are being sent."
+    },
+    "contact": {
+      "title": "Questions",
+      "description": "If you have questions about our use of cookies, please contact us at"
+    }
+  },
   "faq": {
     "title": "Frequently Asked Questions",
     "subtitle": "Everything you need to know about RealtyClose",

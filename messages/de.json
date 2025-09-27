@@ -433,6 +433,131 @@
     "disclaimer": "Haftungsausschluss",
     "disclaimerText": "Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich."
   },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "lastUpdated": "Zuletzt aktualisiert",
+    "overview": {
+      "title": "Überblick",
+      "description": "Bei RealtyClose sind wir dem Schutz Ihrer Privatsphäre und der Sicherheit Ihrer persönlichen Daten verpflichtet. Diese Datenschutzerklärung erklärt, wie wir Ihre Daten sammeln, verwenden und schützen, wenn Sie unseren Gmail-first KI-Assistenten für Immobilienkommunikation nutzen."
+    },
+    "dataCollection": {
+      "title": "Informationen, die wir sammeln",
+      "description": "Wir sammeln folgende Arten von Informationen:",
+      "item1": "Kontoinformationen: E-Mail-Adresse, Name und Authentifizierungsdaten bei der Anmeldung",
+      "item2": "Nutzungsdaten: Wie Sie unseren Service nutzen, einschließlich verwendeter E-Mail-Entwürfe und Vorlagen",
+      "item3": "Technische Daten: Browser-Typ, Geräteinformationen und IP-Adresse für Sicherheit und Analyse",
+      "item4": "E-Mail-Inhalte: Nur in Echtzeit für KI-Unterstützung verarbeitet und sofort verworfen"
+    },
+    "dataUse": {
+      "title": "Wie wir Ihre Informationen verwenden",
+      "description": "Wir verwenden Ihre Informationen für:",
+      "item1": "Bereitstellung von KI-gestützter E-Mail-Unterstützung und Entwurfsdiensten",
+      "item2": "Verbesserung unserer Servicequalität und Entwicklung neuer Funktionen",
+      "item3": "Gewährleistung der Sicherheit und Verhinderung unbefugten Zugriffs",
+      "item4": "Versendung wichtiger Service-Updates und Support-Kommunikation"
+    },
+    "dataSharing": {
+      "title": "Weitergabe von Informationen",
+      "description": "Wir verkaufen, tauschen oder vermieten Ihre persönlichen Daten nicht an Dritte. Wir können Daten nur teilen, wenn dies gesetzlich vorgeschrieben ist oder zum Schutz unserer Rechte und der Sicherheit unserer Nutzer erforderlich ist."
+    },
+    "dataSecurity": {
+      "title": "Datensicherheit",
+      "description": "Wir implementieren branchenübliche Sicherheitsmaßnahmen einschließlich Verschlüsselung, sicherer Datenübertragung und regelmäßiger Sicherheitsaudits. Ihre E-Mail-Inhalte werden in Echtzeit verarbeitet und nicht auf unseren Servern gespeichert."
+    },
+    "userRights": {
+      "title": "Ihre Rechte",
+      "description": "Sie haben das Recht:",
+      "item1": "Ihre persönlichen Daten einzusehen und zu überprüfen",
+      "item2": "Korrektur ungenauer Daten zu verlangen",
+      "item3": "Löschung Ihres Kontos und zugehöriger Daten zu verlangen",
+      "item4": "Einwilligung zu widerrufen und unseren Service jederzeit zu beenden"
+    },
+    "contact": {
+      "title": "Kontaktieren Sie uns",
+      "description": "Wenn Sie Fragen zu dieser Datenschutzerklärung oder unseren Datenpraktiken haben, kontaktieren Sie uns unter"
+    }
+  },
+  "terms": {
+    "title": "Nutzungsbedingungen",
+    "lastUpdated": "Zuletzt aktualisiert",
+    "acceptance": {
+      "title": "Annahme der Bedingungen",
+      "description": "Durch den Zugriff auf und die Nutzung von RealtyClose akzeptieren Sie diese Vereinbarung und stimmen zu, an deren Bedingungen gebunden zu sein. Wenn Sie diesen Bedingungen nicht zustimmen, nutzen Sie diesen Service bitte nicht."
+    },
+    "serviceDescription": {
+      "title": "Service-Beschreibung",
+      "description": "RealtyClose ist ein Gmail-first KI-Assistent, der Immobilienprofis beim Verfassen professioneller E-Mails, der Kommunikationsverwaltung und der Einhaltung von Compliance hilft. Der Service funktioniert als Chrome-Erweiterung, die in Gmail integriert ist."
+    },
+    "userResponsibilities": {
+      "title": "Nutzerverantwortungen",
+      "description": "Als Nutzer stimmen Sie zu:",
+      "item1": "Genaue und aktuelle Informationen bei der Kontoerstellung anzugeben",
+      "item2": "Den Service nur für rechtmäßige Immobiliengeschäftszwecke zu nutzen",
+      "item3": "Die Vertraulichkeit Ihrer Kontodaten zu wahren",
+      "item4": "Alle anwendbaren Immobilienvorschriften und Gesetze einzuhalten"
+    },
+    "subscription": {
+      "title": "Abonnement und Zahlung",
+      "description": "RealtyClose bietet verschiedene Abonnementpläne. Zahlungen werden sicher über Drittanbieter-Zahlungsabwickler verarbeitet. Sie können Ihr Abonnement jederzeit kündigen, und der Zugang bleibt bis zum Ende Ihres Abrechnungszeitraums bestehen."
+    },
+    "limitation": {
+      "title": "Haftungsbeschränkung",
+      "description": "RealtyClose bietet KI-Unterstützung für E-Mail-Entwürfe. Nutzer sind dafür verantwortlich, alle KI-generierten Inhalte vor dem Versenden zu überprüfen. Wir haften nicht für Konsequenzen aus der Verwendung KI-generierter Inhalte."
+    },
+    "termination": {
+      "title": "Kündigung",
+      "description": "Beide Parteien können diese Vereinbarung jederzeit kündigen. Bei Kündigung endet Ihr Zugang zum Service, und ausstehende Gebühren werden gemäß unseren Abrechnungsbestimmungen berechnet."
+    },
+    "changes": {
+      "title": "Änderungen der Bedingungen",
+      "description": "Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern. Nutzer werden über wesentliche Änderungen informiert, und die fortgesetzte Nutzung des Services gilt als Zustimmung zu geänderten Bedingungen."
+    },
+    "contact": {
+      "title": "Kontaktinformationen",
+      "description": "Bei Fragen zu diesen Nutzungsbedingungen kontaktieren Sie uns unter"
+    }
+  },
+  "cookies": {
+    "title": "Cookie-Richtlinie",
+    "lastUpdated": "Zuletzt aktualisiert",
+    "overview": {
+      "title": "Was sind Cookies",
+      "description": "Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden, wenn Sie unsere Website besuchen. Wir verwenden Cookies, um Ihr Browsing-Erlebnis zu verbessern, die Website-Nutzung zu analysieren und personalisierte Inhalte bereitzustellen."
+    },
+    "essential": {
+      "title": "Notwendige Cookies",
+      "description": "Diese Cookies sind für das ordnungsgemäße Funktionieren der Website erforderlich:",
+      "item1": "Authentifizierungs-Cookies, um Sie angemeldet zu halten",
+      "item2": "Sicherheits-Cookies zum Schutz vor Betrug",
+      "item3": "Präferenz-Cookies, um Ihre Einstellungen zu speichern"
+    },
+    "analytics": {
+      "title": "Analyse-Cookies",
+      "description": "Wir verwenden Analyse-Cookies, um zu verstehen, wie Besucher mit unserer Website interagieren:",
+      "item1": "Google Analytics zur Verfolgung von Seitenbesuchen und Nutzerverhalten",
+      "item2": "Performance-Metriken zur Identifizierung von Verbesserungsbereichen",
+      "item3": "Nutzungsstatistiken zur Verbesserung unserer Service-Angebote"
+    },
+    "preferences": {
+      "title": "Verwaltung Ihrer Präferenzen",
+      "description": "Sie können Cookie-Einstellungen über Ihre Browser-Präferenzen steuern. Beachten Sie, dass das Deaktivieren bestimmter Cookies die Website-Funktionalität und Ihr Nutzererlebnis beeinträchtigen kann."
+    },
+    "thirdParty": {
+      "title": "Drittanbieter-Cookies",
+      "description": "Einige Cookies werden von Drittanbieterdiensten gesetzt, die wir nutzen:",
+      "item1": "Google Analytics für Website-Analysen",
+      "item2": "Authentifizierungsanbieter für sicheren Login",
+      "item3": "Zahlungsabwickler für Abonnement-Management"
+    },
+    "control": {
+      "title": "Cookie-Kontrolle",
+      "description": "Sie können Cookies über Ihre Browser-Einstellungen kontrollieren und löschen. Die meisten Browser ermöglichen es, Cookies zu verweigern oder Sie zu warnen, wenn Cookies gesendet werden."
+    },
+    "contact": {
+      "title": "Fragen",
+      "description": "Wenn Sie Fragen zu unserer Verwendung von Cookies haben, kontaktieren Sie uns unter"
+    }
+  },
   "faq": {
     "title": "Häufig gestellte Fragen",
     "subtitle": "Alles, was Sie über RealtyClose wissen müssen",
