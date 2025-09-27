@@ -87,63 +87,125 @@
     "jennifer": "Audit prep time cut by 90%. Compliance officer can't believe the organization."
   },
   "about": {
-    "title": "The Gmail-First AI Assistant Built for Real Estate Communication",
+    "seo": {
+      "title": "About RealtyClose — Gmail-first AI assistant for real estate communication",
+      "description": "Reply in seconds and keep every deal on track. RealtyClose lives inside Gmail to draft, organise, and track deal-critical emails for agents, teams, TCs, and brokerages."
+    },
+    "hero": {
+      "title": "The Gmail-first AI assistant for real estate communication",
+      "subtitle": "Reply in seconds. Keep every deal on track. RealtyClose lives inside Gmail to draft, organise, and track deal-critical emails.",
+      "trustRow": "500+ users • 10k+ emails drafted • 10 sec average draft time",
+      "ctaPrimary": "Install Free Extension",
+      "ctaSecondary": "Watch the Demo"
+    },
     "problem": {
       "title": "The Problem",
-      "description": "Real estate professionals spend hours buried in messy inboxes. Communication is unstructured, deadlines slip, clients feel ignored, and deals fall apart.",
-      "stat1": "70%",
-      "stat1Desc": "of professionals face closing delays from poor communication",
-      "stat2": "49%",
-      "stat2Desc": "of managers have seen a deal jeopardized by missed emails",
-      "stat3": "30+",
-      "stat3Desc": "hours lost per transaction to repetitive email work"
+      "lead": "Real estate pros spend hours fighting messy inboxes. Deadlines slip, clients feel ignored, and deals stall.",
+      "stat1": "report closing delays from poor communication",
+      "stat2": "have seen a deal jeopardised by missed emails", 
+      "stat3Number": "30+ hours",
+      "stat3": "lost per transaction to repetitive email work"
     },
     "whyFail": {
       "title": "Why Existing Tools Fail",
-      "crm": "Too complex and expensive, require you to leave Gmail",
-      "tm": "Focus on documents, not conversations",
-      "generic": "Fast but not built for real estate compliance"
+      "crm": {
+        "title": "CRMs",
+        "description": "Powerful, but pull you out of Gmail and slow adoption"
+      },
+      "transaction": {
+        "title": "Transaction platforms",
+        "description": "Great for documents, not conversations"
+      },
+      "generic": {
+        "title": "Generic email tools",
+        "description": "Fast, but not built for real estate compliance"
+      }
     },
     "solution": {
       "title": "Our Solution",
-      "description": "RealtyClose lives inside Gmail. It drafts, organizes, and tracks every deal-critical email. You reply faster, sound consistent, and keep every transaction on track.",
-      "feature1": "Professional, on-brand replies in seconds",
-      "feature2": "Automated follow-up nudges so no client slips through the cracks",
-      "feature3": "Compliance guardrails that protect your brokerage"
+      "feature1": {
+        "title": "Professional replies in seconds",
+        "description": "On-brand drafts inside Gmail"
+      },
+      "feature2": {
+        "title": "Automated follow-ups",
+        "description": "Nudges and deadline alerts so nothing slips"
+      },
+      "feature3": {
+        "title": "Compliance guardrails",
+        "description": "Templates, audit trails, and role controls"
+      },
+      "closer": "RealtyClose turns email chaos into a clear, consistent, and on-time workflow."
     },
     "whoWeHelp": {
       "title": "Who We Help",
-      "solo": "Save time and maintain a professional voice",
-      "teams": "Standardize communication and coordinate handoffs",
-      "tc": "Automate reminders and track dozens of active deals",
-      "brokerages": "Enforce brand consistency and audit readiness"
+      "soloAgents": {
+        "title": "Solo Agents",
+        "description": "Save time and stay professional"
+      },
+      "teams": {
+        "title": "Teams",
+        "description": "Standardise voice and handoffs"
+      },
+      "tc": {
+        "title": "Transaction Coordinators",
+        "description": "Automate reminders and checklists"
+      },
+      "brokerages": {
+        "title": "Brokerages",
+        "description": "Enforce brand and compliance at scale"
+      }
     },
     "proof": {
       "title": "Proof & Outcomes",
-      "faster": "professional drafts in seconds",
-      "fewer": "AI checks tone and compliance",
-      "happier": "consistent, proactive updates build trust",
-      "more": "less time in email, more time with clients"
+      "faster": {
+        "title": "Faster replies",
+        "description": "drafts in seconds"
+      },
+      "fewer": {
+        "title": "Fewer mistakes",
+        "description": "tone and compliance checks"
+      },
+      "happier": {
+        "title": "Happier clients",
+        "description": "consistent, proactive updates"
+      },
+      "more": {
+        "title": "More closings",
+        "description": "less time in email, more time with clients"
+      },
+      "quote": {
+        "text": "Response times improved by 80%. Clients noticed the difference.",
+        "author": "Team Lead, Phoenix AZ"
+      },
+      "metrics": "Avg draft time 10 sec • 5 languages • Works inside Gmail"
     },
     "beforeAfter": {
       "title": "Before vs After",
       "beforeTitle": "Before RealtyClose",
       "before1": "3+ hours daily writing emails",
       "before2": "Missed follow-ups and delays",
-      "before3": "Fragmented tools and copy-paste chaos",
+      "before3": "Fragmented tools and copy-paste",
       "afterTitle": "With RealtyClose",
       "after1": "10-second replies",
-      "after2": "Consistent, compliant communication",
+      "after2": "Automated reminders, organised threads",
       "after3": "Every deal tracked in Gmail"
     },
     "vision": {
       "title": "Vision",
       "description": "Our mission is simple: eliminate communication chaos so agents, teams, and coordinators can focus on closing deals, not fighting their inbox."
     },
-    "cta": {
-      "install": "Install Free Extension",
-      "demo": "Watch the Demo",
-      "subtitle": "Write your next client email in seconds • See how top agents use RealtyClose daily"
+    "founder": {
+      "title": "About the founder",
+      "description": "RealtyClose is built by Zaza Technologies. Founder Dr Greg Blackburn holds a PhD in Professional Education, an MBA, and BIS (Hons). We build practical, secure, professional-grade tools for real estate teams.",
+      "securityLink": "Security & Data",
+      "privacyLink": "Privacy"
+    },
+    "finalCta": {
+      "title": "Ready to write your next client email in seconds?",
+      "ctaPrimary": "Install Free Extension",
+      "ctaSecondary": "Watch the Demo",
+      "demoLink": "Prefer a personal walkthrough? Schedule a demo."
     }
   },
   "features": {

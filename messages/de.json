@@ -87,63 +87,125 @@
     "jennifer": "Audit-Vorbereitungszeit um 90% reduziert. Der Compliance-Beauftragte kann die Organisation nicht glauben."
   },
   "about": {
-    "title": "Der Gmail-erste KI-Assistent für Immobilienkommunikation",
+    "seo": {
+      "title": "Über RealtyClose — Gmail-first KI-Assistent für Immobilien-Kommunikation",
+      "description": "Antworten in Sekunden und jede Transaktion auf Kurs halten. RealtyClose arbeitet in Gmail, erstellt, organisiert und verfolgt entscheidungsrelevante E-Mails für Makler, Teams, TCs und Maklerhäuser."
+    },
+    "hero": {
+      "title": "Der Gmail-first KI-Assistent für Immobilien-Kommunikation",
+      "subtitle": "Antworten in Sekunden. Halten Sie jede Transaktion auf Kurs. RealtyClose arbeitet direkt in Gmail, erstellt, organisiert und verfolgt alle entscheidungsrelevanten E-Mails.",
+      "trustRow": "500+ Nutzer • 10k+ erstellte E-Mails • 10 Sek durchschnittliche Entwurfszeit",
+      "ctaPrimary": "Kostenlose Erweiterung installieren",
+      "ctaSecondary": "Demo ansehen"
+    },
     "problem": {
       "title": "Das Problem",
-      "description": "Immobilienprofis verbringen Stunden in chaotischen Posteingängen. Kommunikation ist unstrukturiert, Termine werden verpasst, Kunden fühlen sich ignoriert und Geschäfte platzen.",
-      "stat1": "70%",
-      "stat1Desc": "der Profis haben Abschlussverzögerungen durch schlechte Kommunikation",
-      "stat2": "49%",
-      "stat2Desc": "der Manager haben ein Geschäft durch verpasste E-Mails gefährdet gesehen",
-      "stat3": "30+",
-      "stat3Desc": "Stunden pro Transaktion durch repetitive E-Mail-Arbeit verloren"
+      "lead": "Immobilienprofis verbringen Stunden im unübersichtlichen Posteingang. Fristen rutschen, Kunden fühlen sich übersehen, Deals geraten ins Stocken.",
+      "stat1": "melden Verzögerungen beim Abschluss durch mangelhafte Kommunikation",
+      "stat2": "haben erlebt, dass ein Deal durch verpasste E-Mails gefährdet wurde",
+      "stat3Number": "30+ Stunden",
+      "stat3": "gehen pro Transaktion durch wiederholte E-Mail-Arbeit verloren"
     },
     "whyFail": {
-      "title": "Warum bestehende Tools versagen",
-      "crm": "Zu komplex und teuer, zwingen Sie aus Gmail heraus",
-      "tm": "Fokus auf Dokumente, nicht auf Gespräche",
-      "generic": "Schnell, aber nicht für Immobilien-Compliance entwickelt"
+      "title": "Warum vorhandene Tools scheitern",
+      "crm": {
+        "title": "CRMs",
+        "description": "Leistungsfähig, aber zwingen aus Gmail heraus und bremsen die Einführung"
+      },
+      "transaction": {
+        "title": "Transaktions-Plattformen",
+        "description": "Gut für Dokumente, nicht für Gespräche"
+      },
+      "generic": {
+        "title": "Generische E-Mail-Tools",
+        "description": "Schnell, aber nicht für Immobilien-Compliance gebaut"
+      }
     },
     "solution": {
       "title": "Unsere Lösung",
-      "description": "RealtyClose lebt in Gmail. Es erstellt, organisiert und verfolgt jede geschäftskritische E-Mail. Sie antworten schneller, klingen konsistent und halten jede Transaktion auf Kurs.",
-      "feature1": "Professionelle, markengerechte Antworten in Sekunden",
-      "feature2": "Automatisierte Follow-up-Erinnerungen, damit kein Kunde durchs Raster fällt",
-      "feature3": "Compliance-Schutzmaßnahmen, die Ihr Maklerunternehmen schützen"
+      "feature1": {
+        "title": "Professionelle Antworten in Sekunden",
+        "description": "Markenkonforme Entwürfe in Gmail"
+      },
+      "feature2": {
+        "title": "Automatische Follow-ups",
+        "description": "Erinnerungen und Frist-Alerts, damit nichts durchrutscht"
+      },
+      "feature3": {
+        "title": "Compliance-Guardrails",
+        "description": "Vorlagen, Audit-Trails und Rollenrechte"
+      },
+      "closer": "RealtyClose verwandelt E-Mail-Chaos in einen klaren, konsistenten und pünktlichen Workflow."
     },
     "whoWeHelp": {
-      "title": "Wem wir helfen",
-      "solo": "Zeit sparen und eine professionelle Stimme beibehalten",
-      "teams": "Kommunikation standardisieren und Übergaben koordinieren",
-      "tc": "Erinnerungen automatisieren und Dutzende aktiver Geschäfte verfolgen",
-      "brokerages": "Markenkonsistenz und Audit-Bereitschaft durchsetzen"
+      "title": "Für wen wir arbeiten",
+      "soloAgents": {
+        "title": "Solo-Makler",
+        "description": "Zeit sparen und professionell klingen"
+      },
+      "teams": {
+        "title": "Teams",
+        "description": "Stimme und Übergaben standardisieren"
+      },
+      "tc": {
+        "title": "Transaction Coordinators",
+        "description": "Erinnerungen und Checklisten automatisieren"
+      },
+      "brokerages": {
+        "title": "Maklerhäuser",
+        "description": "Marke und Compliance in großem Maßstab durchsetzen"
+      }
     },
     "proof": {
-      "title": "Nachweise & Ergebnisse",
-      "faster": "professionelle Entwürfe in Sekunden",
-      "fewer": "KI überprüft Ton und Compliance",
-      "happier": "konsistente, proaktive Updates schaffen Vertrauen",
-      "more": "weniger Zeit in E-Mails, mehr Zeit mit Kunden"
+      "title": "Nachweise und Ergebnisse",
+      "faster": {
+        "title": "Schnellere Antworten",
+        "description": "Entwürfe in Sekunden"
+      },
+      "fewer": {
+        "title": "Weniger Fehler",
+        "description": "Ton- und Compliance-Checks"
+      },
+      "happier": {
+        "title": "Zufriedenere Kunden",
+        "description": "Konsistente, proaktive Updates"
+      },
+      "more": {
+        "title": "Mehr Abschlüsse",
+        "description": "Weniger Zeit in E-Mails, mehr Zeit beim Kunden"
+      },
+      "quote": {
+        "text": "Unsere Reaktionszeiten haben sich um 80 % verbessert. Die Kunden merken den Unterschied.",
+        "author": "Teamleiter, Phoenix, AZ"
+      },
+      "metrics": "Ø-Entwurfszeit 10 Sek • 5 Sprachen • Funktioniert in Gmail"
     },
     "beforeAfter": {
       "title": "Vorher vs. Nachher",
       "beforeTitle": "Vor RealtyClose",
-      "before1": "3+ Stunden täglich E-Mails schreiben",
+      "before1": "3+ Stunden täglich für E-Mails",
       "before2": "Verpasste Follow-ups und Verzögerungen",
-      "before3": "Fragmentierte Tools und Copy-Paste-Chaos",
+      "before3": "Fragmentierte Tools und Copy-Paste",
       "afterTitle": "Mit RealtyClose",
-      "after1": "10-Sekunden-Antworten",
-      "after2": "Konsistente, konforme Kommunikation",
-      "after3": "Jedes Geschäft in Gmail verfolgt"
+      "after1": "Antworten in 10 Sekunden",
+      "after2": "Automatische Erinnerungen, organisierte Threads",
+      "after3": "Jede Transaktion in Gmail nachverfolgt"
     },
     "vision": {
       "title": "Vision",
-      "description": "Unsere Mission ist einfach: Kommunikationschaos eliminieren, damit sich Makler, Teams und Koordinatoren auf Geschäftsabschlüsse konzentrieren können, nicht auf den Kampf mit ihrem Posteingang."
+      "description": "Unsere Mission ist einfach: Kommunikationschaos eliminieren, damit Makler, Teams und Koordinatoren sich auf Abschlüsse konzentrieren können, nicht auf den Posteingang."
     },
-    "cta": {
-      "install": "Kostenlose Erweiterung installieren",
-      "demo": "Demo ansehen",
-      "subtitle": "Schreiben Sie Ihre nächste Kunden-E-Mail in Sekunden • Sehen Sie, wie Top-Makler RealtyClose täglich nutzen"
+    "founder": {
+      "title": "Über den Gründer",
+      "description": "RealtyClose wird von Zaza Technologies entwickelt. Gründer Dr. Greg Blackburn promovierte in Professional Education, besitzt einen MBA und einen BIS (Hons). Wir bauen praktische, sichere, professionelle Tools für Immobilienteams.",
+      "securityLink": "Sicherheit & Daten",
+      "privacyLink": "Datenschutz"
+    },
+    "finalCta": {
+      "title": "Bereit, Ihre nächste Kunden-E-Mail in Sekunden zu schreiben?",
+      "ctaPrimary": "Kostenlose Erweiterung installieren",
+      "ctaSecondary": "Demo ansehen",
+      "demoLink": "Persönliche Führung gewünscht? Demo vereinbaren."
     }
   },
   "features": {
