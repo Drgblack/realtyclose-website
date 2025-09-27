@@ -19,15 +19,13 @@ export function generateStaticParams() {
 
 export const metadata: Metadata = {
   title: 'RealtyClose – The enterprise real estate platform starting with Gmail',
-  description: 'AI-powered email assistant and deal tools for real estate professionals. Write perfect emails in seconds and close with confidence.',
+  description: 'AI-powered email assistant and deal tools for real estate professionals.',
   icons: {
     icon: [
-      { url: '/icon.svg', type: 'image/svg+xml' },        // primary (transparent)
+      { url: '/icon.svg', type: 'image/svg+xml' },                    // primary
       { url: '/images/brand/z-logo.png', sizes: '32x32', type: 'image/png' }, // fallback
     ],
-    apple: [
-      { url: '/apple-touch-icon.png', sizes: '180x180' },   // no transparency
-    ],
+    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180' }],      // if present
   },
 };
 
