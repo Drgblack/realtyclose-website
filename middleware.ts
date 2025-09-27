@@ -8,6 +8,6 @@ export const config = {
   // - /api (API routes)
   // - /_next (Next.js internals)
   // - /_vercel (Vercel internals)
-  // - /favicon.ico, /sitemap.xml, /robots.txt (static files)
-  matcher: ['/((?!api|_next|_vercel|favicon.ico|sitemap.xml|robots.txt).*)']
+  // - /favicon.ico, /sitemap.xml, /robots.txt, /logo (static files)
+  matcher: ['/((?!api|_next|_vercel|favicon.ico|sitemap.xml|robots.txt|logo).*)']
 };
