@@ -57,13 +57,8 @@ export default async function HomePage({ params }: Props) {
 
       {/* Trust bar - reduced padding */}
       <section className="border-t border-[color:var(--rc-border)] bg-[var(--rc-surface)] py-6">
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6">
+        <div className="mx-auto flex max-w-6xl items-center justify-center gap-6 px-6">
           <span className="text-sm text-[var(--rc-muted)]">{t('common.trustedBy')}</span>
-          <div className="flex items-center gap-6">
-            <div className="h-6 w-20 rounded bg-slate-200 opacity-70"></div>
-            <div className="h-6 w-20 rounded bg-slate-200 opacity-70"></div>
-            <div className="h-6 w-20 rounded bg-slate-200 opacity-70"></div>
-          </div>
         </div>
       </section>
 
