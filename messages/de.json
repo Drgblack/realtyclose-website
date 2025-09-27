@@ -253,6 +253,17 @@
       "subtitle": "Chrome Web Store • 14-tägige kostenlose Testversion • Keine Kreditkarte erforderlich • Funktioniert mit bestehendem Gmail"
     }
   },
+  "contact": {
+    "title": "RealtyClose kontaktieren",
+    "subtitle": "Nehmen Sie Kontakt mit dem RealtyClose-Team auf.",
+    "description": "Wir helfen gerne. Wählen Sie den richtigen Kontakt, damit wir Ihnen schneller helfen können:",
+    "generalSupport": "Allgemeiner Support",
+    "privacyInquiries": "Datenschutz-Anfragen",
+    "pressMedia": "Presse & Medien",
+    "businessAddress": "Geschäftsadresse",
+    "companyName": "Zaza Technologies UG (haftungsbeschränkt)",
+    "addressPlaceholder": "[hier registrierte Adresse einfügen]"
+  },
   "footer": {
     "description": "KI-gestützte Tools, die Immobilienprofis dabei helfen, mehr Geschäfte abzuschließen und ihre Workflows zu optimieren.",
     "coreSuite": "Kern-Suite",
@@ -415,7 +426,7 @@
     "questions": {
       "founder": {
         "question": "Wer steckt hinter RealtyClose? Welche Qualifikationen hat der Gründer?",
-        "answer": "RealtyClose wurde von Greg Blackburn gegründet und wird von ihm geleitet. Greg ist ein produktorientierter Technologe, der seit Jahren nutzerzentrierte Software und Daten-Workflows in regulierten Umgebungen ausliefert. Seine Erfahrung umfasst CRM, Workflow-Automatisierung und KI-gestütztes Schreiben für professionelle Teams.<br><br>Ausbildung:<br>• PhD<br>• MBA<br>• BIS (Hons) (Bachelor of Information Systems, mit Auszeichnung)<br><br>Was das für Sie bedeutet:<br>• Praxisnahe, operations-orientierte Gestaltung – das Produkt folgt der Arbeitsweise von Maklern, TCs und Brokern.<br>• Compliance & Vertrauen – Workflows sind von Beginn an prüfbar und richtlinienkonform.<br>• Konsequente Auslieferung – wir liefern häufig kleine, nachvollziehbare Verbesserungen und kommunizieren den Fahrplan offen.<br><br>Ausgewählte Qualifikationen & Nachweise:<br>• Nachweisbare Erfolge beim Aufbau und Skalieren von B2B-Software.<br>• Leitung interdisziplinärer Teams (Product, Engineering, Go-to-Market).<br>• Erfahrung mit Integrationen in Google Workspace (Gmail/Calendar) und moderne APIs.<br>• Starker Fokus auf Datenschutz, Least-Privilege-Prinzip und transparente Roadmaps.<br><br>Verifizierung & Profile:<br>• LinkedIn: <a href=\"mailto:hello@zazatechnologies.com\">Kontaktieren Sie uns für LinkedIn-Profil</a><br>• GitHub / Portfolio: <a href=\"mailto:hello@zazatechnologies.com\">Kontaktieren Sie uns für Portfolio</a><br>• Kontakt: hello@zazatechnologies.com",
+        "answer": "RealtyClose wurde von <strong>Greg Blackburn</strong> gegründet und wird von ihm geleitet. Greg ist ein produktorientierter Technologe, der seit Jahren nutzerzentrierte Software und Daten-Workflows in regulierten Umgebungen ausliefert. Seine Erfahrung umfasst CRM, Workflow-Automatisierung und KI-gestütztes Schreiben für professionelle Teams.<br><br><strong>Ausbildung:</strong><br>• PhD<br>• MBA<br>• BIS (Hons) (Bachelor of Information Systems, mit Auszeichnung)<br><br><strong>Was das für Sie bedeutet:</strong><br>• <strong>Praxisnahe, operations-orientierte Gestaltung</strong> — das Produkt folgt der Arbeitsweise von Maklern, TCs und Brokern<br>• <strong>Compliance & Vertrauen</strong> — Workflows sind von Beginn an prüfbar und richtlinienkonform<br>• <strong>Konsequente Auslieferung</strong> — wir liefern häufig kleine, nachvollziehbare Verbesserungen und kommunizieren den Fahrplan offen<br><br><strong>Ausgewählte Qualifikationen & Nachweise:</strong><br>• Nachweisbare Erfolge beim Aufbau und Skalieren von B2B-Software<br>• Leitung interdisziplinärer Teams (Product, Engineering, Go-to-Market)<br>• Erfahrung mit Integrationen in Google Workspace (Gmail/Calendar) und moderne APIs<br>• Starker Fokus auf Datenschutz, Least-Privilege-Prinzip und transparente Roadmaps<br><br><strong>Verifizierung & Profile:</strong><br>• LinkedIn: <a href=\"mailto:hello@zazatechnologies.com\">Kontaktieren Sie uns für LinkedIn-Profil</a><br>• GitHub / Portfolio: <a href=\"mailto:hello@zazatechnologies.com\">Kontaktieren Sie uns für Portfolio</a><br>• Kontakt: hello@zazatechnologies.com",
         "category": "general"
       },
       "whatIsRealtyClose": {
