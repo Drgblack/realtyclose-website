@@ -22,10 +22,11 @@ export const metadata: Metadata = {
   description: 'AI-powered email assistant and deal tools for real estate professionals.',
   icons: {
     icon: [
-      { url: '/icon.svg', type: 'image/svg+xml' },                    // primary
-      { url: '/images/brand/z-logo.png', sizes: '32x32', type: 'image/png' }, // fallback
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon.ico', type: 'image/x-icon' }
     ],
-    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180' }],      // if present
+    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180' }],
   },
 };
 
