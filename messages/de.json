@@ -262,7 +262,7 @@
     "pressMedia": "Presse & Medien",
     "businessAddress": "Geschäftsadresse",
     "companyName": "Zaza Technologies UG (haftungsbeschränkt)",
-    "addressPlaceholder": "[hier registrierte Adresse einfügen]"
+    "addressPlaceholder": "Gumbertstraße 150, 40229 Düsseldorf, Deutschland"
   },
   "footer": {
     "description": "KI-gestützte Tools, die Immobilienprofis dabei helfen, mehr Geschäfte abzuschließen und ihre Workflows zu optimieren.",
@@ -532,7 +532,7 @@
       "pressMedia": "Presse & Medien",
       "businessAddress": "Geschäftsadresse",
       "companyName": "Zaza Technologies UG (haftungsbeschränkt)",
-      "addressPlaceholder": "[hier registrierte Adresse einfügen]"
+      "addressPlaceholder": "Gumbertstraße 150, 40229 Düsseldorf, Deutschland"
     }
   }
 }

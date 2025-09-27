@@ -56,8 +56,8 @@ export function ShinyCard({
         className={cn(
           "relative block rounded-2xl transition-transform duration-300",
           hoverLift && "group-hover:-translate-y-0.5",
-          // glass surface + subtle depth
-          "bg-white/90 backdrop-blur-[2px]",
+          // dark surface with good contrast for white text
+          "bg-slate-800/90 backdrop-blur-[2px]",
           "shadow-[0_6px_20px_-8px_rgba(88,101,242,0.25)]"
         )}
       >
