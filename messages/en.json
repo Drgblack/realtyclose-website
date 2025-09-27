@@ -269,7 +269,7 @@
     "businessAddress": "Gumbertstraße 150, 40229 Düsseldorf, Germany",
     "registerCourt": "Register court: Amtsgericht Düsseldorf, HRB [number]",
     "vatId": "VAT ID: DE [number]",
-    "managingDirector": "Managing Director: Greg Blackburn",
+    "managingDirector": "Owner & CEO: Dr. Greg Blackburn",
     "footerLinks": "Imprint (Impressum) • Privacy • Terms • Cookies"
   },
   "footer": {
@@ -424,7 +424,7 @@
     "legalInfo": "Legal Information",
     "registerCourt": "Register court",
     "vatId": "VAT ID",
-    "managingDirector": "Managing Director",
+    "managingDirector": "Owner & CEO",
     "contact": "Contact Information",
     "email": "Email",
     "website": "Website",

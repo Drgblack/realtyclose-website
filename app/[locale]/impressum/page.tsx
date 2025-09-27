@@ -44,7 +44,7 @@ export default async function ImpressumPage({ params: { locale } }: Props) {
               <div className="text-slate-300 space-y-2">
                 <p>{t('impressum.registerCourt')}: Amtsgericht Düsseldorf, HRB [number]</p>
                 <p>{t('impressum.vatId')}: DE [number]</p>
-                <p>{t('impressum.managingDirector')}: Greg Blackburn</p>
+                <p>{t('impressum.managingDirector')}: Dr. Greg Blackburn</p>
               </div>
             </div>
 
