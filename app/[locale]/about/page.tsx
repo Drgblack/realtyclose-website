@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '../../../routing';
 import Link from 'next/link';
+import TestimonialCarousel from '@/components/ui/TestimonialCarousel';
 
 type Props = {
   params: Promise<{ locale: string }>
@@ -254,20 +255,8 @@ export default async function AboutPage({ params }: Props) {
               </div>
             </div>
             
-            {/* Right column - quote card */}
-            <div className="bg-slate-900 text-white rounded-2xl p-6 md:p-8 shadow-sm">
-              <blockquote className="text-xl mb-4" style={{fontSize: '18px', lineHeight: '28px'}}>
-                "{t('about.proof.quote.text')}"
-              </blockquote>
-              <cite className="text-slate-300 font-medium">
-                {t('about.proof.quote.author')}
-              </cite>
-              <div className="mt-6 pt-6 border-t border-slate-700">
-                <div className="text-sm text-slate-400">
-                  {t('about.proof.metrics')}
-                </div>
-              </div>
-            </div>
+            {/* Right column - testimonial carousel */}
+            <TestimonialCarousel locale={locale} />
           </div>
         </div>
       </section>

@@ -206,6 +206,33 @@
       "ctaPrimary": "Install Free Extension",
       "ctaSecondary": "Watch the Demo",
       "demoLink": "Prefer a personal walkthrough? Schedule a demo."
+    },
+    "testimonials": {
+      "slide1": {
+        "eyebrow": "What agents say",
+        "quote": "RealtyClose cut our response times by 80 percent. Clients noticed the difference.",
+        "attribution": "Mike Johnson, Team Lead — Phoenix, AZ",
+        "badge1": "Verified agent",
+        "badge2": "Team rollout in 1 day",
+        "badge3": "Gmail-native"
+      },
+      "slide2": {
+        "eyebrow": "What agents say",
+        "quote": "I was skeptical about AI, but the drafts are spot on. I save 3 hours a day and my clients love the quick, professional replies.",
+        "attribution": "Sarah Martinez, Residential Agent — Austin, TX",
+        "badge1": "Time saved",
+        "badge2": "Professional tone",
+        "badge3": "Consistent updates"
+      },
+      "slide3": {
+        "eyebrow": "What coordinators say",
+        "quote": "We rescued three deals that were stalling because follow-ups went out on time every time.",
+        "attribution": "Dana Lee, Transaction Coordinator — San Diego, CA",
+        "badge1": "Follow-up automation",
+        "badge2": "Deadline tracking",
+        "badge3": "Checklists"
+      },
+      "disclaimer": "Individual results may vary."
     }
   },
   "features": {

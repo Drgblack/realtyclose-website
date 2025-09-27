@@ -206,6 +206,33 @@
       "ctaPrimary": "Kostenlose Erweiterung installieren",
       "ctaSecondary": "Demo ansehen",
       "demoLink": "Persönliche Führung gewünscht? Demo vereinbaren."
+    },
+    "testimonials": {
+      "slide1": {
+        "eyebrow": "Stimmen aus der Praxis",
+        "quote": "RealtyClose hat unsere Reaktionszeiten um 80 Prozent verkürzt. Die Kunden merken den Unterschied.",
+        "attribution": "Mike Johnson, Teamleiter — Phoenix, AZ",
+        "badge1": "Verifizierter Makler",
+        "badge2": "Team-Rollout in 1 Tag",
+        "badge3": "Gmail-native"
+      },
+      "slide2": {
+        "eyebrow": "Stimmen aus der Praxis",
+        "quote": "Ich war anfangs skeptisch, aber die Entwürfe passen. Ich spare täglich 3 Stunden und meine Kunden schätzen die schnellen, professionellen Antworten.",
+        "attribution": "Sarah Martinez, Wohnimmobilien — Austin, TX",
+        "badge1": "Zeitersparnis",
+        "badge2": "Professioneller Ton",
+        "badge3": "Konsistente Updates"
+      },
+      "slide3": {
+        "eyebrow": "Stimmen aus der Praxis",
+        "quote": "Wir haben drei Deals gerettet, weil Follow-ups jedes Mal rechtzeitig rausgingen.",
+        "attribution": "Dana Lee, Transaction Coordinator — San Diego, CA",
+        "badge1": "Follow-up Automatisierung",
+        "badge2": "Frist-Tracking",
+        "badge3": "Checklisten"
+      },
+      "disclaimer": "Individuelle Ergebnisse können abweichen."
     }
   },
   "features": {
