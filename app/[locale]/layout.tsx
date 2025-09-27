@@ -18,15 +18,18 @@ export function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  title: 'RealtyClose – The enterprise real estate platform starting with Gmail',
-  description: 'AI-powered email assistant and deal tools for real estate professionals.',
+  title: 'RealtyClose - Enterprise Real Estate Platform Starting With Gmail',
+  description: 'AI-powered email assistant and deal tools for real estate professionals. Write perfect emails in seconds and close with confidence.',
   icons: {
+    // Primary favicons – use the PNGs under /public/logo
     icon: [
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon.ico', type: 'image/x-icon' }
+      { url: '/logo/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/logo/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      // keep .ico if present and good quality
+      { url: '/logo/favicon.ico', rel: 'icon' },
     ],
-    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180' }],
+    // iOS home screen
+    apple: [{ url: '/logo/apple-touch-icon.png', sizes: '180x180' }],
   },
 };
 
