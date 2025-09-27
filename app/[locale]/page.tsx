@@ -108,7 +108,7 @@ export default async function HomePage({ params }: Props) {
 
           <Reveal delay={0.3}>
             <div className="mt-8">
-              <TestimonialCarousel />
+              <TestimonialCarousel locale={locale} />
             </div>
           </Reveal>
           
