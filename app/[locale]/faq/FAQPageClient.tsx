@@ -175,33 +175,36 @@ export default function FAQPageClient() {
                   <div className="space-y-4">
                     {faqs.map((faq, index) => (
                       <ShinyCard key={faq.id}>
-                        <button
-                          onClick={() => toggleExpanded(faq.id)}
-                          className="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-blue-500/50 rounded-xl"
-                        >
-                          <div className="flex justify-between items-start">
-                            <h3 className="text-lg font-semibold text-slate-800 pr-4">
-                              {faq.question}
-                            </h3>
-                            <svg
-                              className={`h-6 w-6 text-slate-600 transform transition-transform duration-200 flex-shrink-0 ${
-                                expandedItems.has(faq.id) ? "rotate-180" : ""
-                              }`}
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
-                            >
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                            </svg>
-                          </div>
+                        <div className="p-6">
+                          <button
+                            onClick={() => toggleExpanded(faq.id)}
+                            className="w-full text-left focus:outline-none focus:ring-2 focus:ring-blue-500/50 rounded-xl"
+                          >
+                            <div className="flex justify-between items-start">
+                              <h3 className="text-lg font-semibold text-slate-800 pr-4">
+                                {faq.question}
+                              </h3>
+                              <svg
+                                className={`h-6 w-6 text-slate-600 transform transition-transform duration-200 flex-shrink-0 ${
+                                  expandedItems.has(faq.id) ? "rotate-180" : ""
+                                }`}
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                              >
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                              </svg>
+                            </div>
+                          </button>
                           {expandedItems.has(faq.id) && (
                             <div className="mt-4 pt-4 border-t border-slate-300/50">
-                              <p className="text-slate-700 leading-relaxed">
-                                {faq.answer}
-                              </p>
+                              <div 
+                                className="text-slate-700 leading-relaxed prose prose-slate max-w-none [&>p]:mb-4 [&>p:last-child]:mb-0"
+                                dangerouslySetInnerHTML={{ __html: faq.answer }}
+                              />
                             </div>
                           )}
-                        </button>
+                        </div>
                       </ShinyCard>
                     ))}
                   </div>
@@ -215,33 +218,36 @@ export default function FAQPageClient() {
             {filteredFAQs.map((faq, index) => (
               <Reveal key={faq.id} delay={index * 0.05}>
                 <ShinyCard>
-                  <button
-                    onClick={() => toggleExpanded(faq.id)}
-                    className="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-blue-500/50 rounded-xl"
-                  >
-                    <div className="flex justify-between items-start">
-                      <h3 className="text-lg font-semibold text-slate-800 pr-4">
-                        {faq.question}
-                      </h3>
-                      <svg
-                        className={`h-6 w-6 text-slate-600 transform transition-transform duration-200 flex-shrink-0 ${
-                          expandedItems.has(faq.id) ? "rotate-180" : ""
-                        }`}
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </div>
+                  <div className="p-6">
+                    <button
+                      onClick={() => toggleExpanded(faq.id)}
+                      className="w-full text-left focus:outline-none focus:ring-2 focus:ring-blue-500/50 rounded-xl"
+                    >
+                      <div className="flex justify-between items-start">
+                        <h3 className="text-lg font-semibold text-slate-800 pr-4">
+                          {faq.question}
+                        </h3>
+                        <svg
+                          className={`h-6 w-6 text-slate-600 transform transition-transform duration-200 flex-shrink-0 ${
+                            expandedItems.has(faq.id) ? "rotate-180" : ""
+                          }`}
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </div>
+                    </button>
                     {expandedItems.has(faq.id) && (
                       <div className="mt-4 pt-4 border-t border-slate-300/50">
-                        <p className="text-slate-700 leading-relaxed">
-                          {faq.answer}
-                        </p>
+                        <div 
+                          className="text-slate-700 leading-relaxed prose prose-slate max-w-none [&>p]:mb-4 [&>p:last-child]:mb-0"
+                          dangerouslySetInnerHTML={{ __html: faq.answer }}
+                        />
                       </div>
                     )}
-                  </button>
+                  </div>
                 </ShinyCard>
               </Reveal>
             ))}
