@@ -27,10 +27,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html>
+    <html lang="en">
       <body className={`${inter.className} min-h-screen`}>
         <main className="pt-14">{children}</main>
-        <Footer variant="realtyclose" />
+        <Footer />
       </body>
     </html>
   )

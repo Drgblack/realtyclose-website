@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 type Variant = "realtyclose";
 
@@ -48,6 +49,10 @@ const CFG = {
 
 export default function Footer({ variant = "realtyclose" as Variant }) {
   const cfg = CFG;
+  const pathname = usePathname();
+  
+  // Extract current locale from pathname (e.g., /en/about -> en)
+  const currentLocale = pathname.split('/')[1] || 'en';
   return (
     <footer className="mt-20 border-t border-white/10 bg-[#0B1220] text-white">
       <div className="mx-auto w-full max-w-7xl px-6 py-12 grid grid-cols-1 gap-10 md:grid-cols-4">
@@ -93,7 +98,7 @@ export default function Footer({ variant = "realtyclose" as Variant }) {
           <ul className="mt-3 space-y-2 text-sm">
             {cfg.features.map((i) => (
               <li key={i.name}>
-                <Link href={`/en${i.href}`} className="hover:underline">
+                <Link href={`/${currentLocale}${i.href}`} className="hover:underline">
                   {i.name}
                 </Link>
               </li>
@@ -106,7 +111,7 @@ export default function Footer({ variant = "realtyclose" as Variant }) {
           <ul className="mt-3 space-y-2 text-sm">
             {cfg.company.map((i) => (
               <li key={i.name}>
-                <Link href={`/en${i.href}`} className="hover:underline">
+                <Link href={`/${currentLocale}${i.href}`} className="hover:underline">
                   {i.name}
                 </Link>
               </li>
@@ -120,7 +125,7 @@ export default function Footer({ variant = "realtyclose" as Variant }) {
           <div className="flex flex-wrap items-center gap-3">
             {CFG.legal.map((l, idx) => (
               <span key={l.name} className="flex items-center gap-3">
-                <Link href={`/en${l.href}`} className="hover:underline">
+                <Link href={`/${currentLocale}${l.href}`} className="hover:underline">
                   {l.name}
                 </Link>
                 {idx < CFG.legal.length - 1 && <span>•</span>}
