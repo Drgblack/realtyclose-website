@@ -758,6 +758,116 @@
         "category": "general"
       }
     },
+    "demo": {
+      "title": "Interaktive Demo",
+      "subtitle": "Sehen Sie, wie RealtyClose Ihren Gmail-Workflow in 4 Minuten transformiert",
+      "controls": {
+        "play": "Abspielen",
+        "pause": "Pause",
+        "replay": "Wiederholen"
+      },
+      "navigation": {
+        "previous": "Zurück",
+        "next": "Weiter"
+      },
+      "demoLabel": "Demo",
+      "steps": {
+        "opening": {
+          "title": "Eröffnung",
+          "content": {
+            "title": "Makler verbringen 3+ Std./Tag mit E-Mails.",
+            "subtitle": "RealtyClose = Posteingang → Deal-Abschluss-Maschine",
+            "description": "Immobilienmakler verbringen über drei Stunden täglich in E-Mails. RealtyClose verwandelt diesen Posteingang in eine Deal-Abschluss-Maschine."
+          }
+        },
+        "listing": {
+          "title": "Neue Listing-Nachfassung",
+          "content": {
+            "title": "Käufer-E-Mail kommt an...",
+            "subtitle": "KI analysiert sofort → Polierter Entwurf in 30 Sek.",
+            "description": "Ein Käufer fragt per E-Mail nach Details zu einem neuen Listing. RealtyClose analysiert sofort und schlägt eine professionelle Antwort vor. Was früher 15 Minuten dauerte, dauert jetzt 30 Sekunden."
+          }
+        },
+        "closing": {
+          "title": "Abschluss-Koordination",
+          "content": {
+            "title": "Abschlüsse = komplex + chaotisch",
+            "subtitle": "Vereinheitlichte Threads, intelligente Fristen, Ein-Klick-Updates",
+            "description": "Mehrere Parteien. Endloses Hin und Her. RealtyClose bringt Ordnung ins Chaos mit automatischem Threading, Fristenverfolgung und Ein-Klick-Status-Updates."
+          }
+        },
+        "negotiation": {
+          "title": "Preisverhandlung",
+          "content": {
+            "title": "Preisverhandlungen = hohes Risiko",
+            "subtitle": "KI schlägt Gegenangebote mit Marktdaten vor",
+            "description": "RealtyClose erstellt Antworten, die Entschlossenheit mit Diplomatie balancieren. Professionelle, datengestützte Antworten, die Vertrauen aufbauen und Deals voranbringen."
+          }
+        },
+        "actions": {
+          "title": "Schnellaktionen",
+          "content": {
+            "title": "Alles in Gmail - kein Wechseln",
+            "subtitle": "Ein-Klick-Protokollierung, Terminplanung, Berichterstattung",
+            "description": "Anrufe protokollieren, Besichtigungen planen, Berichte erstellen - ohne Ihren Posteingang zu verlassen. Das Produktivitäts-Toolkit, auf das Makler gewartet haben."
+          }
+        },
+        "comparison": {
+          "title": "Vorher vs Nachher",
+          "content": {
+            "title": "Der Unterschied ist wie Tag und Nacht",
+            "subtitle": "Vom Chaos zur Zuversicht",
+            "description": "Sparen Sie täglich 3+ Stunden. Saubere Threads, polierte Antworten, automatisierte Erinnerungen und selbstbewusste Kundenkommunikation."
+          }
+        }
+      },
+      "inbox": {
+        "email1": "Sarah Chen - Interessiert an Oak Street Immobilie",
+        "email2": "Mike Johnson - Abschlussdokumente für Main St",
+        "email3": "Grundbuchamt - Fehlende Offenlegungsformular"
+      },
+      "email": {
+        "from": "Von",
+        "content": "Hallo, ich habe das Listing für 456 Oak Street gesehen und bin sehr interessiert! Können Sie mir mehr über die Immobilie erzählen?"
+      },
+      "ai": {
+        "assistant": "RealtyClose KI-Assistent",
+        "response": "Hallo Sarah, vielen Dank für Ihr Interesse an 456 Oak Street! Dieses wunderschöne 4-Zimmer-Haus bietet...",
+        "insert": "Einfügen & Senden"
+      },
+      "cta": {
+        "title": "Bereit zum Ausprobieren?",
+        "subtitle": "Kostenlos • Sofortige Einrichtung • Vertraut von Maklern",
+        "button": "Kostenlose Erweiterung installieren"
+      },
+      "comparison": {
+        "title": "Vorher vs Nachher RealtyClose",
+        "before": {
+          "title": "Vorher",
+          "point1": "15-20 Minuten pro professionelle E-Mail",
+          "point2": "Verpasste Nachfassungen und verlorene Deals",
+          "point3": "Inkonsistenter Ton und Messaging",
+          "point4": "Manuelle Verfolgung über Tabellen"
+        },
+        "after": {
+          "title": "Nachher",
+          "point1": "10-30 Sekunden pro E-Mail",
+          "point2": "Automatisierte Nachfassungen verpassen nie",
+          "point3": "Konsistenter professioneller Ton",
+          "point4": "Alles in Gmail verfolgt"
+        }
+      },
+      "testimonials": {
+        "testimonial1": {
+          "quote": "Ich ging vom Chaos zur Zuversicht.",
+          "author": "Sarah M., TX"
+        },
+        "testimonial2": {
+          "quote": "Unsere Antwortzeiten verbesserten sich um 80%.",
+          "author": "Mike J., AZ"
+        }
+      }
+    },
     "contact": {
       "stillHaveQuestions": "Haben Sie noch Fragen?",
       "cantFind": "Können Sie nicht finden, wonach Sie suchen? Unser Support-Team hilft Ihnen gerne.",

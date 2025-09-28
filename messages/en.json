@@ -758,6 +758,116 @@
         "category": "general"
       }
     },
+    "demo": {
+      "title": "Interactive Demo",
+      "subtitle": "See how RealtyClose transforms your Gmail workflow in 4 minutes",
+      "controls": {
+        "play": "Play",
+        "pause": "Pause",
+        "replay": "Replay"
+      },
+      "navigation": {
+        "previous": "Previous",
+        "next": "Next"
+      },
+      "demoLabel": "Demo",
+      "steps": {
+        "opening": {
+          "title": "Opening",
+          "content": {
+            "title": "Agents spend 3+ hrs/day on email.",
+            "subtitle": "RealtyClose = Inbox → Deal-Closing Machine",
+            "description": "Real estate agents spend over three hours every day buried in email. RealtyClose transforms that inbox into a deal-closing machine."
+          }
+        },
+        "listing": {
+          "title": "New Listing Follow-Up",
+          "content": {
+            "title": "Buyer email arrives...",
+            "subtitle": "AI analyzes instantly → Polished draft in 30 sec",
+            "description": "A buyer emails asking for more details on a new listing. RealtyClose instantly analyzes and suggests a professional response. What used to take 15 minutes now takes 30 seconds."
+          }
+        },
+        "closing": {
+          "title": "Closing Coordination",
+          "content": {
+            "title": "Closings = complex + chaotic",
+            "subtitle": "Unified threads, smart deadlines, one-click updates",
+            "description": "Multiple parties. Endless back-and-forth. RealtyClose brings order to the chaos with automatic threading, deadline tracking, and one-click status updates."
+          }
+        },
+        "negotiation": {
+          "title": "Price Negotiation",
+          "content": {
+            "title": "Price negotiations = high stakes",
+            "subtitle": "AI suggests counter-offers with market data",
+            "description": "RealtyClose drafts responses that balance firmness with diplomacy. Professional, data-backed responses that build trust and keep deals moving."
+          }
+        },
+        "actions": {
+          "title": "Quick Actions",
+          "content": {
+            "title": "All inside Gmail - no switching",
+            "subtitle": "One-click logging, scheduling, reporting",
+            "description": "Log calls, schedule showings, generate reports - without leaving your inbox. The productivity toolkit agents have been waiting for."
+          }
+        },
+        "comparison": {
+          "title": "Before vs After",
+          "content": {
+            "title": "The difference is night and day",
+            "subtitle": "From chaos to confidence",
+            "description": "Save 3+ hours daily. Clean threads, polished responses, automated reminders, and confident client communication."
+          }
+        }
+      },
+      "inbox": {
+        "email1": "Sarah Chen - Interested in Oak Street property",
+        "email2": "Mike Johnson - Closing documents for Main St",
+        "email3": "Title Company - Missing disclosure form"
+      },
+      "email": {
+        "from": "From",
+        "content": "Hi, I saw the listing for 456 Oak Street and I'm very interested! Can you tell me more about the property?"
+      },
+      "ai": {
+        "assistant": "RealtyClose AI Assistant",
+        "response": "Hi Sarah, Thank you for your interest in 456 Oak Street! This beautiful 4-bedroom home features...",
+        "insert": "Insert & Send"
+      },
+      "cta": {
+        "title": "Ready to try it?",
+        "subtitle": "Free • Instant setup • Trusted by agents",
+        "button": "Install Free Extension"
+      },
+      "comparison": {
+        "title": "Before vs After RealtyClose",
+        "before": {
+          "title": "Before",
+          "point1": "15-20 minutes per professional email",
+          "point2": "Missed follow-ups and lost deals",
+          "point3": "Inconsistent tone and messaging",
+          "point4": "Manual tracking across spreadsheets"
+        },
+        "after": {
+          "title": "After",
+          "point1": "10-30 seconds per email",
+          "point2": "Automated follow-ups never miss",
+          "point3": "Consistent professional tone",
+          "point4": "Everything tracked in Gmail"
+        }
+      },
+      "testimonials": {
+        "testimonial1": {
+          "quote": "I went from chaos to confidence.",
+          "author": "Sarah M., TX"
+        },
+        "testimonial2": {
+          "quote": "Our response times improved by 80%.",
+          "author": "Mike J., AZ"
+        }
+      }
+    },
     "contact": {
       "stillHaveQuestions": "Still have questions?",
       "cantFind": "Can't find what you're looking for? Our support team is here to help.",
