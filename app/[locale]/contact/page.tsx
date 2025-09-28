@@ -18,9 +18,9 @@ export default async function ContactPage({ params: { locale } }: Props) {
       "@type": "Organization",
       "name": "Zaza Technologies UG (haftungsbeschränkt)"
     },
-    "email": "support@realtyclose.com",
+    "email": "help@zazatechnologies.com",
     "sameAs": [
-      "https://www.linkedin.com/company/zazatechnologies"
+      "https://www.linkedin.com/company/zaza-technologies"
     ],
     "address": {
       "@type": "PostalAddress",

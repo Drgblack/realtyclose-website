@@ -46,11 +46,11 @@ export default function ContactPageClient() {
                   {t('contact.generalSupport')}
                 </h3>
                 <a 
-                  href="mailto:support@realtyclose.com" 
+                  href="mailto:help@zazatechnologies.com" 
                   className="text-blue-300 hover:text-blue-200 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-slate-800 rounded-md"
                   aria-label="Send email to general support"
                 >
-                  support@realtyclose.com
+                  help@zazatechnologies.com
                 </a>
               </div>
             </ShinyCard>
