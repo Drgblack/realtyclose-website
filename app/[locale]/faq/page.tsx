@@ -1,22 +1,10 @@
-import { getTranslations, setRequestLocale } from 'next-intl/server';
-import FAQPageClient from './FAQPageClient';
+import { redirect } from "next/navigation";
 
 type Props = {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
-export default async function FAQPage({ params: { locale } }: Props) {
-  // Enable static rendering
-  setRequestLocale(locale);
-  
-  return <FAQPageClient />;
-}
-
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
-  const t = await getTranslations({ locale });
-  
-  return {
-    title: `${t('faq.title')} - RealtyClose`,
-    description: t('faq.subtitle'),
-  };
+export default async function FAQPage({ params }: Props) {
+  const { locale } = await params;
+  redirect(`/${locale}/faqs`);
 }
