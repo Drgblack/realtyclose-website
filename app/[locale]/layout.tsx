@@ -6,7 +6,6 @@ import { ReactNode } from 'react';
 import type { Metadata } from 'next';
 import '@/app/globals.css';
 import Header from '@/components/layout/Header';
-import SiteFooter from '@/components/layout/SiteFooter';
 
 type Props = {
   children: ReactNode;
@@ -54,7 +53,6 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <Header />
           {children}
-          <SiteFooter />
         </NextIntlClientProvider>
       </body>
     </html>
