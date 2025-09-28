@@ -1,11 +1,34 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import { PLANS, comparisonRows, type BillingCycle, CHROME_BADGE_URL, CHROME_DEMO_URL } from "@/lib/pricing";
 
 export default function PricingPageClient() {
+  const searchParams = useSearchParams();
+  const router = useRouter();
   const [cycle, setCycle] = useState<BillingCycle>("monthly");
+
+  // Initialize from query params
+  useEffect(() => {
+    const billing = searchParams.get('billing');
+    if (billing === 'annual') {
+      setCycle('annual');
+    }
+  }, [searchParams]);
+
+  // Update query params when cycle changes
+  const handleCycleChange = (newCycle: BillingCycle) => {
+    setCycle(newCycle);
+    const params = new URLSearchParams(searchParams);
+    if (newCycle === 'annual') {
+      params.set('billing', 'annual');
+    } else {
+      params.delete('billing');
+    }
+    router.replace(`?${params.toString()}`, { scroll: false });
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
@@ -29,7 +52,8 @@ export default function PricingPageClient() {
           <div className="flex flex-col items-center gap-6">
             <div className="inline-flex rounded-2xl border border-slate-600/50 bg-slate-800/50 p-1">
               <button
-                onClick={() => setCycle("monthly")}
+                id="billing-toggle-monthly"
+                onClick={() => handleCycleChange("monthly")}
                 className={`px-6 py-3 rounded-xl text-sm font-medium transition-all duration-200 ${
                   cycle === "monthly" 
                     ? "bg-white text-slate-900 shadow-sm" 
@@ -39,7 +63,8 @@ export default function PricingPageClient() {
                 Monthly
               </button>
               <button
-                onClick={() => setCycle("annual")}
+                id="billing-toggle-annual"
+                onClick={() => handleCycleChange("annual")}
                 className={`px-6 py-3 rounded-xl text-sm font-medium transition-all duration-200 ${
                   cycle === "annual" 
                     ? "bg-white text-slate-900 shadow-sm" 
@@ -47,9 +72,11 @@ export default function PricingPageClient() {
                 }`}
               >
                 Annual 
-                <span className="ml-2 rounded-md bg-green-500/20 px-2 py-0.5 text-xs text-green-300">
-                  Save 20%
-                </span>
+                {cycle === "annual" && (
+                  <span className="ml-2 rounded-md bg-green-500/20 px-2 py-0.5 text-xs text-green-300">
+                    Save 20%
+                  </span>
+                )}
               </button>
             </div>
 
@@ -108,12 +135,14 @@ export default function PricingPageClient() {
                       }
                     </span>
                     {plan.priceMonthly > 0 && (
-                      <span className="text-slate-400">per user/mo</span>
+                      <span className="text-slate-400">
+                        {cycle === "annual" ? "per month billed annually" : "per user/mo"}
+                      </span>
                     )}
                   </div>
                   {plan.priceMonthly > 0 && cycle === "annual" && (
                     <p className="text-sm text-green-400 mt-1">
-                      Billed annually (${plan.priceMonthly}/mo if billed monthly)
+                      Save 20% vs monthly (${plan.priceMonthly}/mo if billed monthly)
                     </p>
                   )}
                   <p className="text-slate-300 mt-3">{plan.tagline}</p>
@@ -132,6 +161,7 @@ export default function PricingPageClient() {
 
                 <Link 
                   href={plan.ctaHref}
+                  id={`plan-cta-${plan.key}`}
                   className={`block w-full text-center py-4 px-6 rounded-xl font-semibold transition-colors duration-200 ${
                     plan.popular
                       ? "bg-green-600 text-white hover:bg-green-700"
