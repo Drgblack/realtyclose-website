@@ -21,7 +21,7 @@ export default function PricingPageClient() {
   // Update query params when cycle changes
   const handleCycleChange = (newCycle: BillingCycle) => {
     setCycle(newCycle);
-    const params = new URLSearchParams(searchParams);
+    const params = new URLSearchParams(searchParams.toString());
     if (newCycle === 'annual') {
       params.set('billing', 'annual');
     } else {
