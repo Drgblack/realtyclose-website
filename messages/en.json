@@ -868,6 +868,123 @@
         }
       }
     },
+    "install": {
+      "title": "Install Extension",
+      "subtitle": "Install the RealtyClose Chrome extension in 3 simple steps. Start writing professional emails in seconds inside Gmail.",
+      "intro": {
+        "title": "Get RealtyClose working in your Gmail in under 2 minutes",
+        "subtitle": "Follow these 3 simple steps to start writing professional real estate emails in seconds"
+      },
+      "step1": {
+        "title": "Install from Chrome Web Store",
+        "description": "Click the button below to go to the Chrome Web Store and install the RealtyClose extension. The installation takes just one click and is completely free.",
+        "button": "Install from Chrome Web Store",
+        "features": "✓ Free to install • ✓ No credit card required • ✓ 30-second setup",
+        "card": {
+          "title": "Chrome Web Store",
+          "subtitle": "Official extension verified by Google"
+        }
+      },
+      "step2": {
+        "title": "Connect Your Gmail",
+        "description": "Open Gmail and you'll see the RealtyClose panel. Click \"Connect Account\" to securely link your Gmail. We only request the minimum permissions needed for email composition and sending.",
+        "privacy": {
+          "title": "Privacy First",
+          "point1": "We never read your existing emails",
+          "point2": "No data stored on our servers",
+          "point3": "Revoke access anytime",
+          "point4": "Bank-level security"
+        },
+        "card": {
+          "title": "Gmail Integration",
+          "subtitle": "Seamless integration with your existing workflow"
+        }
+      },
+      "step3": {
+        "title": "Start Writing Better Emails",
+        "description": "That's it! Open any email thread and you'll see RealtyClose suggestions. Generate professional responses, use quick actions, and access smart templates - all without leaving Gmail.",
+        "feature1": {
+          "title": "AI Email",
+          "subtitle": "Generate responses in seconds"
+        },
+        "feature2": {
+          "title": "Quick Actions",
+          "subtitle": "Log calls, schedule meetings"
+        },
+        "card": {
+          "title": "Ready to Use",
+          "subtitle": "Start improving your email workflow immediately"
+        }
+      },
+      "requirements": {
+        "title": "Browser Requirements",
+        "browsers": {
+          "title": "Supported Browsers:",
+          "chrome": "Google Chrome (Recommended)",
+          "edge": "Microsoft Edge",
+          "brave": "Brave Browser",
+          "chromium": "Any Chromium-based browser"
+        },
+        "system": {
+          "title": "System Requirements:",
+          "chrome": "Chrome version 88 or higher",
+          "gmail": "Active Gmail account",
+          "internet": "Internet connection",
+          "storage": "5MB free storage space"
+        }
+      },
+      "help": {
+        "title": "Need Help?",
+        "notShowing": {
+          "title": "Extension not showing up?",
+          "step1": "Refresh your Gmail tab",
+          "step2": "Check Chrome extensions page (chrome://extensions/)",
+          "step3": "Make sure RealtyClose is enabled",
+          "step4": "Try opening Gmail in an incognito window"
+        },
+        "permissions": {
+          "title": "Permission issues?",
+          "step1": "Click the RealtyClose icon in Gmail",
+          "step2": "Follow the authentication prompts",
+          "step3": "Allow all requested permissions",
+          "step4": "Contact support if issues persist"
+        },
+        "performance": {
+          "title": "Performance issues?",
+          "step1": "Disable other Gmail extensions temporarily",
+          "step2": "Clear browser cache and cookies",
+          "step3": "Restart your browser",
+          "step4": "Check for Chrome updates"
+        },
+        "support": {
+          "title": "Still need help?",
+          "description": "Our support team is here to help you get set up successfully.",
+          "button": "Contact Support"
+        }
+      },
+      "next": {
+        "title": "What's Next?",
+        "subtitle": "Once installed, here's how to get the most out of RealtyClose:",
+        "tutorial": {
+          "title": "Watch the Tutorial",
+          "subtitle": "5-minute video guide to all features"
+        },
+        "firstEmail": {
+          "title": "Try Your First Email",
+          "subtitle": "Generate a professional response"
+        },
+        "quickActions": {
+          "title": "Explore Quick Actions",
+          "subtitle": "Streamline your daily workflow"
+        }
+      },
+      "cta": {
+        "title": "Ready to transform your email workflow?",
+        "subtitle": "Join hundreds of real estate professionals saving 3+ hours daily",
+        "install": "Install RealtyClose Extension",
+        "demo": "Watch Demo First"
+      }
+    },
     "contact": {
       "stillHaveQuestions": "Still have questions?",
       "cantFind": "Can't find what you're looking for? Our support team is here to help.",

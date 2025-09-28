@@ -868,6 +868,123 @@
         }
       }
     },
+    "install": {
+      "title": "Erweiterung installieren",
+      "subtitle": "Installieren Sie die RealtyClose Chrome-Erweiterung in 3 einfachen Schritten. Beginnen Sie in Sekunden professionelle E-Mails in Gmail zu schreiben.",
+      "intro": {
+        "title": "RealtyClose in unter 2 Minuten in Ihrem Gmail zum Laufen bringen",
+        "subtitle": "Folgen Sie diesen 3 einfachen Schritten, um in Sekunden professionelle Immobilien-E-Mails zu schreiben"
+      },
+      "step1": {
+        "title": "Aus Chrome Web Store installieren",
+        "description": "Klicken Sie auf die Schaltfläche unten, um zum Chrome Web Store zu gehen und die RealtyClose-Erweiterung zu installieren. Die Installation dauert nur einen Klick und ist völlig kostenlos.",
+        "button": "Aus Chrome Web Store installieren",
+        "features": "✓ Kostenlos zu installieren • ✓ Keine Kreditkarte erforderlich • ✓ 30-Sekunden-Setup",
+        "card": {
+          "title": "Chrome Web Store",
+          "subtitle": "Offizielle Erweiterung von Google verifiziert"
+        }
+      },
+      "step2": {
+        "title": "Ihr Gmail verbinden",
+        "description": "Öffnen Sie Gmail und Sie sehen das RealtyClose-Panel. Klicken Sie auf \"Konto verbinden\", um Ihr Gmail sicher zu verknüpfen. Wir fordern nur die minimal notwendigen Berechtigungen für die E-Mail-Erstellung und das Senden an.",
+        "privacy": {
+          "title": "Datenschutz zuerst",
+          "point1": "Wir lesen niemals Ihre bestehenden E-Mails",
+          "point2": "Keine Daten auf unseren Servern gespeichert",
+          "point3": "Zugriff jederzeit widerrufen",
+          "point4": "Bank-Level-Sicherheit"
+        },
+        "card": {
+          "title": "Gmail-Integration",
+          "subtitle": "Nahtlose Integration in Ihren bestehenden Workflow"
+        }
+      },
+      "step3": {
+        "title": "Bessere E-Mails schreiben",
+        "description": "Das war's! Öffnen Sie einen beliebigen E-Mail-Thread und Sie sehen RealtyClose-Vorschläge. Generieren Sie professionelle Antworten, nutzen Sie Schnellaktionen und greifen Sie auf intelligente Vorlagen zu - alles ohne Gmail zu verlassen.",
+        "feature1": {
+          "title": "KI-E-Mail",
+          "subtitle": "Antworten in Sekunden generieren"
+        },
+        "feature2": {
+          "title": "Schnellaktionen",
+          "subtitle": "Anrufe protokollieren, Meetings planen"
+        },
+        "card": {
+          "title": "Einsatzbereit",
+          "subtitle": "Verbessern Sie Ihren E-Mail-Workflow sofort"
+        }
+      },
+      "requirements": {
+        "title": "Browser-Anforderungen",
+        "browsers": {
+          "title": "Unterstützte Browser:",
+          "chrome": "Google Chrome (Empfohlen)",
+          "edge": "Microsoft Edge",
+          "brave": "Brave Browser",
+          "chromium": "Jeder Chromium-basierte Browser"
+        },
+        "system": {
+          "title": "Systemanforderungen:",
+          "chrome": "Chrome Version 88 oder höher",
+          "gmail": "Aktives Gmail-Konto",
+          "internet": "Internetverbindung",
+          "storage": "5MB freier Speicherplatz"
+        }
+      },
+      "help": {
+        "title": "Brauchen Sie Hilfe?",
+        "notShowing": {
+          "title": "Erweiterung wird nicht angezeigt?",
+          "step1": "Aktualisieren Sie Ihren Gmail-Tab",
+          "step2": "Überprüfen Sie die Chrome-Erweiterungsseite (chrome://extensions/)",
+          "step3": "Stellen Sie sicher, dass RealtyClose aktiviert ist",
+          "step4": "Versuchen Sie Gmail in einem Inkognito-Fenster zu öffnen"
+        },
+        "permissions": {
+          "title": "Berechtigungsprobleme?",
+          "step1": "Klicken Sie auf das RealtyClose-Symbol in Gmail",
+          "step2": "Folgen Sie den Authentifizierungsaufforderungen",
+          "step3": "Erlauben Sie alle angeforderten Berechtigungen",
+          "step4": "Kontaktieren Sie den Support, wenn Probleme bestehen"
+        },
+        "performance": {
+          "title": "Leistungsprobleme?",
+          "step1": "Deaktivieren Sie andere Gmail-Erweiterungen vorübergehend",
+          "step2": "Löschen Sie Browser-Cache und Cookies",
+          "step3": "Starten Sie Ihren Browser neu",
+          "step4": "Überprüfen Sie auf Chrome-Updates"
+        },
+        "support": {
+          "title": "Brauchen Sie noch Hilfe?",
+          "description": "Unser Support-Team ist hier, um Ihnen bei der erfolgreichen Einrichtung zu helfen.",
+          "button": "Support kontaktieren"
+        }
+      },
+      "next": {
+        "title": "Was kommt als Nächstes?",
+        "subtitle": "Nach der Installation, so holen Sie das Beste aus RealtyClose heraus:",
+        "tutorial": {
+          "title": "Tutorial ansehen",
+          "subtitle": "5-Minuten-Video-Anleitung zu allen Funktionen"
+        },
+        "firstEmail": {
+          "title": "Ihre erste E-Mail ausprobieren",
+          "subtitle": "Eine professionelle Antwort generieren"
+        },
+        "quickActions": {
+          "title": "Schnellaktionen erkunden",
+          "subtitle": "Ihren täglichen Workflow optimieren"
+        }
+      },
+      "cta": {
+        "title": "Bereit, Ihren E-Mail-Workflow zu transformieren?",
+        "subtitle": "Schließen Sie sich Hunderten von Immobilienprofis an, die täglich 3+ Stunden sparen",
+        "install": "RealtyClose-Erweiterung installieren",
+        "demo": "Demo zuerst ansehen"
+      }
+    },
     "contact": {
       "stillHaveQuestions": "Haben Sie noch Fragen?",
       "cantFind": "Können Sie nicht finden, wonach Sie suchen? Unser Support-Team hilft Ihnen gerne.",
