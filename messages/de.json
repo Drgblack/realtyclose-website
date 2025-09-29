@@ -191,7 +191,44 @@
     "mostPopular": "Beliebtester",
     "perUserMonth": "pro Nutzer/Monat",
     "billedAnnually": "Jährlich abgerechnet",
-    "ifBilledMonthly": "bei monatlicher Abrechnung"
+    "ifBilledMonthly": "bei monatlicher Abrechnung",
+    "plans": {
+      "free": {
+        "name": "Kostenlos",
+        "tagline": "Gmail-Workflow testen. Ideal für Solo-Tests.",
+        "ctaLabel": "Kostenlos starten",
+        "bullets": [
+          "5 KI-E-Mail-Entwürfe pro Monat",
+          "Basis-Immobilien-Vorlagen",
+          "Gmail-Integration",
+          "Community-Support"
+        ]
+      },
+      "pro": {
+        "name": "Professional",
+        "tagline": "Stunden zurückgewinnen und jeden Deal schützen - direkt in Gmail.",
+        "ctaLabel": "7-Tage Chrome-Test starten",
+        "bullets": [
+          "Unbegrenzte KI-Entwürfe & intelligente Vorlagen - 30+ Stunden/Transaktion sparen",
+          "Quick Actions für Follow-ups & Datumsmarkierungen - Verzögerungen reduzieren",
+          "Markengerechte Ton- & Stilkontrolle für professionelle Antworten",
+          "Prioritäts-E-Mail-Support",
+          "Analytics & Insights"
+        ]
+      },
+      "team": {
+        "name": "Team",
+        "tagline": "Konsistenz und Aufsicht für Teams & Maklerbüros.",
+        "ctaLabel": "Vertrieb kontaktieren",
+        "bullets": [
+          "Alles aus Professional",
+          "Gemeinsame Vorlagenbibliothek & Genehmigungen - Markenkontrolle",
+          "Teamzusammenarbeit & Rollenberechtigungen - reibungslose Übergaben",
+          "Compliance & Audit-Protokolle - in Sekunden überprüfen",
+          "Dedizierter Account Manager"
+        ]
+      }
+    }
   },
   "contact": {
     "title": "RealtyClose kontaktieren",
