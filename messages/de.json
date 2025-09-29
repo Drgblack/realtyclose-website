@@ -672,41 +672,43 @@
     }
   },
   "about": {
+    "seo": {
+      "title": "Über uns - RealtyClose",
+      "description": "Erfahren Sie mehr über RealtyClose und unser Team, das KI-gestützte Tools für Immobilienprofis entwickelt."
+    },
     "hero": {
       "title": "KI-gestützte Tools für Immobilienprofis",
       "subtitle": "Wir entwickeln praktische, zuverlässige KI-Tools, die repetitive Arbeit aus täglichen Workflows entfernen.",
-      "description": "Schnell entwickeln, sorgfältig polieren, mit einer Neigung zu Klarheit und messbaren Ergebnissen."
+      "description": "Schnell entwickeln, sorgfältig polieren, mit einer Neigung zu Klarheit und messbaren Ergebnissen.",
+      "trustRow": "Vertraut von Solo-Maklern, Teams und Maklerfirmen",
+      "ctaPrimary": "Kostenlos starten",
+      "ctaSecondary": "Demo ansehen"
     },
     "problem": {
       "title": "Das Problem, das wir lösen",
-      "subtitle": "Immobilienprofis verbringen Stunden mit repetitiven Kommunikationsaufgaben",
-      "stat1": "Makler verlieren 30+ Stunden pro Transaktion durch ineffiziente Kommunikation",
-      "stat2": "49% berichten von Deal-Verzögerungen aufgrund schlechter E-Mail-Koordination",
-      "stat3": "3+ Stunden täglich werden für E-Mail-Erstellung und Follow-ups aufgewendet",
-      "statNumber": "70%",
-      "whyFail": {
-        "title": "Warum scheitern E-Mails?",
-        "cms": {
-          "title": "CMS",
-          "description": "Veraltete Systeme, die nicht mit modernen Workflows funktionieren"
-        },
-        "transactions": {
-          "title": "Transaktionen",
-          "description": "Komplexe Prozesse ohne intelligente Automatisierung"
-        },
-        "generic": {
-          "title": "Generische Tools",
-          "description": "One-size-fits-all Lösungen verstehen Immobilien nicht"
-        }
+      "lead": "Immobilienprofis verbringen Stunden mit repetitiven Kommunikationsaufgaben",
+      "stat1": "verlieren 30+ Std./Transaktion durch Kommunikation",
+      "stat2": "berichten von kommunikationsbedingten Deal-Verzögerungen",
+      "stat3": "täglich aufgewendet für E-Mail-Erstellung",
+      "stat3Number": "3+ Std."
+    },
+    "whyFail": {
+      "title": "Warum scheitern bestehende Tools?",
+      "crm": {
+        "title": "CMS",
+        "description": "Veraltete Systeme, die nicht mit modernen Workflows funktionieren"
+      },
+      "transaction": {
+        "title": "Transaktionen",
+        "description": "Komplexe Prozesse ohne intelligente Automatisierung"
+      },
+      "generic": {
+        "title": "Generische Tools",
+        "description": "One-size-fits-all Lösungen verstehen Immobilien nicht"
       }
     },
     "solution": {
       "title": "Unsere Lösung",
-      "subtitle": "Gmail-first KI, die in Ihrem bestehenden Workflow arbeitet",
-      "point1": "Zeit zurückgewinnen: Schreiben Sie perfekte Antworten in ~10 Sekunden statt Minuten",
-      "point2": "Weniger verpasste Follow-ups: Automatisierte Erinnerungen basierend auf Klientenverhalten",
-      "point3": "Professionell + compliant: Markenkonforme Tone, Vorlagen und Audit-Trails",
-      "point4": "Skalierung für Teams: Gemeinsame Bibliothek, Konsistenz, Übersicht",
       "feature1": {
         "title": "Intelligenter Assistent",
         "description": "KI-gestützte E-Mail-Erstellung direkt in Gmail"
@@ -719,7 +721,53 @@
         "title": "Compliance-Sicherheit",
         "description": "Eingebaute Checks und vollständige Audit-Trails"
       },
-      "closed": "Geschäfte abgeschlossen"
+      "closer": "Das entspricht 240 abgeschlossenen Deals monatlich - die Effizienzverbesserungen sprechen für sich."
+    },
+    "proof": {
+      "title": "Nachgewiesene Ergebnisse",
+      "faster": {
+        "title": "Schneller",
+        "description": "Durchschnittlich 3+ Stunden täglich gespart bei der E-Mail-Kommunikation"
+      },
+      "fewer": {
+        "title": "Weniger",
+        "description": "95% weniger verpasste Follow-ups und Deal-Verzögerungen"
+      },
+      "happier": {
+        "title": "Zufriedener",
+        "description": "30% höhere Kundenzufriedenheit durch konsistente Kommunikation"
+      },
+      "more": {
+        "title": "Mehr",
+        "description": "12% höhere Deal-Abschlussraten durch besseres Follow-up"
+      }
+    },
+    "beforeAfter": {
+      "title": "Vorher vs. Nachher",
+      "beforeTitle": "Vorher: E-Mail-Chaos",
+      "before1": "30+ Minuten pro E-Mail-Antwort",
+      "before2": "Inkonsistente Nachrichten und verpasste Follow-ups",
+      "before3": "Compliance-Risiken und Audit-Probleme",
+      "afterTitle": "Nachher: Professionelle Effizienz",
+      "after1": "10 Sekunden für perfekte Antworten",
+      "after2": "Markenkonforme Kommunikation und automatische Erinnerungen",
+      "after3": "Vollständige Audit-Trails und Compliance-Sicherheit"
+    },
+    "vision": {
+      "title": "Unsere Vision",
+      "description": "Eine Welt, in der Immobilienprofis mehr Zeit für Kunden und weniger Zeit für E-Mails aufwenden."
+    },
+    "founder": {
+      "title": "Vom Gründer",
+      "description": "Dr. Greg Blackburn gründete RealtyClose nach jahrelanger Erfahrung im Aufbau von KI-Systemen für komplexe Branchen. Mit einem tiefen Verständnis für die Herausforderungen von Immobilienprofis entwickelt unser Team Tools, die echte Probleme lösen.",
+      "securityLink": "Sicherheit & Datenschutz",
+      "privacyLink": "Datenschutzrichtlinie"
+    },
+    "finalCta": {
+      "title": "Bereit anzufangen?",
+      "ctaPrimary": "Kostenlos starten",
+      "ctaSecondary": "Demo ansehen",
+      "demoLink": "Haben Sie Fragen? Kontaktieren Sie uns"
     },
     "team": {
       "title": "Unser Team",
@@ -728,21 +776,21 @@
     },
     "whoWeHelp": {
       "title": "Wem wir helfen",
-      "cataloger": {
-        "title": "Katalogisierer",
-        "description": "Organisieren und verwalten Sie Immobilieneinträge effizient"
+      "soloAgents": {
+        "title": "Solo-Makler",
+        "description": "Individuelle Produktivitätstools für unabhängige Immobilienprofis"
       },
       "teams": {
         "title": "Teams",
         "description": "Kollaborative Tools für nahtlose Teamkommunikation"
       },
+      "tc": {
+        "title": "Transaktionskoordinatoren",
+        "description": "Spezialisierte Workflows für effizientes Transaktionsmanagement"
+      },
       "brokerages": {
         "title": "Maklerfirmen",
         "description": "Enterprise-Lösungen für große Immobilienunternehmen"
-      },
-      "coaching": {
-        "title": "Coaching",
-        "description": "Schulung und Unterstützung für optimale Nutzung"
       }
     },
     "testimonials": {
