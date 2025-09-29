@@ -62,6 +62,77 @@
     "protectDealsDesc": "Follow-up-Erinnerungen und Timeline-Alerts verhindern Verzögerungen.",
     "stayCompliant": "Compliant bleiben",
     "stayCompliantDesc": "Audit-Trails und genehmigte Vorlagen halten Nachrichten sicher.",
+    "overview": {
+      "title": "Funktionsüberblick",
+      "subtitle": "Alles was Sie brauchen für effiziente Immobilien-Kommunikation",
+      "description": "RealtyClose bietet eine umfassende Suite von Tools, die speziell für die Bedürfnisse von Immobilienprofis entwickelt wurden."
+    },
+    "saveHours": {
+      "title": "Stunden sparen",
+      "description": "Perfekte E-Mail-Antworten in 10 Sekunden mit KI-unterstützten Entwürfen und intelligenten Vorlagen."
+    },
+    "protectDeals": {
+      "title": "Deals schützen",
+      "description": "Automatische Follow-up-Erinnerungen und Fristen-Tracking verhindern verpasste Gelegenheiten."
+    },
+    "stayCompliant": {
+      "title": "Compliant bleiben",
+      "description": "Eingebaute Compliance-Checks und vollständige Audit-Trails für rechtssichere Kommunikation."
+    },
+    "whyHowIt": {
+      "title": "Warum RealtyClose?",
+      "subtitle": "Die einzige E-Mail-Lösung, die speziell für Immobilienprofis entwickelt wurde",
+      "description": "Im Gegensatz zu generischen E-Mail-Tools versteht RealtyClose die spezifischen Herausforderungen des Immobilienbereichs."
+    },
+    "proof": {
+      "title": "Nachgewiesene Ergebnisse",
+      "faster": {
+        "title": "Faster",
+        "description": "Durchschnittlich 3+ Stunden täglich gespart"
+      },
+      "fewer": {
+        "title": "Fewer",
+        "description": "95% weniger verpasste Follow-ups"
+      },
+      "bigger": {
+        "title": "Bigger",
+        "description": "12% höhere Deal-Abschlussraten"
+      },
+      "more": {
+        "title": "More",
+        "description": "30% mehr Kundenzufriedenheit"
+      }
+    },
+    "beforeAfter": {
+      "title": "Vorher vs. Nachher",
+      "beforeTitle": "Vorher: E-Mail-Chaos",
+      "beforeItems": [
+        "30+ Minuten pro E-Mail-Antwort",
+        "Inkonsistente Nachrichten",
+        "Verpasste Follow-ups",
+        "Compliance-Risiken"
+      ],
+      "afterTitle": "Nachher: Professionelle Effizienz",
+      "afterItems": [
+        "10 Sekunden für perfekte Antworten",
+        "Markenkonforme Kommunikation",
+        "Automatische Erinnerungen",
+        "Vollständige Audit-Trails"
+      ]
+    },
+    "vision": {
+      "title": "Unsere Vision",
+      "description": "Eine Welt, in der Immobilienprofis mehr Zeit für Kunden und weniger Zeit für E-Mails aufwenden."
+    },
+    "founder": {
+      "title": "Vom Gründer",
+      "description": "Dr. Greg Blackburn gründete RealtyClose nach jahrelanger Erfahrung im Aufbau von KI-Systemen für komplexe Branchen."
+    },
+    "finalCta": {
+      "title": "Bereit anzufangen?",
+      "callToAction": "Kostenlos starten",
+      "callToActionDemo": "Demo ansehen"
+    },
     "aiEmailAssistant": {
       "title": "KI E-Mail-Assistent",
       "description": "Professionelle E-Mail-Erstellung mit KI. Antworten Sie schneller mit markenkonformen E-Mails, Ton-Vorschlägen und intelligenten Vorlagen für Immobilien-Kommunikation.",
@@ -611,7 +682,23 @@
       "subtitle": "Immobilienprofis verbringen Stunden mit repetitiven Kommunikationsaufgaben",
       "stat1": "Makler verlieren 30+ Stunden pro Transaktion durch ineffiziente Kommunikation",
       "stat2": "49% berichten von Deal-Verzögerungen aufgrund schlechter E-Mail-Koordination",
-      "stat3": "3+ Stunden täglich werden für E-Mail-Erstellung und Follow-ups aufgewendet"
+      "stat3": "3+ Stunden täglich werden für E-Mail-Erstellung und Follow-ups aufgewendet",
+      "statNumber": "70%",
+      "whyFail": {
+        "title": "Warum scheitern E-Mails?",
+        "cms": {
+          "title": "CMS",
+          "description": "Veraltete Systeme, die nicht mit modernen Workflows funktionieren"
+        },
+        "transactions": {
+          "title": "Transaktionen",
+          "description": "Komplexe Prozesse ohne intelligente Automatisierung"
+        },
+        "generic": {
+          "title": "Generische Tools",
+          "description": "One-size-fits-all Lösungen verstehen Immobilien nicht"
+        }
+      }
     },
     "solution": {
       "title": "Unsere Lösung",
@@ -619,12 +706,44 @@
       "point1": "Zeit zurückgewinnen: Schreiben Sie perfekte Antworten in ~10 Sekunden statt Minuten",
       "point2": "Weniger verpasste Follow-ups: Automatisierte Erinnerungen basierend auf Klientenverhalten",
       "point3": "Professionell + compliant: Markenkonforme Tone, Vorlagen und Audit-Trails",
-      "point4": "Skalierung für Teams: Gemeinsame Bibliothek, Konsistenz, Übersicht"
+      "point4": "Skalierung für Teams: Gemeinsame Bibliothek, Konsistenz, Übersicht",
+      "feature1": {
+        "title": "Intelligenter Assistent",
+        "description": "KI-gestützte E-Mail-Erstellung direkt in Gmail"
+      },
+      "feature2": {
+        "title": "Deal-Schutz",
+        "description": "Automatische Follow-ups und Fristen-Tracking"
+      },
+      "feature3": {
+        "title": "Compliance-Sicherheit",
+        "description": "Eingebaute Checks und vollständige Audit-Trails"
+      },
+      "closed": "Geschäfte abgeschlossen"
     },
     "team": {
       "title": "Unser Team",
       "subtitle": "Erfahrene Technologen mit tiefen Branchenkenntnissen",
       "description": "Unser Team kombiniert jahrzehntelange Erfahrung in der Softwareentwicklung mit einem tiefen Verständnis für die Herausforderungen von Immobilienprofis."
+    },
+    "whoWeHelp": {
+      "title": "Wem wir helfen",
+      "cataloger": {
+        "title": "Katalogisierer",
+        "description": "Organisieren und verwalten Sie Immobilieneinträge effizient"
+      },
+      "teams": {
+        "title": "Teams",
+        "description": "Kollaborative Tools für nahtlose Teamkommunikation"
+      },
+      "brokerages": {
+        "title": "Maklerfirmen",
+        "description": "Enterprise-Lösungen für große Immobilienunternehmen"
+      },
+      "coaching": {
+        "title": "Coaching",
+        "description": "Schulung und Unterstützung für optimale Nutzung"
+      }
     },
     "testimonials": {
       "slide1": {
@@ -689,6 +808,131 @@
         "question": "Welche Team-Funktionen sind verfügbar?",
         "answer": "Team-Pläne umfassen gemeinsame Vorlagen-Bibliotheken, Genehmigungsworkflows, Compliance-Übersicht und Teamzusammenarbeit für reibungslose Deal-Übergänge."
       }
+    }
+  },
+  "privacy": {
+    "title": "Datenschutzrichtlinie",
+    "lastUpdated": "Januar 2025",
+    "overview": {
+      "title": "Überblick",
+      "description": "Diese Datenschutzrichtlinie beschreibt, wie RealtyClose Ihre Informationen sammelt, verwendet und schützt, wenn Sie unseren Service nutzen."
+    },
+    "dataCollection": {
+      "title": "Datensammlung",
+      "description": "Wir sammeln nur die Informationen, die für die Bereitstellung unseres Services erforderlich sind:",
+      "item1": "E-Mail-Adressen und Kontaktinformationen für die Kontoerstellung",
+      "item2": "Nutzungsdaten zur Verbesserung unserer KI-Funktionen",
+      "item3": "Technische Informationen für Support und Fehlerbehebung",
+      "item4": "Freiwillige Feedback- und Umfrageantworten"
+    },
+    "dataUse": {
+      "title": "Datenverwendung",
+      "description": "Ihre Daten werden verwendet für:",
+      "item1": "Bereitstellung und Verbesserung unserer KI-E-Mail-Assistenz",
+      "item2": "Kundensupport und technische Hilfe",
+      "item3": "Sicherheitsüberwachung und Betrugsprävention",
+      "item4": "Kommunikation über Service-Updates und neue Funktionen"
+    },
+    "dataSharing": {
+      "title": "Datenweitergabe",
+      "description": "Wir verkaufen oder vermieten Ihre persönlichen Daten niemals an Dritte. Wir teilen Daten nur in begrenzten Umständen:"
+    },
+    "dataSecurity": {
+      "title": "Datensicherheit",
+      "description": "Wir implementieren branchenführende Sicherheitsmaßnahmen zum Schutz Ihrer Daten:"
+    },
+    "userRights": {
+      "title": "Ihre Rechte",
+      "description": "Sie haben das Recht auf:",
+      "item1": "Zugang zu Ihren gespeicherten persönlichen Daten",
+      "item2": "Berichtigung unrichtiger Informationen",
+      "item3": "Löschung Ihrer Daten (Recht auf Vergessenwerden)",
+      "item4": "Datenübertragbarkeit in maschinenlesbaren Formaten"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "description": "Für Datenschutzfragen kontaktieren Sie uns unter privacy@realtyclose.com"
+    }
+  },
+  "terms": {
+    "title": "Nutzungsbedingungen",
+    "lastUpdated": "Januar 2025",
+    "acceptance": {
+      "title": "Annahme der Bedingungen",
+      "description": "Durch die Nutzung von RealtyClose stimmen Sie diesen Nutzungsbedingungen zu."
+    },
+    "serviceDescription": {
+      "title": "Service-Beschreibung",
+      "description": "RealtyClose ist ein KI-gestützter E-Mail-Assistent für Immobilienprofis, der in Gmail integriert ist."
+    },
+    "userResponsibilities": {
+      "title": "Nutzerverantwortlichkeiten",
+      "description": "Als Nutzer verpflichten Sie sich:",
+      "item1": "Den Service nur für legale Zwecke zu verwenden",
+      "item2": "Keine schädlichen oder illegalen Inhalte zu erstellen",
+      "item3": "Die Sicherheit Ihres Kontos zu gewährleisten",
+      "item4": "Alle anwendbaren Gesetze und Vorschriften einzuhalten"
+    },
+    "subscription": {
+      "title": "Abonnement und Zahlung",
+      "description": "Abonnementgebühren werden im Voraus berechnet und sind nicht erstattungsfähig, es sei denn, dies ist gesetzlich vorgeschrieben."
+    },
+    "limitation": {
+      "title": "Haftungsbeschränkung",
+      "description": "RealtyClose haftet nicht für indirekte, zufällige oder Folgeschäden aus der Nutzung unseres Services."
+    },
+    "termination": {
+      "title": "Kündigung",
+      "description": "Beide Parteien können diese Vereinbarung jederzeit kündigen. Bei Kündigung werden Ihre Daten gemäß unserer Datenschutzrichtlinie gelöscht."
+    },
+    "changes": {
+      "title": "Änderungen",
+      "description": "Wir behalten uns das Recht vor, diese Bedingungen zu ändern. Änderungen werden per E-Mail mitgeteilt."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "description": "Für Fragen zu diesen Bedingungen kontaktieren Sie support@realtyclose.com"
+    }
+  },
+  "cookies": {
+    "title": "Cookie-Richtlinie",
+    "lastUpdated": "Januar 2025",
+    "overview": {
+      "title": "Überblick",
+      "description": "Diese Richtlinie erklärt, wie RealtyClose Cookies und ähnliche Technologien verwendet."
+    },
+    "essential": {
+      "title": "Wesentliche Cookies",
+      "description": "Diese Cookies sind für das Funktionieren der Website erforderlich:",
+      "item1": "Authentifizierung und Sitzungsverwaltung",
+      "item2": "Sicherheitsfeatures und Betrugsprävention",
+      "item3": "Grundlegende Website-Funktionalität"
+    },
+    "analytics": {
+      "title": "Analyse-Cookies",
+      "description": "Diese helfen uns zu verstehen, wie Besucher unsere Website nutzen:",
+      "item1": "Seitenaufrufe und Benutzerinteraktionen",
+      "item2": "Leistungsmetriken und Fehlerberichte",
+      "item3": "Demographische und Verhaltensdaten (anonymisiert)"
+    },
+    "preferences": {
+      "title": "Präferenz-Cookies",
+      "description": "Diese speichern Ihre Einstellungen und Präferenzen für zukünftige Besuche."
+    },
+    "thirdParty": {
+      "title": "Drittanbieter-Cookies",
+      "description": "Wir verwenden Drittanbieter-Services, die ihre eigenen Cookies setzen können:",
+      "item1": "Google Analytics für Website-Statistiken",
+      "item2": "Intercom für Kundensupport",
+      "item3": "Vercel für Website-Hosting und -Leistung"
+    },
+    "control": {
+      "title": "Cookie-Kontrolle",
+      "description": "Sie können Cookies über Ihre Browsereinstellungen verwalten oder unsere Cookie-Einstellungen verwenden."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "description": "Für Fragen zu Cookies kontaktieren Sie privacy@realtyclose.com"
     }
   }
 }
