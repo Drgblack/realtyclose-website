@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useTranslations } from 'next-intl';
 
 type Variant = "realtyclose";
 
@@ -17,42 +18,48 @@ const SUITE = [
   { name: "RealtyClose", href: "https://realtyclose.com" },
 ];
 
-const CFG = {
+// Static configuration - non-translatable content
+const STATIC_CFG = {
   brand: "RealtyClose",
-  tagline:
-    "The Gmail first AI assistant for real estate communication. Part of Zaza Technologies.",
-  featureLabel: "Pro Tools",
-  features: [
-    { name: "AI Email Assistant", href: "/features/ai-email-assistant" },
-    { name: "Smart Templates", href: "/features/smart-templates" },
-    { name: "Deal Tracking", href: "/features/deal-tracking" },
-    { name: "Compliance Guardrails", href: "/features/compliance" },
-    { name: "Integrations", href: "/features/integrations" },
-  ],
-  company: [
-    { name: "About Us", href: "/about" },
-    { name: "Pricing", href: "/pricing" },
-    { name: "Blog", href: "/blog" },
-    { name: "Features", href: "/features" },
-    { name: "FAQs", href: "/faqs" },
-    { name: "Contact", href: "/contact" },
-  ],
-  legal: [
-    { name: "Impressum", href: "/impressum" },
-    { name: "Privacy", href: "/privacy" },
-    { name: "Terms", href: "/terms" },
-    { name: "Cookies", href: "/cookies" },
-  ],
   supportEmail: "support@realtyclose.com",
-  copyright: `© ${new Date().getFullYear()} RealtyClose (part of Zaza Technologies UG). All rights reserved.`,
 };
 
 export default function Footer({ variant = "realtyclose" as Variant }) {
-  const cfg = CFG;
+  const t = useTranslations('footer');
   const pathname = usePathname();
   
   // Extract current locale from pathname (e.g., /en/about -> en)
   const currentLocale = pathname.split('/')[1] || 'en';
+
+  // Configuration using translations
+  const cfg = {
+    brand: STATIC_CFG.brand,
+    tagline: t('description'),
+    featureLabel: t('proTools'),
+    features: [
+      { name: t('aiEmailAssistant'), href: "/features/ai-email-assistant" },
+      { name: t('smartTemplates'), href: "/features/smart-templates" },
+      { name: t('dealTracking'), href: "/features/deal-tracking" },
+      { name: t('complianceGuardrails'), href: "/features/compliance" },
+      { name: t('integrations'), href: "/features/integrations" },
+    ],
+    company: [
+      { name: t('about'), href: "/about" },
+      { name: t('pricing'), href: "/pricing" },
+      { name: "Blog", href: "/blog" },
+      { name: "Features", href: "/features" },
+      { name: "FAQs", href: "/faqs" },
+      { name: t('contact'), href: "/contact" },
+    ],
+    legal: [
+      { name: t('impressum'), href: "/impressum" },
+      { name: t('privacy'), href: "/privacy" },
+      { name: t('termsOfService'), href: "/terms" },
+      { name: t('cookiePolicy'), href: "/cookies" },
+    ],
+    supportEmail: STATIC_CFG.supportEmail,
+    copyright: t('copyright'),
+  };
   return (
     <footer className="mt-20 border-t border-white/10 bg-[#0B1220] text-white">
       <div className="mx-auto w-full max-w-7xl px-6 py-12 grid grid-cols-1 gap-10 md:grid-cols-4">
@@ -123,12 +130,12 @@ export default function Footer({ variant = "realtyclose" as Variant }) {
       <div className="border-t border-white/10">
         <div className="mx-auto flex w-full max-w-7xl flex-col items-start justify-between gap-4 px-6 py-6 text-xs text-white/70 md:flex-row md:items-center">
           <div className="flex flex-wrap items-center gap-3">
-            {CFG.legal.map((l, idx) => (
+            {cfg.legal.map((l, idx) => (
               <span key={l.name} className="flex items-center gap-3">
                 <Link href={`/${currentLocale}${l.href}`} className="hover:underline">
                   {l.name}
                 </Link>
-                {idx < CFG.legal.length - 1 && <span>•</span>}
+                {idx < cfg.legal.length - 1 && <span>•</span>}
               </span>
             ))}
           </div>
