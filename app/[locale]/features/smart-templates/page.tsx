@@ -1,76 +1,65 @@
 import PageShell from "@/app/components/PageShell";
+import { getTranslations } from 'next-intl/server';
+import { setRequestLocale } from 'next-intl/server';
 
-export const metadata = { 
-  title: "Smart Templates - RealtyClose",
-  description: "Reusable email templates that auto-fill client details, property information, and dates. Start faster without losing your professional voice."
+type Props = {
+  params: Promise<{locale: string}>;
 };
 
-export default function Page() {
+export async function generateMetadata({ params }: Props) {
+  const { locale } = await params;
+  
+  return {
+    title: "Smart Templates - RealtyClose",
+    description: "Reusable email templates that auto-fill client details, property information, and dates. Start faster without losing your professional voice."
+  };
+}
+
+export default async function Page({ params }: Props) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  
+  const t = await getTranslations('features.smartTemplates');
   return (
-    <PageShell title="Smart Templates">
+    <PageShell title={t('title')}>
       <div className="space-y-8">
         <p className="text-xl text-blue-300 font-medium">
-          Proven email structures for every stage of the transaction process
+          {t('tagline')}
         </p>
         
         <p>
-          Use proven structures for common messages across a transaction. Personalise fields, keep consistency, 
-          and save time for the work that needs you. No more starting from scratch.
+          {t('intro')}
         </p>
 
-        <h2>Template Categories</h2>
+        <h2>{t('categories')}</h2>
         
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-slate-700/30 border border-slate-600/50 rounded-xl p-6">
-            <h3>📝 Client Communication</h3>
-            <ul className="space-y-2 mt-3">
-              <li>• Listing agreement follow-up</li>
-              <li>• Showing feedback requests</li>
-              <li>• Offer presentation updates</li>
-              <li>• Contract milestone notifications</li>
-              <li>• Closing preparation checklist</li>
-            </ul>
+            <h3>📝 {t('templateTypes.listings.title')}</h3>
+            <p className="mt-3">{t('templateTypes.listings.description')}</p>
           </div>
           
           <div className="bg-slate-700/30 border border-slate-600/50 rounded-xl p-6">
-            <h3>🏠 Transaction Coordination</h3>
-            <ul className="space-y-2 mt-3">
-              <li>• Inspection scheduling</li>
-              <li>• Appraisal coordination</li>
-              <li>• Loan status updates</li>
-              <li>• Title and escrow communication</li>
-              <li>• Final walkthrough scheduling</li>
-            </ul>
+            <h3>🏠 {t('templateTypes.buyer.title')}</h3>
+            <p className="mt-3">{t('templateTypes.buyer.description')}</p>
           </div>
           
           <div className="bg-slate-700/30 border border-slate-600/50 rounded-xl p-6">
-            <h3>👥 Team Handoffs</h3>
-            <ul className="space-y-2 mt-3">
-              <li>• Agent to TC transition</li>
-              <li>• Client introduction templates</li>
-              <li>• Deal summary handover</li>
-              <li>• Contact information sharing</li>
-              <li>• Process expectations</li>
-            </ul>
+            <h3>👥 {t('templateTypes.transactions.title')}</h3>
+            <p className="mt-3">{t('templateTypes.transactions.description')}</p>
           </div>
           
           <div className="bg-slate-700/30 border border-slate-600/50 rounded-xl p-6">
-            <h3>🔄 Follow-up Sequences</h3>
-            <ul className="space-y-2 mt-3">
-              <li>• Lead nurturing series</li>
-              <li>• Post-closing follow-up</li>
-              <li>• Referral requests</li>
-              <li>• Market update newsletters</li>
-              <li>• Anniversary reminders</li>
-            </ul>
+            <h3>🔄 {t('templateTypes.followup.title')}</h3>
+            <p className="mt-3">{t('templateTypes.followup.description')}</p>
           </div>
         </div>
 
-        <h2>Smart Field Auto-Fill</h2>
+        <h2>{t('coreFeatures')}</h2>
         
         <div className="bg-green-600/10 border border-green-500/20 rounded-xl p-6">
-          <h3>⚡ Automatic Personalisation</h3>
-          <p>Templates automatically insert:</p>
+          <h3>{t('features.smartFill.title')}</h3>
+          <p>{t('features.smartFill.description')}</p>
           <ul className="mt-3 space-y-2">
             <li><strong>Client Names:</strong> Proper salutations and personalized greetings</li>
             <li><strong>Property Details:</strong> Address, price, square footage, and key features</li>
@@ -80,30 +69,30 @@ export default function Page() {
           </ul>
         </div>
 
-        <h2>Template Management</h2>
+        <h2>{t('howItWorks')}</h2>
         
         <div className="space-y-6">
           <div className="flex gap-4">
             <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-sm">1</div>
             <div>
-              <h4>Choose from library or create custom</h4>
-              <p>Start with proven templates or build your own. Save your best-performing messages for reuse.</p>
+              <h4>{t('steps.step1.title')}</h4>
+              <p>{t('steps.step1.description')}</p>
             </div>
           </div>
           
           <div className="flex gap-4">
             <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-sm">2</div>
             <div>
-              <h4>AI fills in the details</h4>
-              <p>Smart fields pull from your Gmail context, CRM data, and previous conversations automatically.</p>
+              <h4>{t('steps.step2.title')}</h4>
+              <p>{t('steps.step2.description')}</p>
             </div>
           </div>
           
           <div className="flex gap-4">
             <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-sm">3</div>
             <div>
-              <h4>Review and send</h4>
-              <p>Verify the details, make any personal touches, and send with confidence.</p>
+              <h4>{t('steps.step3.title')}</h4>
+              <p>{t('steps.step3.description')}</p>
             </div>
           </div>
         </div>
@@ -124,10 +113,9 @@ export default function Page() {
         </ul>
 
         <div className="bg-purple-600/10 border border-purple-500/20 rounded-xl p-6">
-          <h3>📊 Template Analytics</h3>
+          <h3>{t('benefits.title')}</h3>
           <p className="mb-0">
-            Track open rates, response rates, and client engagement to optimise your templates. 
-            See which messages work best for different client types and transaction stages.
+            {t('benefits.description')}
           </p>
         </div>
       </div>

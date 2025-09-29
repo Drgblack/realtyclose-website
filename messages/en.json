@@ -1004,5 +1004,274 @@
       "companyName": "Zaza Technologies UG (haftungsbeschränkt)",
       "addressPlaceholder": "Gumbertstraße 150, 40229 Düsseldorf, Deutschland"
     }
+  },
+  "features": {
+    "aiEmailAssistant": {
+      "title": "AI Email Assistant",
+      "description": "Professional email drafting powered by AI. Reply faster with on-brand emails, tone suggestions, and smart templates for real estate communication.",
+      "tagline": "Professional email drafting that saves hours and keeps deals moving",
+      "intro": "Reply faster with professional, on-brand emails. The AI assistant suggests phrasing, offers tone options, and flags unclear details before you send. Stop rewriting the same message five times.",
+      "coreFeatures": "Core Features",
+      "features": {
+        "fastDrafts": {
+          "title": "⚡ Fast First Drafts",
+          "description": "Generate professional email responses in seconds. No more staring at blank screens or struggling with the right words."
+        },
+        "toneControl": {
+          "title": "🎨 Tone Control",
+          "description": "Choose the right tone for different clients and situations. Professional, friendly, urgent, or empathetic - the AI adapts to your needs."
+        },
+        "smartRewrites": {
+          "title": "🔄 Smart Rewrites",
+          "description": "Polish existing drafts with suggestions for clarity, professionalism, and impact. Perfect messages every time."
+        },
+        "translation": {
+          "title": "🌍 Translation Support",
+          "description": "Communicate with international clients in their language. Translate messages while maintaining professional tone and context."
+        }
+      },
+      "howItWorks": "How It Works",
+      "steps": {
+        "step1": {
+          "title": "Open Gmail and compose or reply",
+          "description": "The RealtyClose assistant appears in your Gmail sidebar, ready to help with any email."
+        },
+        "step2": {
+          "title": "Provide context or select a template",
+          "description": "Tell the AI what you want to communicate, or choose from smart templates for common scenarios."
+        },
+        "step3": {
+          "title": "Review and send",
+          "description": "The AI generates a professional draft. Make any adjustments and send with confidence."
+        }
+      },
+      "perfectFor": "Perfect For",
+      "useCases": {
+        "clientUpdates": "Keep clients informed about transaction progress, next steps, and important deadlines",
+        "vendorCoordination": "Professional communication with inspectors, appraisers, lenders, and title companies",
+        "teamHandoffs": "Seamless communication when transferring deals between agents and transaction coordinators",
+        "followupSequences": "Consistent, timely follow-ups that nurture leads and maintain client relationships"
+      },
+      "timeSavings": {
+        "title": "💡 Time Savings",
+        "description": "Average time savings: 2-3 hours per day on email composition. Transform 30-minute email sessions into 5-minute professional communications."
+      }
+    },
+    "smartTemplates": {
+      "title": "Smart Templates",
+      "description": "Pre-built, customizable email templates for every real estate scenario. Professional communication made consistent and fast.",
+      "tagline": "Professional email templates that adapt to your brand and style",
+      "intro": "Access a library of proven email templates for every real estate scenario. From listing presentations to closing updates, get the right message every time with smart suggestions and automatic personalization.",
+      "coreFeatures": "Core Features",
+      "features": {
+        "libraryAccess": {
+          "title": "📚 Complete Template Library",
+          "description": "Access hundreds of proven templates for listings, offers, inspections, closings, and follow-ups. New templates added regularly based on industry best practices."
+        },
+        "customization": {
+          "title": "✏️ Brand Customization",
+          "description": "Automatically incorporate your brokerage branding, contact information, and preferred language. Templates adapt to your unique voice and style."
+        },
+        "smartFill": {
+          "title": "🤖 Smart Auto-Fill",
+          "description": "Templates intelligently populate with property details, client names, and transaction information from your Gmail context."
+        },
+        "compliance": {
+          "title": "⚖️ Compliance Ready",
+          "description": "All templates include required disclosures and follow industry regulations. Stay compliant while communicating efficiently."
+        }
+      },
+      "categories": "Template Categories",
+      "templateTypes": {
+        "listings": {
+          "title": "Listing Communications",
+          "description": "New listing announcements, price changes, showing feedback, and marketing updates"
+        },
+        "buyer": {
+          "title": "Buyer Services",
+          "description": "Property recommendations, showing schedules, offer strategies, and purchase guidance"
+        },
+        "transactions": {
+          "title": "Transaction Management",
+          "description": "Contract updates, inspection coordination, financing status, and closing preparations"
+        },
+        "followup": {
+          "title": "Follow-up Sequences",
+          "description": "Lead nurturing, client check-ins, referral requests, and relationship maintenance"
+        }
+      },
+      "howItWorks": "How It Works",
+      "steps": {
+        "step1": {
+          "title": "Choose your scenario",
+          "description": "Select from categorized templates or search for specific situations like 'inspection results' or 'closing delay'."
+        },
+        "step2": {
+          "title": "Auto-populate details",
+          "description": "The template fills in known information from your email context and client history automatically."
+        },
+        "step3": {
+          "title": "Customize and send",
+          "description": "Make any personal adjustments and send professional, compliant communication in seconds."
+        }
+      },
+      "benefits": {
+        "title": "🎯 Consistency Benefits",
+        "description": "Maintain professional standards across all team communications. New agents sound experienced, and veteran agents save time with proven messaging."
+      }
+    },
+    "dealTracking": {
+      "title": "Deal Tracking",
+      "description": "Visual timeline and milestone tracking for real estate transactions. Stay on top of deadlines and keep deals moving forward.",
+      "tagline": "Keep every deal on track with visual timelines and smart reminders",
+      "intro": "Transform chaotic email threads into organized deal timelines. Track milestones, deadlines, and next steps with visual clarity. Never miss a critical date or lose track of transaction progress again.",
+      "coreFeatures": "Core Features",
+      "features": {
+        "timeline": {
+          "title": "📅 Visual Timeline",
+          "description": "See your entire transaction at a glance. Key dates, milestones, and progress updates displayed in an intuitive visual format."
+        },
+        "milestones": {
+          "title": "🎯 Smart Milestones",
+          "description": "Automatic milestone detection from your emails. Contract acceptance, inspection periods, financing deadlines, and closing dates tracked automatically."
+        },
+        "reminders": {
+          "title": "⏰ Proactive Reminders",
+          "description": "Get notified before deadlines hit. Smart reminders based on transaction type, local market practices, and critical path analysis."
+        },
+        "collaboration": {
+          "title": "👥 Team Collaboration",
+          "description": "Share deal progress with team members, transaction coordinators, and clients. Everyone stays informed with real-time updates."
+        }
+      },
+      "tracking": "What Gets Tracked",
+      "trackingItems": {
+        "contracts": "Contract execution and amendment deadlines",
+        "inspections": "Inspection periods, reports, and resolution timelines",
+        "financing": "Loan application milestones and approval deadlines",
+        "closing": "Title work, final walkthrough, and closing preparation"
+      },
+      "howItWorks": "How It Works",
+      "steps": {
+        "step1": {
+          "title": "Automatic detection",
+          "description": "RealtyClose analyzes your emails to identify new deals and extract key dates and milestones automatically."
+        },
+        "step2": {
+          "title": "Timeline creation",
+          "description": "A visual timeline is generated with all critical dates, deadlines, and next steps clearly displayed."
+        },
+        "step3": {
+          "title": "Smart notifications",
+          "description": "Receive proactive reminders and alerts to keep deals moving forward and prevent missed deadlines."
+        }
+      },
+      "benefits": {
+        "title": "🚀 Deal Velocity",
+        "description": "Average deals close 12% faster with proactive timeline management. Reduce delays, improve client satisfaction, and increase transaction volume."
+      }
+    },
+    "compliance": {
+      "title": "Compliance Guardrails",
+      "description": "Built-in compliance checks and audit trails for real estate communications. Stay compliant while maintaining efficiency.",
+      "tagline": "Stay compliant with automated checks and complete audit trails",
+      "intro": "Navigate complex real estate regulations with confidence. Automated compliance checks, required disclosure detection, and complete audit trails ensure your communications meet industry standards and regulatory requirements.",
+      "coreFeatures": "Core Features",
+      "features": {
+        "autoChecks": {
+          "title": "🔍 Automatic Compliance Checks",
+          "description": "Every email scanned for required disclosures, prohibited language, and regulatory compliance before sending."
+        },
+        "auditTrail": {
+          "title": "📋 Complete Audit Trail",
+          "description": "Comprehensive logging of all communications with timestamps, recipients, and compliance status for easy reporting."
+        },
+        "disclosures": {
+          "title": "📄 Smart Disclosures",
+          "description": "Automatic insertion of required disclosures based on transaction type, property location, and regulatory requirements."
+        },
+        "approval": {
+          "title": "✅ Approval Workflows",
+          "description": "Route sensitive communications through designated approvers before sending. Configurable approval chains for different scenarios."
+        }
+      },
+      "protection": "What's Protected",
+      "protectionAreas": {
+        "fair": "Fair housing and anti-discrimination compliance",
+        "disclosure": "Required property and agent disclosure statements",
+        "advertising": "Marketing and advertising regulation compliance",
+        "privacy": "Client privacy and data protection requirements"
+      },
+      "howItWorks": "How It Works",
+      "steps": {
+        "step1": {
+          "title": "Real-time scanning",
+          "description": "Every email draft is analyzed for compliance issues, missing disclosures, and potential regulatory violations."
+        },
+        "step2": {
+          "title": "Smart suggestions",
+          "description": "Receive recommendations for required disclosures, safer language alternatives, and compliance best practices."
+        },
+        "step3": {
+          "title": "Audit logging",
+          "description": "All communications automatically logged with compliance status, making audit preparation simple and thorough."
+        }
+      },
+      "benefits": {
+        "title": "🛡️ Risk Reduction",
+        "description": "Reduce compliance violations by 95% with automated checks. Streamline audit preparation and maintain regulatory confidence."
+      }
+    },
+    "integrations": {
+      "title": "Integrations",
+      "description": "Seamless connections with your existing real estate tools and platforms. Work with what you already use.",
+      "tagline": "Connect with your existing tools for seamless workflow integration",
+      "intro": "RealtyClose works alongside your current real estate technology stack. Sync with popular CRMs, transaction management systems, and communication tools to create a unified workflow without disrupting your established processes.",
+      "coreFeatures": "Core Features",
+      "features": {
+        "crm": {
+          "title": "🏢 CRM Integration",
+          "description": "Sync contacts, deals, and communication history with leading real estate CRMs. Bidirectional data flow keeps everything current."
+        },
+        "transaction": {
+          "title": "📁 Transaction Management",
+          "description": "Connect with transaction management platforms to automatically update deal status, documents, and milestone tracking."
+        },
+        "calendar": {
+          "title": "📅 Calendar Sync",
+          "description": "Integrate with Google Calendar, Outlook, and scheduling tools to coordinate showings, appointments, and deadlines seamlessly."
+        },
+        "mls": {
+          "title": "🏘️ MLS Integration",
+          "description": "Pull property information and market data directly into your email communications and templates automatically."
+        }
+      },
+      "platforms": "Supported Platforms",
+      "supportedPlatforms": {
+        "crms": "Chime, Follow Up Boss, Wise Agent, Top Producer, and more",
+        "transaction": "DocuSign, dotloop, SkySlope, and major transaction platforms",
+        "communication": "Slack, Microsoft Teams, and collaboration tools",
+        "productivity": "Google Workspace, Microsoft 365, and productivity suites"
+      },
+      "howItWorks": "How It Works",
+      "steps": {
+        "step1": {
+          "title": "One-click connection",
+          "description": "Connect your existing tools through secure OAuth authentication. No complex setup or IT involvement required."
+        },
+        "step2": {
+          "title": "Data synchronization",
+          "description": "Contacts, deals, and communication history sync automatically between platforms for unified data access."
+        },
+        "step3": {
+          "title": "Unified workflow",
+          "description": "Work seamlessly across platforms with consistent data and automated updates eliminating duplicate entry."
+        }
+      },
+      "benefits": {
+        "title": "⚡ Workflow Efficiency",
+        "description": "Reduce data entry by 80% with seamless integrations. Focus on clients and deals while technology handles the coordination."
+      }
+    }
   }
 }

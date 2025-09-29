@@ -26,8 +26,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} min-h-screen`}>
+    <html lang="en" className="overflow-x-hidden">
+      <body className={`${inter.className} min-h-screen overflow-x-hidden`}>
         <main className="pt-14">{children}</main>
       </body>
     </html>

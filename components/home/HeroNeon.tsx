@@ -36,7 +36,7 @@ export default function HeroNeon(){
            className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-14 px-6 pt-28 pb-24 sm:pt-40 sm:pb-32 md:grid-cols-2">
 
         {/* Copy */}
-        <div className="max-w-[720px] md:max-w-[760px]">
+        <div className="max-w-full">
           <h1 className="text-4xl md:text-6xl font-semibold leading-tight tracking-tight text-slate-900">
             {t('hero.title')}{" "}
             <span className="bg-gradient-to-r from-indigo-600 via-sky-500 to-fuchsia-600 bg-clip-text text-transparent">

@@ -41,968 +41,273 @@
     "protectDeals": "Deals schützen",
     "protectDealsDesc": "Follow-up-Erinnerungen und Timeline-Benachrichtigungen verhindern Versäumnisse.",
     "stayCompliant": "Compliant bleiben",
-    "stayCompliantDesc": "Audit-Trails und genehmigte Vorlagen halten Nachrichten sicher."
-  },
-  "howItWorks": {
-    "title": "Schreiben Sie perfekte Immobilien-E-Mails in 10 Sekunden",
-    "subtitle": "Unsere KI versteht Immobilienkontext, Compliance-Anforderungen und professionelle Kommunikationsstandards.",
-    "step1Title": "In Chrome installieren",
-    "step1Desc": "Funktioniert sofort mit Gmail. Keine Einrichtung erforderlich.",
-    "step2Title": "Kontext auswählen",
-    "step2Desc": "Erstkontakt, Follow-up, Listing-Update oder Kundenfrage.",
-    "step3Title": "Perfekte E-Mail senden", 
-    "step3Desc": "KI generiert professionelle und konforme Entwürfe in Sekunden.",
-    "seeTransformation": "Sehen Sie die Transformation"
-  },
-  "crm": {
-    "title": "Warum nicht einfach ein CRM verwenden",
-    "subtitle": "Die meisten Tools zwingen Sie aus Gmail heraus und fügen Komplexität hinzu. Wir integrieren dort, wo Sie bereits arbeiten.",
-    "crmTitle": "CRMs",
-    "crmDesc": "Teuer und kompliziert. Zwingen Sie aus Gmail heraus und fügen zusätzliche Schritte hinzu.",
-    "genericTitle": "Generische KI-Tools",
-    "genericDesc": "Verstehen Immobilien-Compliance oder Deal-Timelines nicht.",
-    "emailTitle": "Nur E-Mail",
-    "emailDesc": "Führt zu verpassten Follow-ups und nicht verfolgten Details bei Transaktionen.",
-    "advantageTitle": "RealtyClose-Vorteil", 
-    "advantageDesc": "Speziell für Immobilien entwickelt. In Gmail. KI-gesteuert. Compliance-bereit."
-  },
-  "socialProof": {
-    "title": "Makler, Teams und Maklerfirmen vertrauen RealtyClose",
-    "subtitle": "Schließen Sie sich Tausenden von Immobilienprofis an, die ihren E-Mail-Workflow bereits transformiert haben.",
-    "activeUsers": "aktive Nutzer",
-    "emailsDrafted": "E-Mails erstellt",
-    "languagesSupported": "Sprachen unterstützt", 
-    "averageDraftTime": "durchschnittliche Erstellungszeit",
-    "disclaimer": "Keine Kreditkarte erforderlich. Jederzeit kündbar. Banksicherheit."
-  },
-  "emailTransform": {
-    "before": "Vorher",
-    "after": "Nachher",
-    "messyEmail": "hi, kurz wegen der unterlagen. sollten vermutlich den zeitplan aktualisieren aber bin unsicher. gedanken?",
-    "cleanEmail": "Hallo Jamie,\n\nVielen Dank für Ihre Nachricht. Ich habe die Unterlagen geprüft und den Transaktionszeitplan aktualisiert. Hier ist der aktuelle Status und der nächste Schritt:\n• Bewertung für Donnerstag terminiert\n• Offenlegungen übermittelt und bestätigt\n\nIch werde mich am Freitag mit einer Bestätigung melden.\n\nViele Grüße,\nAlex"
-  },
-  "testimonials": {
-    "sarah": "Ich habe wöchentliche Kunden-Updates von 30 Minuten auf 5 reduziert. Kompletter Gamechanger für meinen Workflow.",
-    "michael": "Unsere Abschlussrate verbesserte sich in zwei Monaten um 18%. Die Follow-up-Automatisierung ist unglaublich.", 
-    "jennifer": "Audit-Vorbereitungszeit um 90% reduziert. Der Compliance-Beauftragte kann die Organisation nicht glauben."
-  },
-  "about": {
-    "seo": {
-      "title": "Über RealtyClose — Gmail-first KI-Assistent für Immobilien-Kommunikation",
-      "description": "Antworten in Sekunden und jede Transaktion auf Kurs halten. RealtyClose arbeitet in Gmail, erstellt, organisiert und verfolgt entscheidungsrelevante E-Mails für Makler, Teams, TCs und Maklerhäuser."
-    },
-    "hero": {
-      "title": "Der Gmail-first KI-Assistent für Immobilien-Kommunikation",
-      "subtitle": "Antworten in Sekunden. Halten Sie jede Transaktion auf Kurs. RealtyClose arbeitet direkt in Gmail, erstellt, organisiert und verfolgt alle entscheidungsrelevanten E-Mails.",
-      "trustRow": "500+ Nutzer • 10k+ erstellte E-Mails • 10 Sek durchschnittliche Entwurfszeit",
-      "ctaPrimary": "Kostenlose Erweiterung installieren",
-      "ctaSecondary": "Demo ansehen"
-    },
-    "problem": {
-      "title": "Das Problem",
-      "lead": "Immobilienprofis verbringen Stunden im unübersichtlichen Posteingang. Fristen rutschen, Kunden fühlen sich übersehen, Deals geraten ins Stocken.",
-      "stat1": "melden Verzögerungen beim Abschluss durch mangelhafte Kommunikation",
-      "stat2": "haben erlebt, dass ein Deal durch verpasste E-Mails gefährdet wurde",
-      "stat3Number": "30+ Stunden",
-      "stat3": "gehen pro Transaktion durch wiederholte E-Mail-Arbeit verloren"
-    },
-    "whyFail": {
-      "title": "Warum vorhandene Tools scheitern",
-      "crm": {
-        "title": "CRMs",
-        "description": "Leistungsfähig, aber zwingen aus Gmail heraus und bremsen die Einführung"
+    "stayCompliantDesc": "Audit-Trails und genehmigte Vorlagen halten Nachrichten sicher.",
+    "aiEmailAssistant": {
+      "title": "KI E-Mail-Assistent",
+      "description": "Professionelle E-Mail-Erstellung mit KI. Antworten Sie schneller mit markenkonformen E-Mails, Ton-Vorschlägen und intelligenten Vorlagen für Immobilien-Kommunikation.",
+      "tagline": "Professionelle E-Mail-Erstellung, die Stunden spart und Geschäfte voranbringt",
+      "intro": "Antworten Sie schneller mit professionellen, markenkonformen E-Mails. Der KI-Assistent schlägt Formulierungen vor, bietet Ton-Optionen und markiert unklare Details vor dem Senden. Hören Sie auf, dieselbe Nachricht fünfmal umzuschreiben.",
+      "coreFeatures": "Kernfunktionen",
+      "features": {
+        "fastDrafts": {
+          "title": "⚡ Schnelle Erstentwürfe",
+          "description": "Erstellen Sie professionelle E-Mail-Antworten in Sekunden. Kein Starren auf leere Bildschirme oder Ringen um die richtigen Worte."
+        },
+        "toneControl": {
+          "title": "🎨 Ton-Kontrolle",
+          "description": "Wählen Sie den richtigen Ton für verschiedene Kunden und Situationen. Professionell, freundlich, dringend oder einfühlsam - die KI passt sich Ihren Bedürfnissen an."
+        },
+        "smartRewrites": {
+          "title": "🔄 Intelligente Überarbeitungen",
+          "description": "Polieren Sie bestehende Entwürfe mit Vorschlägen für Klarheit, Professionalität und Wirkung. Perfekte Nachrichten jedes Mal."
+        },
+        "translation": {
+          "title": "🌍 Übersetzungsunterstützung",
+          "description": "Kommunizieren Sie mit internationalen Kunden in ihrer Sprache. Übersetzen Sie Nachrichten unter Beibehaltung des professionellen Tons und Kontexts."
+        }
       },
-      "transaction": {
-        "title": "Transaktions-Plattformen",
-        "description": "Gut für Dokumente, nicht für Gespräche"
+      "howItWorks": "So funktioniert es",
+      "steps": {
+        "step1": {
+          "title": "Gmail öffnen und verfassen oder antworten",
+          "description": "Der RealtyClose-Assistent erscheint in Ihrer Gmail-Seitenleiste, bereit bei jeder E-Mail zu helfen."
+        },
+        "step2": {
+          "title": "Kontext angeben oder Vorlage auswählen",
+          "description": "Sagen Sie der KI, was Sie kommunizieren möchten, oder wählen Sie aus intelligenten Vorlagen für häufige Szenarien."
+        },
+        "step3": {
+          "title": "Überprüfen und senden",
+          "description": "Die KI erstellt einen professionellen Entwurf. Nehmen Sie Anpassungen vor und senden Sie mit Vertrauen."
+        }
       },
-      "generic": {
-        "title": "Generische E-Mail-Tools",
-        "description": "Schnell, aber nicht für Immobilien-Compliance gebaut"
+      "perfectFor": "Perfekt für",
+      "useCases": {
+        "clientUpdates": "Halten Sie Kunden über Transaktionsfortschritt, nächste Schritte und wichtige Fristen auf dem Laufenden",
+        "vendorCoordination": "Professionelle Kommunikation mit Gutachtern, Schätzern, Kreditgebern und Rechtstitelunternehmen",
+        "teamHandoffs": "Nahtlose Kommunikation bei der Übertragung von Geschäften zwischen Maklern und Transaktionskoordinatoren",
+        "followupSequences": "Konsistente, zeitnahe Follow-ups, die Leads pflegen und Kundenbeziehungen aufrechterhalten"
+      },
+      "timeSavings": {
+        "title": "💡 Zeitersparnis",
+        "description": "Durchschnittliche Zeitersparnis: 2-3 Stunden pro Tag bei der E-Mail-Erstellung. Verwandeln Sie 30-minütige E-Mail-Sitzungen in 5-minütige professionelle Kommunikation."
       }
     },
-    "solution": {
-      "title": "Unsere Lösung",
-      "feature1": {
-        "title": "Professionelle Antworten in Sekunden",
-        "description": "Markenkonforme Entwürfe in Gmail"
+    "smartTemplates": {
+      "title": "Intelligente Vorlagen",
+      "description": "Vorgefertigte, anpassbare E-Mail-Vorlagen für jedes Immobilien-Szenario. Professionelle Kommunikation wird konsistent und schnell.",
+      "tagline": "Professionelle E-Mail-Vorlagen, die sich an Ihre Marke und Ihren Stil anpassen",
+      "intro": "Greifen Sie auf eine Bibliothek bewährter E-Mail-Vorlagen für jedes Immobilien-Szenario zu. Von Listing-Präsentationen bis hin zu Abschluss-Updates erhalten Sie jedes Mal die richtige Nachricht mit intelligenten Vorschlägen und automatischer Personalisierung.",
+      "coreFeatures": "Kernfunktionen",
+      "features": {
+        "libraryAccess": {
+          "title": "📚 Vollständige Vorlagen-Bibliothek",
+          "description": "Zugriff auf Hunderte bewährte Vorlagen für Listings, Angebote, Inspektionen, Abschlüsse und Follow-ups. Neue Vorlagen werden regelmäßig basierend auf Branchenbest-Practices hinzugefügt."
+        },
+        "customization": {
+          "title": "✏️ Marken-Anpassung",
+          "description": "Integrieren Sie automatisch Ihr Makler-Branding, Kontaktinformationen und bevorzugte Sprache. Vorlagen passen sich an Ihre einzigartige Stimme und Ihren Stil an."
+        },
+        "smartFill": {
+          "title": "🤖 Intelligentes Auto-Ausfüllen",
+          "description": "Vorlagen füllen sich intelligent mit Immobiliendetails, Kundennamen und Transaktionsinformationen aus Ihrem Gmail-Kontext."
+        },
+        "compliance": {
+          "title": "⚖️ Compliance-bereit",
+          "description": "Alle Vorlagen enthalten erforderliche Offenlegungen und folgen Branchenvorschriften. Bleiben Sie compliant und kommunizieren Sie effizient."
+        }
       },
-      "feature2": {
-        "title": "Automatische Follow-ups",
-        "description": "Erinnerungen und Frist-Alerts, damit nichts durchrutscht"
+      "categories": "Vorlagen-Kategorien",
+      "templateTypes": {
+        "listings": {
+          "title": "Listing-Kommunikation",
+          "description": "Neue Listing-Ankündigungen, Preisänderungen, Besichtigungs-Feedback und Marketing-Updates"
+        },
+        "buyer": {
+          "title": "Käufer-Services",
+          "description": "Immobilienempfehlungen, Besichtigungspläne, Angebotsstrategien und Kaufberatung"
+        },
+        "transactions": {
+          "title": "Transaktionsmanagement",
+          "description": "Vertrags-Updates, Inspektionskoordination, Finanzierungsstatus und Abschlussvorbereitungen"
+        },
+        "followup": {
+          "title": "Follow-up-Sequenzen",
+          "description": "Lead-Pflege, Kunden-Check-ins, Empfehlungsanfragen und Beziehungspflege"
+        }
       },
-      "feature3": {
-        "title": "Compliance-Guardrails",
-        "description": "Vorlagen, Audit-Trails und Rollenrechte"
+      "howItWorks": "So funktioniert es",
+      "steps": {
+        "step1": {
+          "title": "Wählen Sie Ihr Szenario",
+          "description": "Wählen Sie aus kategorisierten Vorlagen oder suchen Sie nach spezifischen Situationen wie 'Inspektionsergebnisse' oder 'Abschlussverzögerung'."
+        },
+        "step2": {
+          "title": "Details automatisch ausfüllen",
+          "description": "Die Vorlage füllt bekannte Informationen aus Ihrem E-Mail-Kontext und Kundenhistorie automatisch aus."
+        },
+        "step3": {
+          "title": "Anpassen und senden",
+          "description": "Nehmen Sie persönliche Anpassungen vor und senden Sie professionelle, conforme Kommunikation in Sekunden."
+        }
       },
-      "closer": "RealtyClose verwandelt E-Mail-Chaos in einen klaren, konsistenten und pünktlichen Workflow."
-    },
-    "whoWeHelp": {
-      "title": "Für wen wir arbeiten",
-      "soloAgents": {
-        "title": "Solo-Makler",
-        "description": "Zeit sparen und professionell klingen"
-      },
-      "teams": {
-        "title": "Teams",
-        "description": "Stimme und Übergaben standardisieren"
-      },
-      "tc": {
-        "title": "Transaction Coordinators",
-        "description": "Erinnerungen und Checklisten automatisieren"
-      },
-      "brokerages": {
-        "title": "Maklerhäuser",
-        "description": "Marke und Compliance in großem Maßstab durchsetzen"
+      "benefits": {
+        "title": "🎯 Konsistenz-Vorteile",
+        "description": "Halten Sie professionelle Standards in der gesamten Team-Kommunikation aufrecht. Neue Makler klingen erfahren und erfahrene Makler sparen Zeit mit bewährten Nachrichten."
       }
     },
-    "proof": {
-      "title": "Nachweise und Ergebnisse",
-      "faster": {
-        "title": "Schnellere Antworten",
-        "description": "Entwürfe in Sekunden"
+    "dealTracking": {
+      "title": "Deal-Verfolgung",
+      "description": "Visuelle Zeitleiste und Meilenstein-Verfolgung für Immobilientransaktionen. Behalten Sie Fristen im Blick und halten Sie Geschäfte in Bewegung.",
+      "tagline": "Halten Sie jeden Deal auf Kurs mit visuellen Zeitleisten und intelligenten Erinnerungen",
+      "intro": "Verwandeln Sie chaotische E-Mail-Threads in organisierte Deal-Zeitleisten. Verfolgen Sie Meilensteine, Fristen und nächste Schritte mit visueller Klarheit. Verpassen Sie nie wieder ein kritisches Datum oder verlieren Sie den Überblick über den Transaktionsfortschritt.",
+      "coreFeatures": "Kernfunktionen",
+      "features": {
+        "timeline": {
+          "title": "📅 Visuelle Zeitleiste",
+          "description": "Sehen Sie Ihre gesamte Transaktion auf einen Blick. Wichtige Daten, Meilensteine und Fortschritts-Updates werden in einem intuitiven visuellen Format angezeigt."
+        },
+        "milestones": {
+          "title": "🎯 Intelligente Meilensteine",
+          "description": "Automatische Meilenstein-Erkennung aus Ihren E-Mails. Vertragsannahme, Inspektionszeiträume, Finanzierungsfristen und Abschlusstermine werden automatisch verfolgt."
+        },
+        "reminders": {
+          "title": "⏰ Proaktive Erinnerungen",
+          "description": "Werden Sie benachrichtigt, bevor Fristen erreicht werden. Intelligente Erinnerungen basierend auf Transaktionstyp, lokalen Marktpraktiken und kritischem Pfad-Analyse."
+        },
+        "collaboration": {
+          "title": "👥 Team-Zusammenarbeit",
+          "description": "Teilen Sie Deal-Fortschritt mit Teammitgliedern, Transaktionskoordinatoren und Kunden. Alle bleiben mit Echtzeit-Updates informiert."
+        }
       },
-      "fewer": {
-        "title": "Weniger Fehler",
-        "description": "Ton- und Compliance-Checks"
+      "tracking": "Was wird verfolgt",
+      "trackingItems": {
+        "contracts": "Vertragsausführung und Änderungsfristen",
+        "inspections": "Inspektionszeiträume, Berichte und Lösungszeitleisten",
+        "financing": "Kreditantrags-Meilensteine und Genehmigungsfristen",
+        "closing": "Titel-Arbeit, finale Begehung und Abschlussvorbereitungen"
       },
-      "happier": {
-        "title": "Zufriedenere Kunden",
-        "description": "Konsistente, proaktive Updates"
+      "howItWorks": "So funktioniert es",
+      "steps": {
+        "step1": {
+          "title": "Automatische Erkennung",
+          "description": "RealtyClose analysiert Ihre E-Mails, um neue Deals zu identifizieren und wichtige Daten und Meilensteine automatisch zu extrahieren."
+        },
+        "step2": {
+          "title": "Zeitleisten-Erstellung",
+          "description": "Eine visuelle Zeitleiste wird mit allen kritischen Daten, Fristen und nächsten Schritten klar angezeigt generiert."
+        },
+        "step3": {
+          "title": "Intelligente Benachrichtigungen",
+          "description": "Erhalten Sie proaktive Erinnerungen und Warnungen, um Deals voranzutreiben und verpasste Fristen zu verhindern."
+        }
       },
-      "more": {
-        "title": "Mehr Abschlüsse",
-        "description": "Weniger Zeit in E-Mails, mehr Zeit beim Kunden"
-      },
-      "quote": {
-        "text": "Unsere Reaktionszeiten haben sich um 80 % verbessert. Die Kunden merken den Unterschied.",
-        "author": "Teamleiter, Phoenix, AZ"
-      },
-      "metrics": "Ø-Entwurfszeit 10 Sek • 5 Sprachen • Funktioniert in Gmail"
-    },
-    "beforeAfter": {
-      "title": "Vorher vs. Nachher",
-      "beforeTitle": "Vor RealtyClose",
-      "before1": "3+ Stunden täglich für E-Mails",
-      "before2": "Verpasste Follow-ups und Verzögerungen",
-      "before3": "Fragmentierte Tools und Copy-Paste",
-      "afterTitle": "Mit RealtyClose",
-      "after1": "Antworten in 10 Sekunden",
-      "after2": "Automatische Erinnerungen, organisierte Threads",
-      "after3": "Jede Transaktion in Gmail nachverfolgt"
-    },
-    "vision": {
-      "title": "Vision",
-      "description": "Unsere Mission ist einfach: Kommunikationschaos eliminieren, damit Makler, Teams und Koordinatoren sich auf Abschlüsse konzentrieren können, nicht auf den Posteingang."
-    },
-    "founder": {
-      "title": "Über den Gründer",
-      "description": "RealtyClose wird von Zaza Technologies entwickelt. Gründer Dr. Greg Blackburn promovierte in Professional Education, besitzt einen MBA und einen BIS (Hons). Wir bauen praktische, sichere, professionelle Tools für Immobilienteams.",
-      "securityLink": "Sicherheit & Daten",
-      "privacyLink": "Datenschutz"
-    },
-    "finalCta": {
-      "title": "Bereit, Ihre nächste Kunden-E-Mail in Sekunden zu schreiben?",
-      "ctaPrimary": "Kostenlose Erweiterung installieren",
-      "ctaSecondary": "Demo ansehen",
-      "demoLink": "Persönliche Führung gewünscht? Demo vereinbaren."
-    },
-    "testimonials": {
-      "slide1": {
-        "eyebrow": "Stimmen aus der Praxis",
-        "quote": "RealtyClose hat unsere Reaktionszeiten um 80 Prozent verkürzt. Die Kunden merken den Unterschied.",
-        "attribution": "Mike Johnson, Teamleiter — Phoenix, AZ",
-        "badge1": "Verifizierter Makler",
-        "badge2": "Team-Rollout in 1 Tag",
-        "badge3": "Gmail-native"
-      },
-      "slide2": {
-        "eyebrow": "Stimmen aus der Praxis",
-        "quote": "Ich war anfangs skeptisch, aber die Entwürfe passen. Ich spare täglich 3 Stunden und meine Kunden schätzen die schnellen, professionellen Antworten.",
-        "attribution": "Sarah Martinez, Wohnimmobilien — Austin, TX",
-        "badge1": "Zeitersparnis",
-        "badge2": "Professioneller Ton",
-        "badge3": "Konsistente Updates"
-      },
-      "slide3": {
-        "eyebrow": "Stimmen aus der Praxis",
-        "quote": "Wir haben drei Deals gerettet, weil Follow-ups jedes Mal rechtzeitig rausgingen.",
-        "attribution": "Dana Lee, Transaction Coordinator — San Diego, CA",
-        "badge1": "Follow-up Automatisierung",
-        "badge2": "Frist-Tracking",
-        "badge3": "Checklisten"
-      },
-      "disclaimer": "Individuelle Ergebnisse können abweichen."
-    }
-  },
-  "features": {
-    "title": "Gmail-first Immobilien-Assistent",
-    "hero": {
-      "subtitle": "E-Mail-Chaos beheben ohne Gmail zu verlassen",
-      "description": "Gewinnen Sie 30+ Stunden pro Transaktion zurück und schützen Sie Geschäfte vor Kommunikationsfehlern mit KI-gestützter E-Mail-Unterstützung für Immobilienprofis.",
-      "stat1": "94% verlieren 30+ Std/Transaktion durch Kommunikation",
-      "stat2": "49% berichten über kommunikationsbedingte Deal-Verzögerungen",
-      "addToChrome": "Zu Chrome hinzufügen",
-      "watchDemo": "2-Min Gmail Demo ansehen",
-      "subtitle2": "Chrome Web Store • Kostenlose Testversion • Keine Kreditkarte erforderlich"
-    },
-    "howItWorks": {
-      "title": "So funktioniert es in Gmail",
-      "step1Title": "Gmail öffnen",
-      "step1Desc": "RealtyClose erscheint in Ihrer Gmail-Seitenleiste",
-      "step2Title": "RealtyClose anklicken",
-      "step2Desc": "KI analysiert Kontext und schlägt Antworten vor",
-      "step3Title": "Markenkonformen Entwurf einfügen",
-      "step3Desc": "Füllt Namen, Daten und nächste Schritte automatisch aus",
-      "noContextSwitching": "Kein Kontextwechsel. Keine neuen Anmeldungen. Keine Störung Ihres bestehenden Workflows."
-    },
-    "saveHours": {
-      "title": "30+ Stunden pro Transaktion sparen",
-      "description": "Verwandeln Sie 3+ Stunden tägliches E-Mail-Chaos in 30 Minuten optimierte Kommunikation",
-      "aiDrafts": "KI erstellt professionelle E-Mails",
-      "aiDraftsDesc": "Hören Sie auf, dieselbe Nachricht fünfmal umzuschreiben",
-      "smartTemplates": "Intelligente Vorlagen füllen Details automatisch aus",
-      "smartTemplatesDesc": "Namen, Daten, Immobilieninfos werden sofort eingefügt",
-      "oneClick": "Ein-Klick-Kunden-Updates",
-      "oneClickDesc": "Terminieren, Anrufe protokollieren, Updates senden ohne Tab-Wechsel",
-      "testimonial1": "Ich habe meine wöchentlichen Kunden-Updates von 30 Minuten auf 5 reduziert. Kompletter Gamechanger für meinen Workflow."
-    },
-    "protectDeals": {
-      "title": "Jedes Geschäft vor E-Mail-Ausfällen schützen",
-      "description": "Fast die Hälfte der Manager berichten über verzögerte/gefährdete Geschäfte durch Kommunikationsfehler. Werden Sie nicht zur Statistik.",
-      "alerts": "Unbeantwortete E-Mail-Warnungen",
-      "alertsDesc": "Verpassen Sie nie ein Follow-up, das Ihr Geschäft killen könnte",
-      "deadlines": "Termin-Flags",
-      "deadlinesDesc": "Kritische Daten tauchen automatisch in jedem E-Mail-Thread auf",
-      "singleSource": "Einzige Wahrheitsquelle",
-      "singleSourceDesc": "Jede Unterhaltung mit ihrem Geschäft verknüpft für vollständigen Kontext",
-      "testimonial2": "Unsere Abschlussrate verbesserte sich in zwei Monaten um 18%. Die Follow-up-Automatisierung ist unglaublich."
-    },
-    "brandExperience": {
-      "title": "Konsistente, markenkonforme Kundenerfahrung",
-      "description": "Klingen Sie wie die beste Version Ihrer selbst in jeder Nachricht, egal ob Sie solo arbeiten oder ein 50-Makler-Team leiten",
-      "sharedTemplates": "Geteilte Vorlagen",
-      "sharedTemplatesDesc": "Team-genehmigte Nachrichten für alle Makler",
-      "toneControl": "Ton-Kontrolle",
-      "toneControlDesc": "Professionell, freundlich oder dringend - KI passt sich Ihrer Markenstimme an",
-      "handoffContinuity": "Übergabe-Kontinuität",
-      "handoffContinuityDesc": "Nahtlose TC-Übergänge ohne Kundenverwirrung",
-      "testimonial3": "Kunden können nicht erkennen, wann ich Geschäfte an meinen TC übergebe. Die Kommunikation bleibt perfekt konsistent."
+      "benefits": {
+        "title": "🚀 Deal-Geschwindigkeit",
+        "description": "Durchschnittlich schließen Deals 12% schneller mit proaktivem Zeitleisten-Management. Reduzieren Sie Verzögerungen, verbessern Sie die Kundenzufriedenheit und steigern Sie das Transaktionsvolumen."
+      }
     },
     "compliance": {
-      "title": "Prüfbereite Compliance & Überwachung",
-      "description": "Schlafen Sie besser, wissend dass jede Kommunikation protokolliert, compliant und bereit für Makler-Review ist",
-      "centralizedLog": "Zentralisiertes Protokoll",
-      "centralizedLogDesc": "Jede E-Mail mit Zeitstempel und Teilnehmern verfolgt",
-      "rolePermissions": "Rollenbasierte Berechtigungen",
-      "rolePermissionsDesc": "Makler, TCs und Broker sehen genau das, was sie brauchen",
-      "reviews": "Reviews",
-      "reviewsDesc": "Broker-Genehmigungsworkflows für sensible Kommunikation",
-      "testimonial4": "Audit-Vorbereitungszeit um 90% reduziert. Der Compliance-Beauftragte kann die Organisation nicht glauben."
-    },
-    "builtFor": {
-      "title": "Entwickelt für Immobilienprofis, die in Gmail leben",
-      "tc": "Transaktionskoordinatoren",
-      "tcDesc": "Überwachung + Compliance ohne das Chaos. Gewinnen Sie Stunden zurück während Sie jedes Geschäft auf Kurs halten.",
-      "tcFeature1": "Zentralisierte Geschäftsüberwachung",
-      "tcFeature2": "Automatisierte Compliance-Prüfungen",
-      "tcFeature3": "Team-Übergabe-Management",
-      "teamLeads": "Teamleiter",
-      "teamLeadsDesc": "Konsistenz zwischen Maklern ohne Mikromanagement. Skalieren Sie Ihre Standards, nicht Ihren Stress.",
-      "teamLeadsFeature1": "Geteilte Vorlagen-Bibliotheken",
-      "teamLeadsFeature2": "Markenstimmen-Konsistenz",
-      "teamLeadsFeature3": "Leistungseinblicke",
-      "soloAgents": "Solo-Makler",
-      "soloAgentsDesc": "Geschwindigkeit und Eleganz ohne neue Tools zu lernen. Professionelle Kommunikation auf Unternehmensebene.",
-      "soloAgentsFeature1": "KI-gestütztes E-Mail-Schreiben",
-      "soloAgentsFeature2": "Intelligente Follow-up-Erinnerungen",
-      "soloAgentsFeature3": "Professionelle Vorlagen"
-    },
-    "whyNot": {
-      "title": "Warum nicht einfach ... verwenden?",
-      "crms": "CRMs",
-      "crmsProblem": "Das Problem: Mächtig aber komplex & nicht Gmail-nativ → verlangsamt Kommunikation.",
-      "crmsSolution": "RealtyClose: Funktioniert in Gmail, kein Kontextwechsel erforderlich.",
-      "transactionTools": "Transaktions-Tools",
-      "transactionToolsProblem": "Das Problem: Dokument-first; beheben tägliches E-Mail-Chaos nicht.",
-      "transactionToolsSolution": "RealtyClose: E-Mail-first mit eingebautem Geschäftskontext.",
-      "genericPlugins": "Generische E-Mail-Plugins",
-      "genericPluginsProblem": "Das Problem: Schnell aber nicht immobilienspezifisch oder compliance-bewusst.",
-      "genericPluginsSolution": "RealtyClose: Entwickelt für Immobilienprofis und ihre Workflows."
-    },
-    "security": {
-      "title": "Unternehmenssicherheit",
-      "description": "Bank-Level-Verschlüsselung, SOC 2 Compliance und Null-Datenspeicher-Richtlinien. Ihre Kundendaten verlassen nie Ihr Gmail-Konto."
-    },
-    "finalCta": {
-      "title": "Bereit, 30+ Stunden pro Transaktion zurückzugewinnen?",
-      "description": "Schließen Sie sich Tausenden von Immobilienprofis an, die ihren E-Mail-Workflow bereits transformiert haben.",
-      "addToChrome": "Zu Chrome hinzufügen - Kostenlos starten",
-      "watchDemo": "2-Min Demo ansehen",
-      "subtitle": "Chrome Web Store • 14-tägige kostenlose Testversion • Keine Kreditkarte erforderlich • Funktioniert mit bestehendem Gmail"
-    }
-  },
-  "contact": {
-    "title": "Kontakt zu RealtyClose",
-    "subtitle": "Nehmen Sie Kontakt mit dem RealtyClose-Team auf.",
-    "description": "Wählen Sie den richtigen Kontakt, damit wir schneller helfen können:",
-    "generalSupport": "Allgemeiner Support",
-    "privacyInquiries": "Datenschutz-Anfragen",
-    "pressMedia": "Presse & Medien",
-    "salesPartnerships": "Vertrieb & Partnerschaften",
-    "billingAccounts": "Abrechnung",
-    "supportHours": "Supportzeiten & Sprachen",
-    "supportHoursDesc": "Mo–Fr · 09:00–18:00 Uhr (MEZ/MESZ) · Support auf Deutsch und Englisch",
-    "companyDetails": "Unternehmensangaben",
-    "companyDetailsDesc": "RealtyClose ist ein Produkt der Zaza Technologies UG (haftungsbeschränkt).",
-    "businessAddress": "Gumbertstraße 150, 40229 Düsseldorf, Deutschland",
-    "registerCourt": "Registergericht: Amtsgericht Düsseldorf, HRB [Nummer]",
-    "vatId": "USt-IdNr.: DE [Nummer]",
-    "managingDirector": "Inhaber & CEO: Dr. Greg Blackburn",
-    "footerLinks": "Impressum • Datenschutz • Nutzungsbedingungen • Cookies"
-  },
-  "footer": {
-    "description": "KI-gestützte Tools, die Immobilienprofis dabei helfen, mehr Geschäfte abzuschließen und ihre Workflows zu optimieren.",
-    "coreSuite": "Kern-Suite",
-    "realtyCloseAgent": "RealtyClose Agent",
-    "realtyCloseInbox": "RealtyClose Inbox",
-    "realtyCloseExtension": "RealtyClose Erweiterung",
-    "dealPipeline": "Deal-Pipeline",
-    "comingSoon": "(Kommt bald)",
-    "viewAllCore": "Alle Kern-Produkte anzeigen",
-    "proTools": "Profi-Tools",
-    "aiEmailAssistant": "KI E-Mail-Assistent",
-    "smartTemplates": "Intelligente Vorlagen",
-    "dealTracking": "Deal-Verfolgung",
-    "complianceGuardrails": "Compliance-Leitplanken",
-    "integrations": "Integrationen",
-    "leadManager": "Lead-Manager",
-    "marketAnalytics": "Marktanalyse",
-    "crmIntegration": "CRM-Integration",
-    "mobileApp": "Mobile App",
-    "viewAllPro": "Alle Profi-Tools anzeigen",
-    "company": "Unternehmen",
-    "about": "Über uns",
-    "pricing": "Preise",
-    "security": "Sicherheit",
-    "support": "Support",
-    "privacy": "Datenschutz",
-    "contact": "Kontakt",
-    "copyright": "© 2025 RealtyClose. Alle Rechte vorbehalten.",
-    "familySites": "Schwester-Websites:",
-    "privacyPolicy": "Datenschutzrichtlinie",
-    "termsOfService": "Nutzungsbedingungen",
-    "cookiePolicy": "Cookie-Richtlinie",
-    "impressum": "Impressum"
-  },
-  "pricing": {
-    "title": "Preise, die sich in der ersten Woche amortisieren",
-    "subtitle": "Gmail-first Assistent für sekundenschnelle Antworten, um Geschäfte am Laufen zu halten und audit-bereit zu bleiben",
-    "monthly": "Monatlich",
-    "annual": "Jährlich",
-    "save20": "20% sparen",
-    "startTrial": "7-tägige Chrome-Testversion starten",
-    "watchDemo": "2-Min Gmail Demo ansehen",
-    "mostPopular": "Beliebtester",
-    "perUserMonth": "pro Nutzer/Monat",
-    "billedAnnually": "Jährlich abgerechnet",
-    "ifBilledMonthly": "bei monatlicher Abrechnung",
-    "upgradePrompts": "Upgrade-Hinweise erscheinen bei Limit-Erreichen",
-    "crmComparison": "Die meisten CRMs kosten 499–1.800$/Monat und sind immer noch nicht Gmail-nativ. RealtyClose beginnt bei 29$ und funktioniert dort, wo Sie bereits arbeiten.",
-    "roiHint": "30+ Stunden/Transaktion sparen • 49% der Manager berichten über kommunikationsbedingte Verzögerungen - beheben Sie das.",
-    "planComparison": "Plan-Vergleich",
-    "compareOutcomes": "Ergebnisse zwischen Plänen vergleichen",
-    "outcome": "Ergebnis",
-    "free": "Kostenlos",
-    "professional": "Professionell",
-    "team": "Team",
-    "featureAvailability": "Funktionsverfügbarkeit kann sich ändern, während wir das Produkt verbessern. Details finden Sie auf der Funktionen-Seite.",
-    "quickQuestions": "Schnelle Fragen",
-    "whySeatBased": "Warum platzbasiert, nicht pro E-Mail?",
-    "seatBasedAnswer": "Vorhersagbare Kosten; ermutigt zur täglichen Nutzung.",
-    "whoIsEachPlan": "Für wen ist jeder Plan?",
-    "planTargets": "Kostenlos = Solo-Tests; Professionell = Solo-/Hochvolumen-Makler; Team = Teamleiter/TCs; Enterprise = Maklerfirmen.",
-    "enterprise": "Enterprise (Maklerfirma/TC)",
-    "enterpriseDesc": "Für 50+ Plätze und erweiterte Kontrollen.",
-    "sso": "SSO, erweiterte Compliance-Exporte, API & Integrationen",
-    "customIntegrations": "Benutzerdefinierte Integrationen (MLS, CRM)",
-    "whiteLabel": "White-Label-Optionen",
-    "advancedAudit": "Erweiterte Audit- & Berichterstattung",
-    "conciergeOnboarding": "Concierge-Onboarding & Schulung",
-    "dedicatedManager": "Dedizierter Erfolgsmanager",
-    "prioritySupport": "Prioritäts-Telefonsupport",
-    "slaGuarantees": "SLA-Garantien",
-    "scheduleDemo": "Enterprise-Demo planen",
-    "readyToReclaim": "Bereit, 30+ Stunden pro Transaktion zurückzugewinnen?",
-    "joinThousands": "Schließen Sie sich Tausenden von Immobilienprofis an, die ihren E-Mail-Workflow mit Gmail-first Assistenz transformiert haben.",
-    "chromeTrialFeatures": "7-tägige Chrome-Testversion • Keine Kreditkarte • Jederzeit kündbar",
-    "addToChrome": "Zu Chrome hinzufügen",
-    "scheduleStandardDemo": "Demo planen",
-    "testimonialQuote": "Ich habe meine wöchentlichen Kunden-Updates von 30 Minuten auf 5 reduziert. Kompletter Gamechanger für meinen Workflow.",
-    "testimonialAuthor": "- Sarah M., Teamleiterin bei Compass",
-    "usedBy": "Verwendet von TCs, Teamleitern, Solo-Maklern und compliance-fokussierten Maklerfirmen",
-    "plans": {
-      "free": {
-        "name": "Kostenlos",
-        "tagline": "Testen Sie den Gmail-Workflow. Perfekt für Solo-Tests.",
-        "ctaLabel": "Kostenlos starten",
-        "bullets": [
-          "5 KI-E-Mail-Entwürfe pro Monat",
-          "Grundlegende Immobilien-Vorlagen",
-          "Gmail-Integration",
-          "Community-Support"
-        ]
+      "title": "Compliance-Leitplanken",
+      "description": "Eingebaute Compliance-Checks und Audit-Trails für Immobilien-Kommunikation. Bleiben Sie compliant und behalten Sie die Effizienz bei.",
+      "tagline": "Bleiben Sie compliant mit automatisierten Checks und vollständigen Audit-Trails",
+      "intro": "Navigieren Sie mit Vertrauen durch komplexe Immobilienvorschriften. Automatisierte Compliance-Checks, Erkennung erforderlicher Offenlegungen und vollständige Audit-Trails stellen sicher, dass Ihre Kommunikation Branchenstandards und regulatorische Anforderungen erfüllt.",
+      "coreFeatures": "Kernfunktionen",
+      "features": {
+        "autoChecks": {
+          "title": "🔍 Automatische Compliance-Checks",
+          "description": "Jede E-Mail wird vor dem Senden auf erforderliche Offenlegungen, verbotene Sprache und regulatorische Compliance gescannt."
+        },
+        "auditTrail": {
+          "title": "📋 Vollständiger Audit-Trail",
+          "description": "Umfassende Protokollierung aller Kommunikation mit Zeitstempeln, Empfängern und Compliance-Status für einfache Berichterstattung."
+        },
+        "disclosures": {
+          "title": "📄 Intelligente Offenlegungen",
+          "description": "Automatisches Einfügen erforderlicher Offenlegungen basierend auf Transaktionstyp, Immobilienstandort und regulatorischen Anforderungen."
+        },
+        "approval": {
+          "title": "✅ Genehmigungsworkflows",
+          "description": "Leiten Sie sensible Kommunikation durch bestimmte Genehmiger vor dem Senden. Konfigurierbare Genehmigungsketten für verschiedene Szenarien."
+        }
       },
-      "pro": {
-        "name": "Professionell", 
-        "tagline": "Gewinnen Sie Stunden zurück und schützen Sie jedes Geschäft - direkt in Gmail.",
-        "ctaLabel": "7-tägige Chrome-Testversion starten",
-        "bullets": [
-          "Unbegrenzte KI-Entwürfe & intelligente Vorlagen - sparen Sie 30+ Stunden/Transaktion",
-          "Schnellaktionen für Follow-ups & Termin-Flags - reduzieren Sie Verzögerungen",
-          "Markenkonformer Ton & Stil-Kontrollen für polierte Antworten",
-          "Prioritäts-E-Mail-Support",
-          "Analysen & Einblicke"
-        ]
+      "protection": "Was geschützt wird",
+      "protectionAreas": {
+        "fair": "Faire Wohnungs- und Anti-Diskriminierungs-Compliance",
+        "disclosure": "Erforderliche Immobilien- und Makler-Offenlegungserklärungen",
+        "advertising": "Marketing- und Werbungsregulierungs-Compliance",
+        "privacy": "Kundendatenschutz- und Datenschutzanforderungen"
       },
-      "team": {
-        "name": "Team",
-        "tagline": "Konsistenz und Überwachung für Teams & Maklerfirmen.",
-        "ctaLabel": "Mit Vertrieb sprechen",
-        "bullets": [
-          "Alles in Professionell",
-          "Geteilte Vorlagen-Bibliothek & Genehmigungen - Markenkontrolle",
-          "Team-Zusammenarbeit & Rollenberechtigungen - reibungslose Übergaben",
-          "Compliance & Audit-Logs - Überprüfung in Sekunden",
-          "Dedizierter Account-Manager"
-        ]
-      }
-    },
-    "comparison": {
-      "timeSaved": {
-        "label": "Gesparte Zeit (pro Transaktion)",
-        "free": "Workflow testen",
-        "pro": "30+ Std gespart",
-        "team": "30+ Std gespart"
-      },
-      "dealProtection": {
-        "label": "Geschäftsschutz (verpasste E-Mail- / Termin-Warnungen)",
-        "free": "-",
-        "pro": "✓",
-        "team": "✓"
-      },
-      "brandConsistency": {
-        "label": "Markenkonsistenz (Vorlagen, Ton, Genehmigungen)",
-        "free": "Grundlegend",
-        "pro": "Individuell",
-        "team": "Teamweit"
-      },
-      "compliance": {
-        "label": "Compliance & Audit-Bereitschaft",
-        "free": "-",
-        "pro": "Individuell",
-        "team": "✓"
-      },
-      "teamControls": {
-        "label": "Team-Kontrollen & Berechtigungen",
-        "free": "-",
-        "pro": "-",
-        "team": "✓"
-      }
-    }
-  },
-  "impressum": {
-    "title": "Impressum",
-    "description": "Rechtliche Informationen und Unternehmensangaben für RealtyClose",
-    "companyInfo": "Unternehmensangaben",
-    "legalInfo": "Rechtliche Informationen",
-    "registerCourt": "Registergericht",
-    "vatId": "USt-IdNr.",
-    "managingDirector": "Inhaber & CEO",
-    "contact": "Kontaktinformationen",
-    "email": "E-Mail",
-    "website": "Webseite",
-    "responsibility": "Verantwortlich für Inhalte",
-    "responsibilityText": "Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.",
-    "disclaimer": "Haftungsausschluss",
-    "disclaimerText": "Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich."
-  },
-  "privacy": {
-    "title": "Datenschutzerklärung",
-    "lastUpdated": "Zuletzt aktualisiert",
-    "overview": {
-      "title": "Überblick",
-      "description": "Bei RealtyClose sind wir dem Schutz Ihrer Privatsphäre und der Sicherheit Ihrer persönlichen Daten verpflichtet. Diese Datenschutzerklärung erklärt, wie wir Ihre Daten sammeln, verwenden und schützen, wenn Sie unseren Gmail-first KI-Assistenten für Immobilienkommunikation nutzen."
-    },
-    "dataCollection": {
-      "title": "Informationen, die wir sammeln",
-      "description": "Wir sammeln folgende Arten von Informationen:",
-      "item1": "Kontoinformationen: E-Mail-Adresse, Name und Authentifizierungsdaten bei der Anmeldung",
-      "item2": "Nutzungsdaten: Wie Sie unseren Service nutzen, einschließlich verwendeter E-Mail-Entwürfe und Vorlagen",
-      "item3": "Technische Daten: Browser-Typ, Geräteinformationen und IP-Adresse für Sicherheit und Analyse",
-      "item4": "E-Mail-Inhalte: Nur in Echtzeit für KI-Unterstützung verarbeitet und sofort verworfen"
-    },
-    "dataUse": {
-      "title": "Wie wir Ihre Informationen verwenden",
-      "description": "Wir verwenden Ihre Informationen für:",
-      "item1": "Bereitstellung von KI-gestützter E-Mail-Unterstützung und Entwurfsdiensten",
-      "item2": "Verbesserung unserer Servicequalität und Entwicklung neuer Funktionen",
-      "item3": "Gewährleistung der Sicherheit und Verhinderung unbefugten Zugriffs",
-      "item4": "Versendung wichtiger Service-Updates und Support-Kommunikation"
-    },
-    "dataSharing": {
-      "title": "Weitergabe von Informationen",
-      "description": "Wir verkaufen, tauschen oder vermieten Ihre persönlichen Daten nicht an Dritte. Wir können Daten nur teilen, wenn dies gesetzlich vorgeschrieben ist oder zum Schutz unserer Rechte und der Sicherheit unserer Nutzer erforderlich ist."
-    },
-    "dataSecurity": {
-      "title": "Datensicherheit",
-      "description": "Wir implementieren branchenübliche Sicherheitsmaßnahmen einschließlich Verschlüsselung, sicherer Datenübertragung und regelmäßiger Sicherheitsaudits. Ihre E-Mail-Inhalte werden in Echtzeit verarbeitet und nicht auf unseren Servern gespeichert."
-    },
-    "userRights": {
-      "title": "Ihre Rechte",
-      "description": "Sie haben das Recht:",
-      "item1": "Ihre persönlichen Daten einzusehen und zu überprüfen",
-      "item2": "Korrektur ungenauer Daten zu verlangen",
-      "item3": "Löschung Ihres Kontos und zugehöriger Daten zu verlangen",
-      "item4": "Einwilligung zu widerrufen und unseren Service jederzeit zu beenden"
-    },
-    "contact": {
-      "title": "Kontaktieren Sie uns",
-      "description": "Wenn Sie Fragen zu dieser Datenschutzerklärung oder unseren Datenpraktiken haben, kontaktieren Sie uns unter"
-    }
-  },
-  "terms": {
-    "title": "Nutzungsbedingungen",
-    "lastUpdated": "Zuletzt aktualisiert",
-    "acceptance": {
-      "title": "Annahme der Bedingungen",
-      "description": "Durch den Zugriff auf und die Nutzung von RealtyClose akzeptieren Sie diese Vereinbarung und stimmen zu, an deren Bedingungen gebunden zu sein. Wenn Sie diesen Bedingungen nicht zustimmen, nutzen Sie diesen Service bitte nicht."
-    },
-    "serviceDescription": {
-      "title": "Service-Beschreibung",
-      "description": "RealtyClose ist ein Gmail-first KI-Assistent, der Immobilienprofis beim Verfassen professioneller E-Mails, der Kommunikationsverwaltung und der Einhaltung von Compliance hilft. Der Service funktioniert als Chrome-Erweiterung, die in Gmail integriert ist."
-    },
-    "userResponsibilities": {
-      "title": "Nutzerverantwortungen",
-      "description": "Als Nutzer stimmen Sie zu:",
-      "item1": "Genaue und aktuelle Informationen bei der Kontoerstellung anzugeben",
-      "item2": "Den Service nur für rechtmäßige Immobiliengeschäftszwecke zu nutzen",
-      "item3": "Die Vertraulichkeit Ihrer Kontodaten zu wahren",
-      "item4": "Alle anwendbaren Immobilienvorschriften und Gesetze einzuhalten"
-    },
-    "subscription": {
-      "title": "Abonnement und Zahlung",
-      "description": "RealtyClose bietet verschiedene Abonnementpläne. Zahlungen werden sicher über Drittanbieter-Zahlungsabwickler verarbeitet. Sie können Ihr Abonnement jederzeit kündigen, und der Zugang bleibt bis zum Ende Ihres Abrechnungszeitraums bestehen."
-    },
-    "limitation": {
-      "title": "Haftungsbeschränkung",
-      "description": "RealtyClose bietet KI-Unterstützung für E-Mail-Entwürfe. Nutzer sind dafür verantwortlich, alle KI-generierten Inhalte vor dem Versenden zu überprüfen. Wir haften nicht für Konsequenzen aus der Verwendung KI-generierter Inhalte."
-    },
-    "termination": {
-      "title": "Kündigung",
-      "description": "Beide Parteien können diese Vereinbarung jederzeit kündigen. Bei Kündigung endet Ihr Zugang zum Service, und ausstehende Gebühren werden gemäß unseren Abrechnungsbestimmungen berechnet."
-    },
-    "changes": {
-      "title": "Änderungen der Bedingungen",
-      "description": "Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern. Nutzer werden über wesentliche Änderungen informiert, und die fortgesetzte Nutzung des Services gilt als Zustimmung zu geänderten Bedingungen."
-    },
-    "contact": {
-      "title": "Kontaktinformationen",
-      "description": "Bei Fragen zu diesen Nutzungsbedingungen kontaktieren Sie uns unter"
-    }
-  },
-  "cookies": {
-    "title": "Cookie-Richtlinie",
-    "lastUpdated": "Zuletzt aktualisiert",
-    "overview": {
-      "title": "Was sind Cookies",
-      "description": "Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden, wenn Sie unsere Website besuchen. Wir verwenden Cookies, um Ihr Browsing-Erlebnis zu verbessern, die Website-Nutzung zu analysieren und personalisierte Inhalte bereitzustellen."
-    },
-    "essential": {
-      "title": "Notwendige Cookies",
-      "description": "Diese Cookies sind für das ordnungsgemäße Funktionieren der Website erforderlich:",
-      "item1": "Authentifizierungs-Cookies, um Sie angemeldet zu halten",
-      "item2": "Sicherheits-Cookies zum Schutz vor Betrug",
-      "item3": "Präferenz-Cookies, um Ihre Einstellungen zu speichern"
-    },
-    "analytics": {
-      "title": "Analyse-Cookies",
-      "description": "Wir verwenden Analyse-Cookies, um zu verstehen, wie Besucher mit unserer Website interagieren:",
-      "item1": "Google Analytics zur Verfolgung von Seitenbesuchen und Nutzerverhalten",
-      "item2": "Performance-Metriken zur Identifizierung von Verbesserungsbereichen",
-      "item3": "Nutzungsstatistiken zur Verbesserung unserer Service-Angebote"
-    },
-    "preferences": {
-      "title": "Verwaltung Ihrer Präferenzen",
-      "description": "Sie können Cookie-Einstellungen über Ihre Browser-Präferenzen steuern. Beachten Sie, dass das Deaktivieren bestimmter Cookies die Website-Funktionalität und Ihr Nutzererlebnis beeinträchtigen kann."
-    },
-    "thirdParty": {
-      "title": "Drittanbieter-Cookies",
-      "description": "Einige Cookies werden von Drittanbieterdiensten gesetzt, die wir nutzen:",
-      "item1": "Google Analytics für Website-Analysen",
-      "item2": "Authentifizierungsanbieter für sicheren Login",
-      "item3": "Zahlungsabwickler für Abonnement-Management"
-    },
-    "control": {
-      "title": "Cookie-Kontrolle",
-      "description": "Sie können Cookies über Ihre Browser-Einstellungen kontrollieren und löschen. Die meisten Browser ermöglichen es, Cookies zu verweigern oder Sie zu warnen, wenn Cookies gesendet werden."
-    },
-    "contact": {
-      "title": "Fragen",
-      "description": "Wenn Sie Fragen zu unserer Verwendung von Cookies haben, kontaktieren Sie uns unter"
-    }
-  },
-  "faq": {
-    "title": "Häufig gestellte Fragen",
-    "subtitle": "Alles, was Sie über RealtyClose wissen müssen",
-    "searchPlaceholder": "FAQs durchsuchen...",
-    "noResults": "Keine FAQs gefunden, die Ihrer Suche entsprechen.",
-    "clearSearch": "Suche löschen",
-    "categories": {
-      "all": "Alle",
-      "general": "Allgemein",
-      "pricing": "Preise & Pläne", 
-      "technical": "Technisch",
-      "integration": "Integration",
-      "compliance": "Compliance & Sicherheit"
-    },
-    "questions": {
-      "founder": {
-        "question": "Wer steckt hinter RealtyClose? Welche Qualifikationen hat der Gründer?",
-        "answer": "RealtyClose wurde von <strong>Dr. Greg Blackburn</strong> gegründet und wird von ihm geleitet. Greg ist ein produktorientierter Technologe, der seit Jahren nutzerzentrierte Software und Daten-Workflows in regulierten Umgebungen ausliefert. Seine Erfahrung umfasst CRM, Workflow-Automatisierung und KI-gestütztes Schreiben für professionelle Teams.<br><br><strong>Ausbildung:</strong><br>• PhD<br>• MBA<br>• BIS (Hons) (Bachelor of Information Systems, mit Auszeichnung)<br><br><strong>Was das für Sie bedeutet:</strong><br>• <strong>Praxisnahe, operations-orientierte Gestaltung</strong> — das Produkt folgt der Arbeitsweise von Maklern, TCs und Brokern<br>• <strong>Compliance & Vertrauen</strong> — Workflows sind von Beginn an prüfbar und richtlinienkonform<br>• <strong>Konsequente Auslieferung</strong> — wir liefern häufig kleine, nachvollziehbare Verbesserungen und kommunizieren den Fahrplan offen<br><br><strong>Ausgewählte Qualifikationen & Nachweise:</strong><br>• Nachweisbare Erfolge beim Aufbau und Skalieren von B2B-Software<br>• Leitung interdisziplinärer Teams (Product, Engineering, Go-to-Market)<br>• Erfahrung mit Integrationen in Google Workspace (Gmail/Calendar) und moderne APIs<br>• Starker Fokus auf Datenschutz, Least-Privilege-Prinzip und transparente Roadmaps<br><br><strong>Verifizierung & Profile:</strong><br>• LinkedIn: <a href=\"https://www.linkedin.com/in/drgregblackburn\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.linkedin.com/in/drgregblackburn</a><br>• Google Scholar: <a href=\"https://tinyurl.com/55kxxhas\" target=\"_blank\" rel=\"noopener noreferrer\">https://tinyurl.com/55kxxhas</a><br>• Kontakt: hello@zazatechnologies.com",
-        "category": "general"
-      },
-      "whatIsRealtyClose": {
-        "question": "Was ist RealtyClose?",
-        "answer": "RealtyClose ist ein Gmail-first KI-Assistent, der speziell für Immobilienprofis entwickelt wurde. Er hilft Ihnen, professionelle E-Mails in Sekunden zu verfassen, Geschäfte zu verfolgen und compliant zu bleiben - alles ohne Gmail zu verlassen.",
-        "category": "general"
-      },
-      "howDoesItWork": {
-        "question": "Wie funktioniert RealtyClose?",
-        "answer": "RealtyClose integriert sich direkt in Ihre Gmail-Oberfläche als Chrome-Erweiterung. Wenn Sie eine E-Mail verfassen, analysiert unsere KI den Kontext und schlägt professionelle, compliance-bereite Antworten vor. Sie können Ton anpassen, geschäftsspezifische Details hinzufügen und polierte E-Mails in Sekunden senden.",
-        "category": "general"
-      },
-      "whoIsItFor": {
-        "question": "Für wen ist RealtyClose?",
-        "answer": "RealtyClose ist für alle Immobilienprofis entwickelt: Solo-Makler, Teamleiter, Transaktionskoordinatoren und Maklerfirmen. Ob Sie 2 Geschäfte pro Jahr oder 200 abwickeln, unsere Tools skalieren, um Ihnen bei der effizienteren Kommunikation zu helfen.",
-        "category": "general"
-      },
-      "pricingPlans": {
-        "question": "Was sind Ihre Preispläne?",
-        "answer": "Wir bieten drei Hauptpläne: Kostenlos (5 Entwürfe/Monat), Professionell (29$/Nutzer/Monat) und Team (49$/Nutzer/Monat). Enterprise-Pläne sind für Maklerfirmen mit 50+ Maklern verfügbar. Alle bezahlten Pläne beinhalten eine 7-tägige kostenlose Testversion.",
-        "category": "pricing"
-      },
-      "freeTrialDetails": {
-        "question": "Was ist in der kostenlosen Testversion enthalten?",
-        "answer": "Die 7-tägige kostenlose Testversion gibt Ihnen vollen Zugang zu Professional-Funktionen: unbegrenzte KI-Entwürfe, intelligente Vorlagen, Follow-up-Erinnerungen und Compliance-Prüfung. Keine Kreditkarte erforderlich zum Starten.",
-        "category": "pricing"
-      },
-      "cancelAnytime": {
-        "question": "Kann ich jederzeit kündigen?",
-        "answer": "Ja, Sie können Ihr Abonnement jederzeit kündigen. Ihr Zugang bleibt bis zum Ende Ihres Abrechnungszeitraums bestehen, und Sie können jederzeit auf unseren kostenlosen Plan downgraden.",
-        "category": "pricing"
-      },
-      "dataPrivacy": {
-        "question": "Wie gehen Sie mit meinen Daten um?",
-        "answer": "Wir nehmen Datenschutz ernst. RealtyClose arbeitet innerhalb von Gmails Sicherheitsframework und folgt Bank-Level-Verschlüsselungsstandards. Wir speichern Ihre E-Mail-Inhalte nicht - unsere KI verarbeitet Anfragen in Echtzeit und verwirft sie sofort.",
-        "category": "compliance"
-      },
-      "compliance": {
-        "question": "Ist RealtyClose compliant mit Immobilienvorschriften?",
-        "answer": "Ja, RealtyClose ist mit Compliance im Hinterkopf entwickelt. Unsere Vorlagen enthalten erforderliche Offenlegungen, unsere Audit-Logs verfolgen alle Kommunikationen, und Makler-Überwachungsfunktionen gewährleisten Team-Compliance. Sie sind jedoch immer dafür verantwortlich, Ihre lokalen Vorschriften zu befolgen.",
-        "category": "compliance"
-      },
-      "gmailSecurity": {
-        "question": "Sind meine Gmail-Daten sicher?",
-        "answer": "Absolut. RealtyClose verwendet OAuth 2.0 für sicheren Gmail-Zugang und benötigt nur die minimal notwendigen Berechtigungen. Wir sind SOC 2-compliant und Ihre E-Mail-Daten verlassen nie Googles Server außer für Echtzeit-KI-Verarbeitung.",
-        "category": "compliance"
-      },
-      "installation": {
-        "question": "Wie installiere ich RealtyClose?",
-        "answer": "Besuchen Sie einfach den Chrome Web Store, suchen Sie nach 'RealtyClose' und klicken Sie auf 'Zu Chrome hinzufügen'. Nach der Installation öffnen Sie Gmail und Sie sehen das RealtyClose-Panel in Ihrer Seitenleiste. Melden Sie sich mit Ihrem Google-Konto an und Sie sind startklar.",
-        "category": "technical"
-      },
-      "browserSupport": {
-        "question": "Welche Browser werden unterstützt?",
-        "answer": "Derzeit ist RealtyClose als Chrome-Erweiterung verfügbar. Wir arbeiten an der Unterstützung für Edge und Firefox. Für die beste Erfahrung empfehlen wir die neueste Version von Chrome.",
-        "category": "technical"
-      },
-      "mobileSupport": {
-        "question": "Funktioniert RealtyClose auf dem Handy?",
-        "answer": "Noch nicht, aber mobile Unterstützung kommt bald. Derzeit funktioniert RealtyClose am besten auf Desktop-/Laptop-Computern mit Chrome-Browser und Gmail.",
-        "category": "technical"
-      },
-      "crmIntegration": {
-        "question": "Integriert sich RealtyClose in mein CRM?",
-        "answer": "RealtyClose arbeitet neben Ihrem bestehenden CRM, indem es innerhalb von Gmail funktioniert. Wir ersetzen Ihr CRM nicht - wir verbessern Ihre E-Mail-Kommunikation. Direkte CRM-Integrationen sind für zukünftige Versionen geplant.",
-        "category": "integration"
-      },
-      "outlookSupport": {
-        "question": "Unterstützen Sie Outlook?",
-        "answer": "Derzeit nicht. RealtyClose ist speziell für Gmail entwickelt, um die bestmögliche Integration zu bieten. Wir könnten Outlook-Unterstützung in der Zukunft basierend auf Nutzernachfrage in Betracht ziehen.",
-        "category": "integration"
-      },
-      "teamManagement": {
-        "question": "Wie funktioniert Team-Management?",
-        "answer": "Team-Pläne beinhalten geteilte Vorlagen-Bibliotheken, rollenbasierte Berechtigungen und zentralisierte Überwachung. Teamleiter können Vorlagen genehmigen, Nutzung überwachen und Markenkonsistenz in allen Team-Kommunikationen gewährleisten.",
-        "category": "integration"
-      },
-      "aiAccuracy": {
-        "question": "Wie genau ist die KI?",
-        "answer": "Unsere KI ist speziell auf Immobilien-Kommunikationsmuster trainiert und erreicht hohe Genauigkeit für branchenspezifische Inhalte. Sie sollten jedoch immer KI-generierte Inhalte vor dem Senden überprüfen und anpassen.",
-        "category": "technical"
-      },
-      "customTemplates": {
-        "question": "Kann ich benutzerdefinierte Vorlagen erstellen?",
-        "answer": "Ja! Professional- und Team-Pläne beinhalten die Erstellung benutzerdefinierter Vorlagen. Sie können Vorlagen für häufige Szenarien wie Listing-Updates, Closing-Zeitpläne und Kunden-Check-ins erstellen.",
-        "category": "technical"
-      },
-      "supportOptions": {
-        "question": "Welche Support-Optionen sind verfügbar?",
-        "answer": "Kostenlose Nutzer erhalten Community-Support, Professional-Nutzer erhalten E-Mail-Support, und Team-/Enterprise-Nutzer erhalten prioritären Telefon-Support. Wir haben auch umfangreiche Dokumentation und Video-Tutorials.",
-        "category": "general"
-      }
-    },
-    "demo": {
-      "title": "Interaktive Demo",
-      "subtitle": "Sehen Sie, wie RealtyClose Ihren Gmail-Workflow in 4 Minuten transformiert",
-      "controls": {
-        "play": "Abspielen",
-        "pause": "Pause",
-        "replay": "Wiederholen"
-      },
-      "navigation": {
-        "previous": "Zurück",
-        "next": "Weiter"
-      },
-      "demoLabel": "Demo",
+      "howItWorks": "So funktioniert es",
       "steps": {
-        "opening": {
-          "title": "Eröffnung",
-          "content": {
-            "title": "Makler verbringen 3+ Std./Tag mit E-Mails.",
-            "subtitle": "RealtyClose = Posteingang → Deal-Abschluss-Maschine",
-            "description": "Immobilienmakler verbringen über drei Stunden täglich in E-Mails. RealtyClose verwandelt diesen Posteingang in eine Deal-Abschluss-Maschine."
-          }
+        "step1": {
+          "title": "Echtzeit-Scanning",
+          "description": "Jeder E-Mail-Entwurf wird auf Compliance-Probleme, fehlende Offenlegungen und potenzielle regulatorische Verstöße analysiert."
         },
-        "listing": {
-          "title": "Neue Listing-Nachfassung",
-          "content": {
-            "title": "Käufer-E-Mail kommt an...",
-            "subtitle": "KI analysiert sofort → Polierter Entwurf in 30 Sek.",
-            "description": "Ein Käufer fragt per E-Mail nach Details zu einem neuen Listing. RealtyClose analysiert sofort und schlägt eine professionelle Antwort vor. Was früher 15 Minuten dauerte, dauert jetzt 30 Sekunden."
-          }
+        "step2": {
+          "title": "Intelligente Vorschläge",
+          "description": "Erhalten Sie Empfehlungen für erforderliche Offenlegungen, sicherere Sprachalternativen und Compliance-Best-Practices."
         },
-        "closing": {
-          "title": "Abschluss-Koordination",
-          "content": {
-            "title": "Abschlüsse = komplex + chaotisch",
-            "subtitle": "Vereinheitlichte Threads, intelligente Fristen, Ein-Klick-Updates",
-            "description": "Mehrere Parteien. Endloses Hin und Her. RealtyClose bringt Ordnung ins Chaos mit automatischem Threading, Fristenverfolgung und Ein-Klick-Status-Updates."
-          }
-        },
-        "negotiation": {
-          "title": "Preisverhandlung",
-          "content": {
-            "title": "Preisverhandlungen = hohes Risiko",
-            "subtitle": "KI schlägt Gegenangebote mit Marktdaten vor",
-            "description": "RealtyClose erstellt Antworten, die Entschlossenheit mit Diplomatie balancieren. Professionelle, datengestützte Antworten, die Vertrauen aufbauen und Deals voranbringen."
-          }
-        },
-        "actions": {
-          "title": "Schnellaktionen",
-          "content": {
-            "title": "Alles in Gmail - kein Wechseln",
-            "subtitle": "Ein-Klick-Protokollierung, Terminplanung, Berichterstattung",
-            "description": "Anrufe protokollieren, Besichtigungen planen, Berichte erstellen - ohne Ihren Posteingang zu verlassen. Das Produktivitäts-Toolkit, auf das Makler gewartet haben."
-          }
-        },
-        "comparison": {
-          "title": "Vorher vs Nachher",
-          "content": {
-            "title": "Der Unterschied ist wie Tag und Nacht",
-            "subtitle": "Vom Chaos zur Zuversicht",
-            "description": "Sparen Sie täglich 3+ Stunden. Saubere Threads, polierte Antworten, automatisierte Erinnerungen und selbstbewusste Kundenkommunikation."
-          }
+        "step3": {
+          "title": "Audit-Protokollierung",
+          "description": "Alle Kommunikation wird automatisch mit Compliance-Status protokolliert, wodurch die Audit-Vorbereitung einfach und gründlich wird."
         }
       },
-      "inbox": {
-        "email1": "Sarah Chen - Interessiert an Oak Street Immobilie",
-        "email2": "Mike Johnson - Abschlussdokumente für Main St",
-        "email3": "Grundbuchamt - Fehlende Offenlegungsformular"
-      },
-      "email": {
-        "from": "Von",
-        "content": "Hallo, ich habe das Listing für 456 Oak Street gesehen und bin sehr interessiert! Können Sie mir mehr über die Immobilie erzählen?"
-      },
-      "ai": {
-        "assistant": "RealtyClose KI-Assistent",
-        "response": "Hallo Sarah, vielen Dank für Ihr Interesse an 456 Oak Street! Dieses wunderschöne 4-Zimmer-Haus bietet...",
-        "insert": "Einfügen & Senden"
-      },
-      "cta": {
-        "title": "Bereit zum Ausprobieren?",
-        "subtitle": "Kostenlos • Sofortige Einrichtung • Vertraut von Maklern",
-        "button": "Kostenlose Erweiterung installieren"
-      },
-      "comparison": {
-        "title": "Vorher vs Nachher RealtyClose",
-        "before": {
-          "title": "Vorher",
-          "point1": "15-20 Minuten pro professionelle E-Mail",
-          "point2": "Verpasste Nachfassungen und verlorene Deals",
-          "point3": "Inkonsistenter Ton und Messaging",
-          "point4": "Manuelle Verfolgung über Tabellen"
-        },
-        "after": {
-          "title": "Nachher",
-          "point1": "10-30 Sekunden pro E-Mail",
-          "point2": "Automatisierte Nachfassungen verpassen nie",
-          "point3": "Konsistenter professioneller Ton",
-          "point4": "Alles in Gmail verfolgt"
-        }
-      },
-      "testimonials": {
-        "testimonial1": {
-          "quote": "Ich ging vom Chaos zur Zuversicht.",
-          "author": "Sarah M., TX"
-        },
-        "testimonial2": {
-          "quote": "Unsere Antwortzeiten verbesserten sich um 80%.",
-          "author": "Mike J., AZ"
-        }
+      "benefits": {
+        "title": "🛡️ Risikoreduktion",
+        "description": "Reduzieren Sie Compliance-Verstöße um 95% mit automatisierten Checks. Rationalisieren Sie die Audit-Vorbereitung und behalten Sie regulatorisches Vertrauen."
       }
     },
-    "install": {
-      "title": "Erweiterung installieren",
-      "subtitle": "Installieren Sie die RealtyClose Chrome-Erweiterung in 3 einfachen Schritten. Beginnen Sie in Sekunden professionelle E-Mails in Gmail zu schreiben.",
-      "intro": {
-        "title": "RealtyClose in unter 2 Minuten in Ihrem Gmail zum Laufen bringen",
-        "subtitle": "Folgen Sie diesen 3 einfachen Schritten, um in Sekunden professionelle Immobilien-E-Mails zu schreiben"
-      },
-      "step1": {
-        "title": "Aus Chrome Web Store installieren",
-        "description": "Klicken Sie auf die Schaltfläche unten, um zum Chrome Web Store zu gehen und die RealtyClose-Erweiterung zu installieren. Die Installation dauert nur einen Klick und ist völlig kostenlos.",
-        "button": "Aus Chrome Web Store installieren",
-        "features": "✓ Kostenlos zu installieren • ✓ Keine Kreditkarte erforderlich • ✓ 30-Sekunden-Setup",
-        "card": {
-          "title": "Chrome Web Store",
-          "subtitle": "Offizielle Erweiterung von Google verifiziert"
+    "integrations": {
+      "title": "Integrationen",
+      "description": "Nahtlose Verbindungen mit Ihren bestehenden Immobilien-Tools und -Plattformen. Arbeiten Sie mit dem, was Sie bereits verwenden.",
+      "tagline": "Verbinden Sie sich mit Ihren bestehenden Tools für nahtlose Workflow-Integration",
+      "intro": "RealtyClose arbeitet neben Ihrem aktuellen Immobilien-Technologie-Stack. Synchronisieren Sie sich mit beliebten CRMs, Transaktionsmanagement-Systemen und Kommunikationstools, um einen einheitlichen Workflow zu schaffen, ohne Ihre etablierten Prozesse zu stören.",
+      "coreFeatures": "Kernfunktionen",
+      "features": {
+        "crm": {
+          "title": "🏢 CRM-Integration",
+          "description": "Synchronisieren Sie Kontakte, Deals und Kommunikationshistorie mit führenden Immobilien-CRMs. Bidirektionaler Datenfluss hält alles aktuell."
+        },
+        "transaction": {
+          "title": "📁 Transaktionsmanagement",
+          "description": "Verbinden Sie sich mit Transaktionsmanagement-Plattformen, um Deal-Status, Dokumente und Meilenstein-Verfolgung automatisch zu aktualisieren."
+        },
+        "calendar": {
+          "title": "📅 Kalender-Synchronisation",
+          "description": "Integrieren Sie sich mit Google Calendar, Outlook und Planungstools, um Besichtigungen, Termine und Fristen nahtlos zu koordinieren."
+        },
+        "mls": {
+          "title": "🏘️ MLS-Integration",
+          "description": "Ziehen Sie Immobilieninformationen und Marktdaten direkt in Ihre E-Mail-Kommunikation und Vorlagen automatisch."
         }
       },
-      "step2": {
-        "title": "Ihr Gmail verbinden",
-        "description": "Öffnen Sie Gmail und Sie sehen das RealtyClose-Panel. Klicken Sie auf \"Konto verbinden\", um Ihr Gmail sicher zu verknüpfen. Wir fordern nur die minimal notwendigen Berechtigungen für die E-Mail-Erstellung und das Senden an.",
-        "privacy": {
-          "title": "Datenschutz zuerst",
-          "point1": "Wir lesen niemals Ihre bestehenden E-Mails",
-          "point2": "Keine Daten auf unseren Servern gespeichert",
-          "point3": "Zugriff jederzeit widerrufen",
-          "point4": "Bank-Level-Sicherheit"
+      "platforms": "Unterstützte Plattformen",
+      "supportedPlatforms": {
+        "crms": "Chime, Follow Up Boss, Wise Agent, Top Producer und mehr",
+        "transaction": "DocuSign, dotloop, SkySlope und große Transaktionsplattformen",
+        "communication": "Slack, Microsoft Teams und Kollaborationstools",
+        "productivity": "Google Workspace, Microsoft 365 und Produktivitätssuiten"
+      },
+      "howItWorks": "So funktioniert es",
+      "steps": {
+        "step1": {
+          "title": "Ein-Klick-Verbindung",
+          "description": "Verbinden Sie Ihre bestehenden Tools durch sichere OAuth-Authentifizierung. Keine komplexe Einrichtung oder IT-Beteiligung erforderlich."
         },
-        "card": {
-          "title": "Gmail-Integration",
-          "subtitle": "Nahtlose Integration in Ihren bestehenden Workflow"
+        "step2": {
+          "title": "Datensynchronisation",
+          "description": "Kontakte, Deals und Kommunikationshistorie synchronisieren sich automatisch zwischen Plattformen für einheitlichen Datenzugriff."
+        },
+        "step3": {
+          "title": "Einheitlicher Workflow",
+          "description": "Arbeiten Sie nahtlos plattformübergreifend mit konsistenten Daten und automatisierten Updates, die doppelte Eingaben eliminieren."
         }
       },
-      "step3": {
-        "title": "Bessere E-Mails schreiben",
-        "description": "Das war's! Öffnen Sie einen beliebigen E-Mail-Thread und Sie sehen RealtyClose-Vorschläge. Generieren Sie professionelle Antworten, nutzen Sie Schnellaktionen und greifen Sie auf intelligente Vorlagen zu - alles ohne Gmail zu verlassen.",
-        "feature1": {
-          "title": "KI-E-Mail",
-          "subtitle": "Antworten in Sekunden generieren"
-        },
-        "feature2": {
-          "title": "Schnellaktionen",
-          "subtitle": "Anrufe protokollieren, Meetings planen"
-        },
-        "card": {
-          "title": "Einsatzbereit",
-          "subtitle": "Verbessern Sie Ihren E-Mail-Workflow sofort"
-        }
-      },
-      "requirements": {
-        "title": "Browser-Anforderungen",
-        "browsers": {
-          "title": "Unterstützte Browser:",
-          "chrome": "Google Chrome (Empfohlen)",
-          "edge": "Microsoft Edge",
-          "brave": "Brave Browser",
-          "chromium": "Jeder Chromium-basierte Browser"
-        },
-        "system": {
-          "title": "Systemanforderungen:",
-          "chrome": "Chrome Version 88 oder höher",
-          "gmail": "Aktives Gmail-Konto",
-          "internet": "Internetverbindung",
-          "storage": "5MB freier Speicherplatz"
-        }
-      },
-      "help": {
-        "title": "Brauchen Sie Hilfe?",
-        "notShowing": {
-          "title": "Erweiterung wird nicht angezeigt?",
-          "step1": "Aktualisieren Sie Ihren Gmail-Tab",
-          "step2": "Überprüfen Sie die Chrome-Erweiterungsseite (chrome://extensions/)",
-          "step3": "Stellen Sie sicher, dass RealtyClose aktiviert ist",
-          "step4": "Versuchen Sie Gmail in einem Inkognito-Fenster zu öffnen"
-        },
-        "permissions": {
-          "title": "Berechtigungsprobleme?",
-          "step1": "Klicken Sie auf das RealtyClose-Symbol in Gmail",
-          "step2": "Folgen Sie den Authentifizierungsaufforderungen",
-          "step3": "Erlauben Sie alle angeforderten Berechtigungen",
-          "step4": "Kontaktieren Sie den Support, wenn Probleme bestehen"
-        },
-        "performance": {
-          "title": "Leistungsprobleme?",
-          "step1": "Deaktivieren Sie andere Gmail-Erweiterungen vorübergehend",
-          "step2": "Löschen Sie Browser-Cache und Cookies",
-          "step3": "Starten Sie Ihren Browser neu",
-          "step4": "Überprüfen Sie auf Chrome-Updates"
-        },
-        "support": {
-          "title": "Brauchen Sie noch Hilfe?",
-          "description": "Unser Support-Team ist hier, um Ihnen bei der erfolgreichen Einrichtung zu helfen.",
-          "button": "Support kontaktieren"
-        }
-      },
-      "next": {
-        "title": "Was kommt als Nächstes?",
-        "subtitle": "Nach der Installation, so holen Sie das Beste aus RealtyClose heraus:",
-        "tutorial": {
-          "title": "Tutorial ansehen",
-          "subtitle": "5-Minuten-Video-Anleitung zu allen Funktionen"
-        },
-        "firstEmail": {
-          "title": "Ihre erste E-Mail ausprobieren",
-          "subtitle": "Eine professionelle Antwort generieren"
-        },
-        "quickActions": {
-          "title": "Schnellaktionen erkunden",
-          "subtitle": "Ihren täglichen Workflow optimieren"
-        }
-      },
-      "cta": {
-        "title": "Bereit, Ihren E-Mail-Workflow zu transformieren?",
-        "subtitle": "Schließen Sie sich Hunderten von Immobilienprofis an, die täglich 3+ Stunden sparen",
-        "install": "RealtyClose-Erweiterung installieren",
-        "demo": "Demo zuerst ansehen"
+      "benefits": {
+        "title": "⚡ Workflow-Effizienz",
+        "description": "Reduzieren Sie die Dateneingabe um 80% mit nahtlosen Integrationen. Konzentrieren Sie sich auf Kunden und Deals, während die Technologie die Koordination übernimmt."
       }
-    },
-    "contact": {
-      "stillHaveQuestions": "Haben Sie noch Fragen?",
-      "cantFind": "Können Sie nicht finden, wonach Sie suchen? Unser Support-Team hilft Ihnen gerne.",
-      "contactSupport": "Support kontaktieren",
-      "title": "RealtyClose kontaktieren",
-      "subtitle": "Nehmen Sie Kontakt mit dem RealtyClose-Team auf.",
-      "description": "Wir helfen gerne. Wählen Sie den richtigen Kontakt, damit wir Ihnen schneller helfen können:",
-      "generalSupport": "Allgemeiner Support",
-      "privacyInquiries": "Datenschutz-Anfragen",
-      "pressMedia": "Presse & Medien",
-      "businessAddress": "Geschäftsadresse",
-      "companyName": "Zaza Technologies UG (haftungsbeschränkt)",
-      "addressPlaceholder": "Gumbertstraße 150, 40229 Düsseldorf, Deutschland"
     }
   }
 }
