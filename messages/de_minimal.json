@@ -1,0 +1,313 @@
+{
+  "common": {
+    "install": "Kostenlos mit Gmail Extension starten",
+    "watchDemo": "Demo ansehen",
+    "watchDemoGmail": "2-Min Gmail Demo ansehen",
+    "addToChrome": "Zu Chrome hinzufügen",
+    "trustedBy": "Vertrauen von Solo-Maklern, Teams und Maklerfirmen",
+    "copy": "Kopieren",
+    "copied": "Kopiert!"
+  },
+  "nav": {
+    "howItWorks": "So funktioniert's",
+    "company": "Unternehmen",
+    "aboutUs": "Über uns",
+    "blog": "Blog",
+    "pricing": "Preise",
+    "features": "Funktionen",
+    "faq": "FAQ",
+    "contact": "Kontakt",
+    "startFree": "Kostenlos starten",
+    "menu": "Menü"
+  },
+  "hero": {
+    "title": "Chaos bei Immobilien-E-Mails beheben -",
+    "titleHighlight": "direkt in Gmail",
+    "subtitle": "Gewinnen Sie Stunden bei jeder Transaktion zurück und halten Sie Deals mit markenkonformen, konformen E-Mails in Sekunden auf Kurs.",
+    "proofChip1": "Makler verlieren 30+ Std/Transaktion durch Kommunikation",
+    "proofChip2": "49% berichten über kommunikationsbedingte Deal-Verzögerungen",
+    "helperText": "Funktioniert mit Ihrem bestehenden Gmail. Keine Einrichtung erforderlich.",
+    "gmailCard": {
+      "header": "gmail.com · RealtyClose Extension",
+      "status": "Bereit",
+      "dailyDrafts": "Tägliche Entwürfe",
+      "languages": "Sprachen",
+      "statusMessage": "E-Mail-Entwurf auf professionellen Ton eingestellt. Compliance-Check bestanden."
+    }
+  },
+  "features": {
+    "saveHours": "Stunden sparen",
+    "saveHoursDesc": "Antworten Sie in Sekunden mit KI-unterstützter Erstellung und Vorlagen.",
+    "protectDeals": "Deals schützen",
+    "protectDealsDesc": "Follow-up-Erinnerungen und Timeline-Benachrichtigungen verhindern Versäumnisse.",
+    "stayCompliant": "Compliant bleiben",
+    "stayCompliantDesc": "Audit-Trails und genehmigte Vorlagen halten Nachrichten sicher.",
+    "aiEmailAssistant": {
+      "title": "KI E-Mail-Assistent",
+      "description": "Professionelle E-Mail-Erstellung mit KI. Antworten Sie schneller mit markenkonformen E-Mails, Ton-Vorschlägen und intelligenten Vorlagen für Immobilien-Kommunikation.",
+      "tagline": "Professionelle E-Mail-Erstellung, die Stunden spart und Geschäfte voranbringt",
+      "intro": "Antworten Sie schneller mit professionellen, markenkonformen E-Mails. Der KI-Assistent schlägt Formulierungen vor, bietet Ton-Optionen und markiert unklare Details vor dem Senden. Hören Sie auf, dieselbe Nachricht fünfmal umzuschreiben.",
+      "coreFeatures": "Kernfunktionen",
+      "features": {
+        "fastDrafts": {
+          "title": "⚡ Schnelle Erstentwürfe",
+          "description": "Erstellen Sie professionelle E-Mail-Antworten in Sekunden. Kein Starren auf leere Bildschirme oder Ringen um die richtigen Worte."
+        },
+        "toneControl": {
+          "title": "🎨 Ton-Kontrolle",
+          "description": "Wählen Sie den richtigen Ton für verschiedene Kunden und Situationen. Professionell, freundlich, dringend oder einfühlsam - die KI passt sich Ihren Bedürfnissen an."
+        },
+        "smartRewrites": {
+          "title": "🔄 Intelligente Überarbeitungen",
+          "description": "Polieren Sie bestehende Entwürfe mit Vorschlägen für Klarheit, Professionalität und Wirkung. Perfekte Nachrichten jedes Mal."
+        },
+        "translation": {
+          "title": "🌍 Übersetzungsunterstützung",
+          "description": "Kommunizieren Sie mit internationalen Kunden in ihrer Sprache. Übersetzen Sie Nachrichten unter Beibehaltung des professionellen Tons und Kontexts."
+        }
+      },
+      "howItWorks": "So funktioniert es",
+      "steps": {
+        "step1": {
+          "title": "Gmail öffnen und verfassen oder antworten",
+          "description": "Der RealtyClose-Assistent erscheint in Ihrer Gmail-Seitenleiste, bereit bei jeder E-Mail zu helfen."
+        },
+        "step2": {
+          "title": "Kontext angeben oder Vorlage auswählen",
+          "description": "Sagen Sie der KI, was Sie kommunizieren möchten, oder wählen Sie aus intelligenten Vorlagen für häufige Szenarien."
+        },
+        "step3": {
+          "title": "Überprüfen und senden",
+          "description": "Die KI erstellt einen professionellen Entwurf. Nehmen Sie Anpassungen vor und senden Sie mit Vertrauen."
+        }
+      },
+      "perfectFor": "Perfekt für",
+      "useCases": {
+        "clientUpdates": "Halten Sie Kunden über Transaktionsfortschritt, nächste Schritte und wichtige Fristen auf dem Laufenden",
+        "vendorCoordination": "Professionelle Kommunikation mit Gutachtern, Schätzern, Kreditgebern und Rechtstitelunternehmen",
+        "teamHandoffs": "Nahtlose Kommunikation bei der Übertragung von Geschäften zwischen Maklern und Transaktionskoordinatoren",
+        "followupSequences": "Konsistente, zeitnahe Follow-ups, die Leads pflegen und Kundenbeziehungen aufrechterhalten"
+      },
+      "timeSavings": {
+        "title": "💡 Zeitersparnis",
+        "description": "Durchschnittliche Zeitersparnis: 2-3 Stunden pro Tag bei der E-Mail-Erstellung. Verwandeln Sie 30-minütige E-Mail-Sitzungen in 5-minütige professionelle Kommunikation."
+      }
+    },
+    "smartTemplates": {
+      "title": "Intelligente Vorlagen",
+      "description": "Vorgefertigte, anpassbare E-Mail-Vorlagen für jedes Immobilien-Szenario. Professionelle Kommunikation wird konsistent und schnell.",
+      "tagline": "Professionelle E-Mail-Vorlagen, die sich an Ihre Marke und Ihren Stil anpassen",
+      "intro": "Greifen Sie auf eine Bibliothek bewährter E-Mail-Vorlagen für jedes Immobilien-Szenario zu. Von Listing-Präsentationen bis hin zu Abschluss-Updates erhalten Sie jedes Mal die richtige Nachricht mit intelligenten Vorschlägen und automatischer Personalisierung.",
+      "coreFeatures": "Kernfunktionen",
+      "features": {
+        "libraryAccess": {
+          "title": "📚 Vollständige Vorlagen-Bibliothek",
+          "description": "Zugriff auf Hunderte bewährte Vorlagen für Listings, Angebote, Inspektionen, Abschlüsse und Follow-ups. Neue Vorlagen werden regelmäßig basierend auf Branchenbest-Practices hinzugefügt."
+        },
+        "customization": {
+          "title": "✏️ Marken-Anpassung",
+          "description": "Integrieren Sie automatisch Ihr Makler-Branding, Kontaktinformationen und bevorzugte Sprache. Vorlagen passen sich an Ihre einzigartige Stimme und Ihren Stil an."
+        },
+        "smartFill": {
+          "title": "🤖 Intelligentes Auto-Ausfüllen",
+          "description": "Vorlagen füllen sich intelligent mit Immobiliendetails, Kundennamen und Transaktionsinformationen aus Ihrem Gmail-Kontext."
+        },
+        "compliance": {
+          "title": "⚖️ Compliance-bereit",
+          "description": "Alle Vorlagen enthalten erforderliche Offenlegungen und folgen Branchenvorschriften. Bleiben Sie compliant und kommunizieren Sie effizient."
+        }
+      },
+      "categories": "Vorlagen-Kategorien",
+      "templateTypes": {
+        "listings": {
+          "title": "Listing-Kommunikation",
+          "description": "Neue Listing-Ankündigungen, Preisänderungen, Besichtigungs-Feedback und Marketing-Updates"
+        },
+        "buyer": {
+          "title": "Käufer-Services",
+          "description": "Immobilienempfehlungen, Besichtigungspläne, Angebotsstrategien und Kaufberatung"
+        },
+        "transactions": {
+          "title": "Transaktionsmanagement",
+          "description": "Vertrags-Updates, Inspektionskoordination, Finanzierungsstatus und Abschlussvorbereitungen"
+        },
+        "followup": {
+          "title": "Follow-up-Sequenzen",
+          "description": "Lead-Pflege, Kunden-Check-ins, Empfehlungsanfragen und Beziehungspflege"
+        }
+      },
+      "howItWorks": "So funktioniert es",
+      "steps": {
+        "step1": {
+          "title": "Wählen Sie Ihr Szenario",
+          "description": "Wählen Sie aus kategorisierten Vorlagen oder suchen Sie nach spezifischen Situationen wie 'Inspektionsergebnisse' oder 'Abschlussverzögerung'."
+        },
+        "step2": {
+          "title": "Details automatisch ausfüllen",
+          "description": "Die Vorlage füllt bekannte Informationen aus Ihrem E-Mail-Kontext und Kundenhistorie automatisch aus."
+        },
+        "step3": {
+          "title": "Anpassen und senden",
+          "description": "Nehmen Sie persönliche Anpassungen vor und senden Sie professionelle, conforme Kommunikation in Sekunden."
+        }
+      },
+      "benefits": {
+        "title": "🎯 Konsistenz-Vorteile",
+        "description": "Halten Sie professionelle Standards in der gesamten Team-Kommunikation aufrecht. Neue Makler klingen erfahren und erfahrene Makler sparen Zeit mit bewährten Nachrichten."
+      }
+    },
+    "dealTracking": {
+      "title": "Deal-Verfolgung",
+      "description": "Visuelle Zeitleiste und Meilenstein-Verfolgung für Immobilientransaktionen. Behalten Sie Fristen im Blick und halten Sie Geschäfte in Bewegung.",
+      "tagline": "Halten Sie jeden Deal auf Kurs mit visuellen Zeitleisten und intelligenten Erinnerungen",
+      "intro": "Verwandeln Sie chaotische E-Mail-Threads in organisierte Deal-Zeitleisten. Verfolgen Sie Meilensteine, Fristen und nächste Schritte mit visueller Klarheit. Verpassen Sie nie wieder ein kritisches Datum oder verlieren Sie den Überblick über den Transaktionsfortschritt.",
+      "coreFeatures": "Kernfunktionen",
+      "features": {
+        "timeline": {
+          "title": "📅 Visuelle Zeitleiste",
+          "description": "Sehen Sie Ihre gesamte Transaktion auf einen Blick. Wichtige Daten, Meilensteine und Fortschritts-Updates werden in einem intuitiven visuellen Format angezeigt."
+        },
+        "milestones": {
+          "title": "🎯 Intelligente Meilensteine",
+          "description": "Automatische Meilenstein-Erkennung aus Ihren E-Mails. Vertragsannahme, Inspektionszeiträume, Finanzierungsfristen und Abschlusstermine werden automatisch verfolgt."
+        },
+        "reminders": {
+          "title": "⏰ Proaktive Erinnerungen",
+          "description": "Werden Sie benachrichtigt, bevor Fristen erreicht werden. Intelligente Erinnerungen basierend auf Transaktionstyp, lokalen Marktpraktiken und kritischem Pfad-Analyse."
+        },
+        "collaboration": {
+          "title": "👥 Team-Zusammenarbeit",
+          "description": "Teilen Sie Deal-Fortschritt mit Teammitgliedern, Transaktionskoordinatoren und Kunden. Alle bleiben mit Echtzeit-Updates informiert."
+        }
+      },
+      "tracking": "Was wird verfolgt",
+      "trackingItems": {
+        "contracts": "Vertragsausführung und Änderungsfristen",
+        "inspections": "Inspektionszeiträume, Berichte und Lösungszeitleisten",
+        "financing": "Kreditantrags-Meilensteine und Genehmigungsfristen",
+        "closing": "Titel-Arbeit, finale Begehung und Abschlussvorbereitungen"
+      },
+      "howItWorks": "So funktioniert es",
+      "steps": {
+        "step1": {
+          "title": "Automatische Erkennung",
+          "description": "RealtyClose analysiert Ihre E-Mails, um neue Deals zu identifizieren und wichtige Daten und Meilensteine automatisch zu extrahieren."
+        },
+        "step2": {
+          "title": "Zeitleisten-Erstellung",
+          "description": "Eine visuelle Zeitleiste wird mit allen kritischen Daten, Fristen und nächsten Schritten klar angezeigt generiert."
+        },
+        "step3": {
+          "title": "Intelligente Benachrichtigungen",
+          "description": "Erhalten Sie proaktive Erinnerungen und Warnungen, um Deals voranzutreiben und verpasste Fristen zu verhindern."
+        }
+      },
+      "benefits": {
+        "title": "🚀 Deal-Geschwindigkeit",
+        "description": "Durchschnittlich schließen Deals 12% schneller mit proaktivem Zeitleisten-Management. Reduzieren Sie Verzögerungen, verbessern Sie die Kundenzufriedenheit und steigern Sie das Transaktionsvolumen."
+      }
+    },
+    "compliance": {
+      "title": "Compliance-Leitplanken",
+      "description": "Eingebaute Compliance-Checks und Audit-Trails für Immobilien-Kommunikation. Bleiben Sie compliant und behalten Sie die Effizienz bei.",
+      "tagline": "Bleiben Sie compliant mit automatisierten Checks und vollständigen Audit-Trails",
+      "intro": "Navigieren Sie mit Vertrauen durch komplexe Immobilienvorschriften. Automatisierte Compliance-Checks, Erkennung erforderlicher Offenlegungen und vollständige Audit-Trails stellen sicher, dass Ihre Kommunikation Branchenstandards und regulatorische Anforderungen erfüllt.",
+      "coreFeatures": "Kernfunktionen",
+      "features": {
+        "autoChecks": {
+          "title": "🔍 Automatische Compliance-Checks",
+          "description": "Jede E-Mail wird vor dem Senden auf erforderliche Offenlegungen, verbotene Sprache und regulatorische Compliance gescannt."
+        },
+        "auditTrail": {
+          "title": "📋 Vollständiger Audit-Trail",
+          "description": "Umfassende Protokollierung aller Kommunikation mit Zeitstempeln, Empfängern und Compliance-Status für einfache Berichterstattung."
+        },
+        "disclosures": {
+          "title": "📄 Intelligente Offenlegungen",
+          "description": "Automatisches Einfügen erforderlicher Offenlegungen basierend auf Transaktionstyp, Immobilienstandort und regulatorischen Anforderungen."
+        },
+        "approval": {
+          "title": "✅ Genehmigungsworkflows",
+          "description": "Leiten Sie sensible Kommunikation durch bestimmte Genehmiger vor dem Senden. Konfigurierbare Genehmigungsketten für verschiedene Szenarien."
+        }
+      },
+      "protection": "Was geschützt wird",
+      "protectionAreas": {
+        "fair": "Faire Wohnungs- und Anti-Diskriminierungs-Compliance",
+        "disclosure": "Erforderliche Immobilien- und Makler-Offenlegungserklärungen",
+        "advertising": "Marketing- und Werbungsregulierungs-Compliance",
+        "privacy": "Kundendatenschutz- und Datenschutzanforderungen"
+      },
+      "howItWorks": "So funktioniert es",
+      "steps": {
+        "step1": {
+          "title": "Echtzeit-Scanning",
+          "description": "Jeder E-Mail-Entwurf wird auf Compliance-Probleme, fehlende Offenlegungen und potenzielle regulatorische Verstöße analysiert."
+        },
+        "step2": {
+          "title": "Intelligente Vorschläge",
+          "description": "Erhalten Sie Empfehlungen für erforderliche Offenlegungen, sicherere Sprachalternativen und Compliance-Best-Practices."
+        },
+        "step3": {
+          "title": "Audit-Protokollierung",
+          "description": "Alle Kommunikation wird automatisch mit Compliance-Status protokolliert, wodurch die Audit-Vorbereitung einfach und gründlich wird."
+        }
+      },
+      "benefits": {
+        "title": "🛡️ Risikoreduktion",
+        "description": "Reduzieren Sie Compliance-Verstöße um 95% mit automatisierten Checks. Rationalisieren Sie die Audit-Vorbereitung und behalten Sie regulatorisches Vertrauen."
+      }
+    },
+    "integrations": {
+      "title": "Integrationen",
+      "description": "Nahtlose Verbindungen mit Ihren bestehenden Immobilien-Tools und -Plattformen. Arbeiten Sie mit dem, was Sie bereits verwenden.",
+      "tagline": "Verbinden Sie sich mit Ihren bestehenden Tools für nahtlose Workflow-Integration",
+      "intro": "RealtyClose arbeitet neben Ihrem aktuellen Immobilien-Technologie-Stack. Synchronisieren Sie sich mit beliebten CRMs, Transaktionsmanagement-Systemen und Kommunikationstools, um einen einheitlichen Workflow zu schaffen, ohne Ihre etablierten Prozesse zu stören.",
+      "coreFeatures": "Kernfunktionen",
+      "features": {
+        "crm": {
+          "title": "🏢 CRM-Integration",
+          "description": "Synchronisieren Sie Kontakte, Deals und Kommunikationshistorie mit führenden Immobilien-CRMs. Bidirektionaler Datenfluss hält alles aktuell."
+        },
+        "transaction": {
+          "title": "📁 Transaktionsmanagement",
+          "description": "Verbinden Sie sich mit Transaktionsmanagement-Plattformen, um Deal-Status, Dokumente und Meilenstein-Verfolgung automatisch zu aktualisieren."
+        },
+        "calendar": {
+          "title": "📅 Kalender-Synchronisation",
+          "description": "Integrieren Sie sich mit Google Calendar, Outlook und Planungstools, um Besichtigungen, Termine und Fristen nahtlos zu koordinieren."
+        },
+        "mls": {
+          "title": "🏘️ MLS-Integration",
+          "description": "Ziehen Sie Immobilieninformationen und Marktdaten direkt in Ihre E-Mail-Kommunikation und Vorlagen automatisch."
+        }
+      },
+      "platforms": "Unterstützte Plattformen",
+      "supportedPlatforms": {
+        "crms": "Chime, Follow Up Boss, Wise Agent, Top Producer und mehr",
+        "transaction": "DocuSign, dotloop, SkySlope und große Transaktionsplattformen",
+        "communication": "Slack, Microsoft Teams und Kollaborationstools",
+        "productivity": "Google Workspace, Microsoft 365 und Produktivitätssuiten"
+      },
+      "howItWorks": "So funktioniert es",
+      "steps": {
+        "step1": {
+          "title": "Ein-Klick-Verbindung",
+          "description": "Verbinden Sie Ihre bestehenden Tools durch sichere OAuth-Authentifizierung. Keine komplexe Einrichtung oder IT-Beteiligung erforderlich."
+        },
+        "step2": {
+          "title": "Datensynchronisation",
+          "description": "Kontakte, Deals und Kommunikationshistorie synchronisieren sich automatisch zwischen Plattformen für einheitlichen Datenzugriff."
+        },
+        "step3": {
+          "title": "Einheitlicher Workflow",
+          "description": "Arbeiten Sie nahtlos plattformübergreifend mit konsistenten Daten und automatisierten Updates, die doppelte Eingaben eliminieren."
+        }
+      },
+      "benefits": {
+        "title": "⚡ Workflow-Effizienz",
+        "description": "Reduzieren Sie die Dateneingabe um 80% mit nahtlosen Integrationen. Konzentrieren Sie sich auf Kunden und Deals, während die Technologie die Koordination übernimmt."
+      }
+    }
+  }
+}

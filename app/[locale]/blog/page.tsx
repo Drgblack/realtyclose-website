@@ -134,9 +134,9 @@ export default async function BlogPage({ params }: Props) {
   const otherPosts = blogPosts.filter(post => !post.featured);
   
   return (
-    <main className="bg-[var(--rc-bg)] text-[var(--rc-text)]">
+    <main className="bg-white text-slate-900">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-[var(--rc-bg)] rc-noise">
+      <section className="relative overflow-hidden bg-white rc-noise">
         <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
           <div className="absolute inset-0"
                style={{background:
@@ -149,7 +149,7 @@ export default async function BlogPage({ params }: Props) {
               {locale === 'de' ? 'Immobilien-Einblicke & Tipps' : 'Real Estate Insights & Tips'}
             </h1>
             <div className="h-1 w-16 rounded-full bg-gradient-to-r from-indigo-500 via-sky-400 to-fuchsia-500 mb-6" />
-            <p className="text-lg text-[var(--rc-muted)] max-w-2xl">
+            <p className="text-lg text-slate-600 max-w-2xl">
               {locale === 'de' 
                 ? 'KI-E-Mail-Strategien, Produktivitätstipps und bewährte Branchenpraktiken für mehr Geschäftsabschlüsse'
                 : 'AI email strategies, productivity tips, and industry best practices to help you close more deals'
@@ -170,13 +170,13 @@ export default async function BlogPage({ params }: Props) {
                     <span className="text-blue-600 text-sm font-medium mb-2 block">
                       📌 {locale === 'de' ? 'Hauptartikel' : 'Featured Post'}
                     </span>
-                    <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-[var(--rc-text)] mt-2 mb-4">
+                    <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-slate-900 mt-2 mb-4">
                       {featuredPost.title}
                     </h2>
-                    <p className="text-[var(--rc-muted)] mb-6 text-lg">
+                    <p className="text-slate-600 mb-6 text-lg">
                       {featuredPost.excerpt}
                     </p>
-                    <div className="flex flex-wrap items-center text-[var(--rc-muted)] text-sm mb-6 gap-2">
+                    <div className="flex flex-wrap items-center text-slate-500 text-sm mb-6 gap-2">
                       <span>Von {featuredPost.author}</span>
                       <span>•</span>
                       <span>{featuredPost.date}</span>
@@ -203,7 +203,7 @@ export default async function BlogPage({ params }: Props) {
                         <h4 className="text-lg font-semibold text-blue-600 mb-2">
                           {locale === 'de' ? 'Zeit zurückgewinnen' : 'Reclaim Your Time'}
                         </h4>
-                        <p className="text-[var(--rc-muted)] text-sm">
+                        <p className="text-slate-600 text-sm">
                           {locale === 'de' 
                             ? 'Ein praktisches System für 30+ Stunden pro Transaktion'
                             : 'A practical system to win back 30+ hours per transaction'
@@ -224,13 +224,13 @@ export default async function BlogPage({ params }: Props) {
         <div className="mx-auto max-w-4xl px-6">
           <Reveal>
             <ShinyCard gradient="emerald" padding="lg" innerClassName="text-center">
-              <h3 className="text-lg font-bold text-[var(--rc-text)] mb-3">
+              <h3 className="text-lg font-bold text-slate-900 mb-3">
                 {locale === 'de' 
                   ? 'Erhalten Sie jede Woche einen praktischen E-Mail-System-Tipp'
                   : 'Get one practical email systems tip each week'
                 }
               </h3>
-              <p className="text-[var(--rc-muted)] mb-4 text-sm">
+              <p className="text-slate-600 mb-4 text-sm">
                 {locale === 'de' ? 'Kein Spam.' : 'No spam.'}
               </p>
               <div className="max-w-sm mx-auto flex gap-3">
@@ -252,7 +252,7 @@ export default async function BlogPage({ params }: Props) {
       <section className="rc-ambient py-20">
         <div className="mx-auto max-w-6xl px-6">
           <Reveal>
-            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-[var(--rc-text)] mb-8 text-center">
+            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-slate-900 mb-8 text-center">
               {locale === 'de' ? 'Neueste Beiträge' : 'Recent Posts'}
             </h2>
             <div className="h-1 w-16 rounded-full bg-gradient-to-r from-indigo-500 via-sky-400 to-fuchsia-500 mx-auto mb-12" />
@@ -269,15 +269,15 @@ export default async function BlogPage({ params }: Props) {
                       </span>
                     </div>
                     
-                    <h3 className="text-xl font-bold text-[var(--rc-text)] mb-3 group-hover:text-blue-600 transition-colors">
+                    <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
                       {post.title}
                     </h3>
                     
-                    <p className="text-[var(--rc-muted)] mb-4 text-sm leading-relaxed">
+                    <p className="text-slate-600 mb-4 text-sm leading-relaxed">
                       {post.excerpt}
                     </p>
                     
-                    <div className="flex items-center justify-between text-[var(--rc-muted)] text-xs mt-auto">
+                    <div className="flex items-center justify-between text-slate-600 text-xs mt-auto">
                       <div className="flex items-center">
                         <span>Von {post.author}</span>
                         <span className="mx-2">•</span>
@@ -299,7 +299,7 @@ export default async function BlogPage({ params }: Props) {
       <section className="rc-ambient py-20">
         <div className="mx-auto max-w-6xl px-6">
           <Reveal>
-            <h2 className="text-center mb-8 text-[var(--rc-text)] font-semibold text-2xl">
+            <h2 className="text-center mb-8 text-slate-900 font-semibold text-2xl">
               {locale === 'de' ? 'Beliebte Themen' : 'Popular Topics'}
             </h2>
             <div className="h-1 w-16 rounded-full bg-gradient-to-r from-indigo-500 via-sky-400 to-fuchsia-500 mx-auto mb-12" />
@@ -334,7 +334,7 @@ export default async function BlogPage({ params }: Props) {
                     <span className="text-xl">{topic.icon}</span>
                   </div>
                   <h4 className="font-semibold text-blue-600 mb-2">{topic.title}</h4>
-                  <p className="text-[var(--rc-muted)] text-sm">{topic.desc}</p>
+                  <p className="text-slate-600 text-sm">{topic.desc}</p>
                 </ShinyCard>
               </Reveal>
             ))}
@@ -347,13 +347,13 @@ export default async function BlogPage({ params }: Props) {
         <div className="mx-auto max-w-4xl px-6">
           <Reveal>
             <ShinyCard gradient="brand" padding="lg" innerClassName="text-center">
-              <h2 className="text-2xl font-bold text-[var(--rc-text)] mb-4">
+              <h2 className="text-2xl font-bold text-slate-900 mb-4">
                 {locale === 'de' 
                   ? 'Bereit, das Gelernte umzusetzen?'
                   : 'Ready to implement what you\'ve learned?'
                 }
               </h2>
-              <p className="text-[var(--rc-muted)] mb-6">
+              <p className="text-slate-600 mb-6">
                 {locale === 'de'
                   ? 'Beginnen Sie noch heute mit KI-gestützter E-Mail-Unterstützung und sehen Sie den Unterschied in Ihrer Kundenkommunikation'
                   : 'Start using AI-powered email assistance today and see the difference in your client communications'
@@ -368,7 +368,7 @@ export default async function BlogPage({ params }: Props) {
                 </a>
                 <a 
                   href="/demo"
-                  className="inline-flex items-center justify-center rounded-xl border border-[var(--rc-border)] hover:border-indigo-200 bg-white px-6 py-3 text-sm font-semibold transition-all duration-200 hover:bg-slate-50"
+                  className="inline-flex items-center justify-center rounded-xl border border-slate-200 hover:border-indigo-200 bg-white px-6 py-3 text-sm font-semibold transition-all duration-200 hover:bg-slate-50"
                 >
                   📺 {locale === 'de' ? 'Demo ansehen' : 'Watch Demo'}
                 </a>
