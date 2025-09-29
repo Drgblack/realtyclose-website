@@ -36,6 +36,25 @@
     }
   },
   "features": {
+    "title": "Gmail-First Real Estate Assistant",
+    "hero": {
+      "subtitle": "Fix email chaos without leaving Gmail",
+      "description": "Reclaim 30+ hours per transaction and protect deals from communication failures with AI-powered email assistance built for real estate professionals.",
+      "stat1": "94% lose 30+ hrs/transaction to comms",
+      "stat2": "49% report comms-related deal delays",
+      "addToChrome": "Add to Chrome — Free",
+      "watchDemo": "Watch 2-min Gmail Demo",
+      "subtitle2": "Works inside Gmail. No setup required."
+    },
+    "howItWorks": {
+      "title": "How it works inside Gmail",
+      "step1Title": "Open any email thread",
+      "step1Desc": "RealtyClose appears right in your Gmail sidebar",
+      "step2Title": "AI suggests perfect response",
+      "step2Desc": "Contextual, professional, compliance-ready drafts",
+      "step3Title": "Send with confidence",
+      "step3Desc": "Review, customize if needed, and send professional emails"
+    },
     "saveHours": "Save hours",
     "saveHoursDesc": "Reply in seconds with AI assisted drafting and templates.",
     "protectDeals": "Protect deals", 

@@ -4,44 +4,15 @@
     "watchDemo": "Demo ansehen",
     "watchDemoGmail": "2-Min Gmail Demo ansehen",
     "addToChrome": "Zu Chrome hinzufügen",
-    "trustedBy": "Vertrauen von Solo-Maklern, Teams und Maklerfirmen",
-    "copy": "Kopieren",
-    "copied": "Kopiert!"
+    "trustedBy": "Vertrauen von Solo-Maklern, Teams und Maklerfirmen"
   },
   "nav": {
-    "howItWorks": "So funktioniert's",
-    "company": "Unternehmen",
-    "aboutUs": "Über uns",
-    "blog": "Blog",
-    "pricing": "Preise",
     "features": "Funktionen",
-    "faq": "FAQ",
-    "contact": "Kontakt",
-    "startFree": "Kostenlos starten",
-    "menu": "Menü"
-  },
-  "hero": {
-    "title": "Chaos bei Immobilien-E-Mails beheben -",
-    "titleHighlight": "direkt in Gmail",
-    "subtitle": "Gewinnen Sie Stunden bei jeder Transaktion zurück und halten Sie Deals mit markenkonformen, konformen E-Mails in Sekunden auf Kurs.",
-    "proofChip1": "Makler verlieren 30+ Std/Transaktion durch Kommunikation",
-    "proofChip2": "49% berichten über kommunikationsbedingte Deal-Verzögerungen",
-    "helperText": "Funktioniert mit Ihrem bestehenden Gmail. Keine Einrichtung erforderlich.",
-    "gmailCard": {
-      "header": "gmail.com · RealtyClose Extension",
-      "status": "Bereit",
-      "dailyDrafts": "Tägliche Entwürfe",
-      "languages": "Sprachen",
-      "statusMessage": "E-Mail-Entwurf auf professionellen Ton eingestellt. Compliance-Check bestanden."
-    }
+    "pricing": "Preise",
+    "aboutUs": "Über uns",
+    "contact": "Kontakt"
   },
   "features": {
-    "saveHours": "Stunden sparen",
-    "saveHoursDesc": "Antworten Sie in Sekunden mit KI-unterstützter Erstellung und Vorlagen.",
-    "protectDeals": "Deals schützen",
-    "protectDealsDesc": "Follow-up-Erinnerungen und Timeline-Benachrichtigungen verhindern Versäumnisse.",
-    "stayCompliant": "Compliant bleiben",
-    "stayCompliantDesc": "Audit-Trails und genehmigte Vorlagen halten Nachrichten sicher.",
     "aiEmailAssistant": {
       "title": "KI E-Mail-Assistent",
       "description": "Professionelle E-Mail-Erstellung mit KI. Antworten Sie schneller mit markenkonformen E-Mails, Ton-Vorschlägen und intelligenten Vorlagen für Immobilien-Kommunikation.",
