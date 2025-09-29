@@ -234,7 +234,7 @@
       "intro": "Navigieren Sie sicher durch komplexe Compliance-Anforderungen mit automatisierten Checks, Audit-Trails und Experten-geleiteten Leitplanken. RealtyClose stellt sicher, dass jede E-Mail professionelle Standards erfüllt und regulatorische Anforderungen einhält, ohne Ihren Workflow zu verlangsamen.",
       "coreFeatures": "Kernfunktionen",
       "features": {
-        "autoCheck": {
+        "autoChecks": {
           "title": "🔍 Automatische Compliance-Checks",
           "description": "Jede E-Mail wird automatisch auf erforderliche Offenlegungen, professionelle Sprache und Branchenstandards überprüft, bevor sie gesendet wird."
         },
@@ -242,21 +242,21 @@
           "title": "📋 Vollständige Audit-Trails",
           "description": "Jede Kommunikation wird mit Zeitstempel, Änderungshistorie und Compliance-Status protokolliert für mühelose Prüfungen und Berichterstattung."
         },
-        "templates": {
+        "disclosures": {
           "title": "⚖️ Compliance-getestete Vorlagen",
           "description": "Alle Vorlagen wurden von Experten geprüft und enthalten erforderliche Offenlegungen für verschiedene Transaktionstypen und Rechtsgebiete."
         },
-        "alerts": {
+        "approval": {
           "title": "⚠️ Intelligente Warnungen",
           "description": "Werden Sie gewarnt vor potenziell problematischen Formulierungen, fehlenden Offenlegungen oder Nachrichten, die weitere Überprüfung erfordern."
         }
       },
       "protection": "Schutzgebiete",
       "protectionAreas": {
+        "fair": "Automatische Fair Housing Compliance und diskriminierungsfreie Kommunikation",
         "disclosure": "Automatische Offenlegungen für Interessenskonflikte und Provisionsstrukturen",
-        "communication": "Professionelle Kommunikationsstandards und Ton-Leitlinien",
-        "documentation": "Vollständige Dokumentation aller Kunden-Interaktionen und Vereinbarungen",
-        "timeline": "Fristenverfolgung für kritische Compliance-Meilensteine und Fristen"
+        "advertising": "Professionelle Kommunikationsstandards und rechtskonforme Werbung",
+        "privacy": "Datenschutz und vertrauliche Kundeninformationen sicher verwalten"
       },
       "howItWorks": "So funktioniert es",
       "steps": {
