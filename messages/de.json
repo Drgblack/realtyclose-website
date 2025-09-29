@@ -237,6 +237,46 @@
           "subtitle": "RealtyClose = Posteingang → Deal-Closing-Maschine",
           "description": "Immobilienmakler verbringen täglich über drei Stunden mit E-Mails. RealtyClose verwandelt diesen Posteingang in eine Deal-Closing-Maschine."
         }
+      },
+      "listing": {
+        "title": "Neues Listing Follow-Up",
+        "content": {
+          "title": "Käufer-E-Mail trifft ein...",
+          "subtitle": "KI analysiert sofort → Polierter Entwurf in 30 Sek",
+          "description": "Ein Käufer fragt per E-Mail nach weiteren Details zu einem neuen Listing. RealtyClose analysiert sofort und schlägt eine professionelle Antwort vor. Was früher 15 Minuten dauerte, dauert jetzt 30 Sekunden."
+        }
+      },
+      "closing": {
+        "title": "Abschluss-Koordination",
+        "content": {
+          "title": "Abschlüsse = komplex + chaotisch",
+          "subtitle": "Einheitliche Threads, intelligente Fristen, Ein-Klick-Updates",
+          "description": "Mehrere Parteien. Endloses Hin und Her. RealtyClose bringt Ordnung ins Chaos mit automatischem Threading, Fristen-Tracking und Ein-Klick-Status-Updates."
+        }
+      },
+      "negotiation": {
+        "title": "Preisverhandlung",
+        "content": {
+          "title": "Preisverhandlungen = hohes Risiko",
+          "subtitle": "KI schlägt Gegenangebote mit Marktdaten vor",
+          "description": "RealtyClose erstellt Antworten, die Festigkeit mit Diplomatie balancieren. Professionelle, datengestützte Antworten, die Vertrauen aufbauen und Deals voranbringen."
+        }
+      },
+      "actions": {
+        "title": "Quick Actions",
+        "content": {
+          "title": "Alles in Gmail - kein Wechseln",
+          "subtitle": "Ein-Klick-Protokollierung, Terminierung, Berichterstattung",
+          "description": "Anrufe protokollieren, Besichtigungen planen, Berichte erstellen - ohne den Posteingang zu verlassen. Das Produktivitäts-Toolkit, auf das Makler gewartet haben."
+        }
+      },
+      "comparison": {
+        "title": "Vorher vs Nachher",
+        "content": {
+          "title": "Der Unterschied ist wie Tag und Nacht",
+          "subtitle": "Vom Chaos zum Vertrauen",
+          "description": "Sparen Sie täglich 3+ Stunden. Saubere Threads, polierte Antworten, automatisierte Erinnerungen und selbstbewusste Kundenkommunikation."
+        }
       }
     }
   },
@@ -287,6 +327,26 @@
         "title": "Einsatzbereit",
         "subtitle": "Beginnen Sie sofort, Ihren E-Mail-Workflow zu verbessern"
       }
+    }
+  },
+  "about": {
+    "testimonials": {
+      "slide1": {
+        "badge1": "Verifizierter Makler",
+        "badge2": "Team-Rollout in 1 Tag",
+        "badge3": "Gmail-nativ"
+      },
+      "slide2": {
+        "badge1": "Zeitersparnis",
+        "badge2": "Professioneller Ton",
+        "badge3": "Konsistente Updates"
+      },
+      "slide3": {
+        "badge1": "Follow-up-Automatisierung",
+        "badge2": "Fristen-Tracking",
+        "badge3": "Checklisten"
+      },
+      "disclaimer": "Individuelle Ergebnisse können variieren."
     }
   }
 }
